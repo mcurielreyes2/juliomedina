@@ -12,24 +12,30 @@ class Asistente:
         """
         Initialize the Asistente class with configurations for OpenAI and GroundX APIs.
         """
-        # Load API keys and bucket ID
+        # Load API keys and bucket ID from environment variables
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.groundx_api_key = os.getenv("GROUNDX_API_KEY")
         self.bucket_id = os.getenv("GROUNDX_BUCKET_ID")
 
-        if not openai_api_key or not groundx_api_key or not bucket_id:
+        # If keys are not set in the environment, attempt to load from config.json
+        if not self.openai_api_key or not self.groundx_api_key or not self.bucket_id:
             try:
                 with open('config.json') as config_file:
                     config = json.load(config_file)
-                    self.openai_api_key = config.get("OPENAI_API_KEY")
-                    groundx_api_key = config.get("GROUNDX_API_KEY")
-                    bucket_id = config.get("GROUNDX_BUCKET_ID")
+                    self.openai_api_key = self.openai_api_key or config.get("OPENAI_API_KEY")
+                    self.groundx_api_key = self.groundx_api_key or config.get("GROUNDX_API_KEY")
+                    self.bucket_id = self.bucket_id or config.get("GROUNDX_BUCKET_ID")
             except FileNotFoundError:
-                raise ValueError("Error: No se encontró la clave de API o bucket ID.")
+                raise ValueError("Error: No API key or bucket ID found in environment variables or config.json.")
 
-        if not bucket_id or not str(bucket_id).isdigit():
-            raise ValueError("Error: GROUNDX_BUCKET_ID debe ser un entero válido.")
+        # Validate that the bucket ID is a valid integer
+        if not self.bucket_id or not str(self.bucket_id).isdigit():
+            raise ValueError("Error: GROUNDX_BUCKET_ID must be a valid integer.")
 
+        # Convert bucket ID to integer
+        self.bucket_id = int(self.bucket_id)
+
+        # Set other configurations
         self.completion_model = "gpt-4o-mini"
         self.instruction = (
             "You are an assistant specialized in coffee."
@@ -40,10 +46,11 @@ class Asistente:
             "If you cannot find the requested information in the content below, apologize to the user and kindly ask them to contact Martin Garmendia from MCT (mgarmendia@mct-esco.com)."
         )
 
-        # GroundX setup
-        self.groundx = GroundX(api_key=groundx_api_key)
-        self.bucket_id = int(bucket_id)
+        # Initialize GroundX and OpenAI clients
+        self.groundx = GroundX(api_key=self.groundx_api_key)
         self.client = OpenAI(api_key=self.openai_api_key)
+
+        # Initialize conversation context
         self.context_history = []
 
     def groundx_search_content(self, query: str) -> str:
