@@ -13,9 +13,9 @@ class Asistente:
         Initialize the Asistente class with configurations for OpenAI and GroundX APIs.
         """
         # Load API keys and bucket ID
-        openai_api_key = os.getenv("OPENAI_API_KEY")
-        groundx_api_key = os.getenv("GROUNDX_API_KEY")
-        bucket_id = os.getenv("GROUNDX_BUCKET_ID")
+        self.openai_api_key = os.getenv("OPENAI_API_KEY")
+        self.groundx_api_key = os.getenv("GROUNDX_API_KEY")
+        self.bucket_id = os.getenv("GROUNDX_BUCKET_ID")
 
         if not openai_api_key or not groundx_api_key or not bucket_id:
             try:
