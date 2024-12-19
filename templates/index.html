@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="checkEnter(event)">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        // Display welcome message when the page loads
+        window.onload = function() {
+            const chatBox = document.getElementById("chat-box");
+            const welcomeMessage = document.createElement("div");
+            welcomeMessage.className = "assistant-message";
+            welcomeMessage.innerText = "Hola, soy un asistente especializado en cafe, en que puedo ayudarte?";
+            chatBox.appendChild(welcomeMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+        };
+
+        async function sendMessage() {
+            const inputField = document.getElementById("user-input");
+            const message = inputField.value.trim();
+            if (message === "") return; // Don't send empty messages
+            inputField.value = '';
+
+            // Display user message
+            const chatBox = document.getElementById("chat-box");
+            const userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.innerText = message;
+            chatBox.appendChild(userMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+
+            // Display typing indicator
+            const typingIndicator = document.createElement("div");
+            typingIndicator.className = "assistant-message";
+            typingIndicator.innerHTML = '<span class="typing-indicator"></span><span class="typing-indicator"></span><span class="typing-indicator"></span>';
+            chatBox.appendChild(typingIndicator);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Send message to Flask server
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            // Remove typing indicator after getting the response
+            chatBox.removeChild(typingIndicator);
+
+            const data = await response.json();
+            const assistantMessage = document.createElement("div");
+            assistantMessage.className = "assistant-message";
+            chatBox.appendChild(assistantMessage);
+            typeWriterEffect(assistantMessage, data.message);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+        }
+
+        // Typing effect for assistant's response
+        function typeWriterEffect(element, text) {
+            let index = 0;
+            function type() {
+                if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 10); // Adjust typing speed here
+                }
+            }
+            type();
+        }
+
+        // Check if Enter key is pressed
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>
+
