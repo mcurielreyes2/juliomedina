@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-box"></div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="checkEnter(event)">
+            <button id="send-button" onclick="sendMessageStream()">Send</button>
+
+        </div>
+    </div>
+    <script>
+        // Display welcome message when the page loads
+        window.onload = function() {
+            const chatBox = document.getElementById("chat-box");
+            const welcomeMessage = document.createElement("div");
+            welcomeMessage.className = "assistant-message";
+            welcomeMessage.innerText = "Hola, soy un asistente especializado en cafe, en que puedo ayudarte?";
+            chatBox.appendChild(welcomeMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+        };
+
+        async function sendMessage() {
+            const inputField = document.getElementById("user-input");
+            const message = inputField.value.trim();
+            if (message === "") return; // Don't send empty messages
+            inputField.value = '';
+
+            // Display user message
+            const chatBox = document.getElementById("chat-box");
+            const userMessage = document.createElement("div");
+            userMessage.className = "user-message";
+            userMessage.innerText = message;
+            chatBox.appendChild(userMessage);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+
+            // Display typing indicator
+            const typingIndicator = document.createElement("div");
+            typingIndicator.className = "assistant-message";
+            typingIndicator.innerHTML = '<span class="typing-indicator"></span><span class="typing-indicator"></span><span class="typing-indicator"></span>';
+            chatBox.appendChild(typingIndicator);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Send message to Flask server
+            const response = await fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: message })
+            });
+
+            // Remove typing indicator after getting the response
+            chatBox.removeChild(typingIndicator);
+
+            const data = await response.json();
+            const assistantMessage = document.createElement("div");
+            assistantMessage.className = "assistant-message";
+            chatBox.appendChild(assistantMessage);
+            typeWriterEffect(assistantMessage, data.message);
+            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
+        }
+
+        async function sendMessageStream() {
+            const inputField = document.getElementById("user-input");
+            const message = inputField.value.trim();
+            if (message === "") return;
+            inputField.value = '';
+
+            // Ocultar welcome-message y options-container al enviar el primer mensaje
+            const welcomeMessageEl = document.querySelector('.welcome-message');
+            const optionsContainerEl = document.querySelector('.options-container');
+            if (welcomeMessageEl) welcomeMessageEl.style.display = 'none';
+            if (optionsContainerEl) optionsContainerEl.style.display = 'none';
+
+            // Create user message element
+            const chatBox = document.getElementById("chat-box");
+            const userMessageDiv = document.createElement("div");
+            userMessageDiv.className = "user-message";
+            userMessageDiv.innerText = message;
+            chatBox.appendChild(userMessageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            // Show typing indicator
+            const typingIndicator = document.createElement("div");
+            typingIndicator.className = "assistant-message";
+            typingIndicator.innerHTML = '<span class="typing-indicator"></span><span class="typing-indicator"></span><span class="typing-indicator"></span>';
+            chatBox.appendChild(typingIndicator);
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            try {
+                // 1) Call the streaming endpoint
+                const response = await fetch("/chat_stream", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ message: message })
+                });
+
+                // 2) Remove typing indicator (we'll show typed text instead)
+                chatBox.removeChild(typingIndicator);
+
+                // 3) Create a placeholder for the assistant's message
+                const assistantMessageDiv = document.createElement("div");
+                assistantMessageDiv.className = "assistant-message";
+                chatBox.appendChild(assistantMessageDiv);
+
+                // Check for errors in the response
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    assistantMessageDiv.innerText = `Error: ${errorData.message}`;
+                    return;
+                }
+
+                // === FULLY TYPED APPROACH ===
+
+                // We'll keep new text in a variable `pendingText`,
+                // and type it out gradually in the background.
+                let pendingText = "";    // Chunks waiting to be typed
+                let isTyping = false;    // Whether we're currently typing
+
+                // This function types out characters from `pendingText`,
+                // one at a time, until empty. If more text arrives later,
+                // we can call this again and it will continue where it left off.
+                function backgroundTyper(element, speed = 50) {
+                    // If we're already typing, do nothing (it will keep typing).
+                    if (isTyping) return;
+                    isTyping = true;
+
+                    function typeNextChar() {
+                        if (pendingText.length > 0) {
+                            // Take the first character of pendingText
+                            const nextChar = pendingText.charAt(0);
+                            // Remove it from pendingText
+                            pendingText = pendingText.slice(1);
+                            // Append it to the element
+                            element.innerHTML += nextChar;
+                            // Schedule typing the next character
+                            setTimeout(typeNextChar, speed);
+                        } else {
+                            // No more pending text
+                            isTyping = false;
+                        }
+                    }
+
+                    // Start typing
+                    typeNextChar();
+                }
+
+                // 4) Read streaming chunks from the server
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder("utf-8");
+
+                // We'll define a function to read each chunk
+                function readChunk() {
+                    reader.read().then(({ done, value }) => {
+                        if (done) {
+                            // Streaming is finished
+                            return;
+                        }
+                        // Decode chunk to text
+                        const chunkText = decoder.decode(value, { stream: true });
+
+                        // Add this new chunk to pendingText
+                        pendingText += chunkText;
+
+                        // Call the background typer to type any newly arrived text
+                        backgroundTyper(assistantMessageDiv, 10);
+                        // You can adjust 50 to a slower or faster speed.
+
+                        // Auto-scroll
+                        chatBox.scrollTop = chatBox.scrollHeight;
+
+                        // Keep reading the next chunk
+                        readChunk();
+                    });
+                }
+                // Start reading chunks
+                readChunk();
+
+            } catch (err) {
+                // If there's a network/fetch error
+                chatBox.removeChild(typingIndicator); // remove any leftover indicator
+
+                // Create an assistant message (in case we didn't yet)
+                const errorMessageDiv = document.createElement("div");
+                errorMessageDiv.className = "assistant-message";
+                errorMessageDiv.innerText = `Request error: ${err}`;
+                chatBox.appendChild(errorMessageDiv);
+            }
+        }
+
+        // Typing effect for assistant's response
+        function typeWriterEffect(element, text) {
+            let index = 0;
+            function type() {
+                if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 50); // Adjust typing speed here
+                }
+            }
+            type();
+        }
+
+        // Check if Enter key is pressed
+        function checkEnter(event) {
+            if (event.key === "Enter") {
+                // Optionally, call the streaming version
+                sendMessageStream();
+            }
+        }
+
+
+    </script>
+</body>
+</html>
+

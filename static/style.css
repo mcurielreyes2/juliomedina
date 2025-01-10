@@ -1,120 +1,125 @@
 /* General body styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Cambiado de height a min-height */
+    min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a1a;
+    background-color: #f4f4f4;
     margin: 0;
-    color: #e0e0e0;
+    color: #333;
 }
 
 /* Chat container styling */
 .chat-container {
-    width: 800px;
-    max-width: 95%;
+    width: 90%;
+    max-width: 1400px;
     border-radius: 8px;
-    background-color: #2b2b2b;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border: 1px solid #444;
+    height: 100vh;
+    margin: 0;
+    border: 1px solid #ddd;
+}
+
+/* Chat header styling */
+.chat-header {
+    background-color: #f9f9f9; /* Match the chatbox color */
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+}
+
+.welcome-message {
+    background-color: #e8eaf6;
+    padding: 20px;
+    text-align: center;
+    color: #002F6C;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    width: 100%;
+    margin: 0 auto;   /* Centra el contenido en el contenedor */
+}
+
+/* Options container styling */
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+    background-color: #f4f6f8;
+}
+
+.option-box {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #002F6C;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.option-box:hover {
+    background-color: #001B4E; /* Darker blue shade */
+    transform: translateY(-5px);
 }
 
 /* Chat box styling */
 #chat-box {
-    height: 600px;
+    flex: 1;
     overflow-y: auto;
-    padding: 25px;
-    background-color: #333;
+    padding: 20px;
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 15px;
     scroll-behavior: smooth;
 }
 
-/* Message styling */
-.user-message, .assistant-message, .waiting-message {
+/* User and assistant message bubbles */
+.user-message, .assistant-message {
     padding: 14px 20px;
-    border-radius: 8px;
-    max-width: 75%;
-    line-height: 1.8;
+    border-radius: 16px;
+    max-width: 70%;
+    line-height: 1.6;
     font-size: 16px;
     word-wrap: break-word;
     white-space: pre-line;
+
+    /* Nueva fuente y peso */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Prueba 500, 600 o 700 para hacerlo más grueso */
 }
 
-/* User message styling */
 .user-message {
     align-self: flex-end;
-    background-color: #4a8fe7;
-    color: #ffffff;
-    border-radius: 8px 8px 0 8px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 16px 16px 0 16px;
 }
 
-/* Assistant message styling */
 .assistant-message {
     align-self: flex-start;
-    background-color: #444;
-    color: #d0d0d0;
-    border-radius: 8px 8px 8px 0;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 16px 16px 16px 0;
 }
 
-/* Waiting message styling */
-.waiting-message {
-    align-self: flex-start;
-    font-style: italic;
-    color: #888;
-    background-color: transparent;
-}
-
-/* Input and send button container styling */
-.chat-input-container {
-    display: flex;
-    border-top: 1px solid #444;
-    background-color: #2b2b2b;
-}
-
-/* Input and send button styling */
-#user-input, #send-button {
-    padding: 18px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-}
-
-#user-input {
-    flex: 1;
-    background-color: #444;
-    color: #ddd;
-    border-top-left-radius: 8px;
-}
-
-#send-button {
-    background-color: #4a8fe7;
-    color: #ffffff;
-    border-top-right-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#send-button:hover {
-    background-color: #3578b7;
-}
-
-/* Scroll bar styling for chat box */
-#chat-box::-webkit-scrollbar {
-    width: 8px;
-}
-
-#chat-box::-webkit-scrollbar-thumb {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-/* Typing animation */
+/* Typing indicator animation */
 .typing-indicator {
     display: inline-block;
     width: 8px;
@@ -142,32 +147,121 @@ body {
     }
 }
 
-/* Media Query for Mobile Screens */
+/* Input and send button container styling */
+/* Aumentamos padding y fuente para agrandar la sección de ingreso de texto */
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    padding: 15px; /* Aumentado */
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+#feedback-button, #erase-button {
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 18px; /* Aumentado */
+    color: #333;
+    font-size: 16px; /* Aumentado */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#feedback-button:hover, #erase-button:hover {
+    background-color: #e0e0e0;
+}
+
+#user-input {
+    flex: 1;
+    padding: 14px; /* Aumentado */
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px; /* Aumentado */
+    margin-right: 10px;
+}
+
+/* Cambiado a azul (#002F6C) con hover (#001B4E) */
+#send-button {
+    background-color: #002F6C;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 24px; /* Aumentado */
+    cursor: pointer;
+    font-size: 16px; /* Aumentado */
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #001B4E;
+}
+
+/* Ajustes para móvil */
 @media (max-width: 768px) {
-    /* Adjust chat container width and height */
-    .chat-container {
-        width: 100%;
-        max-width: 100%;
-        height: 100vh;
-        border-radius: 0;
+    .chat-input-container {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
-    /* Adjust chat box height */
-    #chat-box {
-        height: calc(100vh - 120px); /* Ajuste para que encaje bien en pantalla móvil */
-        padding: 15px;
-        font-size: 15px;
+    #feedback-button, #erase-button {
+        flex: 1;
+        text-align: center;
     }
 
-    /* Adjust message font size and width */
-    .user-message, .assistant-message {
-        font-size: 15px;
-        max-width: 90%;
+    #user-input {
+        flex: 100%;
+        margin-right: 0;
     }
 
-    /* Adjust input and button padding and font size */
-    #user-input, #send-button {
-        padding: 12px;
-        font-size: 15px;
+    #send-button {
+        flex: 1;
     }
+}
+
+/* Modal overlay: ocupa toda la pantalla y la oscurece */
+.feedback-modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 999; /* Para que quede encima de todo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Si hay contenido largo */
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+}
+
+/* Contenedor interno del modal: centrado */
+.feedback-modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px; /* Ancho máximo */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Estilos del textarea y botones dentro del modal */
+#feedback-text {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    resize: vertical; /* Para permitir agrandarlo verticalmente */
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.feedback-modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.options-container-bottom {
+  margin-top: 20px; /* separarlas un poco de la última respuesta */
 }

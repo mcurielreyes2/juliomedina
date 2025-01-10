@@ -3,89 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat Assistant</title>
+    <title>Café Bahía: Experto en café</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="chat-container">
+        <div class="chat-header">
+            <img src="https://static.wixstatic.com/media/978c91_1c1911b9d26d4f888da1d423cab1298b~mv2.png/v1/fill/w_126,h_59,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo-MCT-Color.png" alt="Logo" class="logo">
+        </div>
+
+        <div class="welcome-message">
+            <p>Bienvenido al asistente experto en cafe de <strong>Café Bahía</strong>. Pregúntame cualquier cosa sobre café para comenzar.</p>
+        </div>
+
+        <div class="options-container">
+            <div class="option-box">¿Cómo influye la química del tostado en el sabor del café?</div>
+            <div class="option-box">¿Qué factores son clave para un tostado perfecto?</div>
+            <div class="option-box">¿Qué es el ROR o "Rate of Rise" en ingles??</div>
+            <div class="option-box">¿Qué rol tiene el análisis sensorial en la calidad del café?</div>
+        </div>
+
         <div id="chat-box"></div>
+        <!-- Contenedor (vacío) donde reinsertaremos los conversation starters -->
+        <div id="conversation-starters-bottom"></div>
         <div class="chat-input-container">
-            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="checkEnter(event)">
-            <button id="send-button" onclick="sendMessage()">Send</button>
+            <button id="feedback-button">Feedback</button>
+            <button id="erase-button" onclick="eraseLastAndStop()">Borrar</button>
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." onkeypress="checkEnter(event)">
+            <button id="send-button" onclick="sendMessageStream()">Enviar</button>
         </div>
     </div>
-    <script>
-        // Display welcome message when the page loads
-        window.onload = function() {
-            const chatBox = document.getElementById("chat-box");
-            const welcomeMessage = document.createElement("div");
-            welcomeMessage.className = "assistant-message";
-            welcomeMessage.innerText = "Hola, soy un asistente especializado en cafe, en que puedo ayudarte?";
-            chatBox.appendChild(welcomeMessage);
-            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
-        };
 
-        async function sendMessage() {
-            const inputField = document.getElementById("user-input");
-            const message = inputField.value.trim();
-            if (message === "") return; // Don't send empty messages
-            inputField.value = '';
+        <!-- Cuadro modal para Feedback (invisible al inicio) -->
+    <div id="feedback-modal" class="feedback-modal">
+      <div class="feedback-modal-content">
+        <h2>Feedback</h2>
+        <p>
+          Por favor, informe sobre todas las respuestas incorrectas o inexactas del asistente.
+          Describa cuál es el problema y cómo esperaba que el asistente respondiera.
+          ¡También se agradecen los comentarios positivos!
+        </p>
+        <textarea id="feedback-text" placeholder="Describa la situación aquí..."></textarea>
+        <div class="feedback-modal-buttons">
+          <button id="close-feedback">Cerrar</button>
+          <button id="submit-feedback">Enviar reporte</button>
+        </div>
+      </div>
+    </div>
 
-            // Display user message
-            const chatBox = document.getElementById("chat-box");
-            const userMessage = document.createElement("div");
-            userMessage.className = "user-message";
-            userMessage.innerText = message;
-            chatBox.appendChild(userMessage);
-            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
-
-            // Display typing indicator
-            const typingIndicator = document.createElement("div");
-            typingIndicator.className = "assistant-message";
-            typingIndicator.innerHTML = '<span class="typing-indicator"></span><span class="typing-indicator"></span><span class="typing-indicator"></span>';
-            chatBox.appendChild(typingIndicator);
-            chatBox.scrollTop = chatBox.scrollHeight;
-
-            // Send message to Flask server
-            const response = await fetch('/chat', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ message: message })
-            });
-
-            // Remove typing indicator after getting the response
-            chatBox.removeChild(typingIndicator);
-
-            const data = await response.json();
-            const assistantMessage = document.createElement("div");
-            assistantMessage.className = "assistant-message";
-            chatBox.appendChild(assistantMessage);
-            typeWriterEffect(assistantMessage, data.message);
-            chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to latest message
-        }
-
-        // Typing effect for assistant's response
-        function typeWriterEffect(element, text) {
-            let index = 0;
-            function type() {
-                if (index < text.length) {
-                    element.innerHTML += text.charAt(index);
-                    index++;
-                    setTimeout(type, 10); // Adjust typing speed here
-                }
-            }
-            type();
-        }
-
-        // Check if Enter key is pressed
-        function checkEnter(event) {
-            if (event.key === "Enter") {
-                sendMessage();
-            }
-        }
-    </script>
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
 </body>
 </html>
 
