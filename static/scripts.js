@@ -80,6 +80,31 @@ async function sendMessageStream() {
   chatBox.appendChild(userMessageDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 
+    // (1) Verificar si el backend va a usar RAG
+  let isRag = false;
+  try {
+    const ragResp = await fetch("/check_rag", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
+    });
+    const ragData = await ragResp.json();
+    isRag = ragData.is_rag;
+  } catch (err) {
+    console.error("Error checking RAG:", err);
+  }
+
+  // (2) Si isRag=true, mostramos un aviso especial, arriba de los typing indicators
+  let ragMessageDiv = null;
+  if (isRag) {
+    ragMessageDiv = document.createElement("div");
+    // Usa clases de "assistant-message" más una clase especial de blink
+    ragMessageDiv.className = "assistant-message rag-status-blink";
+    ragMessageDiv.innerText = "Buscando información en los documentos de referencia...";
+    chatBox.appendChild(ragMessageDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
   // Show typing indicator
   const typingIndicator = document.createElement("div");
   typingIndicator.className = "assistant-message";
@@ -100,6 +125,11 @@ async function sendMessageStream() {
 
     // Remove typing indicator
     chatBox.removeChild(typingIndicator);
+
+    // Quitar el ragMessageDiv (si existe) cuando ya empieza la respuesta
+    if (ragMessageDiv && ragMessageDiv.parentNode) {
+      ragMessageDiv.parentNode.removeChild(ragMessageDiv);
+    }
 
     // Prepare assistant message container
     const assistantMessageDiv = document.createElement("div");
@@ -313,12 +343,12 @@ document.querySelectorAll('.option-box').forEach(box => {
   });
 });
 
-function sendOptionMessage(message) {
+async function sendOptionMessage(message) {
   // 1) Ocultar welcome-message y options-container si están visibles
-  const welcomeMessageEl = document.querySelector('.welcome-message');
-  const optionsContainerEl = document.querySelector('.options-container');
-  if (welcomeMessageEl) welcomeMessageEl.style.display = 'none';
-  if (optionsContainerEl) optionsContainerEl.style.display = 'none';
+  const welcomeMessageEl = document.querySelector(".welcome-message");
+  const optionsContainerEl = document.querySelector(".options-container");
+  if (welcomeMessageEl) welcomeMessageEl.style.display = "none";
+  if (optionsContainerEl) optionsContainerEl.style.display = "none";
 
   // 2) Mostrar el mensaje del usuario en el chat
   const chatBox = document.getElementById("chat-box");
@@ -328,108 +358,114 @@ function sendOptionMessage(message) {
   chatBox.appendChild(userMessageDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 
-  // 3) Mostrar indicador de escritura
+  // 3) Verificar si el backend usará RAG (check_rag)
+  let isRag = false;
+  try {
+    const ragResp = await fetch("/check_rag", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
+    });
+    const ragData = await ragResp.json();
+    isRag = ragData.is_rag;  // true o false
+  } catch (err) {
+    console.error("Error checking RAG:", err);
+  }
+
+  // 4) Si RAG es True, mostrar un aviso especial antes de los typing indicators
+  let ragMessageDiv = null;
+  if (isRag) {
+    ragMessageDiv = document.createElement("div");
+    // Usa la clase de burbuja del asistente y una clase blink si quieres animar
+    ragMessageDiv.className = "assistant-message rag-status-blink";
+    ragMessageDiv.innerText = "Buscando información en los documentos de referencia...";
+    chatBox.appendChild(ragMessageDiv);
+    chatBox.scrollTop = chatBox.scrollHeight;
+  }
+
+  // 5) Mostrar indicador de escritura
   const typingIndicator = document.createElement("div");
   typingIndicator.className = "assistant-message";
-  typingIndicator.innerHTML = `<span class="typing-indicator"></span><span class="typing-indicator"></span><span class="typing-indicator"></span>`;
+  typingIndicator.innerHTML = `<span class="typing-indicator"></span> <span class="typing-indicator"></span><span class="typing-indicator"></span>`;
   chatBox.appendChild(typingIndicator);
   chatBox.scrollTop = chatBox.scrollHeight;
 
-  // 4) Hacer la llamada al endpoint /chat_stream
-  fetch("/chat_stream", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ message })
-  })
-    .then(response => {
-      // 5) Retirar el indicador de escritura (si sigue en el DOM)
-      if (typingIndicator.parentNode) {
-        typingIndicator.parentNode.removeChild(typingIndicator);
-      }
-
-      // Crear contenedor para la respuesta del asistente
-      const assistantMessageDiv = document.createElement("div");
-      assistantMessageDiv.className = "assistant-message";
-      chatBox.appendChild(assistantMessageDiv);
-
-      // Validar que la respuesta sea exitosa
-      if (!response.ok) {
-        return response.json().then(errorData => {
-          assistantMessageDiv.innerText = `Error: ${errorData.message}`;
-          return null;
-        });
-      }
-      // 6) Procesar el streaming de la respuesta
-      return response.body ? response.body : null;
-    })
-    .then(body => {
-      if (!body) return; // si hubo error o no hay body, salimos
-
-      const reader = body.getReader();
-      const decoder = new TextDecoder("utf-8");
-      let pendingText = "";
-      let isTyping = false;
-
-      // backgroundTyper: función que va tipeando poco a poco el texto acumulado
-      function backgroundTyper(element, speed = 10) {
-        // Evitamos arrancar la animación si ya está tipeando
-        if (isTyping) return;
-        isTyping = true;
-
-        function typeNextChar() {
-          // Validar que el elemento exista y siga en el DOM
-          if (!element || !document.body.contains(element)) {
-            isTyping = false;
-            return;
-          }
-          if (pendingText.length > 0) {
-            const nextChar = pendingText.charAt(0);
-            pendingText = pendingText.slice(1);
-            // Asignar el char
-            element.innerHTML += nextChar;
-            setTimeout(typeNextChar, speed);
-          } else {
-            isTyping = false;
-          }
-        }
-        typeNextChar();
-      }
-
-      function readChunk() {
-        reader.read().then(({ done, value }) => {
-          if (done) return;
-
-          const chunkText = decoder.decode(value, { stream: true });
-          // Acumulamos el texto
-          pendingText += chunkText;
-          // Mandamos a “tipear”
-          const assistantMessageDiv = chatBox.querySelector(
-            ".assistant-message:last-of-type"
-          );
-          if (assistantMessageDiv) {
-            backgroundTyper(assistantMessageDiv, 12);
-          }
-
-          // Auto-scroll
-          chatBox.scrollTop = chatBox.scrollHeight;
-          // Continuar leyendo
-          readChunk();
-        });
-      }
-      readChunk();
-    })
-    .catch(err => {
-      // Manejo de cualquier error en fetch o streaming
-      // Quitar typingIndicator si sigue presente
-      if (typingIndicator.parentNode) {
-        typingIndicator.parentNode.removeChild(typingIndicator);
-      }
-
-      // Crear un div para el error
-      const errorMessageDiv = document.createElement("div");
-      errorMessageDiv.className = "assistant-message";
-      errorMessageDiv.innerText = `Error: ${err.message}`;
-      chatBox.appendChild(errorMessageDiv);
+  // 6) Llamar al endpoint /chat_stream para obtener la respuesta en streaming
+  try {
+    const response = await fetch("/chat_stream", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
     });
-}
 
+    // Quitar el indicador de escritura (si aún está en el DOM)
+    if (typingIndicator.parentNode) {
+      typingIndicator.parentNode.removeChild(typingIndicator);
+    }
+    // Quitar el mensaje RAG si existe
+    if (ragMessageDiv && ragMessageDiv.parentNode) {
+      ragMessageDiv.parentNode.removeChild(ragMessageDiv);
+    }
+
+    // Crear contenedor para la respuesta del asistente
+    const assistantMessageDiv = document.createElement("div");
+    assistantMessageDiv.className = "assistant-message";
+    chatBox.appendChild(assistantMessageDiv);
+
+    // Si la respuesta no es OK, mostrar el error
+    if (!response.ok) {
+      const errorData = await response.json();
+      assistantMessageDiv.innerText = `Error: ${errorData.message}`;
+      return;
+    }
+
+    // 7) Procesar el streaming de la respuesta
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder("utf-8");
+    let pendingText = "";
+    let isTyping = false;
+
+    function backgroundTyper(element, speed = 12) {
+      if (isTyping) return;
+      isTyping = true;
+
+      function typeNextChar() {
+        if (pendingText.length > 0) {
+          const nextChar = pendingText.charAt(0);
+          pendingText = pendingText.slice(1);
+          element.innerHTML += nextChar;
+          setTimeout(typeNextChar, speed);
+        } else {
+          isTyping = false;
+        }
+      }
+      typeNextChar();
+    }
+
+    async function readChunk() {
+      const { done, value } = await reader.read();
+      if (done) return;
+
+      const chunkText = decoder.decode(value, { stream: true });
+      pendingText += chunkText;
+      backgroundTyper(assistantMessageDiv, 12);
+
+      chatBox.scrollTop = chatBox.scrollHeight;
+      readChunk();
+    }
+    readChunk();
+
+  } catch (err) {
+    // 8) Manejo de errores
+    if (typingIndicator.parentNode) {
+      typingIndicator.parentNode.removeChild(typingIndicator);
+    }
+    if (ragMessageDiv && ragMessageDiv.parentNode) {
+      ragMessageDiv.parentNode.removeChild(ragMessageDiv);
+    }
+    const errorMessageDiv = document.createElement("div");
+    errorMessageDiv.className = "assistant-message";
+    errorMessageDiv.innerText = `Error: ${err}`;
+    chatBox.appendChild(errorMessageDiv);
+  }
+}

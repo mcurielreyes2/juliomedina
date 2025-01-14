@@ -322,3 +322,23 @@ body {
 .options-container-bottom {
     margin-top: 20px;
 }
+
+/* Mensaje parpadeante RAG */
+.rag-status-blink {
+    /* Mismo estilo de .assistant-message, si deseas */
+    background-color: #faf4d3; /* un color diferente, p.ej. un amarillo claro */
+    color: #333;
+
+    /* Animate opacity: blink */
+    animation: ragBlink 1.2s infinite;
+    /* Podrías animar color con 'colorBlink' en su lugar */
+}
+
+@keyframes ragBlink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
