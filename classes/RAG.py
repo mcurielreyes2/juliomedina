@@ -16,7 +16,7 @@ class RAGService:
         #self.bucket_id_english = os.getenv("GROUNDX_BUCKET_ID_ENGLISH")
 
         if not self.openai_api_key or not self.groundx_api_key \
-           or not self.bucket_id_spanish or not self.bucket_id_english:
+           or not self.bucket_id_spanish:
             try:
                 with open('config.json') as config_file:
                     config = json.load(config_file)
