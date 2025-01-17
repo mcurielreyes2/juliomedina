@@ -4,6 +4,8 @@ from flask import Flask, request, jsonify, render_template, Response, stream_wit
 
 # Import your Asistente class from the separate module
 from classes.asistente import Asistente
+from classes.RAG import RAGService
+from classes.asistente_osma import AsistenteOSMA
 
 # Optionally configure or tweak logging here
 logging.basicConfig(
@@ -14,28 +16,12 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 asistente = Asistente()  # Instantiate your class from classes/asistente.py
+rag_service = RAGService()
 
 @app.route("/", methods=["GET"])
 def home():
     """Serve the main HTML page."""
     return render_template("index.html")
-
-@app.route("/chat", methods=["POST"])
-def chat():
-    """
-    Handle non-streaming chat (one-shot).
-    """
-    data = request.get_json()
-    user_message = data.get("message", "")
-    if not user_message:
-        return jsonify({"message": "Error: No message provided"}), 400
-
-    try:
-        assistant_response = asistente.chat_completions(user_message)
-        return jsonify({"message": assistant_response})
-    except Exception as e:
-        logger.error(f"Error in /chat: {e}")
-        return jsonify({"message": f"Error: {e}"}), 500
 
 @app.route("/erase", methods=["POST"])
 def erase():
@@ -77,7 +63,7 @@ def check_rag():
     """
     data = request.get_json()
     user_message = data.get("message", "")
-    rag_used = asistente.should_call_groundx(user_message)
+    rag_used = rag_service.should_call_groundx(user_message)
     return jsonify({"is_rag": rag_used})
 
 @app.route("/chat_stream", methods=["POST"])
@@ -104,6 +90,63 @@ def chat_stream():
     except Exception as e:
         logger.error(f"Error in /chat_stream: {e}")
         return jsonify({"message": f"Error: {e}"}), 500
+
+
+@app.route("/osma_init", methods=["POST"])
+def osma_init():
+    """
+    Inicializa la sesión OSMA creando una instancia de AsistenteOSMA.
+    Devuelve el prompt inicial y las opciones de servicios disponibles.
+    """
+    global osma_assistant
+    osma_assistant = AsistenteOSMA()
+    services = list(osma_assistant.data.keys())
+    prompt = "¿Qué servicio(s) desea seleccionar?"
+    logger.info("Se ha iniciado la sesión OSMA")
+    return jsonify({"prompt": prompt, "services": services})
+
+
+@app.route("/osma_respond", methods=["POST"])
+def osma_respond():
+    """
+    Procesa la respuesta del usuario en el flujo OSMA y devuelve
+    el siguiente prompt y, cuando corresponda, las opciones para el siguiente formulario.
+    """
+    global osma_assistant
+    if osma_assistant is None:
+        return jsonify({"error": "No se ha iniciado la sesión OSMA"}), 400
+
+    data = request.get_json()
+    respuesta = data.get("respuesta", "").strip()
+    if respuesta == "":
+        return jsonify({"error": "Respuesta vacía"}), 400
+
+    next_prompt = osma_assistant.procesar_respuesta(respuesta)
+
+    # Según el nuevo estado, devolvemos opciones para el próximo formulario.
+    if osma_assistant.state == 1:
+        # Paso 1: Monitoreables. Se agrupan de todos los servicios seleccionados.
+        monitoreables = set()
+        for serv in osma_assistant.servicio:
+            monitoreables.update(osma_assistant.data.get(serv, {}).keys())
+        return jsonify({"prompt": next_prompt, "monitoreables": list(monitoreables)})
+    elif osma_assistant.state == 2:
+        # Paso 2: Variables.
+        variables = set()
+        for mon in osma_assistant.monitoreable:
+            for serv in osma_assistant.servicio:
+                if mon in osma_assistant.data.get(serv, {}):
+                    for var_item in osma_assistant.data[serv][mon]:
+                        variables.add(var_item.get("Variable"))
+        return jsonify({"prompt": next_prompt, "variables": list(variables)})
+    elif osma_assistant.state == 4:
+        # Paso 4: Intervalo; enviamos las opciones fijas
+        intervals = ["Minuto", "Hora", "Día", "Mes"]
+        return jsonify({"prompt": next_prompt, "intervals": intervals})
+    else:
+        return jsonify({"prompt": next_prompt})
+
+
 
 if __name__ == "__main__":
     app.run(debug=False, port=5000)

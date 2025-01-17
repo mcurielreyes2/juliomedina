@@ -169,13 +169,49 @@ async function sendMessageStream() {
     const reader = response.body.getReader();
     const decoder = new TextDecoder("utf-8");
 
-    async function readChunk() {
-      const { done, value } = await reader.read();
-      if (done) return;
+async function readChunk() {
+  const { done, value } = await reader.read();
+  if (done) {
+    // When streaming is complete, check if math delimiters are balanced
 
-      const chunkText = decoder.decode(value, { stream: true });
-      pendingText += chunkText; // add newly arrived text
+    if (pendingText.length > 0) {
+      assistantMessageDiv.innerHTML += pendingText;
+      pendingText = "";
+    }
+    function isBalancedMath(text) {
+      // Count the occurrences of \[ and \]
+      const displayOpen = (text.match(/\\\[/g) || []).length;
+      const displayClose = (text.match(/\\\]/g) || []).length;
+      // Count the occurrences of \( and \)
+      const inlineOpen = (text.match(/\\\(/g) || []).length;
+      const inlineClose = (text.match(/\\\)/g) || []).length;
+      return displayOpen === displayClose && inlineOpen === inlineClose;
+    }
+
+    // Once streaming is complete, call MathJax on the new assistantMessageDiv only
+    if (window.MathJax) {
+      console.log("Math delimiters balanced. Triggering MathJax typesetPromise on assistantMessageDiv.");
+      window.MathJax.typesetPromise([assistantMessageDiv])
+        .then(() => {
+          console.log("MathJax re-typeset successfully after final chunk.");
+        })
+        .catch((err) => {
+          console.error("MathJax typeset error:", err);
+        });
+    }
+    return;
+  }
+
+
+      let chunkText = decoder.decode(value, { stream: true });
+
+      // Accumulate chunk text
+      pendingText += chunkText;
+
+      // Start typing
       backgroundTyper(assistantMessageDiv, 12); // type chunk
+
+      // Auto-scroll to bottom
       chatBox.scrollTop = chatBox.scrollHeight;  // auto-scroll
 
       readChunk(); // keep reading
@@ -442,16 +478,52 @@ async function sendOptionMessage(message) {
       typeNextChar();
     }
 
-    async function readChunk() {
-      const { done, value } = await reader.read();
-      if (done) return;
 
-      const chunkText = decoder.decode(value, { stream: true });
+async function readChunk() {
+  const { done, value } = await reader.read();
+  if (done) {
+    // When streaming is complete, check if math delimiters are balanced
+
+    if (pendingText.length > 0) {
+      assistantMessageDiv.innerHTML += pendingText;
+      pendingText = "";
+    }
+    function isBalancedMath(text) {
+      // Count the occurrences of \[ and \]
+      const displayOpen = (text.match(/\\\[/g) || []).length;
+      const displayClose = (text.match(/\\\]/g) || []).length;
+      // Count the occurrences of \( and \)
+      const inlineOpen = (text.match(/\\\(/g) || []).length;
+      const inlineClose = (text.match(/\\\)/g) || []).length;
+      return displayOpen === displayClose && inlineOpen === inlineClose;
+    }
+
+    // Once streaming is complete, call MathJax on the new assistantMessageDiv only
+    if (window.MathJax) {
+      console.log("Math delimiters balanced. Triggering MathJax typesetPromise on assistantMessageDiv.");
+      window.MathJax.typesetPromise([assistantMessageDiv])
+        .then(() => {
+          console.log("MathJax re-typeset successfully after final chunk.");
+        })
+        .catch((err) => {
+          console.error("MathJax typeset error:", err);
+        });
+    }
+    return;
+  }
+
+      let chunkText = decoder.decode(value, { stream: true });
+
+      // Accumulate chunk text
       pendingText += chunkText;
-      backgroundTyper(assistantMessageDiv, 12);
 
-      chatBox.scrollTop = chatBox.scrollHeight;
-      readChunk();
+      // Start typing
+      backgroundTyper(assistantMessageDiv, 12); // type chunk
+
+      // Auto-scroll to bottom
+      chatBox.scrollTop = chatBox.scrollHeight;  // auto-scroll
+
+      readChunk(); // keep reading
     }
     readChunk();
 

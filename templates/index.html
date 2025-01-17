@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Bahía: Experto en café</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Infectología: Asistente especializado en flujogramas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <div class="chat-container">
@@ -13,24 +13,29 @@
         </div>
 
         <div class="welcome-message">
-            <p>Bienvenido al asistente experto en cafe de <strong>Café Bahía</strong>. Pregúntame cualquier cosa sobre café para comenzar.</p>
+            <p>Bienvenido al asistente especializado en Infectología de <strong>Julio Medina</strong>. Pregúntame cualquier cosa sobre infectología para comenzar.</p>
         </div>
 
-        <div class="options-container">
-            <div class="option-box">¿Cómo influye la química del tostado en el sabor del café?</div>
-            <div class="option-box">¿Qué factores son clave para un tostado perfecto?</div>
-            <div class="option-box">¿Qué es el ROR o "Rate of Rise" en ingles??</div>
-            <div class="option-box">¿Qué rol tiene el análisis sensorial en la calidad del café?</div>
+        <div class="options-wrapper">
+          <div class="options-container coffee-options">
+              <div class="option-box">Neumonía intrahospitalaria Quick – SOFA = 0-1, Estadía < 5 días sin FR para microorganismos multirresistente. Describirme el tratamiento recomendado </div>
+              <div class="option-box">Infección de piel y partes blandas no supuradas, en estado leve. Describir el tratamiento recomendado </div>
+              <div class="option-box">Infección de piel y partes blandas supuradas, en estado severo. Describir el tratamiento recomendado</div>
+              <div class="option-box">Neumonia aguda comunitaria, describir tratamiento para el Grupo 1</div>
+              <div class="option-box">Cuentame detalles respecto a tus documentos de referencia</div>
+          </div>
+{#          <div class="options-container osma-option">#}
+{#              <div class="option-box osma">Exploración de datos con OSMA</div>#}
+{#          </div>#}
         </div>
-
         <div id="chat-box"></div>
         <!-- Contenedor (vacío) donde reinsertaremos los conversation starters -->
         <div id="conversation-starters-bottom"></div>
         <div class="chat-input-container">
             <button id="feedback-button">Feedback</button>
             <button id="erase-button" onclick="eraseLastAndStop()">Borrar</button>
-            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí..." onkeypress="checkEnter(event)">
-            <button id="send-button" onclick="sendMessageStream()">Enviar</button>
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+            <button id="send-button">Enviar</button>
         </div>
     </div>
 
@@ -51,7 +56,23 @@
       </div>
     </div>
 
-<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+<script>
+  // Configure MathJax to parse the usual \( ... \) and \[ ... \] delimiters
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],  // for inline: \( ... \)
+      displayMath: [['\\[', '\\]']], // for display: \[ ... \]
+    },
+  };
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  id="MathJax-script"
+  async
+></script>
+
 </body>
 </html>
 
