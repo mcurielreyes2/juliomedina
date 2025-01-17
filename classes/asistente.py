@@ -31,12 +31,12 @@ class Asistente:
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.groundx_api_key = os.getenv("GROUNDX_API_KEY")
         self.bucket_id_spanish = os.getenv("GROUNDX_BUCKET_ID_SPANISH")
-        self.bucket_id_english = os.getenv("GROUNDX_BUCKET_ID_ENGLISH")
+        #self.bucket_id_english = os.getenv("GROUNDX_BUCKET_ID_ENGLISH")
         # Load instruction from JSON file
 
 
         # If keys are not set in the environment, attempt to load from config.json
-        if not self.openai_api_key or not self.groundx_api_key or not self.bucket_id_spanish or not self.bucket_id_english:
+        if not self.openai_api_key or not self.groundx_api_key or not self.bucket_id_spanish:
             try:
                 with open('config.json') as config_file:
                     config = json.load(config_file)
