@@ -1,0 +1,117 @@
+[
+  {
+    "fecha": "2025-01-19T22:02:34.203Z",
+    "pregunta": "Quien sos?",
+    "respuesta": "Soy un asistente especializado en infectología, diseñado para ayudarte con preguntas relacionadas con este campo utilizando la información de documentos sobre diagnóstico, tratamiento y manejo de diferentes tipos de infecciones. Si necesitas información específica sobre infecciones, no dudes en preguntar.\n\n👍\n👎\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "2025-01-19T22:03:43.385Z",
+    "pregunta": "Gracias",
+    "respuesta": "¡De nada! Si tienes alguna pregunta relacionada con infectología o necesitas información específica, no dudes en decírmelo. Estoy aquí para ayudar.\n\n👍\n👎\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "2025-01-20T12:17:03.425Z",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy? Si tienes preguntas sobre infectología, estaré encantado de proporcionarte información.\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "1/20/2025, 9:22:46 AM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "1/20/2025, 9:38:37 AM",
+    "pregunta": "Quien sos?",
+    "respuesta": "Soy un asistente especializado en infectología, diseñado para responder preguntas sobre diagnóstico, tratamiento y manejo de diferentes tipos de infecciones, utilizando documentos relacionados con la infectología como base de conocimiento. Si tienes preguntas específicas sobre infecciones, estaré encantado de ayudarte.\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "1/20/2025, 9:59:57 AM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy relacionado con infectología?\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "1/20/2025, 12:02:37 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "up"
+  },
+  {
+    "fecha": "1/20/2025, 12:02:59 PM",
+    "pregunta": "Quien sos?",
+    "respuesta": "Soy un asistente especializado en infectología, diseñado para responder tus preguntas sobre el diagnóstico, tratamiento y manejo de diferentes tipos de infecciones. Si tienes alguna consulta en este ámbito, estaré encantado de ayudarte.\n",
+    "evaluacion": "down"
+  },
+  {
+    "fecha": "1/20/2025, 12:04:16 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "down"
+  },
+  {
+    "fecha": "1/20/2025, 12:22:54 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en el ámbito de infectología?\n",
+    "evaluacion": "down"
+  },
+  {
+    "fecha": "1/20/2025, 12:38:36 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy relacionado con infectología?\n",
+    "evaluacion": "down"
+  },
+  {
+    "fecha": "1/20/2025, 1:43:05 PM",
+    "pregunta": "Hola",
+    "respuesta": "Hola, ¿en qué puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "down",
+    "motivo": "Hola"
+  },
+  {
+    "fecha": "1/20/2025, 1:43:24 PM",
+    "pregunta": "Quien sos?",
+    "respuesta": "Soy un asistente especializado en infectología. Estoy aquí para responder tus preguntas sobre diagnósticos, tratamientos y manejo de diferentes tipos de infecciones. Si tienes alguna consulta específica, no dudes en preguntar.\n",
+    "evaluacion": "up",
+    "motivo": ""
+  },
+  {
+    "fecha": "1/20/2025, 1:44:08 PM",
+    "pregunta": "Hola",
+    "respuesta": "Hola, ¿en qué puedo ayudarte hoy relacionado con infectología?\n",
+    "evaluacion": "up",
+    "motivo": ""
+  },
+  {
+    "fecha": "1/20/2025, 1:45:01 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "up",
+    "motivo": ""
+  },
+  {
+    "fecha": "1/20/2025, 1:51:45 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
+    "evaluacion": "up",
+    "motivo": ""
+  },
+  {
+    "fecha": "1/20/2025, 1:52:29 PM",
+    "pregunta": "Hola",
+    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en temas de infectología?\n",
+    "evaluacion": "down",
+    "motivo": "Gracias"
+  },
+  {
+    "fecha": "1/20/2025, 1:53:24 PM",
+    "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
+    "respuesta": "El tratamiento para la neumonía aguda comunitaria en el Grupo 1 se basa en los siguientes criterios:\n\n**Grupo 1a**: Pacientes menores de 65 años, SIN comorbilidades y SIN factores de riesgo para microorganismos multirresistentes.\n- **Tratamiento**: Amoxicilina 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\n**Grupo 1b**: Pacientes mayores o iguales a 65 años, SIN comorbilidades, o menores de 65 años CON comorbilidades compensadas, SIN factores de riesgo para microorganismos multirresistentes.\n- **Tratamiento**:\n- Amoxicilina/clavulánico o amoxicilina/sulbactam 875 mg/125 mg por vía oral cada 12 horas.\n- Si hay alergia a betalactámicos o sospecha de microorganismos atípicos, considerar:\n- Claritromicina 500 mg por vía oral cada 12 horas o claritromicina de liberación prolongada 1000 mg por vía oral cada 24 horas.\n\n**Duración del tratamiento**: Generalmente se recomienda un tratamiento de 5 días.\n\nEs importante realizar un control ambulatorio en 48/72 horas para evaluar la respuesta al tratamiento (**FlujoG-3-Neumonia_Aguda.pdf**[1], páginas 1-2).\n\n\nReferences:\n[1] FlujoG-3-Neumonia_Aguda.pdf\n",
+    "evaluacion": "up",
+    "motivo": ""
+  }
+]

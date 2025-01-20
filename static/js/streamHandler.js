@@ -1,6 +1,7 @@
 // streamHandler.js
-import { appendAssistantMessage, appendOsmaModeSwitchBox,hideOptionContainers  } from './chatUI.js';
+import { appendAssistantMessage, appendOsmaModeSwitchBox,hideOptionContainers, postProcessReferences  } from './chatUI.js';
 import { promptAbortProcess } from './osmaHandler.js';
+import { insertThumbsFeedbackUI } from './thumbsFeedback.js';
 
 
 export let abortController = null;
@@ -15,6 +16,8 @@ function fixMathDelimiters(text) {
     .replace(/\\\\\[/g, '\\[')
     .replace(/\\\\\]/g, '\\]');
 }
+
+
 
 /**
  * Gradually appends pending text to the target element.
@@ -130,6 +133,7 @@ if (message === "") {
     assistantMessageDiv.className = "assistant-message";
     chatBox.appendChild(assistantMessageDiv);
 
+
     // Check response OK
     if (!response.ok) {
       const errorData = await response.json();
@@ -176,12 +180,23 @@ if (message === "") {
                 .then(() => {
                   console.log("MathJax re-typeset successfully after final chunk.");
                   // Agregar el cuadro OSMA al finalizar la respuesta
+                  assistantMessageDiv.innerHTML += "<br>";
+                  insertThumbsFeedbackUI({
+                    question: message,
+                    assistantDiv: assistantMessageDiv
+                  });
                   appendOsmaModeSwitchBox();
+                  // Insertar los pulgares
                 })
                 .catch((err) => { console.error("MathJax typeset error:", err); });
             } else {
               // Si MathJax no está presente, se agrega directamente el cuadro
               appendOsmaModeSwitchBox();
+              // Insertar los pulgares
+              insertThumbsFeedbackUI({
+              question: message,
+              assistantDiv: assistantMessageDiv
+              });
             }
           }
         }, 50);
@@ -214,6 +229,7 @@ if (message === "") {
     chatBox.appendChild(errorMessageDiv);
   }
 }
+
 
 /**
  * Similar to sendMessageStream, but triggers when an option-box is clicked.
@@ -337,12 +353,27 @@ export async function sendOptionMessage(message) {
                 .then(() => {
                   console.log("MathJax re-typeset successfully after final chunk.");
                   // Agregar el cuadro OSMA al finalizar la respuesta
+                  assistantMessageDiv.innerHTML += "<br>";
+                      // *** Post-process references ***
+                      const finalText = postProcessReferences(assistantMessageDiv.innerHTML);
+                      assistantMessageDiv.innerHTML = finalText;
+                  insertThumbsFeedbackUI({
+                  question: message,
+                  assistantDiv: assistantMessageDiv
+                  });
                   appendOsmaModeSwitchBox();
+                  // Insertar pulgares
+
                 })
                 .catch((err) => { console.error("MathJax typeset error:", err); });
             } else {
               // Si MathJax no está presente, se agrega directamente el cuadro
               appendOsmaModeSwitchBox();
+              // Insertar pulgares
+              insertThumbsFeedbackUI({
+              question: message,
+              assistantDiv: assistantMessageDiv
+              });
             }
           }
         }, 50);

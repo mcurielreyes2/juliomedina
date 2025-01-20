@@ -54,7 +54,52 @@ def feedback():
     # Example: print or log to console
     logger.info(f"=== FEEDBACK RECEIVED ===\n{feedback_text}\n========================\n")
 
-    return jsonify({"message": "¡Gracias por tu feedback!"}), 200
+    return jsonify({"message": "¡Gracias por tu evaluación!"}), 200
+
+@app.route("/feedback_rating", methods=["POST"])
+def feedback_rating():
+    data = request.get_json() or {}
+    pregunta = data.get("pregunta", "")
+    respuesta = data.get("respuesta", "")
+    evaluacion = data.get("evaluacion", "")  # "up" o "down"
+    fecha_str = data.get("fecha", "")
+    motivo = data.get("motivo", "")  # Reason for thumbs-down, if any
+
+    if not pregunta or not respuesta or not evaluacion:
+        return jsonify({"message": "Error: faltan campos en el feedback de rating"}), 400
+
+    # Ruta para feedback.json
+    import os
+    feedback_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feedback.json")
+
+    # Cargar contenido previo
+    if os.path.exists(feedback_file):
+        with open(feedback_file, "r", encoding="utf-8") as f:
+            try:
+                feedback_data = json.load(f)
+            except json.JSONDecodeError:
+                feedback_data = []
+    else:
+        feedback_data = []
+
+    # Crear registro
+    registro = {
+        "fecha": fecha_str,
+        "pregunta": pregunta,
+        "respuesta": respuesta,
+        "evaluacion": evaluacion,
+        "motivo": motivo
+    }
+    feedback_data.append(registro)
+
+    # Guardar
+    with open(feedback_file, "w", encoding="utf-8") as f:
+        json.dump(feedback_data, f, indent=2, ensure_ascii=False)
+
+    logger.info(f"=== FEEDBACK (PULGAR) RECIBIDO ===\n{registro}\n========================\n")
+
+    return jsonify({"message": "¡Gracias por tu evaluación!"}), 200
+
 
 @app.route("/check_rag", methods=["POST"])
 def check_rag():

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infectología: Asistente especializado en flujogramas</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="chat-container">
@@ -56,6 +57,19 @@
       </div>
     </div>
 
+        <!-- Thumbs Down Modal (initially hidden via CSS) -->
+    <div id="thumbs-down-modal" class="thumbs-down-modal" style="display: none;">
+      <div class="modal-content">
+        <h3>¿Por qué consideras que la respuesta no fue útil?</h3>
+        <textarea id="thumbs-down-reason" rows="4" placeholder="Explica brevemente..."></textarea>
+        <div class="modal-buttons">
+          <button id="cancel-thumbs-down">Cancelar</button>
+          <button id="submit-thumbs-down">Enviar</button>
+        </div>
+      </div>
+    </div>
+
+
 <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 <script>
@@ -72,6 +86,8 @@
   id="MathJax-script"
   async
 ></script>
+
+
 
 </body>
 </html>

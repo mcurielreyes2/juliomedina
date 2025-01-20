@@ -1,7 +1,7 @@
+import json
 # File: classes/asistente_osma.py
 
 import os
-import json
 import logging
 
 logger = logging.getLogger(__name__)

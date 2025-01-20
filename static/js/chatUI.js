@@ -214,16 +214,36 @@ function removeLastAssistantMessage() {
   }
 }
 
+/**
+ * Hides Top part of the page after first message is sent
+ */
 
 export function hideOptionContainers() {
-  console.log("hideOptionContainers called."); // Added log
+  console.log("hideOptionContainers called.");
+
   const welcomeMessageEl = document.querySelector(".welcome-message");
   const coffeeOptionsContainerEl = document.querySelector(".options-container.coffee-options");
   const osmaOptionsContainerEl = document.querySelector(".options-container.osma-option");
-  console.log("Ocultando .welcome-message y opciones.");
-  if (welcomeMessageEl) welcomeMessageEl.style.display = "none";
-  if (coffeeOptionsContainerEl) coffeeOptionsContainerEl.style.display = "none";
-  if (osmaOptionsContainerEl) osmaOptionsContainerEl.style.display = "none";
+
+  // NEW: also hide the .options-wrapper
+  const optionsWrapperEl = document.querySelector(".options-wrapper");
+
+  if (welcomeMessageEl) {
+    welcomeMessageEl.style.display = "none";
+  }
+  if (coffeeOptionsContainerEl) {
+    coffeeOptionsContainerEl.style.display = "none";
+  }
+  if (osmaOptionsContainerEl) {
+    osmaOptionsContainerEl.style.display = "none";
+  }
+
+  // Hide the parent wrapper
+  if (optionsWrapperEl) {
+    optionsWrapperEl.style.display = "none";
+  }
+
+  console.log("Ocultando .welcome-message, .coffee-options, .osma-option, y .options-wrapper.");
 }
 
 /**
@@ -237,4 +257,50 @@ export function scrollToBottom() {
       behavior: "smooth" // Use "auto" for instant scroll
     });
   }
+}
+
+
+/**
+ * Post-process the assistant's final text to:
+ *  1) Find doc references like **SomeDocName.pdf** (enclosed in double asterisks and ending in .pdf).
+ *  2) Assign each doc a numeric citation [1], [2], ...
+ *  3) Append a "References" list with each doc as a link.
+ *
+ * @param {string} fullText - The final text from the assistant (HTML or plain text).
+ * @return {string} The updated text with inline [n] citations + a "References" block.
+ */
+export function postProcessReferences(fullText) {
+  // 1) Regex to match: **SomeDocName.pdf**
+  const docRegex = /\*\*([^*]+\.pdf)\*\*/g;
+
+  // 2) We'll store each unique doc in a Map: docName -> citationNumber
+  const docMap = new Map();
+  let docCounter = 1;
+
+  // 3) Replace in the text: keep the doc name, then add [n]
+  let replacedText = fullText.replace(docRegex, (fullMatch, docName) => {
+    // If we haven't seen this docName, assign a new number
+    if (!docMap.has(docName)) {
+      docMap.set(docName, docCounter);
+      docCounter++;
+    }
+    const citationNum = docMap.get(docName);
+
+    // Return the original (with asterisks) + [n]
+    // e.g. "**FlujoG-3-Neumonia_Aguda.pdf**[1]"
+    return `**${docName}**<span class="doc-citation-number">[${citationNum}]</span>`;
+  });
+
+  // 4) If any references found, append a "References" section at the end
+  if (docMap.size > 0) {
+    replacedText += `<br><br><strong>References:</strong><br>`;
+    for (const [docName, number] of docMap.entries()) {
+      // If you want clickable links, define your doc URL here
+      const docUrl = `/static/docs/${docName}`;
+
+      replacedText += `[${number}] <a href="${docUrl}" target="_blank">${docName}</a><br>`;
+    }
+  }
+
+  return replacedText;
 }

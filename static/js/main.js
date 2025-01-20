@@ -4,6 +4,7 @@ import { initChatUI, appendUserMessage, appendOsmaModeSwitchBox, hideOptionConta
 import { sendMessageStream, sendOptionMessage } from './streamHandler.js';
 import { initFeedback } from './feedback.js';
 import { initOsmaSession, promptAbortProcess } from './osmaHandler.js';
+import { initThumbsDownModal } from './thumbsFeedback.js';
 
 window.OSMA_ENABLED = false; // or false
 
@@ -17,6 +18,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Initialize feedback
   initFeedback();
+
+  // Initialize the thumbs-down modal
+  initThumbsDownModal();
 
   // Get input and send button
   const userInput = document.getElementById("user-input");
