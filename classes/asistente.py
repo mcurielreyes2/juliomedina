@@ -1,52 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import os
 import json
 import time
@@ -55,9 +6,13 @@ import io
 import logging
 from openai import OpenAI
 from groundx import GroundX
+from dotenv import load_dotenv
 
 from classes.RAG import RAGService
 from classes.instruction_parser import InstructionParser
+
+# Cargar variables de entorno desde .env
+load_dotenv()
 
 # Optionally keep your stdout re-encoding
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
@@ -70,17 +25,19 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 class Asistente:
-    def __init__(self):
+    def __init__(self, db):
         """
         Initialize the Asistente class with configurations for OpenAI and GroundX APIs.
         """
+
         # Initialize RAG service
         self.rag_service = RAGService()
-        # Load API keys and bucket ID from environment variables
+
+        # Cargar API keys y bucket ID desde variables de entorno
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.groundx_api_key = os.getenv("GROUNDX_API_KEY")
         self.bucket_id_spanish = os.getenv("GROUNDX_BUCKET_ID_SPANISH")
-        #self.bucket_id_english = os.getenv("GROUNDX_BUCKET_ID_ENGLISH")
+        self.database_url = os.getenv("DATABASE_URL")
         # Load instruction from JSON file
 
 
@@ -92,7 +49,7 @@ class Asistente:
                     self.openai_api_key = self.openai_api_key or config.get("OPENAI_API_KEY")
                     self.groundx_api_key = self.groundx_api_key or config.get("GROUNDX_API_KEY")
                     self.bucket_id_spanish = self.bucket_id_spanish or config.get("GROUNDX_BUCKET_ID_SPANISH")
-                   # self.bucket_id_english = self.bucket_id_english or config.get("GROUNDX_BUCKET_ID_ENGLISH")
+                    self.database_url = self.database_url or config.get("DATABASE_URL")
             except FileNotFoundError:
                 raise ValueError("Error: No API key or bucket ID found in environment variables or config.json.")
 
@@ -118,6 +75,10 @@ class Asistente:
 
         # Load coffee keywords from external file
         self.coffee_keywords = self.rag_service.load_coffee_keywords("kw.txt")
+
+        # Guardar referencia a la base de datos
+        self.db = db
+
 
     def chat_completions(self, query: str) -> str:
         system_context = self.rag_service.groundx_search_content(query, query)

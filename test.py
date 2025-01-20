@@ -1,12 +1,22 @@
-# test_osma.py
-from classes.asistente_osma import AsistenteOSMA
+from sqlalchemy import create_engine, text
 
-osma = AsistenteOSMA()
-print("Pregunta inicial:", osma.iniciar_dialogo())
 
-# Simula respuestas válidas (usa datos que existan en el JSON)
-print("Siguiente:", osma.procesar_respuesta("Aire Acondicionado"))
-print("Siguiente:", osma.procesar_respuesta("AM102 Cigarrillera A49 - 2"))
-print("Siguiente:", osma.procesar_respuesta("Humedad, Temperatura"))
-print("Siguiente:", osma.procesar_respuesta("2025-01-15 08:00, 2025-01-15 17:00"))
-print("Siguiente:", osma.procesar_respuesta("Hora"))
+DATABASE_URL = "postgresql://infectologia_postgresql_user:tvwuOJZVzxf8wiC4cMvHf4aXc1rHvWcW@dpg-cu78983tq21c738e3qjg-a.oregon-postgres.render.com:5432/infectologia_postgresql?sslmode=require"
+
+# Crear la conexión al motor de base de datos
+engine = create_engine(DATABASE_URL)
+
+# Consultar los datos en la tabla `feedback`
+try:
+    with engine.connect() as connection:
+        # Ejecutar la consulta
+        query = text("SELECT * FROM feedback;")
+        result = connection.execute(query)
+
+        # Iterar sobre los resultados
+        print("Contenido de la tabla feedback:")
+        for row in result:
+            print(row)
+
+except Exception as e:
+    print(f"Error al consultar la tabla feedback: {e}")

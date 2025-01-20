@@ -3,3 +3,7 @@ openai
 gunicorn
 groundx
 flask
+psycopg2-binary
+flask-sqlalchemy
+flask_migrate
+python-dotenv

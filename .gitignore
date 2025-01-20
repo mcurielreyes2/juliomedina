@@ -1,2 +1,6 @@
 config.json
-Documentos/
+.env
+*.pyc
+__pycache__/
+instance/
+.webassets-cache

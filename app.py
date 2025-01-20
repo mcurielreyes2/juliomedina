@@ -1,21 +1,42 @@
 import json
 import logging
 from flask import Flask, request, jsonify, render_template, Response, stream_with_context
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+from dotenv import load_dotenv
+from classes.models import db, Feedback
+import os
 
 # Import your Asistente class from the separate module
 from classes.asistente import Asistente
 from classes.RAG import RAGService
 from classes.asistente_osma import AsistenteOSMA
+from classes.models import Feedback
 
-# Optionally configure or tweak logging here
+# Cargar variables de entorno desde .env
+load_dotenv()
+
+app = Flask(__name__)
+
+# Configurar la URI de la base de datos desde la variable de entorno
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Inicializar SQLAlchemy
+db.init_app(app)
+
+# Inicializar Flask-Migrate para gestionar migraciones
+migrate = Migrate(app, db)
+
+# configure logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 
-app = Flask(__name__)
-asistente = Asistente()  # Instantiate your class from classes/asistente.py
+
+asistente = Asistente(db)  # Instantiate your class from classes/asistente.py
 rag_service = RAGService()
 
 @app.route("/", methods=["GET"])
@@ -58,47 +79,77 @@ def feedback():
 
 @app.route("/feedback_rating", methods=["POST"])
 def feedback_rating():
+    """
+    Endpoint para recibir feedback de los usuarios.
+    Espera un JSON con los campos: pregunta, respuesta, evaluacion, fecha, motivo.
+    """
     data = request.get_json() or {}
-    pregunta = data.get("pregunta", "")
-    respuesta = data.get("respuesta", "")
-    evaluacion = data.get("evaluacion", "")  # "up" o "down"
-    fecha_str = data.get("fecha", "")
-    motivo = data.get("motivo", "")  # Reason for thumbs-down, if any
+    pregunta = data.get("pregunta", "").strip()
+    respuesta = data.get("respuesta", "").strip()
+    evaluacion = data.get("evaluacion", "").strip().lower()  # "up" o "down"
+    fecha_str = data.get("fecha", "").strip()
+    motivo = data.get("motivo", "").strip()
 
+    # Validaciones
     if not pregunta or not respuesta or not evaluacion:
+        logger.warning("Feedback received with missing fields.")
         return jsonify({"message": "Error: faltan campos en el feedback de rating"}), 400
 
-    # Ruta para feedback.json
-    import os
-    feedback_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feedback.json")
+    if evaluacion not in ["up", "down"]:
+        logger.warning("Invalid evaluation type received.")
+        return jsonify({"message": "Error: evaluacion debe ser 'up' o 'down'"}), 400
 
-    # Cargar contenido previo
-    if os.path.exists(feedback_file):
-        with open(feedback_file, "r", encoding="utf-8") as f:
-            try:
-                feedback_data = json.load(f)
-            except json.JSONDecodeError:
-                feedback_data = []
-    else:
-        feedback_data = []
+    # Crear registro en la base de datos
+    feedback_entry = Feedback(
+        fecha=fecha_str,
+        pregunta=pregunta,
+        respuesta=respuesta,
+        evaluacion=evaluacion,
+        motivo=motivo if evaluacion == "down" else ""
+    )
 
-    # Crear registro
-    registro = {
-        "fecha": fecha_str,
-        "pregunta": pregunta,
-        "respuesta": respuesta,
-        "evaluacion": evaluacion,
-        "motivo": motivo
-    }
-    feedback_data.append(registro)
+    try:
+        db.session.add(feedback_entry)
+        db.session.commit()
+        logger.info(f"Feedback almacenado: {feedback_entry}")
+        return jsonify({"message": "¡Gracias por tu calificación!"}), 200
+    except Exception as e:
+        logger.error(f"Error al almacenar el feedback: {e}")
+        db.session.rollback()
+        return jsonify({"message": "Error interno al guardar el feedback."}), 500
+
+    # # Ruta para feedback.json
+    # feedback_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feedback.json")
+    #
+    # # Cargar contenido previo
+    # if os.path.exists(feedback_file):
+    #     with open(feedback_file, "r", encoding="utf-8") as f:
+    #         try:
+    #             feedback_data = json.load(f)
+    #         except json.JSONDecodeError:
+    #             feedback_data = []
+    # else:
+    #     feedback_data = []
+    #
+    # # Crear registro
+    # registro = {
+    #     "fecha": fecha_str,
+    #     "pregunta": pregunta,
+    #     "respuesta": respuesta,
+    #     "evaluacion": evaluacion,
+    #     "motivo": motivo
+    # }
+    # feedback_data.append(registro)
+    # asistente.db.session.add(registro)
+    # asistente.db.session.commit()
 
     # Guardar
-    with open(feedback_file, "w", encoding="utf-8") as f:
-        json.dump(feedback_data, f, indent=2, ensure_ascii=False)
-
-    logger.info(f"=== FEEDBACK (PULGAR) RECIBIDO ===\n{registro}\n========================\n")
-
-    return jsonify({"message": "¡Gracias por tu evaluación!"}), 200
+    # with open(feedback_file, "w", encoding="utf-8") as f:
+    #     json.dump(feedback_data, f, indent=2, ensure_ascii=False)
+    #
+    # logger.info(f"=== FEEDBACK (PULGAR) RECIBIDO ===\n{registro}\n========================\n")
+    #
+    # return jsonify({"message": "¡Gracias por tu evaluación!"}), 200
 
 
 @app.route("/check_rag", methods=["POST"])
