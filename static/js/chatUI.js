@@ -293,7 +293,7 @@ export function postProcessReferences(fullText) {
 
   // 4) If any references found, append a "References" section at the end
   if (docMap.size > 0) {
-    replacedText += `<br><br><strong>References:</strong><br>`;
+    replacedText += `<br><br><strong>Referencias:</strong><br>`;
     for (const [docName, number] of docMap.entries()) {
       // If you want clickable links, define your doc URL here
       const docUrl = `/static/docs/${docName}`;
