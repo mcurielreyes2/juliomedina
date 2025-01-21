@@ -129,7 +129,7 @@ class Asistente:
             logger.info(f"Translated to English => '{query_english}'")
 
             # 2) Retrieve RAG context from both Spanish & English buckets
-            system_context = self.rag_service.groundx_search_content(query_spanish=query)
+            system_context = self.rag_service.groundx_search_content(query_spanish=query, query_english=query_english)
 
             after_groundx = time.time()
             logger.info("Received system_context...")
