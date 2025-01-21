@@ -125,8 +125,8 @@ class Asistente:
             logger.info(f"chat_completions_stream called with query='{query}'")
 
             # # 1) Translate the Spanish query into English
-            # query_english = self.rag_service.translate_spanish_to_english(query)
-            # logger.info(f"Translated to English => '{query_english}'")
+            query_english = self.rag_service.translate_spanish_to_english(query)
+            logger.info(f"Translated to English => '{query_english}'")
 
             # 2) Retrieve RAG context from both Spanish & English buckets
             system_context = self.rag_service.groundx_search_content(query_spanish=query)

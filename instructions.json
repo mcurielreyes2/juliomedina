@@ -16,7 +16,8 @@
 	  "Flujograma-12_PANCREATITIS_AGUDA.pdf: Este documento describe el manejo de la pancreatitis aguda, abordando temas como la valoración etiológica, el riesgo de infección, y el tratamiento antimicrobiano.",
 	  "Flujograma-13_PROA_CATETERES.pdf: describe las pautas para el manejo de infecciones asociadas a catéteres centrales. Se centra en la identificación y tratamiento de infecciones, incluyendo cuándo retirar un catéter en función de la presencia de síntomas sistémicos o locales. Se detalla el uso de antibióticos específicos como vancomicina y meropenem, y se discuten las consideraciones para pacientes inmunosuprimidos o con riesgo de microorganismos multirresistentes",
       "Flujograma-14_PACIENTE CON DISPOSITIVO CARDÍACO ELECTRÓNICO.pdf: describe el manejo de pacientes con dispositivos cardíacos electrónicos implantables (DCEI) que presentan sospecha de infección. Se abordan diferentes escenarios de bacteriemia, incluyendo aquellos con microorganismos de alto riesgo como S. aureus y Candida spp, y se detallan los signos clínicos que pueden indicar una infección del DCEI.",
-      "FlujoG-15-Endocarditis_Infecciosa(EI).pdf: describe el manejo y diagnóstico de la endocarditis infecciosa, involucrando a profesionales de la salud en el tratamiento de esta condición."	  
+      "FlujoG-15-Endocarditis_Infecciosa(EI).pdf: describe el manejo y diagnóstico de la endocarditis infecciosa, involucrando a profesionales de la salud en el tratamiento de esta condición.",
+	  "Principles and Practice of Infectious Diseases (2019).pdf: Durante cuatro décadas, médicos y otros profesionales de la salud han confiado en Mandell, Douglas y Bennett Principles and Practice of Infectious Diseases para obtener orientación experta sobre el diagnóstico y tratamiento de estos complejos trastornos." 
     ],
     "response_guidelines": [
       "Responde preguntas específicas sobre infectologia utilizando las referencias detalladas de los documentos proporcionados.",
@@ -25,6 +26,7 @@
     "prioritization": "Siempre cita las referencias de los documentos para las respuestas basadas en estos. Rechaza las consultas no relacionadas con infectologia o que no sean relevantes a la medicina",
     "examples": [
       "Según el documento **FlujoG-1-Nemonia Intrahospitalaria.pdf** (página 1)...",
+	  "Según el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte1** (página 8)...",
       "La sección sobre neumonía intrahospitalaria (**FlujoG-1-Nemonia Intrahospitalaria.pdf**, página 3) indica..."
     ],
     "fallback": "Si la información solicitada no se encuentra en los documentos proporcionados, amablemente pide disculpas al usuario y sugiérele que contacte a Martín Garmendia de MCT (mgarmendia@mct-esco.com). No compartas enlaces externos en tus respuestas."

@@ -103,7 +103,7 @@ class RAGService:
         logger.info(f"Infectologia probability: {probability}% (threshold={threshold})")
         return probability >= threshold
 
-    def groundx_search_content(self, query_spanish: str) -> str:
+    def groundx_search_content(self, query_spanish: str, query_english:str) -> str:
         """
         Perform two GroundX searches: one in the Spanish bucket using the
         Spanish query, and one in the English bucket using the English query.
@@ -114,26 +114,26 @@ class RAGService:
         # 1) Search Spanish bucket
         content_response_es = self.groundx.search.content(
             id=self.bucket_id_spanish,
-            n=20,
+            n=10,
             query=query_spanish
         )
         results_es = content_response_es.search
         text_es = results_es.text if results_es.text else ""
 
         # # 2) Search English bucket
-        # content_response_en = self.groundx.search.content(
-        #     id=self.bucket_id_english,
-        #     n=5,
-        #     query=query_english
-        # )
-        # results_en = content_response_en.search
-        # text_en = results_en.text if results_en.text else ""
+        content_response_en = self.groundx.search.content(
+             id=self.bucket_id_spanish,
+             n=10,
+             query=query_english
+         )
+        results_en = content_response_en.search
+        text_en = results_en.text if results_en.text else ""
 
         t1 = time.time()
         logger.info(f"groundx_search_content took {t1 - t0:.3f}s")
 
         # Combine both texts (Spanish + English)
-        combined_text = f"{text_es}".strip()
+        combined_text = f"{text_es}\n{text_en}".strip()
         if not combined_text:
             raise ValueError("No context found in either Spanish or English search.")
 
