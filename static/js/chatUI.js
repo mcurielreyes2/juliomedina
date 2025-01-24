@@ -260,47 +260,47 @@ export function scrollToBottom() {
 }
 
 
-/**
- * Post-process the assistant's final text to:
- *  1) Find doc references like **SomeDocName.pdf** (enclosed in double asterisks and ending in .pdf).
- *  2) Assign each doc a numeric citation [1], [2], ...
- *  3) Append a "References" list with each doc as a link.
- *
- * @param {string} fullText - The final text from the assistant (HTML or plain text).
- * @return {string} The updated text with inline [n] citations + a "References" block.
- */
-export function postProcessReferences(fullText) {
-  // 1) Regex to match: **SomeDocName.pdf**
-  const docRegex = /\*\*([^*]+\.pdf)\*\*/g;
-
-  // 2) We'll store each unique doc in a Map: docName -> citationNumber
-  const docMap = new Map();
-  let docCounter = 1;
-
-  // 3) Replace in the text: keep the doc name, then add [n]
-  let replacedText = fullText.replace(docRegex, (fullMatch, docName) => {
-    // If we haven't seen this docName, assign a new number
-    if (!docMap.has(docName)) {
-      docMap.set(docName, docCounter);
-      docCounter++;
-    }
-    const citationNum = docMap.get(docName);
-
-    // Return the original (with asterisks) + [n]
-    // e.g. "**FlujoG-3-Neumonia_Aguda.pdf**[1]"
-    return `**${docName}**<span class="doc-citation-number">[${citationNum}]</span>`;
-  });
-
-  // 4) If any references found, append a "References" section at the end
-  if (docMap.size > 0) {
-    replacedText += `<br><br><strong>Referencias:</strong><br>`;
-    for (const [docName, number] of docMap.entries()) {
-      // If you want clickable links, define your doc URL here
-      const docUrl = `/static/docs/${docName}`;
-
-      replacedText += `[${number}] <a href="${docUrl}" target="_blank">${docName}</a><br>`;
-    }
-  }
-
-  return replacedText;
-}
+// /**
+//  * Post-process the assistant's final text to:
+//  *  1) Find doc references like **SomeDocName.pdf** (enclosed in double asterisks and ending in .pdf).
+//  *  2) Assign each doc a numeric citation [1], [2], ...
+//  *  3) Append a "References" list with each doc as a link.
+//  *
+//  * @param {string} fullText - The final text from the assistant (HTML or plain text).
+//  * @return {string} The updated text with inline [n] citations + a "References" block.
+//  */
+// export function postProcessReferences(fullText) {
+//   // 1) Regex to match: **SomeDocName.pdf**
+//   const docRegex = /\*\*([^*]+\.pdf)\*\*/g;
+//
+//   // 2) We'll store each unique doc in a Map: docName -> citationNumber
+//   const docMap = new Map();
+//   let docCounter = 1;
+//
+//   // 3) Replace in the text: keep the doc name, then add [n]
+//   let replacedText = fullText.replace(docRegex, (fullMatch, docName) => {
+//     // If we haven't seen this docName, assign a new number
+//     if (!docMap.has(docName)) {
+//       docMap.set(docName, docCounter);
+//       docCounter++;
+//     }
+//     const citationNum = docMap.get(docName);
+//
+//     // Return the original (with asterisks) + [n]
+//     // e.g. "**FlujoG-3-Neumonia_Aguda.pdf**[1]"
+//     return `**${docName}**<span class="doc-citation-number">[${citationNum}]</span>`;
+//   });
+//
+//   // 4) If any references found, append a "References" section at the end
+//   if (docMap.size > 0) {
+//     replacedText += `<br><br><strong>Referencias:</strong><br>`;
+//     for (const [docName, number] of docMap.entries()) {
+//       // If you want clickable links, define your doc URL here
+//       const docUrl = `/static/docs/${docName}`;
+//
+//       replacedText += `[${number}] <a href="${docUrl}" target="_blank">${docName}</a><br>`;
+//     }
+//   }
+//
+//   return replacedText;
+// }

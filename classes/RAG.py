@@ -4,11 +4,23 @@ import time
 import logging
 from groundx import GroundX
 from openai import OpenAI
+from classes.reference_maker import ReferenceMaker
 
 logger = logging.getLogger(__name__)
 
 class RAGService:
+    _instance = None # Class-level attribute to hold the single instance
+    def __new__(cls, *args, **kwargs):
+        # If an instance already exists, return it
+        if cls._instance is None:
+            cls._instance = super(RAGService, cls).__new__(cls)
+        return cls._instance
+
     def __init__(self):
+        # Avoid re-initialization if the instance already exists
+        if hasattr(self, "_initialized") and self._initialized:
+            return
+        self._initialized = True
         # 1) Load environment vars or config (similar to what you had in Asistente)
         self.openai_api_key = os.getenv("OPENAI_API_KEY")
         self.groundx_api_key = os.getenv("GROUNDX_API_KEY")
@@ -43,6 +55,11 @@ class RAGService:
         # 4) Load coffee keywords
         self.coffee_keywords = self.load_coffee_keywords("kw.txt")
 
+        # 5) Inicializar ReferenceMaker
+        docs_directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "static", "docs")
+        self.reference_maker = ReferenceMaker(docs_directory=docs_directory, threshold=50)
+
+
     def load_coffee_keywords(self, filename: str):
 
         # Get the root directory of the project
@@ -69,6 +86,7 @@ class RAGService:
         says it's about infectologia above a probability threshold.
         """
         # 1) Keyword Check
+
         lower_query = query.lower()
         for kw in self.coffee_keywords:
             if kw in lower_query:
@@ -133,7 +151,7 @@ class RAGService:
         logger.info(f"groundx_search_content took {t1 - t0:.3f}s")
 
         # Combine both texts (Spanish + English)
-        combined_text = f"{text_es}\n{text_en}".strip()
+        combined_text = f"{text_en}\n{text_es}".strip()
         if not combined_text:
             raise ValueError("No context found in either Spanish or English search.")
 
@@ -159,3 +177,18 @@ class RAGService:
         )
         english_translation = response.choices[0].message.content.strip()
         return english_translation
+
+    def process_references_in_text(self, text: str) -> str:
+        """
+        Utiliza ReferenceMaker para procesar referencias en el texto.
+
+        Args:
+            text (str): El texto a procesar.
+
+        Returns:
+            str: El texto con referencias reemplazadas por enlaces.
+        """
+        logger.info("Procesando referencias en el texto mediante ReferenceMaker.")
+        processed_text = self.reference_maker.process_text_references_with_citations(text)
+        logger.info("Referencias procesadas.")
+        return processed_text

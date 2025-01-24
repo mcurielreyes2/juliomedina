@@ -1,124 +1,402 @@
 [
-  {
-    "fecha": "2025-01-19T22:02:34.203Z",
-    "pregunta": "Quien sos?",
-    "respuesta": "Soy un asistente especializado en infectología, diseñado para ayudarte con preguntas relacionadas con este campo utilizando la información de documentos sobre diagnóstico, tratamiento y manejo de diferentes tipos de infecciones. Si necesitas información específica sobre infecciones, no dudes en preguntar.\n\n👍\n👎\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "2025-01-19T22:03:43.385Z",
-    "pregunta": "Gracias",
-    "respuesta": "¡De nada! Si tienes alguna pregunta relacionada con infectología o necesitas información específica, no dudes en decírmelo. Estoy aquí para ayudar.\n\n👍\n👎\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "2025-01-20T12:17:03.425Z",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy? Si tienes preguntas sobre infectología, estaré encantado de proporcionarte información.\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "1/20/2025, 9:22:46 AM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "1/20/2025, 9:38:37 AM",
-    "pregunta": "Quien sos?",
-    "respuesta": "Soy un asistente especializado en infectología, diseñado para responder preguntas sobre diagnóstico, tratamiento y manejo de diferentes tipos de infecciones, utilizando documentos relacionados con la infectología como base de conocimiento. Si tienes preguntas específicas sobre infecciones, estaré encantado de ayudarte.\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "1/20/2025, 9:59:57 AM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy relacionado con infectología?\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "1/20/2025, 12:02:37 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "up"
-  },
-  {
-    "fecha": "1/20/2025, 12:02:59 PM",
-    "pregunta": "Quien sos?",
-    "respuesta": "Soy un asistente especializado en infectología, diseñado para responder tus preguntas sobre el diagnóstico, tratamiento y manejo de diferentes tipos de infecciones. Si tienes alguna consulta en este ámbito, estaré encantado de ayudarte.\n",
-    "evaluacion": "down"
-  },
-  {
-    "fecha": "1/20/2025, 12:04:16 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "down"
-  },
-  {
-    "fecha": "1/20/2025, 12:22:54 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en el ámbito de infectología?\n",
-    "evaluacion": "down"
-  },
-  {
-    "fecha": "1/20/2025, 12:38:36 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy relacionado con infectología?\n",
-    "evaluacion": "down"
-  },
-  {
-    "fecha": "1/20/2025, 1:43:05 PM",
-    "pregunta": "Hola",
-    "respuesta": "Hola, ¿en qué puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "down",
-    "motivo": "Hola"
-  },
-  {
-    "fecha": "1/20/2025, 1:43:24 PM",
-    "pregunta": "Quien sos?",
-    "respuesta": "Soy un asistente especializado en infectología. Estoy aquí para responder tus preguntas sobre diagnósticos, tratamientos y manejo de diferentes tipos de infecciones. Si tienes alguna consulta específica, no dudes en preguntar.\n",
-    "evaluacion": "up",
-    "motivo": ""
-  },
-  {
-    "fecha": "1/20/2025, 1:44:08 PM",
-    "pregunta": "Hola",
-    "respuesta": "Hola, ¿en qué puedo ayudarte hoy relacionado con infectología?\n",
-    "evaluacion": "up",
-    "motivo": ""
-  },
-  {
-    "fecha": "1/20/2025, 1:45:01 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "up",
-    "motivo": ""
-  },
-  {
-    "fecha": "1/20/2025, 1:51:45 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "up",
-    "motivo": ""
-  },
-  {
-    "fecha": "1/20/2025, 1:52:29 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en temas de infectología?\n",
-    "evaluacion": "down",
-    "motivo": "Gracias"
-  },
-  {
-    "fecha": "1/20/2025, 1:53:24 PM",
-    "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
-    "respuesta": "El tratamiento para la neumonía aguda comunitaria en el Grupo 1 se basa en los siguientes criterios:\n\n**Grupo 1a**: Pacientes menores de 65 años, SIN comorbilidades y SIN factores de riesgo para microorganismos multirresistentes.\n- **Tratamiento**: Amoxicilina 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\n**Grupo 1b**: Pacientes mayores o iguales a 65 años, SIN comorbilidades, o menores de 65 años CON comorbilidades compensadas, SIN factores de riesgo para microorganismos multirresistentes.\n- **Tratamiento**:\n- Amoxicilina/clavulánico o amoxicilina/sulbactam 875 mg/125 mg por vía oral cada 12 horas.\n- Si hay alergia a betalactámicos o sospecha de microorganismos atípicos, considerar:\n- Claritromicina 500 mg por vía oral cada 12 horas o claritromicina de liberación prolongada 1000 mg por vía oral cada 24 horas.\n\n**Duración del tratamiento**: Generalmente se recomienda un tratamiento de 5 días.\n\nEs importante realizar un control ambulatorio en 48/72 horas para evaluar la respuesta al tratamiento (**FlujoG-3-Neumonia_Aguda.pdf**[1], páginas 1-2).\n\n\nReferences:\n[1] FlujoG-3-Neumonia_Aguda.pdf\n",
-    "evaluacion": "up",
-    "motivo": ""
-  },
-  {
-    "fecha": "1/20/2025, 2:09:27 PM",
-    "pregunta": "Hola",
-    "respuesta": "¡Hola! ¿Cómo puedo ayudarte hoy en relación con infectología?\n",
-    "evaluacion": "down",
-    "motivo": "Hola"
-  }
+    {
+        "id": 1,
+        "fecha": "1/20/2025, 3:56:26 PM",
+        "pregunta": "Hola",
+        "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en el ámbito de la infectología?",
+        "evaluacion": "down",
+        "motivo": "No fue útil"
+    },
+    {
+        "id": 2,
+        "fecha": "1/20/2025, 6:45:31 PM",
+        "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
+        "respuesta": "El tratamiento para el Grupo 1 en el manejo de la neumonía aguda comunitaria, que incluye a pacientes menores de 65 años sin comorbilidades y sin factores de riesgo para microorganismos multirresistentes, se establece de la siguiente manera:\n\n- **Amoxicilina**: 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\nEn caso de alergia a betalactámicos o sospecha de microorganismos atípicos, se recomienda considerar:\n\n- **Claritromicina**: 500 mg por vía oral cada 12 horas o claritromicina de liberación prolongada 1000 mg por vía oral cada 24 horas.\n\nLa duración del tratamiento es de 5 días (**FlujoG-3-Neumonia_Aguda.pdf**[1], página 1).\n\n\nReferences:\n[1] FlujoG-3-Neumonia_Aguda.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 3,
+        "fecha": "1/20/2025, 6:48:19 PM",
+        "pregunta": "Hola",
+        "respuesta": "Hola, ¿en qué puedo ayudarte hoy? Si tienes preguntas sobre infectología, no dudes en hacerlas.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 4,
+        "fecha": "1/21/2025, 7:52:06 AM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia relacionados con el café:\n\n1. **Green Coffee Classification.pdf**[1]: Este documento detalla los estándares de clasificación para granos de café Arábica verde. Incluye información sobre el contenido de humedad aceptable y características visuales que se utilizan para identificar defectos en los granos.\n\n2. **Measuring Moisture Content.pdf**[2]: En este documento se explican los métodos para medir el contenido de humedad en los granos de café, como el secado en horno y el uso de medidores electrónicos. Esta información es crucial para mantener la calidad del café.\n\n3. **Rate of Rise in Roasting.pdf**[3]: Este documento destaca la importancia de monitorear los cambios de temperatura de los granos de café durante el proceso de tostado, para garantizar una calidad constante del producto final.\n\n4. **Chemical Composition of Roasts.pdf**[4]: Aquí se discute cómo los tiempos y temperaturas de tostado afectan la composición química del café. Esto incluye aspectos relacionados con el sabor y el aroma.\n\n5. **Roasting as Art and Science.pdf**[5]: Este documento explora los cambios físicos y químicos que ocurren durante el tostado del café, subrayando la interacción entre el calor y el tiempo en este proceso.\n\n6. **Coffee Tree Family Chart.pdf**[6]: Este documento presenta una representación visual de la evolución de las especies de café, incluyendo las variedades Arábica, Robusta y Liberica.\n\n7. **Articulo_ValentinaOsorio.pdf**[7]: Un artículo de investigación que investiga el efecto de las temperaturas y tiempos de tueste sobre la composición química del café, proporcionando información valiosa sobre el proceso de tostado.\n\n8. **Maquinaria_para_Café.pdf**[8]: Una guía técnica que ofrece detalles sobre maquinaria para el procesamiento del café, incluyendo diferentes modelos, características y mantenimiento.\n\nEstos documentos son fundamentales para entender los aspectos técnicos y científicos del café, desde su clasificación hasta el proceso de tostado y sus efectos en el producto final. Si tienes preguntas específicas sobre alguno de estos temas, no dudes en preguntar.\n\n\nReferencias:\n[1] Green Coffee Classification.pdf\n[2] Measuring Moisture Content.pdf\n[3] Rate of Rise in Roasting.pdf\n[4] Chemical Composition of Roasts.pdf\n[5] Roasting as Art and Science.pdf\n[6] Coffee Tree Family Chart.pdf\n[7] Articulo_ValentinaOsorio.pdf\n[8] Maquinaria_para_Café.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 5,
+        "fecha": "1/21/2025, 8:48:08 AM",
+        "pregunta": "Que es el ROR? Como es su procedimiento de calculo?",
+        "respuesta": "El RoR, o \"Rate of Rise\" (Tasa de Aumento), es una medida utilizada en el tostado de café que representa la tasa de cambio de la temperatura de los granos de café a lo largo del tiempo. Es crucial para entender cómo se desarrolla el calor durante el proceso de tostado, lo que a su vez afecta la calidad del café.\n\n### Procedimiento de Cálculo del RoR\n\n1. **Definición**: El RoR se calcula como el cambio de temperatura de los granos de café en un intervalo de tiempo específico. Por ejemplo, si la temperatura de los granos aumenta en 5 grados Celsius en 30 segundos, el RoR sería de 10 grados por minuto.\n\n2. **Fórmula General**:\n\nRoR\n=\nΔ\n𝑇\nΔ\n𝑡\n\n\nDonde:\n- \nΔ\n𝑇\n es el cambio en temperatura (en grados Celsius).\n- \nΔ\n𝑡\n es el intervalo de tiempo (en minutos).\n\n3. **Ejemplo Práctico**: Si en un intervalo de 4 minutos la temperatura de los granos de café aumenta de 100°C a 160°C, entonces:\n\nΔ\n𝑇\n=\n160\n°\n𝐶\n−\n100\n°\n𝐶\n=\n60\n°\n𝐶\n\n\nΔ\n𝑡\n=\n4\n minutos\n\nAl aplicar la fórmula:\n\nRoR\n=\n60\n°\n𝐶\n4\n min\n=\n15\n°\n𝐶\n/\nmin\n\n\n4. **Importancia del RoR**:\n- Un RoR demasiado bajo puede indicar que el café se está “horneando” y no desarrollándose correctamente.\n- Un RoR irregular puede señalar un desarrollo de calor desigual, lo que afectará el aroma y el sabor del café final.\n\nSegún el documento **RoR rate of rise roasting.pdf**[1] (página 1), el RoR ayuda a los tostadores a reaccionar antes de que se presente un problema en el tueste y es esencial para garantizar un tostado consistente y de calidad.\n\n\nReferencias:\n[1] RoR rate of rise roasting.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 6,
+        "fecha": "1/21/2025, 9:12:35 AM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Por supuesto, aquí tienes un resumen de los documentos de referencia que tengo sobre el café:\n\n1. **Measuring Coffee Bean Moisture Content.pdf**[1]: Este documento explica diferentes métodos para medir el contenido de humedad en los granos de café, tales como el secado en horno y el uso de medidores electrónicos. Mantener un nivel adecuado de humedad es crucial para preservar la calidad del café.\n\n2. **RoR rate of rise roasting.pdf**[2]: En este documento se destaca la importancia de monitorear la tasa de aumento de temperatura durante el proceso de tostado. Esto es esencial para garantizar que la calidad del café sea consistente y para evitar problemas relacionados con sobrecalentamiento o subtueste.\n\n3. **Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf**[3]: Aquí se exploran los cambios físicos y químicos que ocurren durante el proceso de tostado del café, enfatizando la interacción entre calor y tiempo, lo que es fundamental para obtener el perfil de sabor deseado.\n\n4. **CoffeeTree Family.pdf**[4]: Este documento ofrece una representación visual de la evolución de las especies de café, centrándose en las más conocidas: Arábica, Robusta y Liberica, así como algunas de sus características distintivas.\n\n5. **Articulo_ValentinaOsorio.pdf**[5]: Es un artículo de investigación que estudia el efecto de diferentes temperaturas y tiempos de tueste sobre la composición química del café, proporcionando información valiosa para optimizar el proceso de tostado.\n\n6. **Maquinaria_para_Café.pdf**[6]: Esta guía técnica detalla diversos modelos de maquinaria utilizados en el procesamiento del café, incluyendo sus características y consejos para el mantenimiento adecuado.\n\nSi tienes preguntas específicas sobre alguno de estos temas, estaré encantado de ayudarte.\n\n\nReferencias:\n[1] Measuring Coffee Bean Moisture Content.pdf\n[2] RoR rate of rise roasting.pdf\n[3] Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf\n[4] CoffeeTree Family.pdf\n[5] Articulo_ValentinaOsorio.pdf\n[6] Maquinaria_para_Café.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 7,
+        "fecha": "1/21/2025, 11:27:46 AM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia relacionados con el café:\n\n1. **Measuring Coffee Bean Moisture Content.pdf**[1]: Este documento explica métodos para evaluar el contenido de humedad en los granos de café, destacando el secado en horno y el uso de medidores electrónicos. La evaluación adecuada de la humedad es crucial para mantener la calidad del café.\n\n2. **RoR rate of rise roasting.pdf**[2]: Se centra en la importancia de monitorear los cambios de temperatura de los granos de café durante el proceso de tostado para asegurar una calidad constante. Este documento subraya el impacto de la tasa de elevación de la temperatura (RoR) en el tostado.\n\n3. **Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf**[3]: Este documento explora los cambios físicos y químicos que ocurren durante el tostado del café, enfatizando cómo el calor interactúa con el tiempo para afectar el sabor y la calidad del café.\n\n4. **CoffeeTree Family.pdf**[4]: Presenta una representación visual de la evolución de las especies de café, incluyendo las más conocidas: Arábica, Robusta y Liberica. Este documento ayuda a entender la diversidad de las variedades de café.\n\n5. **Articulo_ValentinaOsorio.pdf**[5]: Se trata de una investigación que analiza el efecto de las temperaturas y los tiempos de tueste en la composición química del café. Esto es relevante para conocer cómo el proceso de tostado influye en las propiedades del café.\n\n6. **Maquinaria_para_Café.pdf**[6]: Es una guía técnica sobre la maquinaria utilizada en el procesamiento del café, que incluye modelos, características y pautas de mantenimiento.\n\nSi tienes alguna pregunta específica sobre uno de estos documentos o algún tema relacionado con el café, estaré encantado de ayudarte.\n\n\nReferencias:\n[1] Measuring Coffee Bean Moisture Content.pdf\n[2] RoR rate of rise roasting.pdf\n[3] Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf\n[4] CoffeeTree Family.pdf\n[5] Articulo_ValentinaOsorio.pdf\n[6] Maquinaria_para_Café.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 8,
+        "fecha": "1/22/2025, 11:14:36 AM",
+        "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
+        "respuesta": "El tratamiento para el Grupo 1 en el manejo de la neumonía aguda comunitaria, que incluye a pacientes menores de 65 años sin comorbilidades y sin factores de riesgo para microorganismos multirresistentes, es el siguiente:\n\n1. **Amoxicilina**:\n- **Dosis**: 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\n2. **Alternativas en caso de alergia a betalactámicos o sospecha de microorganismos atípicos**:\n- **Claritromicina**: 500 mg por vía oral cada 12 horas o una dosis única de liberación prolongada de 1000 mg por vía oral cada 24 horas.\n\nEn general, la duración del tratamiento es de **5 días** (puede extenderse en base a la evolución clínica del paciente). Este grupo no requiere realizar paraclínica habitual, aunque se sugiere realizar un test rápido para VIH en la evaluación inicial. Si el paciente no presenta factores que afecten la absorción, se puede considerar cambiar a tratamiento oral tras 48 horas si el paciente está clínicamente estable y presenta mejoría de los síntomas (**FlujoG-3-Neumonia_Aguda.pdf**[1], página 1).\n\n\nReferencias:\n[1] FlujoG-3-Neumonia_Aguda.pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 9,
+        "fecha": "1/22/2025, 2:56:20 PM",
+        "pregunta": "¿Cuál de las siguientes afirmaciones sobre Streptococcus pneumoniae es correcta? A) Las tasas de mortalidad son más altas en niños menores de 2 años. B) Los brotes grandes son comunes, especialmente en áreas urbanas densamente pobladas. C) La colonización asintomática es rara y no precede a infecciones clínicas sintomáticas. D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.",
+        "respuesta": "La afirmación correcta es: **D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.**  Streptococcus pneumoniae es conocido por causar infecciones severas, especialmente en poblaciones vulnerables como los individuos con asplenia, quienes tienen un riesgo significativamente mayor de desarrollarse infecciones graves debido a su incapacidad para responder adecuadamente a la infección.  Las demás opciones son incorrectas: - **A)** Las tasas de mortalidad son más altas en adultos mayores, especialmente aquellos con enfermedades subyacentes, no necesariamente en niños menores de 2 años. - **B)** Aunque se pueden producir brotes en condiciones de hacinamiento, los brotes grandes no son comunes; la transmisión es más común en contacto cercano. - **C)** La colonización asintomática es común y, de hecho, precede a casi todas las infecciones clínicas sintomáticas.  Esta información se encuentra en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte65** (páginas 31-35).",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 10,
+        "fecha": "1/22/2025, 3:05:35 PM",
+        "pregunta": "¿Cuál de los siguientes es un método de diagnóstico específico para meningitis neumocócica? A) Detección de polisacárido de la pared celular neumocócica en orina. B) Gram de esputo con más de 10 neutrófilos por célula epitelial. C) Tinción de Gram y cultivo del líquido cefalorraquídeo. D) Antígeno urinario capsular para todos los serotipos.",
+        "respuesta": "El método de diagnóstico específico para meningitis neumocócica es:  C) Tinción de Gram y cultivo del líquido cefalorraquídeo.  Según el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte40** (página 40), la identificación de *Streptococcus pneumoniae* mediante la tinción de Gram y el cultivo del líquido cefalorraquídeo (LCR) establece el diagnóstico de meningitis neumocócica.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 11,
+        "fecha": "1/22/2025, 3:06:57 PM",
+        "pregunta": "Cuál de las siguientes opciones describe correctamente el uso de vacunas para prevenir infecciones neumocócicas? A) La vacuna PPSV23 está aprobada exclusivamente para niños menores de 2 años. B) La vacuna PCV13 ofrece más del 90% de protección contra otitis media en adultos. C) Las vacunas no ofrecen ninguna protección contra neumonía causada por serotipos específicos. D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.",
+        "respuesta": "La opción que describe correctamente el uso de vacunas para prevenir infecciones neumocócicas es:  D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.  Según el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte49** (página 49), se recomienda que los adultos mayores de 65 años que nunca han recibido vacunación neumocócica reciban primero PCV13, seguido de PPSV23 al menos un año después. Esto asegura una mejor respuesta inmune y una mayor protección contra enfermedades neumocócicas.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 12,
+        "fecha": "1/22/2025, 3:08:21 PM",
+        "pregunta": "En cuanto a Listeria monocytogenes, cuál es el tratamiento antimicrobiano de elección?",
+        "respuesta": "El tratamiento antimicrobiano de elección para *Listeria monocytogenes* es:  - Ampicilina, administrada a una dosis de 2 g intravenosos cada 4 horas. En infecciones más graves, como aquellas que afectan el sistema nervioso central, se recomienda considerar la adición de gentamicina a la terapia.  Esto se encuentra detallado en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 25-26). Aunque el tratamiento puede incluir otros agentes en pacientes alérgicos a la penicilina, la ampicilina sigue siendo el estándar para tratar las infecciones por este patógeno.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 13,
+        "fecha": "1/22/2025, 3:18:00 PM",
+        "pregunta": "¿Cuál de las siguientes afirmaciones sobre Streptococcus pneumoniae es correcta? A) Las tasas de mortalidad son más altas en niños menores de 2 años. B) Los brotes grandes son comunes, especialmente en áreas urbanas densamente pobladas. C) La colonización asintomática es rara y no precede a infecciones clínicas sintomáticas. D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.",
+        "respuesta": "La afirmación correcta sobre *Streptococcus pneumoniae* es:\n\nD) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte34** (páginas 34-35), se destaca que los pacientes con asplenia o aquellos que son altamente inmunocomprometidos tienen un riesgo significativamente mayor de desarrollar infecciones graves por *Streptococcus pneumoniae*. Esto subraya la importancia de la vacunación y profilaxis en estos grupos de pacientes.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 14,
+        "fecha": "1/22/2025, 3:18:54 PM",
+        "pregunta": "¿Cuál de los siguientes es un método de diagnóstico específico para meningitis neumocócica? A) Detección de polisacárido de la pared celular neumocócica en orina. B) Gram de esputo con más de 10 neutrófilos por célula epitelial. C) Tinción de Gram y cultivo del líquido cefalorraquídeo. D) Antígeno urinario capsular para todos los serotipos.",
+        "respuesta": "El método de diagnóstico específico para meningitis neumocócica es:\n\nC) Tinción de Gram y cultivo del líquido cefalorraquídeo.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte40** (página 40), la tinción de Gram y el cultivo del líquido cefalorraquídeo son fundamentales para establecer el diagnóstico de meningitis neumocócica, permitiendo identificar *Streptococcus pneumoniae*.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 15,
+        "fecha": "1/22/2025, 3:19:52 PM",
+        "pregunta": "¿Cuál de las siguientes opciones describe correctamente el uso de vacunas para prevenir infecciones neumocócicas? A) La vacuna PPSV23 está aprobada exclusivamente para niños menores de 2 años. B) La vacuna PCV13 ofrece más del 90% de protección contra otitis media en adultos. C) Las vacunas no ofrecen ninguna protección contra neumonía causada por serotipos específicos. D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.",
+        "respuesta": "La opción que describe correctamente el uso de vacunas para prevenir infecciones neumocócicas es:\n\nD) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte49** (página 49), se recomienda que los adultos mayores de 65 años que nunca han recibido vacunación neumocócica reciban primero la vacuna PCV13, seguida por la PPSV23 al menos 12 meses después. Esto asegura una mejor respuesta inmune y mayor protección contra enfermedades neumocócicas.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 16,
+        "fecha": "1/22/2025, 3:20:43 PM",
+        "pregunta": "¿Cuál es la característica clínica más comúnmente asociada con el grupo Streptococcus anginosus dentro de los estreptococos viridans? A) Endocarditis subaguda en válvulas nativas. B) Faringitis aguda en adultos mayores. C) Formación de abscesos en dientes, cerebro, hígado y abdomen. D) Celulitis en personas con diabetes.",
+        "respuesta": "La característica clínica más comúnmente asociada con el grupo *Streptococcus anginosus* dentro de los estreptococos viridans es:\n\nC) Formación de abscesos en dientes, cerebro, hígado y abdomen.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte36** (páginas 35-36), el grupo *Streptococcus anginosus* es conocido por su asociación con la formación de abscesos en varios órganos, incluyendo los dientes, cerebro, hígado y abdomen, lo que destaca su virulencia en estos contextos clínicos.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 17,
+        "fecha": "1/22/2025, 3:21:33 PM",
+        "pregunta": "¿Cuál de las siguientes afirmaciones sobre el tratamiento antimicrobiano de los estreptococos viridans es correcta? A) La resistencia a penicilina es un problema frecuente y requiere el uso de vancomicina. B) Los estreptococos viridans muestran resistencia absoluta a β-lactámicos. C) El principal desafío terapéutico en la endocarditis subaguda en válvulas nativas es la penetración de los antibióticos en las vegetaciones valvulares. D) El grupo Streptococcus anginosus requiere tratamiento con quinolonas debido a su resistencia intrínseca a penicilina.",
+        "respuesta": "La afirmación correcta sobre el tratamiento antimicrobiano de los estreptococos viridans es:\n\nC) El principal desafío terapéutico en la endocarditis subaguda en válvulas nativas es la penetración de los antibióticos en las vegetaciones valvulares.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte37** (páginas 37-38), uno de los principales desafíos en el tratamiento de la endocarditis subaguda causada por estreptococos viridans es asegurar que los antibióticos alcancen concentraciones terapéuticamente efectivas en las vegetaciones de las válvulas cardíacas, lo que es crucial para la erradicación de la infección.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 18,
+        "fecha": "1/22/2025, 3:22:17 PM",
+        "pregunta": "En cuanto a Listeria monocytogenes, cuáles son los grupos de pacientes más vulnerables a desarrollar una infección ?",
+        "respuesta": "Los grupos de pacientes más vulnerables a desarrollar una infección por *Listeria monocytogenes* incluyen:\n\n1. **Personas mayores**: Especialmente aquellos de 65 años o más, que tienen mayor riesgo debido a un sistema inmunológico debilitado.\n2. **Mujeres embarazadas**: Existe un mayor riesgo de infección en este grupo, que puede llevar a complicaciones como abortos espontáneos, partos prematuros o infecciones neonatales.\n3. **Individuos con asplenia o enfermedades hematológicas**: Los pacientes que han perdido el bazo o que padecen enfermedades que comprometen la función del sistema inmune tienen un riesgo aumentado.\n4. **Pacientes con enfermedades crónicas**: Esto incluye aquellos con diabetes mellitus, cirrosis, o enfermedades renales.\n5. **Inmunocomprometidos**: Incluye a personas que están en tratamiento con inmunosupresores, como en el caso de pacientes con cáncer, trasplantes de órganos, o infecciones por VIH.\n\nEsta información se encuentra detallada en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 28-29), donde se enfatiza la vulnerabilidad de estos grupos frente a infecciones por *Listeria monocytogenes*.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 19,
+        "fecha": "1/22/2025, 3:22:53 PM",
+        "pregunta": "En cuanto a Listeria monocytogenes, cuál es el tratamiento antimicrobiano de elección?",
+        "respuesta": "El tratamiento antimicrobiano de elección para *Listeria monocytogenes* es:\n\n- **Ampicilina**, administrada a una dosis de 2 g intravenosos cada 4 horas. En casos más graves, como aquellas infecciones que afectan el sistema nervioso central, se recomienda considerar la adición de **gentamicina** para potenciar la efectividad del tratamiento.\n\nEsto se detalla en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 25-26), donde se establece la importancia de la ampicilina como tratamiento estándar para las infecciones por este patógeno.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 20,
+        "fecha": "1/22/2025, 3:38:23 PM",
+        "pregunta": "Caso clínico Paciente, 75 años, procedente de Carmelo, vive sola. Jubilada.   Antecedentes personales: Asma en tratamiento durante crisis bronco obstructivas. Arritmia en tratamiento con Diltiazem, seguimiento por cardiología. Patología de columna dada por canal estrecho lumbar L3-4 y L4-5 Lumbociatalgia crónica de 5 años de evolución, irradiada bilateralmente hasta los dedos de ambos pies, controlada parcialmente con Tramadol y Diclofenac. Niega otras patologías médicas, medicación habitual y alergias.   Antecedentes quirúrgicos Apendicectomía. Cirugía de túnel carpiano MSD. Intervenida el 12/08/24: Se realizó liberación del canal estrecho lumbar mediante abordaje medial, resección del arco de L4, resección de ligamentos flavum L3-4 y L4-5, artrodesis instrumentada con colocación de tornillos y barras, control radiográfico intraoperatorio, y colocación de drenaje aspirativo. El procedimiento transcurrió sin complicaciones.   Antecedentes de la enfermedad actual: En el posoperatorio se otorga alta con seguimiento y controles en Carmelo. Evolucionó bien por tres semanas. En la última semana antes del ingreso, presentó episodios febriles de hasta 38°C que cedían con AINES, y dolor abdominal difuso. Sin otros síntomas o déficits motores/sensitivos.   Enfermedad actual:  Comienza hace 5 días con episodios febriles, de hasta 38°C que cede con AINES, niega otra sintomatología toxiinfecciosa. Refiere dolor abdominal difuso. Niega elementos deficitarios motores/sensitivos. Niega otra sintomatología. TU-TD s/p   Exámen físico: Piel y Mucosas: Pálidas, febril , hidratadas. Curación moja serohemático, herida cicatrizal, eritematosa, dehiscencia a nivel medial. Pleuro pulmonar sin particularidades. FC: 110 por minuto.  Abdomen: Blando, depresible, dolor a hipogastrio. Lúcida sin ni déficit motor o sensitivo.  Hemograma completo Hb: 10.7 GB: 17.5 Plaquetas: 163000 PCR: 460 VES: 96  Ecografía abdominal (10/09/2024) Descripción normal del hígado, vesícula, páncreas, bazo y riñones. Rectosigmoides distendido con abundante material intraluminal.  Tomografía computarizada (TC) de abdomen Colecciones en músculos psoas ilíacos, relación con abscesos. Defecto de relleno en vena ácigos y vena cava (sugiere trombos).  Hemocultivos Negativos al cabo de 7 días de incubación (16/09/2024).  Cultivo de la herida Staphylococcus aureus y bacterias gramnegativas (BGN) en cultivos previos.  En base a esta información proporcionada, plantea los diagnósticos presuntivos y la estrategia terepeutica.",
+        "respuesta": "En base a la información clínica proporcionada sobre el paciente, se pueden plantear los siguientes diagnósticos presuntivos y estrategias terapéuticas:\n\n### Diagnósticos Presuntivos:\n1. **Infección del sitio quirúrgico**: La presencia de eritema, dehiscencia y curación serohemática indica una posible infección en la herida postoperatoria.\n2. **Absceso psoas**: La tomografía muestra colecciones en los músculos psoas ilíacos, lo que sugiere la formación de abscesos, posiblemente secundarios a la infección del sitio quirúrgico.\n3. **Trombosis venosa**: El defecto de relleno en la vena ácigos y en la vena cava sugiere la posibilidad de trombos, lo que podría estar contribuyendo a la sintomatología del paciente y complicando su estado general.\n4. **Anemia postoperatoria**: Con una hemoglobina de 10.7 g/dL y signos de infección, es probable que el paciente tenga anemia asociada a la infección o a complicaciones postquirúrgicas.\n\n### Estrategia Terapéutica:\n1. **Antibióticos**: Iniciar tratamiento empírico con antibióticos de amplio espectro que cubran tanto *Staphylococcus aureus* como las bacterias gramnegativas aisladas en los cultivos. Una opción inicial podría ser:\n- **Vancomicina** (para cubrir *Staphylococcus aureus*, incluyendo cepas resistentes a meticilina) más un **beta-lactámico de amplio espectro** (como piperacilina-tazobactam) o **cefepime** (cubriendo BGN).\n- Ajustar la terapia según los resultados de los cultivos y la sensibilidad de los agentes aislados.\n\n2. **Drenaje de abscesos**: Si los abscesos son suficientemente grandes, considerar la necesidad de drenaje quirúrgico o percutáneo, según la evaluación del equipo quirúrgico.\n\n3. **Soporte general**: Monitoreo de signos vitales, control de la fiebre, fluidoterapia si es necesario y",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 21,
+        "fecha": "1/22/2025, 3:38:32 PM",
+        "pregunta": "Caso clínico Paciente, 75 años, procedente de Carmelo, vive sola. Jubilada.   Antecedentes personales: Asma en tratamiento durante crisis bronco obstructivas. Arritmia en tratamiento con Diltiazem, seguimiento por cardiología. Patología de columna dada por canal estrecho lumbar L3-4 y L4-5 Lumbociatalgia crónica de 5 años de evolución, irradiada bilateralmente hasta los dedos de ambos pies, controlada parcialmente con Tramadol y Diclofenac. Niega otras patologías médicas, medicación habitual y alergias.   Antecedentes quirúrgicos Apendicectomía. Cirugía de túnel carpiano MSD. Intervenida el 12/08/24: Se realizó liberación del canal estrecho lumbar mediante abordaje medial, resección del arco de L4, resección de ligamentos flavum L3-4 y L4-5, artrodesis instrumentada con colocación de tornillos y barras, control radiográfico intraoperatorio, y colocación de drenaje aspirativo. El procedimiento transcurrió sin complicaciones.   Antecedentes de la enfermedad actual: En el posoperatorio se otorga alta con seguimiento y controles en Carmelo. Evolucionó bien por tres semanas. En la última semana antes del ingreso, presentó episodios febriles de hasta 38°C que cedían con AINES, y dolor abdominal difuso. Sin otros síntomas o déficits motores/sensitivos.   Enfermedad actual:  Comienza hace 5 días con episodios febriles, de hasta 38°C que cede con AINES, niega otra sintomatología toxiinfecciosa. Refiere dolor abdominal difuso. Niega elementos deficitarios motores/sensitivos. Niega otra sintomatología. TU-TD s/p   Exámen físico: Piel y Mucosas: Pálidas, febril , hidratadas. Curación moja serohemático, herida cicatrizal, eritematosa, dehiscencia a nivel medial. Pleuro pulmonar sin particularidades. FC: 110 por minuto.  Abdomen: Blando, depresible, dolor a hipogastrio. Lúcida sin ni déficit motor o sensitivo.  Hemograma completo Hb: 10.7 GB: 17.5 Plaquetas: 163000 PCR: 460 VES: 96  Ecografía abdominal (10/09/2024) Descripción normal del hígado, vesícula, páncreas, bazo y riñones. Rectosigmoides distendido con abundante material intraluminal.  Tomografía computarizada (TC) de abdomen Colecciones en músculos psoas ilíacos, relación con abscesos. Defecto de relleno en vena ácigos y vena cava (sugiere trombos).  Hemocultivos Negativos al cabo de 7 días de incubación (16/09/2024).  Cultivo de la herida Staphylococcus aureus y bacterias gramnegativas (BGN) en cultivos previos.  En base a esta información proporcionada, plantea los diagnósticos presuntivos y la estrategia terepeutica.",
+        "respuesta": "En base a la información clínica proporcionada sobre el paciente, se pueden plantear los siguientes diagnósticos presuntivos y estrategias terapéuticas:\n\n### Diagnósticos Presuntivos:\n1. **Infección del sitio quirúrgico**: La presencia de eritema, dehiscencia y curación serohemática indica una posible infección en la herida postoperatoria.\n2. **Absceso psoas**: La tomografía muestra colecciones en los músculos psoas ilíacos, lo que sugiere la formación de abscesos, posiblemente secundarios a la infección del sitio quirúrgico.\n3. **Trombosis venosa**: El defecto de relleno en la vena ácigos y en la vena cava sugiere la posibilidad de trombos, lo que podría estar contribuyendo a la sintomatología del paciente y complicando su estado general.\n4. **Anemia postoperatoria**: Con una hemoglobina de 10.7 g/dL y signos de infección, es probable que el paciente tenga anemia asociada a la infección o a complicaciones postquirúrgicas.\n\n### Estrategia Terapéutica:\n1. **Antibióticos**: Iniciar tratamiento empírico con antibióticos de amplio espectro que cubran tanto *Staphylococcus aureus* como las bacterias gramnegativas aisladas en los cultivos. Una opción inicial podría ser:\n- **Vancomicina** (para cubrir *Staphylococcus aureus*, incluyendo cepas resistentes a meticilina) más un **beta-lactámico de amplio espectro** (como piperacilina-tazobactam) o **cefepime** (cubriendo BGN).\n- Ajustar la terapia según los resultados de los cultivos y la sensibilidad de los agentes aislados.\n\n2. **Drenaje de abscesos**: Si los abscesos son suficientemente grandes, considerar la necesidad de drenaje quirúrgico o percutáneo, según la evaluación del equipo quirúrgico.\n\n3. **Soporte general**: Monitoreo de signos vitales, control de la fiebre, fluidoterapia si es necesario y",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 22,
+        "fecha": "1/22/2025, 3:40:22 PM",
+        "pregunta": "Paciente de 45 años, usuario activo de drogas por vía parenteral, que acude al servicio de Urgencias por fiebre de 39,5 ºC de 48 horas de evolución, dolor pleurítico, tos y expectoración purulenta. En la radiografía de tórax se observan múltiples lesiones nodulares periféricas múltiples, algunas de ellas cavitadas. Señalar la combinación más probable de las que se proponen: 1) Endocarditis pulmonar por S. aureus. Tratamiento con cloxacilina durante 4 semanas como mínimo, en ausencia de complicaciones. 2) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina y gentamicina durante 2 semanas, seguidas de recambio valvular protésico. 3) Endocarditis mitral por S. epidermidis. Tratamiento con vancomicina, y gentamicina durante 4-6 semanas como mínimo, en ausencia de complicaciones. 4) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina durante 4 semanas, ante la presencia de émbolos sépticos pulmonares.",
+        "respuesta": "El caso que describes presenta síntomas típicos de endocarditis tricuspídea causadas por Staphylococcus aureus en un paciente que utiliza drogas por vía parenteral. La fiebre, el dolor pleurítico, la tos y la expectoración purulenta, junto con las lesiones nodulares en la radiografía, sugieren la posibilidad de embolias sépticas pulmonares, que son comunes en este tipo de endocarditis.\n\nSegún la literatura sobre el tratamiento de endocarditis, en particular en el contexto de inyección de drogas, el tratamiento recomendado para la endocarditis tricuspídea por S. aureus es de hecho cloxacilina durante un periodo de tiempo que puede variar, pero frecuentemente se establece en 2 a 4 semanas, dependiendo de las complicaciones asociadas (Principles and Practice of Infectious Diseases, 2019, páginas 10-11).\n\nLa combinación más adecuada entre las opciones proporcionadas sería:\n\n4) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina durante 4 semanas, ante la presencia de émbolos sépticos pulmonares.\n\nEsta opción es coherente con el manejo clínico habitual en estos casos, abarcando tanto el agente patógeno como la duración del tratamiento en relación con las complicaciones presentadas.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 23,
+        "fecha": "1/22/2025, 3:41:20 PM",
+        "pregunta": "Un paciente de 35 años acude al servicio de Urgencias por presentar fiebre elevada de hasta 39 ºC, asociada a confusión mental. En la exploración física destaca la existencia de lesiones cutáneas en pie izquierdo a nivel distal, maculares, de milímetros de diámetro, de aspecto isquémico hemorrágico, y la auscultación cardiopulmonar es normal. A los pocos días, se obtiene crecimiento de S. aureus sensible a meticilina en tres hemocultivos de tres obtenidos. ¿Cuál de las siguientes sería la actitud correcta a seguir en ese momento? 1) Considerar el resultado de los hemocultivos como probable contaminación. 2) Pautar de inmediato tratamiento antibiótico con penicilina y gentamicina durante 10 días. 3) Comenzar tratamiento con cloxacilina y realizar estudio ecocardiográfico por la existencia probable de endocarditis aguda. 4) Descartar la existencia de endocarditis, por la ausencia de soplos en la auscultación cardíaca, y buscar focos de posible osteomielitis.",
+        "respuesta": "La presentación clínica en este caso sugiere la posibilidad de una endocarditis aguda, dado que el paciente presenta fiebre elevada, confusión mental, y lesiones cutáneas que pueden ser indicativas de embolias sépticas por la presencia de S. aureus en hemocultivos.\n\nLa obtención de S. aureus en tres hemocultivos es un hallazgo significativo y no debe considerarse como contaminación, especialmente en el contexto de los síntomas que presenta el paciente. Es importante actuar rápidamente ante esta situación dado que la endocarditis infecciosa puede ser peligrosa y requiere intervención inmediata.\n\nLa actitud más correcta en este momento sería:\n\n3) Comenzar tratamiento con cloxacilina y realizar estudio ecocardiográfico por la existencia probable de endocarditis aguda.\n\nEste enfoque es consistente con el manejo recomendado para la endocarditis aguda por S. aureus, donde se inicia tratamiento antibiótico específico (en este caso, cloxacilina por ser sensible a meticilina) y se lleva a cabo un estudio ecocardiográfico para evaluar la posible afectación valvular.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 24,
+        "fecha": "1/22/2025, 3:43:58 PM",
+        "pregunta": "Un estudiante de derecho de 20 años, previamente sano, presenta un cuadro de febrícula, artromialgias, tos seca persistente y astenia de 2 semanas de evolución. En el último mes, sus dos hermanos de 9 y 17 años han presentado consecutivamente un cuadro similar, que se ha autolimitado de forma progresiva. Tras practicársele una radiografía de tórax, el médico le ha diagnosticado neumonía atípica. ¿Cuál es el agente etiológico más probable en este caso? 1) Coxiella burnetii (fiebre Q). 2) Haemophilus influenzae. 3) Mycoplasma pneumoniae. 4) Legionella pneumophila.",
+        "respuesta": "La presentación clínica del paciente, con febrícula, artromialgias, tos seca persistente y astenia, así como la evolución progresiva y autolimitada de los síntomas en sus hermanos, es característica de una neumonía atípica. En jóvenes sanos, la causa más común de neumonía atípica es la infección por **Mycoplasma pneumoniae**.\n\nEste patógeno es conocido por causar brotes de neumonía atípica, especialmente en poblaciones jóvenes, como en el caso de este estudiante. A menudo se observa que varios miembros de una familia o de un grupo escolar presentan síntomas similares, lo que refuerza la asociación con **Mycoplasma pneumoniae**.\n\nPor lo tanto, el agente etiológico más probable en este caso es:\n\n3) **Mycoplasma pneumoniae**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 25,
+        "fecha": "1/22/2025, 3:46:25 PM",
+        "pregunta": "Paciente de 64 años, fumador, que acude a Urgencias por un cuadro de 48 h de evolución de fiebre y tos con expectoración mucopurulenta. La radiografía de tórax muestra una condensación alveolar en lóbulo inferior derecho y un pequeño infiltrado en el lóbulo inferior izquierdo. La gasometría arterial muestra un pH de 7,39, una pO2 de 54 mmHg y una pCO2 de 29 mmHg. ¿Cuál de las siguientes opciones terapéuticas le parece más adecuada? 1) Claritromicina 500 mg i.v./12 h. 2) Ciprofloxacino 200 mg i.v./12 h. 3) Amoxicilina-ácido clavulánico 1 g i.v./8 h. 4) Ceftriaxona 2 g i.v./24 h más claritromicina 500 mg i.v./12 h.",
+        "respuesta": "La presentación clínica del paciente sugiere neumonía, dada la fiebre, tos con expectoración mucopurulenta y los hallazgos en la radiografía de tórax que indican condensación alveolar en el lóbulo inferior derecho. Además, la gasometría arterial muestra hipoxemia severa (pO2 de 54 mmHg) y acidosis respiratoria (pH de 7,39 y pCO2 de 29 mmHg), lo que indica un cuadro grave que requiere atención inmediata.\n\nEn pacientes que presentan neumonía y tienen factores de riesgo, como el tabaquismo en este caso, es importante considerar la cobertura para organismos resistentes y otros patógenos con potencial para causar neumonía grave.\n\nDe las opciones proporcionadas, la combinación más adecuada es:\n\n**4) Ceftriaxona 2 g i.v./24 h más claritromicina 500 mg i.v./12 h.**\n\nEsta combinación permite una cobertura adecuada para patógenos más comunes en neumonías adquiridas en la comunidad (como Streptococcus pneumoniae), así como para aquellos que pueden ser más difíciles de tratar. Ceftriaxona proporciona una buena cobertura para los bacilos gram negativos, mientras que claritromicina abarca organismos atípicos, complementando el tratamiento empírico.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 26,
+        "fecha": "1/22/2025, 3:47:47 PM",
+        "pregunta": "Mujer de 45 años, de origen subsahariano y residente en España desde hace 5 años, que consulta por un cuadro de 3 meses de evolución consistente en tos no productiva, febrícula diaria de predominio vespertino y pérdida ponderal. La radiografía de tórax demuestra un infiltrado con cavitación central en el lóbulo superior derecho. La baciloscopia de esputo demuestra bacilos ácido-alcohol resistentes. Señalar la actitud más correcta en este caso: 1) Realizar una prueba de tuberculina y, en el caso de que sea positiva (> 15 mm), iniciar tratamiento con 3 fármacos (isoniacida, rifampicina y pirazinamida) durante los 2 primeros meses. 2) Iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 2 primeros meses, con posibilidad de suspender en ese intervalo el etambutol en función del resultado del antibiograma. 3) Esperar el resultado del cultivo en medio de Löwenstein-Jensen y, si demuestra creciminto de Mycobacterium tuberculosis, iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 3 primeros meses. 4) Preguntar por el antecedente de vacunación con BCG, realizar una prueba de la tuberculina y, en el caso de que sea positiva, iniciar tratamiento con 3 fármacos (isoniacida, rifampicina y pirazinamida) durante los 3 primeros meses.",
+        "respuesta": "La paciente presenta una serie de síntomas y hallazgos que son altamente sugestivos de una infección activa por Mycobacterium tuberculosis, dado su historial, la presencia de tos no productiva, febrícula vespertina, pérdida de peso, y la radiografía de tórax que muestra un infiltrado con cavitación. Además, la baciloscopia de esputo ha demostrado bacilos ácido-alcohol resistentes, lo que indica la presencia de tuberculosis (TB) activa.\n\nEn este contexto, la actitud más apropiada es:\n\n**2) Iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 2 primeros meses, con posibilidad de suspender en ese intervalo el etambutol en función del resultado del antibiograma.**\n\nEste enfoque es el estándar para el tratamiento de la TB pulmonar con baciloscopía positiva, ya que se recomienda iniciar la terapia con un régimen de múltiples fármacos para asegurar la eficacia y prevenir la resistencia a los medicamentos. La duración del tratamiento inicial debería ser de 2 meses con los cuatro fármacos indicados, y continuar con un régimen de 2 fármacos en la fase de continuación, según sea necesario y según los resultados del cultivo y antibiograma.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 27,
+        "fecha": "1/22/2025, 3:48:53 PM",
+        "pregunta": "¿Cuál sería el proceso más probable a descartar en una persona de 70 años que ingresa en la UCI por una neumonía grave, siendo tratado con cefalosporinas de 3.ª generación, y que desarrolla a los pocos días una diarrea muy copiosa, con gran deterioro del estado general? 1) Diarrea por Clostridioides difficile. 2) Colitis ulcerosa. 3) Colitis isquémica. 4) Síndrome de malabsorción por daño del intestino delgado",
+        "respuesta": "Dada la presentación clínica de un paciente de 70 años que ingresa en la UCI con neumonía grave y recibe tratamiento con cefalosporinas de 3.ª generación, el desarrollo de diarrea muy copiosa y un deterioro significativo del estado general son signos que sugieren una complicación asociada al uso de antibióticos.\n\nEl uso de antibióticos, especialmente en tratamientos prolongados como los que se podrían requerir en la neumonía grave, se asocia comúnmente con un desbalance en la flora intestinal normal, lo que puede permitir la proliferación de patógenos causantes de diarrea.\n\nEn este caso, lo más probable a descartar es:\n\n**1) Diarrea por Clostridioides difficile.**\n\nLa diarrea atribuible a Clostridioides difficile es una complicación frecuente en pacientes que han recibido antibióticos, y los síntomas suelen incluir diarrea abundante y, en algunos casos, deterioro del estado general. Esta entidad puede ser potencialmente grave y requiere atención médica inmediata. En el contexto clínico presentado, hay una alta probabilidad de que esta sea la causa de la diarrea copiosa.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 28,
+        "fecha": "1/22/2025, 3:50:10 PM",
+        "pregunta": "Un varón de 56 años, con antecedentes de EPOC moderada (FEV1 65%) y hepatopatía crónica por VHC, fue sometido a un trasplante ortotópico hepático hace 10 días. En el periodo posoperatorio se han sucedido diversas complicaciones que han impedido el traslado del paciente desde la UCI a una planta de hospitalización convencional. Comienza con fiebre, hipotensión y leucocitosis, y una TC abdominal urgente demuestra una colección líquida intraperitoneal. Señale cuál de los siguientes tratamientos no sería apropiado: 1) Piperacilina-tazobactam. 2) Meropenem. 3) Tigeciclina. 4) Cefepima y metronidazol.",
+        "respuesta": "En el contexto de un paciente con antecedentes de EPOC moderada y hepatopatía crónica que ha sido sometido a un trasplante hepático y presenta complicaciones postoperatorias con fiebre, hipotensión, leucocitosis y una colección líquida intraperitoneal, es crucial seleccionar un tratamiento antibiótico que cubra adecuadamente los posibles patógenos asociados, especialmente considerando que estos pacientes son propensos a infecciones graves.\n\nVamos a evaluar las opciones de tratamiento:\n\n1) **Piperacilina-tazobactam**: Es un antibiótico de amplio espectro que cubre tanto bacterias gram negativas como anaerobios, y es adecuado para infecciones intraabdominales complicadas.\n\n2) **Meropenem**: Este es un carbapenem que también ofrece una cobertura muy amplia, incluyendo muchas cepas resistentes, lo cual es importante en un paciente inmunocomprometido.\n\n3) **Tigeciclina**: Aunque es un antibiótico de amplio espectro, no se recomienda como primera línea para infecciones intraabdominales complicadas debido a su perfil de farmacocinética y potencialmente menor eficacia en infecciones graves.\n\n4) **Cefepima y metronidazol**: Esta combinación es efectiva, ya que cefepima cubre las bacterias gram negativas, y metronidazol ofrece cobertura para anaerobios, lo cual es crítico en infecciones intraabdominales.\n\nPor lo tanto, el tratamiento que **no sería apropiado** en este contexto sería:\n\n**3) Tigeciclina.**\n\nAunque puede ser parte de un régimen antibiótico en algunas situaciones, no se considera la mejor opción de tratamiento para infecciones intraabdominales complicadas en este tipo de paciente.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 29,
+        "fecha": "1/22/2025, 3:52:04 PM",
+        "pregunta": "Una paciente de 42 años consulta por presentar, 3 horas después de la ingesta de un pastel de crema en un restaurante, un cuadro de vómitos y deposiciones diarreicas sin productos patológicos ni fiebre. Mientras que la paciente es visitada, su marido inicia un cuadro similar. ¿Cuál de los siguientes microorganismos es probablemente el responsable del cuadro clínico? 1) Salmonella enteriditis. 2) Shigella sonnei. 3) Staphylococcus aureus. 4) Campylobacter jejuni.",
+        "respuesta": "En el caso de la paciente que presenta vómitos y diarrea 3 horas después de la ingesta de un pastel de crema, junto con la aparición de síntomas similares en su marido, se sugiere un cuadro de intoxicación alimentaria.\n\nLa rápida aparición de síntomas gastrointestinales en un entorno donde ambos pacientes han consumido el mismo alimento indica que la causa es más probable que esté relacionada con un agente que produzca toxinas rápidamente en los alimentos, en lugar de un patógeno que requiera más tiempo para multiplicarse en el intestino y causar síntomas.\n\nAnalizando las opciones:\n\n1) **Salmonella enteriditis**: Típicamente causa síntomas en un lapso de 12 a 72 horas post ingestión y no es la causa más común de aparición rápida de síntomas.\n\n2) **Shigella sonnei**: Causa un cuadro más característico de diarrea con sangre y moco, y un inicio más tardío de los síntomas.\n\n3) **Staphylococcus aureus**: Es conocido por causar intoxicación alimentaria con un inicio rápido de síntomas (generalmente entre 1 a 6 horas) debido a la producción de una enterotoxina que se puede encontrar en alimentos como cremas y productos lácteos.\n\n4) **Campylobacter jejuni**: Tiene un periodo de incubación más largo, que varía de 2 a 5",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 30,
+        "fecha": "1/22/2025, 3:54:14 PM",
+        "pregunta": "Una paciente de 44 años, sometida a mastectomía izquierda con vaciamiento ganglionar, presenta, 8 meses después de la intervención, un cuadro febril con celulitis extensa en brazo izquierdo, que se resuelve con tratamiento antibiótico. 6 meses más tarde, acude de nuevo por un cuadro similar. ¿Cuál es el agente etiológico más probable? 1) Staphylococcus epidermidis. 2) Streptococcus agalactiae. 3) Corynebacterium hemoliticum. 4) Streptococcus pyogenes.",
+        "respuesta": "En el caso de una paciente que ha sido sometida a una mastectomía con vaciamiento ganglionar y que presenta episodios recurrentes de celulitis en el brazo del lado afectado, el agente etiológico más probable es **Staphylococcus epidermidis**. Este microorganismo es un coagulasa negativa que a menudo se asocia con infecciones de piel y partes blandas en pacientes con antecedentes quirúrgicos y en aquellos con dispositivos médicos, como es el caso en pacientes post-mastectomía.\n\nLa razón detrás de esta elección se basa en que S. epidermidis es parte de la flora cutánea normal, pero puede convertirse en patógeno, especialmente en individuos inmunocomprometidos o en pacientes que han tenido procedimientos quirúrgicos. Los otros gérmenes mencionados, aunque también pueden causar infecciones, no son tan comúnmente asociados con episodios reiterados de celulitis postoperatoria en pacientes que han realizado mastectomías.\n\nAdemás, las infecciones en el brazo afectado pueden correlacionarse con la flora normal de la piel, en la cual S. epidermidis predomina.\n\nPor lo tanto, la respuesta correcta es: **1) Staphylococcus epidermidis**.",
+        "evaluacion": "down",
+        "motivo": "Streptococcus pyogenes es el patógeno que puede dar una sintomatologia como la que presentó la paciente y luego tener una recidiva"
+    },
+    {
+        "id": 31,
+        "fecha": "1/23/2025, 7:49:46 AM",
+        "pregunta": "¿Cuál de las siguientes es la vía de transmisión MÁS FRECUENTE del virus de hepatitis B (VHB)? a)\tPunciones (accidentales o en contexto de consumo de drogas) b)\tTransfusiones de sangre y otros hemoderivados c)\tSexual d)\tVertical (madre-hijo) e)\tPiercings y tatuajes",
+        "respuesta": "La vía de transmisión más frecuente del virus de hepatitis B (VHB) varía según la prevalencia de la infección en diferentes poblaciones. Sin embargo, en la mayoría de los contextos, especialmente en áreas de baja prevalencia como muchos países occidentales, la transmisión sexual se considera la vía más común.\n\nAquí una breve descripción de cada opción:\n\na) **Punciones (accidentales o en contexto de consumo de drogas)**: Esta es una vía importante de transmisión, especialmente en el contexto de usuarios de drogas intravenosas, pero no es la más frecuente en general.\n\nb) **Transfusiones de sangre y otros hemoderivados**: Esta vía de transmisión ha disminuido significativamente debido a los estrictos controles de tamizaje en sangre.\n\nc) **Sexual**: Esta es la vía de transmisión predominante en muchas regiones de baja prevalencia del VHB, siendo la más común entre adultos.\n\nd) **Vertical (madre-hijo)**: Aunque esta vía es significativa en áreas de alta prevalencia, es menos común en contextos de bajo riesgo.\n\ne) **Piercings y tatuajes**: Esta vía puede contribuir a la transmisión, pero es menos frecuente que las vías mencionadas anteriormente.\n\nPor lo tanto, la respuesta correcta es **c) Sexual**, que representa la vía de transmisión más frecuente del virus de hepatitis B (VHB) en general.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 32,
+        "fecha": "1/23/2025, 7:50:38 AM",
+        "pregunta": "¿Qué características definen una infección crónica por VHB? a)\tHBsAg positivo con enzimas hepáticas elevadas  b)\tHBsAg positivo persistente al menos 6 meses c)\tHBsAg positivo con anticuerpos-HBe d)\tHBsAg positivo con anticuerpos-HBe y enzimas hepáticas elevadas",
+        "respuesta": "La característica que define una infección crónica por el virus de la hepatitis B (VHB) es:\n\n**b) HBsAg positivo persistente al menos 6 meses.**\n\nLa infección crónica por VHB se define específicamente por la presencia del antígeno de superficie de la hepatitis B (HBsAg) en el suero durante más de seis meses. Esto indica que el virus ha establecido una replicación persistente en el hígado.\n\nAquí un breve análisis de cada opción:\n\na) **HBsAg positivo con enzimas hepáticas elevadas**: No es suficiente por sí solo para definir una infección crónica, ya que las enzimas hepáticas pueden ser normales en algunas fases de infección crónica.\n\nb) **HBsAg positivo persistente al menos 6 meses**: Esta es la definición clara y aceptada para la infección crónica.\n\nc) **HBsAg positivo con anticuerpos-HBe**: Esto puede estar presente en infecciones crónicas, pero no necesariamente define la cronicidad por sí solo.\n\nd) **HBsAg positivo con anticuerpos-HBe y enzimas hepáticas elevadas**: Aunque puede indicar una fase activa de hepatitis crónica, no es una definición estricta de infección crónica.\n\nPor lo tanto, la opción correcta es **b)** que indica la persistencia del HBsAg por al menos 6 meses como el criterio para definir infección crónica por VHB.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 33,
+        "fecha": "1/23/2025, 7:51:35 AM",
+        "pregunta": "El tratamiento del VHB está indicado en (señale la correcta): a)\tCirrosis hepática compensada independientemente de la carga viral del VHB b)\tEn pacientes con hepatitis B aguda c)\tEn pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml d)\tEn pacientes con infección crónica por VHB independientemente de otros parámetros",
+        "respuesta": "La opción correcta sobre el tratamiento del virus de hepatitis B (VHB) es:\n\n**c) En pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml.**\n\nEl tratamiento antiviral para la infección crónica por VHB se recomienda en ciertos contextos, especialmente en aquellos con evidencia de daño hepático o replicación viral significativa.\n\nA continuación, un breve análisis de cada opción:\n\na) **Cirrosis hepática compensada independientemente de la carga viral del VHB**: Si bien el tratamiento está indicado en pacientes con cirrosis, no se puede afirmar que sea “independientemente” de la carga viral. Se deben considerar otros factores, y el tratamiento generalmente se inicia si hay carga viral detectable.\n\nb) **En pacientes con hepatitis B aguda**: En general, el tratamiento antiviral no se indica de rutina en la hepatitis B aguda, ya que la mayoría de los pacientes se resolverán de forma espontánea.\n\nc) **En pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml**: Esta es la mejor indicación para iniciar tratamiento. Los pacientes que presentan elevaciones de transaminasas y cargas virales significativas son candidatos para la terapia antiviral.\n\nd) **En pacientes con infección crónica por VHB independientemente de otros parámetros**: Esta afirmación no es precisa, ya que el tratamiento no se ofrece a todos los pacientes con infección crónica sin considerar otros factores como la actividad inflamatoria y la replicación viral.\n\nPor lo tanto, la respuesta correcta es **c)**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 34,
+        "fecha": "1/23/2025, 7:53:19 AM",
+        "pregunta": "¿Qué medidas adopta frente a un paciente que ingresa por una infección en curso producida por Listeria monocytogenes?, responda lo correcto:  a)\tIndica aislamiento de contacto al ingreso a la institución y lo mantiene hasta el mes posterior a finalizar el tratamiento antimicrobiano  b)\tIndica precauciones estándar  c)\tIndica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación.",
+        "respuesta": "La opción correcta sobre las medidas que se deben adoptar frente a un paciente con infección por **Listeria monocytogenes** es:\n\n**c) Indica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación.**\n\nLa **Listeria monocytogenes** puede ser transmitida de persona a persona en ciertas circunstancias, y los pacientes con esta infección pueden presentar un riesgo, especialmente en un entorno hospitalario. Por lo tanto, es importante implementar medidas de aislamiento adecuadas.\n\nA continuación, el análisis de cada opción:\n\na) **Indica aislamiento de contacto al ingreso a la institución y lo mantiene hasta el mes posterior a finalizar el tratamiento antimicrobiano**: Esta opción es incorrecta, ya que el aislamiento no debe extenderse un mes después del tratamiento, ya que no se requiere tanto tiempo de aislamiento post-tratamiento.\n\nb) **Indica precauciones estándar**: Aunque las precauciones estándar son importantes, no son suficientes por sí solas, dado que **Listeria** representa un riesgo especial que justifica medidas más estrictas.\n\nc) **Indica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación**: Esta opción es la más precisa, ya que el aislamiento de contacto y medidas por gotitas son recomendadas para prevenir la transmisión de Listeria, especialmente en el contexto de pacientes inmunocomprometidos o en un entorno hospitalario.\n\nPor lo tanto, la respuesta correcta es **c)**.",
+        "evaluacion": "down",
+        "motivo": "La oopción correcta es la b)\tIndica precauciones estándar. El modo de transmisión de esta bacteria determina que las precauciones estándares sean suficientes"
+    },
+    {
+        "id": 35,
+        "fecha": "1/23/2025, 7:54:19 AM",
+        "pregunta": "Sobre la clínica de la infección producida por Leptospira, marque la opción correcta a)\tEl periodo de incubación es entre 30 y 60 días b)\tEl compromiso meníngeo se encuentra en más de la mitad de los casos c)\tEn la enfermedad de Weil la afectación renal es característica",
+        "respuesta": "La opción correcta sobre la clínica de la infección producida por **Leptospira** es:\n\n**c) En la enfermedad de Weil la afectación renal es característica.**\n\nLa enfermedad de Weil es una forma severa de leptospirosis que se caracteriza por síntomas como fiebre, ictericia, hemorragias y afectación renal, que puede incluir insuficiencia renal aguda.\n\nA continuación, un análisis de cada opción:\n\na) **El periodo de incubación es entre 30 y 60 días**: Esto es incorrecto, ya que el periodo de incubación para la leptospirosis generalmente es de 5 a 14 días, aunque puede variar.\n\nb) **El compromiso meníngeo se encuentra en más de la mitad de los casos**: Esto también es incorrecto. Aunque el compromiso meníngeo puede ocurrir, no se presenta en más de la mitad de los casos de leptospirosis.\n\nc) **En la enfermedad de Weil la afectación renal es característica**: Esta afirmación es verdadera. La afectación renal es una de las características distintivas de la enfermedad de Weil.\n\nPor lo tanto, la respuesta correcta es **c)**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 36,
+        "fecha": "1/23/2025, 7:55:17 AM",
+        "pregunta": "En referencia al tratamiento ATB en la leptospirosis, marque la opción correcta a)\tCiprofloxacina es una opción recomendada en casos de leptospirosis leve b)\tPenicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves c)\tEl TMP/SMX ha demostrado ser un ATB eficaz en el tratamiento",
+        "respuesta": "La opción correcta sobre el tratamiento antibiótico en la leptospirosis es:\n\n**b) Penicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves.**\n\nLa penicilina y la ceftriaxona son los tratamientos de elección para las formas moderadas a graves de leptospirosis. Se ha demostrado que son eficaces en el manejo de la enfermedad, especialmente en casos más severos.\n\nA continuación, un análisis de cada opción:\n\na) **Ciprofloxacina es una opción recomendada en casos de leptospirosis leve**: Si bien ciprofloxacina puede ser utilizada, no es la primera opción recomendada para el tratamiento, especialmente en casos leves. Doxycycline es generalmente preferida en esas circunstancias.\n\nb) **Penicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves**: Esta opción es correcta y está respaldada por las guías de tratamiento para leptospirosis en formas severas.\n\nc) **El TMP/SMX ha demostrado ser un ATB eficaz en el tratamiento**: Aunque el TMP/SMX se ha utilizado en algunas circunstancias, no es considerado el antimicrobiano de elección para leptospirosis y su eficacia no está garantizada en todas las presentaciones de la enfermedad.\n\nPor lo tanto, la respuesta correcta es **b)**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 37,
+        "fecha": "1/23/2025, 7:56:00 AM",
+        "pregunta": "68 años. HTA en tratamiento con enalapril 5 mg cada 12 hrs, DM2 en tratamiento con metformina 850 mg día. Histerectomía en 2014.  Hace 25 días episodio de infección urinaria (IU baja) no complicada, recibe tratamiento empírico con nitrofurantoína 100 mg cada 6 hrs durante 5 días. Luego de 2 semanas de finalizado el tratamiento comienza nuevamente síntomas urinarios. Hoy consulta en emergencia por disuria, pujos, tenesmo y polaquiuria de 3 días de evolución. Niega fiebre.  ¿Cómo se define el episodio de IU actual? a)\tPor tratarse de un segundo episodio en menos de 1 mes, se trata de una infección urinaria persistente (recaída).  b)\tPor tratarse de un segundo episodio en menos de un mes se trata de una infección urinaria complicada.  c)\tPor tratarse de un nuevo episodio luego de 15 días de finalizado el tratamiento previo, se considera una reinfección.",
+        "respuesta": "La opción correcta para definir el episodio actual de infección urinaria (IU) en este paciente es:\n\n**c) Por tratarse de un nuevo episodio luego de 15 días de finalizado el tratamiento previo, se considera una reinfección.**\n\nEn la terminología de las infecciones urinarias:\n\n- **Recaída** ocurre cuando el mismo microorganismo que causó la infección original persiste en el tracto urinario y causa un nuevo episodio dentro de un periodo corto, generalmente definido como 2 semanas desde la finalización del tratamiento.\n- **Reinfección** es cuando un nuevo episodio de infección urinaria es causado por un microorganismo diferente, o por la misma bacteria pero después de un período suficiente como para considerar que se ha resuelto la infección original (generalmente más de 2 semanas).\n\nDado que en este caso el episodio actual ocurrió más de 15 días después del tratamiento previo y parece ser un nuevo incidente, se clasifica como una **reinfección**.\n\nPor lo tanto, la respuesta correcta es **c)**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 38,
+        "fecha": "1/23/2025, 7:57:32 AM",
+        "pregunta": "En cuanto tratamiento antimicrobiano de este episodio, elija la opción correcta:  a)\tCefuroxime axetil 500 mg vo cada 12 hrs por 7 días. b)\tNitrofurantoína macrocistales 100 mg vo cada 12 hrs por 5 días.  c)\tTMP-SMX 160/800 mg vo cada 12 hrs por 5 días.",
+        "respuesta": "La opción correcta para el tratamiento antimicrobiano del episodio actual de infección urinaria (IU) en este paciente es:\n\n**a) Cefuroxime axetil 500 mg vo cada 12 hrs por 7 días.**\n\n### Justificación:\n\n1. **Cefuroxime axetil** es un antibiótico de la clase de los cefalosporinas, con buena actividad frente a patógenos comúnmente involucrados en las infecciones urinarias, y es una opción adecuada para un tratamiento empírico en infecciones urinarias no complicadas.\n\n2. **Nitrofurantoína macrocistales**: Si bien se utiliza frecuentemente para tratar infecciones urinarias, no es la mejor opción en este caso, ya que el paciente ya recibió tratamiento con nitrofurantoína para un episodio reciente. La reinfección podría no responder bien a la misma clase de antibiótico.\n\n3. **TMP-SMX** (trimetoprim-sulfametoxazol) es otra opción válida en infecciones urinarias, pero su uso debe ser considerado en función de las pautas locales de resistencia y, en ocasiones, puede que no sea la primera opción debido a preocupaciones sobre la resistencia.\n\nPor lo tanto, teniendo en cuenta la necesidad de un tratamiento empírico adecuado y el historial del paciente, la mejor opción es **a)**.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 44,
+        "fecha": "1/23/2025, 8:07:05 AM",
+        "pregunta": "En referencia a la vancomicina, marque la opción correcta a)\tLa vancomicina es una molécula lipofílica b)\tPresenta eliminación principalmente a nivel hepático c)\tEl parámetro PK/PD (AUC/CIM) es el principal parámetro farmacocinético a tener en cuenta para el tratamiento d)\tLa dosificación en valle se recomienda solicitar luego de la segunda dosis de administrada",
+        "respuesta": "La opción correcta es: **c) El parámetro PK/PD (AUC/CIM) es el principal parámetro farmacocinético a tener en cuenta para el tratamiento.**\n\nEl área bajo la curva (AUC) en relación a la CIM es un parámetro clave para optimizar la eficacia del tratamiento con vancomicina, especialmente en infecciones severas por Staphylococcus aureus resistente a meticilina (SAMR). Un objetivo comúnmente recomendado es alcanzar una relación AUC/CIM de al menos 400 para maximizar la efectividad del tratamiento.\n\nSi necesitas más información sobre vancomicina o alguna otra consulta relacionada con infectología, no dudes en preguntar.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 39,
+        "fecha": "1/23/2025, 7:59:59 AM",
+        "pregunta": "Mujer de 59 años.  AP: hipertensión arterial, diabética tratada con hipoglicemiantes orales, sin descompensaciones y con buen control metabólico, HbA1c de dos meses previos: 7,1%. Peso 78 Kgr. Historia de cólicos nefríticos hace 3 años, microlitiasis en cavidad calicial derecha en tomografía que no requirieron tratamiento.  Un episodio de pielonefritis hace 2 años, requirió ATB i/v, mejorando y con controles posteriores con ecografía sin alteraciones del aparato urinario. EA: Consulta por fiebre de 38,7°C axilar, malestar general, chuchos de frío y dolor miccional de 6 días de evolución. Orina concentrada y algo turbia. Se automedicó con nitrofurantoina durante 3 días, sin mejoría. Ex. Físico: Confusa, 32 rpm. Lengua seca. Piel y mucosas bien coloreadas. Bien perfundida a nivel de extremidades. Temp. axilar 38,1°C.  Ritmo regular de 96 cpm, bien golpeados, sin soplos. PA: 100/60 Dolor abdominal en flanco izquierdo, aumenta a la palpación profunda. Fosa lumbar izquierda dolorosa a la palpación.  Examen respiratorio y de otros sectores normales. Ex. de orina: abundantes leucocitos, esterasa leucocitaria positiva y nitritos positivos. ¿Cuál sería su diagnóstico inicial? a)\tInfección urinaria no complicada b)\tPielonefritis aguda  c)\tSepsis nefro-urológica d)\tInfección urinaria baja complicada",
+        "respuesta": "El diagnóstico inicial más adecuado para esta paciente es:\n\n**b) Pielonefritis aguda.**\n\n### Justificación:\n\n1. **Síntomas**: La paciente presenta fiebre, malestar general, chuchos de frío y dolor miccional, que son indicativos de una infección del tracto urinario. Sin embargo, el síntoma",
+        "evaluacion": "down",
+        "motivo": "La opción correcta es: c)\tSepsis nefro-urológica (la paciente estaba confusa y con una frecuencia respiratoria elevada de 32 respiraciones por minuto, y estos son sintomas de sepsis"
+    },
+    {
+        "id": 40,
+        "fecha": "1/23/2025, 8:03:22 AM",
+        "pregunta": "Teniendo en cuenta el caso clinico anterior y que se trata de una sepsis nefrourologica, ¿Cuál plan ATB empírico elegiría? a)\tCiprofloxacina 500 mg vo cada 8 horas b)\tCiprofloxacina 400 mg iv cada 8 horas c)\tPiperacilina-tazobactam 4,5 gr iv cada 6 horas + amikacina 20 mg/Kg cada 24horas iv d)\tCeftriaxona 1 gr iv cada 24 horas + amikacina 20 mg/Kg iv cada 24horas.",
+        "respuesta": "Para el manejo empírico de una sepsis nefrourológica, especialmente en presencia de factores de riesgo para microorganismos multirresistentes, la opción más adecuada es:\n\n**c) Piperacilina-tazobactam 4,5 gr iv cada 6 horas + amikacina 20 mg/Kg cada 24 horas iv.**\n\nLa combinación de piperacilina-tazobactam proporciona una amplia cobertura contra bacterias grampositivas y gramnegativas, así como anaerobios, y la adición de amikacina ofrece cobertura adicional para posibles bacilos gramnegativos resistentes. La elección de este esquema se basa en la necesidad de un tratamiento que cubra una amplia gama de patógenos en el contexto de una sepsis, donde se espera resistencia a los antibióticos.\n\nEsto está respaldado por el documento **FlujoG-5-Infeccion_Intra_Abdominal.pdf**[1] que discute la administración de piperacilina-tazobactam en el contexto de sepsis y las opciones para mejorar la cobertura en infecciones complicadas (página 1) y también se menciona la importancia de considerar factores de riesgo para microorganismos resistentes en el manejo de infecciones severas.\n\n\nReferencias:\n[1] FlujoG-5-Infeccion_Intra_Abdominal.pdf",
+        "evaluacion": "down",
+        "motivo": "La opción correcta es: d)\tCeftriaxona 1 gr iv cada 24 horas + amikacina 20 mg/Kg iv cada 24horas. (deberias haber considerado el Flujograma 4 de ITU (infeccion de tracto urinario) y no es de Infeccion intraabdominal"
+    },
+    {
+        "id": 41,
+        "fecha": "1/23/2025, 8:04:52 AM",
+        "pregunta": "Mujer de 28 años, maestra. En pareja desde hace 2 años, deseo concepcional. Enviada desde consulta ginecológica para asesoramiento preconcepcional por episodio de herpes genital. Primoinfección hace 14 meses, presentó 2 episodios de recidiva posterior. Recibió tratamiento con valaciclovir en la primoinfección y en la recidiva con buena respuesta. Actualmente asintomática. Está preocupada por un eventual embarazo. ¿Qué conducta tomaría hoy con respecto al tratamiento del herpes genital? a)\tIniciaría tratamiento supresivo con aciclovir. b)\tIniciaría tratamiento con valaciclovir. c)\tRealizaría seguimiento clínico para tratar eventuales recidivas. d)\tNo tomaría ninguna conducta en especial.",
+        "respuesta": "En este caso, considerando que la paciente ha tenido una primoinfección de herpes genital hace 14 meses y ha experimentado dos episodios de recidiva, es recomendable:\n\n**a) Iniciaría tratamiento supresivo con aciclovir.**\n\nEl tratamiento supresivo con aciclovir puede reducir la frecuencia de las recidivas y disminuir el riesgo de transmisión del virus al compañero sexual, lo que es especialmente importante dado que la paciente está en proceso de concepcionar. Además, el tratamiento supresivo puede ayudar a minimizar el riesgo de brotes activos durante el embarazo, donde una infección activa podría tener reper",
+        "evaluacion": "down",
+        "motivo": "La opcion correcta es c)\tRealizaría seguimiento clínico para tratar eventuales recidivas."
+    },
+    {
+        "id": 42,
+        "fecha": "1/23/2025, 8:05:43 AM",
+        "pregunta": "En cuanto a la indicación de realización de serología para Herpes tipo 1 y 2, señale la opción correcta: a)\tForma parte del estudio de donantes de sangre  b)\tForma parte del estudio de ulceras genitales de etiología no clara c)\tForma parte del estudio inicial de coinfecciones en personas con VIH d)\tForma parte del estudio pre quirúrgico en pacientes con patología ginecológica",
+        "respuesta": "La opción correcta es: **b) Forma parte del estudio de úlceras genitales de etiología no clara.**\n\nLa serología para herpes tipo 1 y 2 se indica a menudo cuando se presentan úlceras genitales y la etiología no es clara, ya que estas infecciones pueden ser una causa significativa de lesiones ulcerativas en esta área, especialmente en individuos con riesgo de coinfección, como aquellos con VIH. Este enfoque es crucial para establecer un diagnóstico adecuado y un manejo apropiado de los pacientes.\n\nSi tienes más consultas sobre infectología o necesitas información adicional, no dudes en preguntar.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 43,
+        "fecha": "1/23/2025, 8:06:28 AM",
+        "pregunta": "Sobre el manejo de una bacteriemia por SAMR, marque la opción correcta a)\tLa realización de hemocultivos de control es una medida desaconsejada  b)\tSe recomienda el tratamiento con TMP/SMX en monoterapia c)\tLa CIM a la vancomicina es un determinante fundamental para definir el tratamiento ATB d)\tIndependientemente del foco de infección, la duración del tratamiento ATB debe de ser de 21 días",
+        "respuesta": "La opción correcta es: **c) La CIM a la vancomicina es un determinante fundamental para definir el tratamiento ATB.**\n\nLa Concentración Inhibitoria Mínima (CIM) a la vancomicina es crucial en el manejo de infecciones por Staphylococcus aureus meticilino resistente (SAMR), ya que influye en la elección del tratamiento antibiótico. En particular, una CIM elevada puede requerir la utilización de alternativas a la vancomicina o ajustes en la terapia.\n\nSi tienes más preguntas sobre el manejo de infecciones o cualquier otro tema relacionado con infectología, no dudes en preguntar.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 45,
+        "fecha": "1/23/2025, 8:07:45 AM",
+        "pregunta": "En cuanto al uso de TMP/SMX en la bacteriemia por SAMR, marque la opción correcta a)\tSe considera exclusivamente como ATB bacteriostático b)\tLa combinación de ambos principios activos no tiene efecto sinérgico antifolato c)\tLa dosis recomendada es de 10 mg/kg día del componente trimetoprim d)\tEl metabolismo es principalmente extrahepático",
+        "respuesta": "La opción correcta es: **c) La dosis recomendada es de 10 mg/kg/día del componente trimetoprim.**\n\nEn el manejo de bacteriemia por Staphylococcus aureus resistente a meticilina (SAMR), se recomienda una dosis de 10 mg/kg/día del componente trimetoprim de TMP/SMX, administrada en dosis divididas.\n\nEl TMP/SMX se considera generalmente como un antibiótico con actividad bactericida en algunos contextos, y la combinación de sus componentes puede tener un efecto sinérgico en la inhibición de la síntesis de ácido folínico en bacterias.\n\nSi tienes más preguntas o necesitas más información, no dudes en preguntar.",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 46,
+        "fecha": "1/23/2025, 8:08:54 AM",
+        "pregunta": "78 años. HTA. Recambio valvular Aórtico en 3/2023. Adenoma de próstata en seguimiento por urología. Ingresa a sala de medicina por fiebre de 2 semanas de evolución acompañada de sudoración nocturna y astenia. Dentro de la valoración al ingreso se solicitan 2 set de HC de 10 ml cada uno desarrollando en todas las muestras: S.viridans sensible a cefepime, cefotaxime, ceftriaxona y vancomicina con CIM para penicilina de 0.12 ug/ml. Se realiza ETE que informa vegetación de 2 mm sobre válvula Ao.  Con respecto al tratamiento, elija la opción correcta:  a)\tCeftriaxona 2 g iv día por 4 semanas. b)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas. c)\tCeftriaxona 2g iv día + gentamicina 3mg/kg/día en 3 dosis iv por 4 semanas.  d)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas + gentamicina 3 mg /kg iv en 3 dosis por 2 semanas.",
+        "respuesta": "La opción correcta es: **a) Ceftriaxona 2 g iv día por 4 semanas.**\n\nEl tratamiento recomendado para la endocarditis infecciosa causada por *Streptococcus viridans* (considerando que tiene una CIM de penicilina de 0.12 µg/mL, lo que indica sensibilidad) es el uso de ceftriaxona. Según las guías, la ceftriaxona a 2 g por vía intravenosa al día es apropiada para el tratamiento de endocarditis causada por este microorganismo, generalmente durante 4 semanas.\n\nSi necesitas más información o detalles sobre el manejo de esta condición u otros temas relacionados con infectología, no dudes en",
+        "evaluacion": "down",
+        "motivo": "La opción correcta es: d)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas + gentamicina 3 mg /kg iv en 3 dosis por 2 semanas."
+    },
+    {
+        "id": 47,
+        "fecha": "1/23/2025, 8:09:48 AM",
+        "pregunta": "En el contexto de profilaxis post exposición (PPE) de rabia, son contraindicaciones absolutas para la administración de vacuna antirrábica: a)\tEmbarazo y lactancia. b)\tAlergia a polimixinas, estreptomicina o neomicina. c)\tMenores de 5 años. d)\tNo tiene contraindicaciones.",
+        "respuesta": "En el contexto de la profilaxis post exposición (PPE) de rabia, la opción correcta es la **d) No tiene contraindicaciones.** La vacuna antirrábica se considera segura incluso durante el embarazo y la lactancia. Sin embargo, las personas con antecedentes de reacciones anafilácticas a componentes de la vacuna (como la neomicina) deben ser evaluadas cuidadosamente. En general, se recomienda la vacunación a todos los individuos expuestos, independientemente de su edad o estado de embarazo.\n\nEsta información se menciona en el documento **Principles and Practice of Infectious Diseases (2019).pdf**[1] (página 18 y 19).\n\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases (2019).pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 48,
+        "fecha": "1/23/2025, 8:10:36 AM",
+        "pregunta": "En viajeros la profilaxis preexposición de rabia está indicada en: a)\tViaje a zonas endémicas de rabia silvestre independientemente del tiempo y la actividad que realice. b)\tViajeros inmunosuprimidos. c)\tViajeros a zonas endémicas de rabia canina independientemente del tiempo y la actividad que realice. d)\tViajeros a zonas endémicas de rabia canina donde la atención médica y el acceso a la profilaxis post exposición sea muy limitado.",
+        "respuesta": "La opción correcta es **d) Viajeros a zonas endémicas de rabia canina donde la atención médica y el acceso a la profilaxis post exposición sea muy limitado.** En estos casos, la vacunación previa a la exposición es recomendable para ofrecer una protección adecuada debido a la posibilidad de exposición a animales potencialmente rabiosos y la limitación en el acceso a tratamientos posteriores.\n\nEsta información se indica en el documento **Principles and Practice of Infectious Diseases (2019).pdf**[1] (página 5).\n\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases (2019).pdf",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 49,
+        "fecha": "1/23/2025, 8:11:30 AM",
+        "pregunta": "Paciente de sexo masculino, 32 años, tabaquista, diagnóstico reciente de VIH con inmunodepresión severa (carga viral de 125mil copias/mL y linfocitos CD4 de 78/mL), no coinfecciones, que inicia tratamiento hace 7 días con tenofovir + lamivudina + dolutegravir. Ingresa a emergencia con cefalea y pérdida de fuerzas progresiva de miembro superior derecho de 3 días de evolución. Tomografía de cráneo evidencia 3 lesiones redondeadas gangliobasales con realce en anillo tras la administración de contraste, de 1,5 a 2,5 cm de diámetro con marcado edema perilesional. Se plantea probable diagnóstico de toxoplasmosis encefálica. ¿Qué conducta terapéutica indicaría?  a)\tSuspender el TARV e iniciar espiramicina hasta confirmación diagnóstica b)\tSuspender el TARV e indicar dexametasona intravenosa dado que corresponde a un SIRI (síndrome inflamatorio de reconstitución inmune) c)\tContinuar el TARV y agregar cotrimoxazol forte un comprimido cada 12 horas y dexametasona 4 mg cada 6 horas d)\tContinuar el TARV y agregar sulfadiacina + pirimetamina + ácido folínico",
+        "respuesta": "La opción correcta es **d) Continuar el TARV y agregar sulfadiacina + pirimetamina + ácido folínico.** En este caso, dado que hay una presentación clínica y tomográfica compatible con toxoplasmosis encefálica en un paciente con VIH e inmunodepresión severa, el tratamiento de elección incluye sulfadiacina y pirimetamina, junto con ácido folínico para minimizar la toxicidad por pirimetamina.\n\nEs crucial continuar con el tratamiento antirretroviral (TARV) durante esta fase, ya que no se ha evid",
+        "evaluacion": "up",
+        "motivo": ""
+    },
+    {
+        "id": 50,
+        "fecha": "1/23/2025, 8:13:09 AM",
+        "pregunta": "¿Cuál estudio diagnóstico permite confirmar que se trate de abscesos toxoplásmicos?  a)\tResonancia nuclear magnética de cráneo con imágenes en flair b)\tPCR en líquido cefalorraquídeo c)\tCuadruplicación de los títulos de IgG para toxoplasma d)\tEstudio parasitológico de una muestra de la lesión",
+        "respuesta": "El estudio diagnóstico que permite confirmar que se trate de abscesos toxoplásmicos es la **PCR en líquido cefalorraquídeo (b)**.\n\nLa PCR es específica y puede demostrar la presencia de ADN de Toxoplasma gondii en el líquido cefalorraquídeo, lo cual es indicativo de una infección activa. Aunque otros métodos como la resonancia magnética pueden mostrar lesiones características, la PCR proporciona un diagnóstico definitivo.\n\nSegún el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte106** (página 21), la PCR en líquido cefalorraquídeo es una herramienta importante para establecer el diagnóstico de encefalitis por Toxoplasma en pacientes inmunocomprometidos, como aquellos con VIH/SIDA.",
+        "evaluacion": "down",
+        "motivo": "la opcion correcta es la d)\tEstudio parasitológico de una muestra de la lesión. Si bien la PCR es altamente especifica, el unico estudio confirmatorio es ver el parasito en una muestra de tejido cerebral"
+    }
 ]

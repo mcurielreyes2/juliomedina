@@ -44,7 +44,7 @@ def ingestDocument(file_name, file_type, upload_path, search_data):
 
 
 if __name__ == "__main__":
-    directory = "static/docs/INFECTOLOGIA/SPLIT"
+    directory = "static/docs/INFECTOLOGIA"
     file_type = "pdf"
     search_data = None
 

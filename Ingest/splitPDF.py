@@ -22,13 +22,13 @@ def split_pdf_into_seven(input_path, output_dir, part_counter):
     print(f"Total pages: {total_pages}")
 
     # Calculate the number of pages per part
-    pages_per_part = total_pages // 10
-    remaining_pages = total_pages % 10
+    pages_per_part = total_pages // 20
+    remaining_pages = total_pages % 20
 
     # Define the ranges for each part
     parts = []
     start = 0
-    for i in range(10):
+    for i in range(20):
         end = start + pages_per_part + (1 if i < remaining_pages else 0)
         parts.append((start, end))
         start = end
@@ -52,11 +52,61 @@ def split_pdf_into_seven(input_path, output_dir, part_counter):
 
     return part_counter
 
+def normalize_file_name(file_name: str) -> str:
+    """
+    Normalize a file name by replacing spaces with underscores.
+    Optionally, you can add more transformations like converting to lowercase.
+
+    Args:
+        file_name (str): The original file name.
+
+    Returns:
+        str: The normalized file name.
+    """
+    # Replace spaces with underscores
+    normalized = file_name.replace(" ", "_")
+
+    # Optionally: Add more transformations, e.g., convert to lowercase
+    # normalized = normalized.lower()
+
+    return normalized
+
+def normalize_files_in_directory(directory_path: str):
+    """
+    Normalize all file names in the specified directory by replacing spaces with underscores.
+
+    Args:
+        directory_path (str): The path to the directory containing the files.
+
+    Returns:
+        None
+    """
+    for file_name in os.listdir(directory_path):
+        # Skip directories
+        if os.path.isdir(os.path.join(directory_path, file_name)):
+            continue
+
+        # Generate the normalized file name
+        normalized_name = normalize_file_name(file_name)
+
+        # Rename the file if the name has changed
+        if file_name != normalized_name:
+            original_path = os.path.join(directory_path, file_name)
+            normalized_path = os.path.join(directory_path, normalized_name)
+            os.rename(original_path, normalized_path)
+            print(f"Renamed: {file_name} -> {normalized_name}")
+
+
 
 if __name__ == "__main__":
+
+    # Example usage
+    directory = "../static/docs/libro"  # Path to your directory
+    #normalize_files_in_directory(directory)
+
     # Directory containing the PDFs to be checked
-    input_directory = "static/docs/INFECTOLOGIA/LIBRO"
-    output_directory = "static/docs/INFECTOLOGIA/SPLIT"
+    input_directory = "../static/docs/INFECTOLOGIA/libro"
+    output_directory = "../static/docs/INFECTOLOGIA/SPLIT"
 
     # Create the output directory if it doesn't exist
     os.makedirs(output_directory, exist_ok=True)

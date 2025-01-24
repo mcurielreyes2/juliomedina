@@ -1,5 +1,5 @@
 // streamHandler.js
-import { appendAssistantMessage, appendOsmaModeSwitchBox,hideOptionContainers, postProcessReferences  } from './chatUI.js';
+import { appendAssistantMessage, appendOsmaModeSwitchBox,hideOptionContainers } from './chatUI.js';
 import { promptAbortProcess } from './osmaHandler.js';
 import { insertThumbsFeedbackUI } from './thumbsFeedback.js';
 
@@ -143,6 +143,7 @@ if (message === "") {
 
     // We'll type out the streamed text chunk by chunk
     let pendingText = "";
+    let finalRefChunk = null
     let isTyping = false;
 
     function backgroundTyper(element, speed = 12) {
@@ -170,62 +171,84 @@ if (message === "") {
     async function readChunk() {
       const { done, value } = await reader.read();
       if (done) {
-        // Espera a que finalice la escritura del texto pendiente y MathJax (si aplica)
-        let intervalId = setInterval(() => {
-          if (pendingText.length === 0) {
-            clearInterval(intervalId);
+        // El servidor cerró el stream => No llegarán más chunks.
+        // Pero tu typewriter (pendingText) podría seguir escribiendo.
+        let checkInterval = setInterval(() => {
+          // Esperamos a que el typewriter consuma pendingText
+          if (pendingText.length === 0 && !isTyping) {
+            clearInterval(checkInterval);
+
+
+          if (finalRefChunk) {
+            // SUSTITUIR el contenido con la respuesta final (SIN duplicar):
+            assistantMessageDiv.innerHTML = finalRefChunk;
+          }
+
+            // Una vez que está todo el texto final insertado,
+            // puedes invocar MathJax y/o poner thumbs, OSMA, etc.
             if (window.MathJax) {
-              console.log("Math delimiters balanced. Triggering MathJax.typesetPromise on assistantMessageDiv.");
               window.MathJax.typesetPromise([assistantMessageDiv])
                 .then(() => {
-                  console.log("MathJax re-typeset successfully after final chunk.");
-                  // Agregar el cuadro OSMA al finalizar la respuesta
-                  assistantMessageDiv.innerHTML += "<br>";
-                  insertThumbsFeedbackUI({
-                    question: message,
-                    assistantDiv: assistantMessageDiv
-                  });
+                  insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
                   appendOsmaModeSwitchBox();
-                  // Insertar los pulgares
                 })
-                .catch((err) => { console.error("MathJax typeset error:", err); });
+                .catch(err => console.error("MathJax typeset error:", err));
             } else {
-              // Si MathJax no está presente, se agrega directamente el cuadro
+              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
               appendOsmaModeSwitchBox();
-              // Insertar los pulgares
-              insertThumbsFeedbackUI({
-              question: message,
-              assistantDiv: assistantMessageDiv
-              });
             }
           }
         }, 50);
         return;
       }
 
-
+      // Decodificar el chunk
       let chunkText = decoder.decode(value, { stream: true });
 
-      // Accumulate chunk text
-      pendingText += chunkText;
+      // Verificar si trae el marcador [REF_POSTPROCESS]
+      if (chunkText.includes("[REF_POSTPROCESS]")) {
+        // Dividir en dos partes: lo que está antes y lo que está después de [REF_POSTPROCESS]
+        // (Normalmente, vendrá algo como "...[REF_POSTPROCESS]TextoFinalYaProcesado"
+        //  pero igual manejamos la separación por si hay texto previo)
+        const parts = chunkText.split("[REF_POSTPROCESS]");
+        const normalText = parts[0] || "";  // Texto "normal" antes del marcador
+        const finalText = parts[1] || "";   // Texto final postprocesado
 
-      // Start typing
-      backgroundTyper(assistantMessageDiv, 12); // type chunk
+        // 1) Al "normalText" le aplicamos typewriter (si no está vacío)
+        if (normalText) {
+          pendingText += normalText;
+          backgroundTyper(assistantMessageDiv, 12); // Efecto typewriter a 25ms por char
+        }
 
-      // Auto-scroll to bottom
-      chatBox.scrollTop = chatBox.scrollHeight;  // auto-scroll
+        // 2) Guardamos el "finalText" en una variable global/local finalRefChunk
+        //    NO lo mostramos todavía, esperaremos a que termine el typewriter
+        finalRefChunk = finalText;
 
-      readChunk(); // keep reading
+      } else {
+        // No es chunk final => se muestra con typewriter
+        pendingText += chunkText;
+        backgroundTyper(assistantMessageDiv, 12);
+      }
+
+      // Auto-scroll al final
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Continuar leyendo más chunks de forma recursiva
+      readChunk();
     }
     readChunk();
 
   } catch (err) {
-    // If there's an error or we aborted
-    chatBox.removeChild(typingIndicator);
-
+    // 8) Manejo de errores
+    if (typingIndicator.parentNode) {
+      typingIndicator.parentNode.removeChild(typingIndicator);
+    }
+    if (ragMessageDiv && ragMessageDiv.parentNode) {
+      ragMessageDiv.parentNode.removeChild(ragMessageDiv);
+    }
     const errorMessageDiv = document.createElement("div");
     errorMessageDiv.className = "assistant-message";
-    errorMessageDiv.innerText = `Request error: ${err}`;
+    errorMessageDiv.innerText = `Error: ${err}`;
     chatBox.appendChild(errorMessageDiv);
   }
 }
@@ -320,6 +343,7 @@ export async function sendOptionMessage(message) {
     const reader = response.body.getReader();
     const decoder = new TextDecoder("utf-8");
     let pendingText = "";
+    let finalRefChunk = null
     let isTyping = false;
 
     function backgroundTyper(element, speed = 12) {
@@ -343,55 +367,70 @@ export async function sendOptionMessage(message) {
     async function readChunk() {
       const { done, value } = await reader.read();
       if (done) {
-        // Espera a que finalice la escritura del texto pendiente y MathJax (si aplica)
-        let intervalId = setInterval(() => {
-          if (pendingText.length === 0) {
-            clearInterval(intervalId);
+        // El servidor cerró el stream => No llegarán más chunks.
+        // Pero tu typewriter (pendingText) podría seguir escribiendo.
+        let checkInterval = setInterval(() => {
+          // Esperamos a que el typewriter consuma pendingText
+          if (pendingText.length === 0 && !isTyping) {
+            clearInterval(checkInterval);
+
+
+          if (finalRefChunk) {
+            // SUSTITUIR el contenido con la respuesta final (SIN duplicar):
+            assistantMessageDiv.innerHTML = finalRefChunk;
+          }
+
+            // Una vez que está todo el texto final insertado,
+            // puedes invocar MathJax y/o poner thumbs, OSMA, etc.
             if (window.MathJax) {
-              console.log("Math delimiters balanced. Triggering MathJax.typesetPromise on assistantMessageDiv.");
               window.MathJax.typesetPromise([assistantMessageDiv])
                 .then(() => {
-                  console.log("MathJax re-typeset successfully after final chunk.");
-                  // Agregar el cuadro OSMA al finalizar la respuesta
-                  assistantMessageDiv.innerHTML += "<br>";
-                      // *** Post-process references ***
-                      const finalText = postProcessReferences(assistantMessageDiv.innerHTML);
-                      assistantMessageDiv.innerHTML = finalText;
-                  insertThumbsFeedbackUI({
-                  question: message,
-                  assistantDiv: assistantMessageDiv
-                  });
+                  insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
                   appendOsmaModeSwitchBox();
-                  // Insertar pulgares
-
                 })
-                .catch((err) => { console.error("MathJax typeset error:", err); });
+                .catch(err => console.error("MathJax typeset error:", err));
             } else {
-              // Si MathJax no está presente, se agrega directamente el cuadro
+              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
               appendOsmaModeSwitchBox();
-              // Insertar pulgares
-              insertThumbsFeedbackUI({
-              question: message,
-              assistantDiv: assistantMessageDiv
-              });
             }
           }
         }, 50);
         return;
       }
 
+      // Decodificar el chunk
       let chunkText = decoder.decode(value, { stream: true });
 
-      // Accumulate chunk text
-      pendingText += chunkText;
+      // Verificar si trae el marcador [REF_POSTPROCESS]
+      if (chunkText.includes("[REF_POSTPROCESS]")) {
+        // Dividir en dos partes: lo que está antes y lo que está después de [REF_POSTPROCESS]
+        // (Normalmente, vendrá algo como "...[REF_POSTPROCESS]TextoFinalYaProcesado"
+        //  pero igual manejamos la separación por si hay texto previo)
+        const parts = chunkText.split("[REF_POSTPROCESS]");
+        const normalText = parts[0] || "";  // Texto "normal" antes del marcador
+        const finalText = parts[1] || "";   // Texto final postprocesado
 
-      // Start typing
-      backgroundTyper(assistantMessageDiv, 12); // type chunk
+        // 1) Al "normalText" le aplicamos typewriter (si no está vacío)
+        if (normalText) {
+          pendingText += normalText;
+          backgroundTyper(assistantMessageDiv, 12); // Efecto typewriter a 25ms por char
+        }
 
-      // Auto-scroll to bottom
-      chatBox.scrollTop = chatBox.scrollHeight;  // auto-scroll
+        // 2) Guardamos el "finalText" en una variable global/local finalRefChunk
+        //    NO lo mostramos todavía, esperaremos a que termine el typewriter
+        finalRefChunk = finalText;
 
-      readChunk(); // keep reading
+      } else {
+        // No es chunk final => se muestra con typewriter
+        pendingText += chunkText;
+        backgroundTyper(assistantMessageDiv, 12);
+      }
+
+      // Auto-scroll al final
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      // Continuar leyendo más chunks de forma recursiva
+      readChunk();
     }
     readChunk();
 

@@ -12,6 +12,7 @@ from classes.asistente import Asistente
 from classes.RAG import RAGService
 from classes.asistente_osma import AsistenteOSMA
 from classes.models import Feedback
+from classes.reference_maker import ReferenceMaker
 
 # Cargar variables de entorno desde .env
 load_dotenv()
@@ -118,40 +119,6 @@ def feedback_rating():
         db.session.rollback()
         return jsonify({"message": "Error interno al guardar el feedback."}), 500
 
-    # # Ruta para feedback.json
-    # feedback_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "feedback.json")
-    #
-    # # Cargar contenido previo
-    # if os.path.exists(feedback_file):
-    #     with open(feedback_file, "r", encoding="utf-8") as f:
-    #         try:
-    #             feedback_data = json.load(f)
-    #         except json.JSONDecodeError:
-    #             feedback_data = []
-    # else:
-    #     feedback_data = []
-    #
-    # # Crear registro
-    # registro = {
-    #     "fecha": fecha_str,
-    #     "pregunta": pregunta,
-    #     "respuesta": respuesta,
-    #     "evaluacion": evaluacion,
-    #     "motivo": motivo
-    # }
-    # feedback_data.append(registro)
-    # asistente.db.session.add(registro)
-    # asistente.db.session.commit()
-
-    # Guardar
-    # with open(feedback_file, "w", encoding="utf-8") as f:
-    #     json.dump(feedback_data, f, indent=2, ensure_ascii=False)
-    #
-    # logger.info(f"=== FEEDBACK (PULGAR) RECIBIDO ===\n{registro}\n========================\n")
-    #
-    # return jsonify({"message": "¡Gracias por tu evaluación!"}), 200
-
-
 @app.route("/check_rag", methods=["POST"])
 def check_rag():
     """
@@ -175,9 +142,19 @@ def chat_stream():
 
     try:
         def generate():
+            partial_answer = []
             # Use your Asistente's streaming method
             for chunk in asistente.chat_completions_stream(user_message):
+                partial_answer.append(chunk)
                 yield chunk
+
+            # Al finalizar la recepción de chunks, unimos
+            final_answer = "".join(partial_answer)
+
+            # Llamamos a reference_maker para hacer fuzzy matching en la respuesta completa
+            final_answer_with_citations = asistente.rag_service.process_references_in_text(final_answer)
+
+            yield "\n[REF_POSTPROCESS]" + final_answer_with_citations
 
         return Response(
             stream_with_context(generate()),
@@ -241,6 +218,29 @@ def osma_respond():
         return jsonify({"prompt": next_prompt, "intervals": intervals})
     else:
         return jsonify({"prompt": next_prompt})
+
+
+@app.route("/process_references", methods=["POST"])
+def process_references():
+    """
+    Endpoint para procesar referencias en el texto completo de la respuesta.
+    Espera un JSON con el campo 'text'.
+    Retorna el texto procesado con referencias reemplazadas por enlaces.
+    """
+    data = request.get_json()
+    text = data.get("text", "")
+
+    if not text:
+        logger.warning("No se proporcionó texto para procesar referencias.")
+        return jsonify({"message": "Error: No se proporcionó texto."}), 400
+
+    try:
+        processed_text = rag_service.process_references_in_text(text)
+        logger.info("Referencias procesadas exitosamente.")
+        return jsonify({"processed_text": processed_text}), 200
+    except Exception as e:
+        logger.error(f"Error al procesar referencias: {e}")
+        return jsonify({"message": "Error al procesar referencias."}), 500
 
 
 
