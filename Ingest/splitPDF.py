@@ -101,24 +101,24 @@ def normalize_files_in_directory(directory_path: str):
 if __name__ == "__main__":
 
     # Example usage
-    directory = "../static/docs/libro"  # Path to your directory
-    #normalize_files_in_directory(directory)
+    directory = "../static/docs/INFECTOLOGIA/libro"  # Path to your directory
+    normalize_files_in_directory(directory)
 
     # Directory containing the PDFs to be checked
-    input_directory = "../static/docs/INFECTOLOGIA/libro"
-    output_directory = "../static/docs/INFECTOLOGIA/SPLIT"
-
-    # Create the output directory if it doesn't exist
-    os.makedirs(output_directory, exist_ok=True)
-
-    # Initialize part counter
-    part_counter = 1
-
-    # Get and sort files in natural order
-    file_list = natsorted(os.listdir(input_directory))
-
-    # Iterate through all sorted PDF files in the input directory
-    for file_name in file_list:
-        if file_name.endswith(".pdf"):
-            input_path = os.path.join(input_directory, file_name)
-            part_counter = split_pdf_into_seven(input_path, output_directory, part_counter)
+    # input_directory = "../static/docs/INFECTOLOGIA/libro"
+    # output_directory = "../static/docs/INFECTOLOGIA/SPLIT"
+    #
+    # # Create the output directory if it doesn't exist
+    # os.makedirs(output_directory, exist_ok=True)
+    #
+    # # Initialize part counter
+    # part_counter = 1
+    #
+    # # Get and sort files in natural order
+    # file_list = natsorted(os.listdir(input_directory))
+    #
+    # # Iterate through all sorted PDF files in the input directory
+    # for file_name in file_list:
+    #     if file_name.endswith(".pdf"):
+    #         input_path = os.path.join(input_directory, file_name)
+    #         part_counter = split_pdf_into_seven(input_path, output_directory, part_counter)
