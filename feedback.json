@@ -5,7 +5,8 @@
         "pregunta": "Hola",
         "respuesta": "¡Hola! ¿En qué puedo ayudarte hoy en el ámbito de la infectología?",
         "evaluacion": "down",
-        "motivo": "No fue útil"
+        "motivo": "No fue útil",
+        "marker": null
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
         "respuesta": "El tratamiento para el Grupo 1 en el manejo de la neumonía aguda comunitaria, que incluye a pacientes menores de 65 años sin comorbilidades y sin factores de riesgo para microorganismos multirresistentes, se establece de la siguiente manera:\n\n- **Amoxicilina**: 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\nEn caso de alergia a betalactámicos o sospecha de microorganismos atípicos, se recomienda considerar:\n\n- **Claritromicina**: 500 mg por vía oral cada 12 horas o claritromicina de liberación prolongada 1000 mg por vía oral cada 24 horas.\n\nLa duración del tratamiento es de 5 días (**FlujoG-3-Neumonia_Aguda.pdf**[1], página 1).\n\n\nReferences:\n[1] FlujoG-3-Neumonia_Aguda.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "pregunta": "Hola",
         "respuesta": "Hola, ¿en qué puedo ayudarte hoy? Si tienes preguntas sobre infectología, no dudes en hacerlas.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
         "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia relacionados con el café:\n\n1. **Green Coffee Classification.pdf**[1]: Este documento detalla los estándares de clasificación para granos de café Arábica verde. Incluye información sobre el contenido de humedad aceptable y características visuales que se utilizan para identificar defectos en los granos.\n\n2. **Measuring Moisture Content.pdf**[2]: En este documento se explican los métodos para medir el contenido de humedad en los granos de café, como el secado en horno y el uso de medidores electrónicos. Esta información es crucial para mantener la calidad del café.\n\n3. **Rate of Rise in Roasting.pdf**[3]: Este documento destaca la importancia de monitorear los cambios de temperatura de los granos de café durante el proceso de tostado, para garantizar una calidad constante del producto final.\n\n4. **Chemical Composition of Roasts.pdf**[4]: Aquí se discute cómo los tiempos y temperaturas de tostado afectan la composición química del café. Esto incluye aspectos relacionados con el sabor y el aroma.\n\n5. **Roasting as Art and Science.pdf**[5]: Este documento explora los cambios físicos y químicos que ocurren durante el tostado del café, subrayando la interacción entre el calor y el tiempo en este proceso.\n\n6. **Coffee Tree Family Chart.pdf**[6]: Este documento presenta una representación visual de la evolución de las especies de café, incluyendo las variedades Arábica, Robusta y Liberica.\n\n7. **Articulo_ValentinaOsorio.pdf**[7]: Un artículo de investigación que investiga el efecto de las temperaturas y tiempos de tueste sobre la composición química del café, proporcionando información valiosa sobre el proceso de tostado.\n\n8. **Maquinaria_para_Café.pdf**[8]: Una guía técnica que ofrece detalles sobre maquinaria para el procesamiento del café, incluyendo diferentes modelos, características y mantenimiento.\n\nEstos documentos son fundamentales para entender los aspectos técnicos y científicos del café, desde su clasificación hasta el proceso de tostado y sus efectos en el producto final. Si tienes preguntas específicas sobre alguno de estos temas, no dudes en preguntar.\n\n\nReferencias:\n[1] Green Coffee Classification.pdf\n[2] Measuring Moisture Content.pdf\n[3] Rate of Rise in Roasting.pdf\n[4] Chemical Composition of Roasts.pdf\n[5] Roasting as Art and Science.pdf\n[6] Coffee Tree Family Chart.pdf\n[7] Articulo_ValentinaOsorio.pdf\n[8] Maquinaria_para_Café.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "pregunta": "Que es el ROR? Como es su procedimiento de calculo?",
         "respuesta": "El RoR, o \"Rate of Rise\" (Tasa de Aumento), es una medida utilizada en el tostado de café que representa la tasa de cambio de la temperatura de los granos de café a lo largo del tiempo. Es crucial para entender cómo se desarrolla el calor durante el proceso de tostado, lo que a su vez afecta la calidad del café.\n\n### Procedimiento de Cálculo del RoR\n\n1. **Definición**: El RoR se calcula como el cambio de temperatura de los granos de café en un intervalo de tiempo específico. Por ejemplo, si la temperatura de los granos aumenta en 5 grados Celsius en 30 segundos, el RoR sería de 10 grados por minuto.\n\n2. **Fórmula General**:\n\nRoR\n=\nΔ\n𝑇\nΔ\n𝑡\n\n\nDonde:\n- \nΔ\n𝑇\n es el cambio en temperatura (en grados Celsius).\n- \nΔ\n𝑡\n es el intervalo de tiempo (en minutos).\n\n3. **Ejemplo Práctico**: Si en un intervalo de 4 minutos la temperatura de los granos de café aumenta de 100°C a 160°C, entonces:\n\nΔ\n𝑇\n=\n160\n°\n𝐶\n−\n100\n°\n𝐶\n=\n60\n°\n𝐶\n\n\nΔ\n𝑡\n=\n4\n minutos\n\nAl aplicar la fórmula:\n\nRoR\n=\n60\n°\n𝐶\n4\n min\n=\n15\n°\n𝐶\n/\nmin\n\n\n4. **Importancia del RoR**:\n- Un RoR demasiado bajo puede indicar que el café se está “horneando” y no desarrollándose correctamente.\n- Un RoR irregular puede señalar un desarrollo de calor desigual, lo que afectará el aroma y el sabor del café final.\n\nSegún el documento **RoR rate of rise roasting.pdf**[1] (página 1), el RoR ayuda a los tostadores a reaccionar antes de que se presente un problema en el tueste y es esencial para garantizar un tostado consistente y de calidad.\n\n\nReferencias:\n[1] RoR rate of rise roasting.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
         "respuesta": "Por supuesto, aquí tienes un resumen de los documentos de referencia que tengo sobre el café:\n\n1. **Measuring Coffee Bean Moisture Content.pdf**[1]: Este documento explica diferentes métodos para medir el contenido de humedad en los granos de café, tales como el secado en horno y el uso de medidores electrónicos. Mantener un nivel adecuado de humedad es crucial para preservar la calidad del café.\n\n2. **RoR rate of rise roasting.pdf**[2]: En este documento se destaca la importancia de monitorear la tasa de aumento de temperatura durante el proceso de tostado. Esto es esencial para garantizar que la calidad del café sea consistente y para evitar problemas relacionados con sobrecalentamiento o subtueste.\n\n3. **Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf**[3]: Aquí se exploran los cambios físicos y químicos que ocurren durante el proceso de tostado del café, enfatizando la interacción entre calor y tiempo, lo que es fundamental para obtener el perfil de sabor deseado.\n\n4. **CoffeeTree Family.pdf**[4]: Este documento ofrece una representación visual de la evolución de las especies de café, centrándose en las más conocidas: Arábica, Robusta y Liberica, así como algunas de sus características distintivas.\n\n5. **Articulo_ValentinaOsorio.pdf**[5]: Es un artículo de investigación que estudia el efecto de diferentes temperaturas y tiempos de tueste sobre la composición química del café, proporcionando información valiosa para optimizar el proceso de tostado.\n\n6. **Maquinaria_para_Café.pdf**[6]: Esta guía técnica detalla diversos modelos de maquinaria utilizados en el procesamiento del café, incluyendo sus características y consejos para el mantenimiento adecuado.\n\nSi tienes preguntas específicas sobre alguno de estos temas, estaré encantado de ayudarte.\n\n\nReferencias:\n[1] Measuring Coffee Bean Moisture Content.pdf\n[2] RoR rate of rise roasting.pdf\n[3] Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf\n[4] CoffeeTree Family.pdf\n[5] Articulo_ValentinaOsorio.pdf\n[6] Maquinaria_para_Café.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 7,
@@ -53,7 +59,8 @@
         "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
         "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia relacionados con el café:\n\n1. **Measuring Coffee Bean Moisture Content.pdf**[1]: Este documento explica métodos para evaluar el contenido de humedad en los granos de café, destacando el secado en horno y el uso de medidores electrónicos. La evaluación adecuada de la humedad es crucial para mantener la calidad del café.\n\n2. **RoR rate of rise roasting.pdf**[2]: Se centra en la importancia de monitorear los cambios de temperatura de los granos de café durante el proceso de tostado para asegurar una calidad constante. Este documento subraya el impacto de la tasa de elevación de la temperatura (RoR) en el tostado.\n\n3. **Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf**[3]: Este documento explora los cambios físicos y químicos que ocurren durante el tostado del café, enfatizando cómo el calor interactúa con el tiempo para afectar el sabor y la calidad del café.\n\n4. **CoffeeTree Family.pdf**[4]: Presenta una representación visual de la evolución de las especies de café, incluyendo las más conocidas: Arábica, Robusta y Liberica. Este documento ayuda a entender la diversidad de las variedades de café.\n\n5. **Articulo_ValentinaOsorio.pdf**[5]: Se trata de una investigación que analiza el efecto de las temperaturas y los tiempos de tueste en la composición química del café. Esto es relevante para conocer cómo el proceso de tostado influye en las propiedades del café.\n\n6. **Maquinaria_para_Café.pdf**[6]: Es una guía técnica sobre la maquinaria utilizada en el procesamiento del café, que incluye modelos, características y pautas de mantenimiento.\n\nSi tienes alguna pregunta específica sobre uno de estos documentos o algún tema relacionado con el café, estaré encantado de ayudarte.\n\n\nReferencias:\n[1] Measuring Coffee Bean Moisture Content.pdf\n[2] RoR rate of rise roasting.pdf\n[3] Coffee_roasting_Magic-Art-Science_Gerhard Jensen.pdf\n[4] CoffeeTree Family.pdf\n[5] Articulo_ValentinaOsorio.pdf\n[6] Maquinaria_para_Café.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 8,
@@ -61,7 +68,8 @@
         "pregunta": "Neumonia aguda comunitaria, describir tratamiento para el Grupo 1",
         "respuesta": "El tratamiento para el Grupo 1 en el manejo de la neumonía aguda comunitaria, que incluye a pacientes menores de 65 años sin comorbilidades y sin factores de riesgo para microorganismos multirresistentes, es el siguiente:\n\n1. **Amoxicilina**:\n- **Dosis**: 500 mg por vía oral cada 8 horas o 750 mg - 1000 mg por vía oral cada 12 horas.\n\n2. **Alternativas en caso de alergia a betalactámicos o sospecha de microorganismos atípicos**:\n- **Claritromicina**: 500 mg por vía oral cada 12 horas o una dosis única de liberación prolongada de 1000 mg por vía oral cada 24 horas.\n\nEn general, la duración del tratamiento es de **5 días** (puede extenderse en base a la evolución clínica del paciente). Este grupo no requiere realizar paraclínica habitual, aunque se sugiere realizar un test rápido para VIH en la evaluación inicial. Si el paciente no presenta factores que afecten la absorción, se puede considerar cambiar a tratamiento oral tras 48 horas si el paciente está clínicamente estable y presenta mejoría de los síntomas (**FlujoG-3-Neumonia_Aguda.pdf**[1], página 1).\n\n\nReferencias:\n[1] FlujoG-3-Neumonia_Aguda.pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 9,
@@ -69,7 +77,8 @@
         "pregunta": "¿Cuál de las siguientes afirmaciones sobre Streptococcus pneumoniae es correcta? A) Las tasas de mortalidad son más altas en niños menores de 2 años. B) Los brotes grandes son comunes, especialmente en áreas urbanas densamente pobladas. C) La colonización asintomática es rara y no precede a infecciones clínicas sintomáticas. D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.",
         "respuesta": "La afirmación correcta es: **D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.**  Streptococcus pneumoniae es conocido por causar infecciones severas, especialmente en poblaciones vulnerables como los individuos con asplenia, quienes tienen un riesgo significativamente mayor de desarrollarse infecciones graves debido a su incapacidad para responder adecuadamente a la infección.  Las demás opciones son incorrectas: - **A)** Las tasas de mortalidad son más altas en adultos mayores, especialmente aquellos con enfermedades subyacentes, no necesariamente en niños menores de 2 años. - **B)** Aunque se pueden producir brotes en condiciones de hacinamiento, los brotes grandes no son comunes; la transmisión es más común en contacto cercano. - **C)** La colonización asintomática es común y, de hecho, precede a casi todas las infecciones clínicas sintomáticas.  Esta información se encuentra en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte65** (páginas 31-35).",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 10,
@@ -77,7 +86,8 @@
         "pregunta": "¿Cuál de los siguientes es un método de diagnóstico específico para meningitis neumocócica? A) Detección de polisacárido de la pared celular neumocócica en orina. B) Gram de esputo con más de 10 neutrófilos por célula epitelial. C) Tinción de Gram y cultivo del líquido cefalorraquídeo. D) Antígeno urinario capsular para todos los serotipos.",
         "respuesta": "El método de diagnóstico específico para meningitis neumocócica es:  C) Tinción de Gram y cultivo del líquido cefalorraquídeo.  Según el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte40** (página 40), la identificación de *Streptococcus pneumoniae* mediante la tinción de Gram y el cultivo del líquido cefalorraquídeo (LCR) establece el diagnóstico de meningitis neumocócica.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 11,
@@ -85,7 +95,8 @@
         "pregunta": "Cuál de las siguientes opciones describe correctamente el uso de vacunas para prevenir infecciones neumocócicas? A) La vacuna PPSV23 está aprobada exclusivamente para niños menores de 2 años. B) La vacuna PCV13 ofrece más del 90% de protección contra otitis media en adultos. C) Las vacunas no ofrecen ninguna protección contra neumonía causada por serotipos específicos. D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.",
         "respuesta": "La opción que describe correctamente el uso de vacunas para prevenir infecciones neumocócicas es:  D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.  Según el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte49** (página 49), se recomienda que los adultos mayores de 65 años que nunca han recibido vacunación neumocócica reciban primero PCV13, seguido de PPSV23 al menos un año después. Esto asegura una mejor respuesta inmune y una mayor protección contra enfermedades neumocócicas.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 12,
@@ -93,7 +104,8 @@
         "pregunta": "En cuanto a Listeria monocytogenes, cuál es el tratamiento antimicrobiano de elección?",
         "respuesta": "El tratamiento antimicrobiano de elección para *Listeria monocytogenes* es:  - Ampicilina, administrada a una dosis de 2 g intravenosos cada 4 horas. En infecciones más graves, como aquellas que afectan el sistema nervioso central, se recomienda considerar la adición de gentamicina a la terapia.  Esto se encuentra detallado en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 25-26). Aunque el tratamiento puede incluir otros agentes en pacientes alérgicos a la penicilina, la ampicilina sigue siendo el estándar para tratar las infecciones por este patógeno.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 13,
@@ -101,7 +113,8 @@
         "pregunta": "¿Cuál de las siguientes afirmaciones sobre Streptococcus pneumoniae es correcta? A) Las tasas de mortalidad son más altas en niños menores de 2 años. B) Los brotes grandes son comunes, especialmente en áreas urbanas densamente pobladas. C) La colonización asintomática es rara y no precede a infecciones clínicas sintomáticas. D) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.",
         "respuesta": "La afirmación correcta sobre *Streptococcus pneumoniae* es:\n\nD) Los individuos con asplenia tienen mayor riesgo de enfermedad neumocócica grave.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte34** (páginas 34-35), se destaca que los pacientes con asplenia o aquellos que son altamente inmunocomprometidos tienen un riesgo significativamente mayor de desarrollar infecciones graves por *Streptococcus pneumoniae*. Esto subraya la importancia de la vacunación y profilaxis en estos grupos de pacientes.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 14,
@@ -109,7 +122,8 @@
         "pregunta": "¿Cuál de los siguientes es un método de diagnóstico específico para meningitis neumocócica? A) Detección de polisacárido de la pared celular neumocócica en orina. B) Gram de esputo con más de 10 neutrófilos por célula epitelial. C) Tinción de Gram y cultivo del líquido cefalorraquídeo. D) Antígeno urinario capsular para todos los serotipos.",
         "respuesta": "El método de diagnóstico específico para meningitis neumocócica es:\n\nC) Tinción de Gram y cultivo del líquido cefalorraquídeo.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte40** (página 40), la tinción de Gram y el cultivo del líquido cefalorraquídeo son fundamentales para establecer el diagnóstico de meningitis neumocócica, permitiendo identificar *Streptococcus pneumoniae*.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 15,
@@ -117,7 +131,8 @@
         "pregunta": "¿Cuál de las siguientes opciones describe correctamente el uso de vacunas para prevenir infecciones neumocócicas? A) La vacuna PPSV23 está aprobada exclusivamente para niños menores de 2 años. B) La vacuna PCV13 ofrece más del 90% de protección contra otitis media en adultos. C) Las vacunas no ofrecen ninguna protección contra neumonía causada por serotipos específicos. D) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.",
         "respuesta": "La opción que describe correctamente el uso de vacunas para prevenir infecciones neumocócicas es:\n\nD) Se recomienda la inmunización secuencial con PCV13 y PPSV23 en adultos mayores de 65 años.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte49** (página 49), se recomienda que los adultos mayores de 65 años que nunca han recibido vacunación neumocócica reciban primero la vacuna PCV13, seguida por la PPSV23 al menos 12 meses después. Esto asegura una mejor respuesta inmune y mayor protección contra enfermedades neumocócicas.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 16,
@@ -125,7 +140,8 @@
         "pregunta": "¿Cuál es la característica clínica más comúnmente asociada con el grupo Streptococcus anginosus dentro de los estreptococos viridans? A) Endocarditis subaguda en válvulas nativas. B) Faringitis aguda en adultos mayores. C) Formación de abscesos en dientes, cerebro, hígado y abdomen. D) Celulitis en personas con diabetes.",
         "respuesta": "La característica clínica más comúnmente asociada con el grupo *Streptococcus anginosus* dentro de los estreptococos viridans es:\n\nC) Formación de abscesos en dientes, cerebro, hígado y abdomen.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte36** (páginas 35-36), el grupo *Streptococcus anginosus* es conocido por su asociación con la formación de abscesos en varios órganos, incluyendo los dientes, cerebro, hígado y abdomen, lo que destaca su virulencia en estos contextos clínicos.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 17,
@@ -133,7 +149,8 @@
         "pregunta": "¿Cuál de las siguientes afirmaciones sobre el tratamiento antimicrobiano de los estreptococos viridans es correcta? A) La resistencia a penicilina es un problema frecuente y requiere el uso de vancomicina. B) Los estreptococos viridans muestran resistencia absoluta a β-lactámicos. C) El principal desafío terapéutico en la endocarditis subaguda en válvulas nativas es la penetración de los antibióticos en las vegetaciones valvulares. D) El grupo Streptococcus anginosus requiere tratamiento con quinolonas debido a su resistencia intrínseca a penicilina.",
         "respuesta": "La afirmación correcta sobre el tratamiento antimicrobiano de los estreptococos viridans es:\n\nC) El principal desafío terapéutico en la endocarditis subaguda en válvulas nativas es la penetración de los antibióticos en las vegetaciones valvulares.\n\nSegún el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte37** (páginas 37-38), uno de los principales desafíos en el tratamiento de la endocarditis subaguda causada por estreptococos viridans es asegurar que los antibióticos alcancen concentraciones terapéuticamente efectivas en las vegetaciones de las válvulas cardíacas, lo que es crucial para la erradicación de la infección.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 18,
@@ -141,7 +158,8 @@
         "pregunta": "En cuanto a Listeria monocytogenes, cuáles son los grupos de pacientes más vulnerables a desarrollar una infección ?",
         "respuesta": "Los grupos de pacientes más vulnerables a desarrollar una infección por *Listeria monocytogenes* incluyen:\n\n1. **Personas mayores**: Especialmente aquellos de 65 años o más, que tienen mayor riesgo debido a un sistema inmunológico debilitado.\n2. **Mujeres embarazadas**: Existe un mayor riesgo de infección en este grupo, que puede llevar a complicaciones como abortos espontáneos, partos prematuros o infecciones neonatales.\n3. **Individuos con asplenia o enfermedades hematológicas**: Los pacientes que han perdido el bazo o que padecen enfermedades que comprometen la función del sistema inmune tienen un riesgo aumentado.\n4. **Pacientes con enfermedades crónicas**: Esto incluye aquellos con diabetes mellitus, cirrosis, o enfermedades renales.\n5. **Inmunocomprometidos**: Incluye a personas que están en tratamiento con inmunosupresores, como en el caso de pacientes con cáncer, trasplantes de órganos, o infecciones por VIH.\n\nEsta información se encuentra detallada en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 28-29), donde se enfatiza la vulnerabilidad de estos grupos frente a infecciones por *Listeria monocytogenes*.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 19,
@@ -149,7 +167,8 @@
         "pregunta": "En cuanto a Listeria monocytogenes, cuál es el tratamiento antimicrobiano de elección?",
         "respuesta": "El tratamiento antimicrobiano de elección para *Listeria monocytogenes* es:\n\n- **Ampicilina**, administrada a una dosis de 2 g intravenosos cada 4 horas. En casos más graves, como aquellas infecciones que afectan el sistema nervioso central, se recomienda considerar la adición de **gentamicina** para potenciar la efectividad del tratamiento.\n\nEsto se detalla en el documento **Principles+and+Practice+of+Infectious+Diseases-Elsevier (2019).pdf_parte67** (páginas 25-26), donde se establece la importancia de la ampicilina como tratamiento estándar para las infecciones por este patógeno.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 20,
@@ -157,7 +176,8 @@
         "pregunta": "Caso clínico Paciente, 75 años, procedente de Carmelo, vive sola. Jubilada.   Antecedentes personales: Asma en tratamiento durante crisis bronco obstructivas. Arritmia en tratamiento con Diltiazem, seguimiento por cardiología. Patología de columna dada por canal estrecho lumbar L3-4 y L4-5 Lumbociatalgia crónica de 5 años de evolución, irradiada bilateralmente hasta los dedos de ambos pies, controlada parcialmente con Tramadol y Diclofenac. Niega otras patologías médicas, medicación habitual y alergias.   Antecedentes quirúrgicos Apendicectomía. Cirugía de túnel carpiano MSD. Intervenida el 12/08/24: Se realizó liberación del canal estrecho lumbar mediante abordaje medial, resección del arco de L4, resección de ligamentos flavum L3-4 y L4-5, artrodesis instrumentada con colocación de tornillos y barras, control radiográfico intraoperatorio, y colocación de drenaje aspirativo. El procedimiento transcurrió sin complicaciones.   Antecedentes de la enfermedad actual: En el posoperatorio se otorga alta con seguimiento y controles en Carmelo. Evolucionó bien por tres semanas. En la última semana antes del ingreso, presentó episodios febriles de hasta 38°C que cedían con AINES, y dolor abdominal difuso. Sin otros síntomas o déficits motores/sensitivos.   Enfermedad actual:  Comienza hace 5 días con episodios febriles, de hasta 38°C que cede con AINES, niega otra sintomatología toxiinfecciosa. Refiere dolor abdominal difuso. Niega elementos deficitarios motores/sensitivos. Niega otra sintomatología. TU-TD s/p   Exámen físico: Piel y Mucosas: Pálidas, febril , hidratadas. Curación moja serohemático, herida cicatrizal, eritematosa, dehiscencia a nivel medial. Pleuro pulmonar sin particularidades. FC: 110 por minuto.  Abdomen: Blando, depresible, dolor a hipogastrio. Lúcida sin ni déficit motor o sensitivo.  Hemograma completo Hb: 10.7 GB: 17.5 Plaquetas: 163000 PCR: 460 VES: 96  Ecografía abdominal (10/09/2024) Descripción normal del hígado, vesícula, páncreas, bazo y riñones. Rectosigmoides distendido con abundante material intraluminal.  Tomografía computarizada (TC) de abdomen Colecciones en músculos psoas ilíacos, relación con abscesos. Defecto de relleno en vena ácigos y vena cava (sugiere trombos).  Hemocultivos Negativos al cabo de 7 días de incubación (16/09/2024).  Cultivo de la herida Staphylococcus aureus y bacterias gramnegativas (BGN) en cultivos previos.  En base a esta información proporcionada, plantea los diagnósticos presuntivos y la estrategia terepeutica.",
         "respuesta": "En base a la información clínica proporcionada sobre el paciente, se pueden plantear los siguientes diagnósticos presuntivos y estrategias terapéuticas:\n\n### Diagnósticos Presuntivos:\n1. **Infección del sitio quirúrgico**: La presencia de eritema, dehiscencia y curación serohemática indica una posible infección en la herida postoperatoria.\n2. **Absceso psoas**: La tomografía muestra colecciones en los músculos psoas ilíacos, lo que sugiere la formación de abscesos, posiblemente secundarios a la infección del sitio quirúrgico.\n3. **Trombosis venosa**: El defecto de relleno en la vena ácigos y en la vena cava sugiere la posibilidad de trombos, lo que podría estar contribuyendo a la sintomatología del paciente y complicando su estado general.\n4. **Anemia postoperatoria**: Con una hemoglobina de 10.7 g/dL y signos de infección, es probable que el paciente tenga anemia asociada a la infección o a complicaciones postquirúrgicas.\n\n### Estrategia Terapéutica:\n1. **Antibióticos**: Iniciar tratamiento empírico con antibióticos de amplio espectro que cubran tanto *Staphylococcus aureus* como las bacterias gramnegativas aisladas en los cultivos. Una opción inicial podría ser:\n- **Vancomicina** (para cubrir *Staphylococcus aureus*, incluyendo cepas resistentes a meticilina) más un **beta-lactámico de amplio espectro** (como piperacilina-tazobactam) o **cefepime** (cubriendo BGN).\n- Ajustar la terapia según los resultados de los cultivos y la sensibilidad de los agentes aislados.\n\n2. **Drenaje de abscesos**: Si los abscesos son suficientemente grandes, considerar la necesidad de drenaje quirúrgico o percutáneo, según la evaluación del equipo quirúrgico.\n\n3. **Soporte general**: Monitoreo de signos vitales, control de la fiebre, fluidoterapia si es necesario y",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 21,
@@ -165,7 +185,8 @@
         "pregunta": "Caso clínico Paciente, 75 años, procedente de Carmelo, vive sola. Jubilada.   Antecedentes personales: Asma en tratamiento durante crisis bronco obstructivas. Arritmia en tratamiento con Diltiazem, seguimiento por cardiología. Patología de columna dada por canal estrecho lumbar L3-4 y L4-5 Lumbociatalgia crónica de 5 años de evolución, irradiada bilateralmente hasta los dedos de ambos pies, controlada parcialmente con Tramadol y Diclofenac. Niega otras patologías médicas, medicación habitual y alergias.   Antecedentes quirúrgicos Apendicectomía. Cirugía de túnel carpiano MSD. Intervenida el 12/08/24: Se realizó liberación del canal estrecho lumbar mediante abordaje medial, resección del arco de L4, resección de ligamentos flavum L3-4 y L4-5, artrodesis instrumentada con colocación de tornillos y barras, control radiográfico intraoperatorio, y colocación de drenaje aspirativo. El procedimiento transcurrió sin complicaciones.   Antecedentes de la enfermedad actual: En el posoperatorio se otorga alta con seguimiento y controles en Carmelo. Evolucionó bien por tres semanas. En la última semana antes del ingreso, presentó episodios febriles de hasta 38°C que cedían con AINES, y dolor abdominal difuso. Sin otros síntomas o déficits motores/sensitivos.   Enfermedad actual:  Comienza hace 5 días con episodios febriles, de hasta 38°C que cede con AINES, niega otra sintomatología toxiinfecciosa. Refiere dolor abdominal difuso. Niega elementos deficitarios motores/sensitivos. Niega otra sintomatología. TU-TD s/p   Exámen físico: Piel y Mucosas: Pálidas, febril , hidratadas. Curación moja serohemático, herida cicatrizal, eritematosa, dehiscencia a nivel medial. Pleuro pulmonar sin particularidades. FC: 110 por minuto.  Abdomen: Blando, depresible, dolor a hipogastrio. Lúcida sin ni déficit motor o sensitivo.  Hemograma completo Hb: 10.7 GB: 17.5 Plaquetas: 163000 PCR: 460 VES: 96  Ecografía abdominal (10/09/2024) Descripción normal del hígado, vesícula, páncreas, bazo y riñones. Rectosigmoides distendido con abundante material intraluminal.  Tomografía computarizada (TC) de abdomen Colecciones en músculos psoas ilíacos, relación con abscesos. Defecto de relleno en vena ácigos y vena cava (sugiere trombos).  Hemocultivos Negativos al cabo de 7 días de incubación (16/09/2024).  Cultivo de la herida Staphylococcus aureus y bacterias gramnegativas (BGN) en cultivos previos.  En base a esta información proporcionada, plantea los diagnósticos presuntivos y la estrategia terepeutica.",
         "respuesta": "En base a la información clínica proporcionada sobre el paciente, se pueden plantear los siguientes diagnósticos presuntivos y estrategias terapéuticas:\n\n### Diagnósticos Presuntivos:\n1. **Infección del sitio quirúrgico**: La presencia de eritema, dehiscencia y curación serohemática indica una posible infección en la herida postoperatoria.\n2. **Absceso psoas**: La tomografía muestra colecciones en los músculos psoas ilíacos, lo que sugiere la formación de abscesos, posiblemente secundarios a la infección del sitio quirúrgico.\n3. **Trombosis venosa**: El defecto de relleno en la vena ácigos y en la vena cava sugiere la posibilidad de trombos, lo que podría estar contribuyendo a la sintomatología del paciente y complicando su estado general.\n4. **Anemia postoperatoria**: Con una hemoglobina de 10.7 g/dL y signos de infección, es probable que el paciente tenga anemia asociada a la infección o a complicaciones postquirúrgicas.\n\n### Estrategia Terapéutica:\n1. **Antibióticos**: Iniciar tratamiento empírico con antibióticos de amplio espectro que cubran tanto *Staphylococcus aureus* como las bacterias gramnegativas aisladas en los cultivos. Una opción inicial podría ser:\n- **Vancomicina** (para cubrir *Staphylococcus aureus*, incluyendo cepas resistentes a meticilina) más un **beta-lactámico de amplio espectro** (como piperacilina-tazobactam) o **cefepime** (cubriendo BGN).\n- Ajustar la terapia según los resultados de los cultivos y la sensibilidad de los agentes aislados.\n\n2. **Drenaje de abscesos**: Si los abscesos son suficientemente grandes, considerar la necesidad de drenaje quirúrgico o percutáneo, según la evaluación del equipo quirúrgico.\n\n3. **Soporte general**: Monitoreo de signos vitales, control de la fiebre, fluidoterapia si es necesario y",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 22,
@@ -173,7 +194,8 @@
         "pregunta": "Paciente de 45 años, usuario activo de drogas por vía parenteral, que acude al servicio de Urgencias por fiebre de 39,5 ºC de 48 horas de evolución, dolor pleurítico, tos y expectoración purulenta. En la radiografía de tórax se observan múltiples lesiones nodulares periféricas múltiples, algunas de ellas cavitadas. Señalar la combinación más probable de las que se proponen: 1) Endocarditis pulmonar por S. aureus. Tratamiento con cloxacilina durante 4 semanas como mínimo, en ausencia de complicaciones. 2) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina y gentamicina durante 2 semanas, seguidas de recambio valvular protésico. 3) Endocarditis mitral por S. epidermidis. Tratamiento con vancomicina, y gentamicina durante 4-6 semanas como mínimo, en ausencia de complicaciones. 4) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina durante 4 semanas, ante la presencia de émbolos sépticos pulmonares.",
         "respuesta": "El caso que describes presenta síntomas típicos de endocarditis tricuspídea causadas por Staphylococcus aureus en un paciente que utiliza drogas por vía parenteral. La fiebre, el dolor pleurítico, la tos y la expectoración purulenta, junto con las lesiones nodulares en la radiografía, sugieren la posibilidad de embolias sépticas pulmonares, que son comunes en este tipo de endocarditis.\n\nSegún la literatura sobre el tratamiento de endocarditis, en particular en el contexto de inyección de drogas, el tratamiento recomendado para la endocarditis tricuspídea por S. aureus es de hecho cloxacilina durante un periodo de tiempo que puede variar, pero frecuentemente se establece en 2 a 4 semanas, dependiendo de las complicaciones asociadas (Principles and Practice of Infectious Diseases, 2019, páginas 10-11).\n\nLa combinación más adecuada entre las opciones proporcionadas sería:\n\n4) Endocarditis tricuspídea por S. aureus. Tratamiento con cloxacilina durante 4 semanas, ante la presencia de émbolos sépticos pulmonares.\n\nEsta opción es coherente con el manejo clínico habitual en estos casos, abarcando tanto el agente patógeno como la duración del tratamiento en relación con las complicaciones presentadas.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 23,
@@ -181,7 +203,8 @@
         "pregunta": "Un paciente de 35 años acude al servicio de Urgencias por presentar fiebre elevada de hasta 39 ºC, asociada a confusión mental. En la exploración física destaca la existencia de lesiones cutáneas en pie izquierdo a nivel distal, maculares, de milímetros de diámetro, de aspecto isquémico hemorrágico, y la auscultación cardiopulmonar es normal. A los pocos días, se obtiene crecimiento de S. aureus sensible a meticilina en tres hemocultivos de tres obtenidos. ¿Cuál de las siguientes sería la actitud correcta a seguir en ese momento? 1) Considerar el resultado de los hemocultivos como probable contaminación. 2) Pautar de inmediato tratamiento antibiótico con penicilina y gentamicina durante 10 días. 3) Comenzar tratamiento con cloxacilina y realizar estudio ecocardiográfico por la existencia probable de endocarditis aguda. 4) Descartar la existencia de endocarditis, por la ausencia de soplos en la auscultación cardíaca, y buscar focos de posible osteomielitis.",
         "respuesta": "La presentación clínica en este caso sugiere la posibilidad de una endocarditis aguda, dado que el paciente presenta fiebre elevada, confusión mental, y lesiones cutáneas que pueden ser indicativas de embolias sépticas por la presencia de S. aureus en hemocultivos.\n\nLa obtención de S. aureus en tres hemocultivos es un hallazgo significativo y no debe considerarse como contaminación, especialmente en el contexto de los síntomas que presenta el paciente. Es importante actuar rápidamente ante esta situación dado que la endocarditis infecciosa puede ser peligrosa y requiere intervención inmediata.\n\nLa actitud más correcta en este momento sería:\n\n3) Comenzar tratamiento con cloxacilina y realizar estudio ecocardiográfico por la existencia probable de endocarditis aguda.\n\nEste enfoque es consistente con el manejo recomendado para la endocarditis aguda por S. aureus, donde se inicia tratamiento antibiótico específico (en este caso, cloxacilina por ser sensible a meticilina) y se lleva a cabo un estudio ecocardiográfico para evaluar la posible afectación valvular.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 24,
@@ -189,7 +212,17 @@
         "pregunta": "Un estudiante de derecho de 20 años, previamente sano, presenta un cuadro de febrícula, artromialgias, tos seca persistente y astenia de 2 semanas de evolución. En el último mes, sus dos hermanos de 9 y 17 años han presentado consecutivamente un cuadro similar, que se ha autolimitado de forma progresiva. Tras practicársele una radiografía de tórax, el médico le ha diagnosticado neumonía atípica. ¿Cuál es el agente etiológico más probable en este caso? 1) Coxiella burnetii (fiebre Q). 2) Haemophilus influenzae. 3) Mycoplasma pneumoniae. 4) Legionella pneumophila.",
         "respuesta": "La presentación clínica del paciente, con febrícula, artromialgias, tos seca persistente y astenia, así como la evolución progresiva y autolimitada de los síntomas en sus hermanos, es característica de una neumonía atípica. En jóvenes sanos, la causa más común de neumonía atípica es la infección por **Mycoplasma pneumoniae**.\n\nEste patógeno es conocido por causar brotes de neumonía atípica, especialmente en poblaciones jóvenes, como en el caso de este estudiante. A menudo se observa que varios miembros de una familia o de un grupo escolar presentan síntomas similares, lo que refuerza la asociación con **Mycoplasma pneumoniae**.\n\nPor lo tanto, el agente etiológico más probable en este caso es:\n\n3) **Mycoplasma pneumoniae**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 100,
+        "fecha": "1/25/2025, 12:31:48 PM",
+        "pregunta": "cuales son las dosis en sangre de acido valproico recoendadas",
+        "respuesta": "Las concentraciones recomendadas en sangre para el ácido valproico, según la información del documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf** [1], son las siguientes:\n\n- Las concentraciones terapéuticas de ácido valproico en sangre suelen estar en el rango de **50 a 100 µg/ml** (microgramos por mililitro) para el control general de las convulsiones.\n\nEs importante que la monitorización de los niveles en sangre se realice de manera regular para asegurar que se mantenga dentro de este rango terapéutico, ajustando las dosis según sea necesario para evitar tanto la eficacia como la toxicidad.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
     },
     {
         "id": 25,
@@ -197,7 +230,8 @@
         "pregunta": "Paciente de 64 años, fumador, que acude a Urgencias por un cuadro de 48 h de evolución de fiebre y tos con expectoración mucopurulenta. La radiografía de tórax muestra una condensación alveolar en lóbulo inferior derecho y un pequeño infiltrado en el lóbulo inferior izquierdo. La gasometría arterial muestra un pH de 7,39, una pO2 de 54 mmHg y una pCO2 de 29 mmHg. ¿Cuál de las siguientes opciones terapéuticas le parece más adecuada? 1) Claritromicina 500 mg i.v./12 h. 2) Ciprofloxacino 200 mg i.v./12 h. 3) Amoxicilina-ácido clavulánico 1 g i.v./8 h. 4) Ceftriaxona 2 g i.v./24 h más claritromicina 500 mg i.v./12 h.",
         "respuesta": "La presentación clínica del paciente sugiere neumonía, dada la fiebre, tos con expectoración mucopurulenta y los hallazgos en la radiografía de tórax que indican condensación alveolar en el lóbulo inferior derecho. Además, la gasometría arterial muestra hipoxemia severa (pO2 de 54 mmHg) y acidosis respiratoria (pH de 7,39 y pCO2 de 29 mmHg), lo que indica un cuadro grave que requiere atención inmediata.\n\nEn pacientes que presentan neumonía y tienen factores de riesgo, como el tabaquismo en este caso, es importante considerar la cobertura para organismos resistentes y otros patógenos con potencial para causar neumonía grave.\n\nDe las opciones proporcionadas, la combinación más adecuada es:\n\n**4) Ceftriaxona 2 g i.v./24 h más claritromicina 500 mg i.v./12 h.**\n\nEsta combinación permite una cobertura adecuada para patógenos más comunes en neumonías adquiridas en la comunidad (como Streptococcus pneumoniae), así como para aquellos que pueden ser más difíciles de tratar. Ceftriaxona proporciona una buena cobertura para los bacilos gram negativos, mientras que claritromicina abarca organismos atípicos, complementando el tratamiento empírico.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 26,
@@ -205,7 +239,8 @@
         "pregunta": "Mujer de 45 años, de origen subsahariano y residente en España desde hace 5 años, que consulta por un cuadro de 3 meses de evolución consistente en tos no productiva, febrícula diaria de predominio vespertino y pérdida ponderal. La radiografía de tórax demuestra un infiltrado con cavitación central en el lóbulo superior derecho. La baciloscopia de esputo demuestra bacilos ácido-alcohol resistentes. Señalar la actitud más correcta en este caso: 1) Realizar una prueba de tuberculina y, en el caso de que sea positiva (> 15 mm), iniciar tratamiento con 3 fármacos (isoniacida, rifampicina y pirazinamida) durante los 2 primeros meses. 2) Iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 2 primeros meses, con posibilidad de suspender en ese intervalo el etambutol en función del resultado del antibiograma. 3) Esperar el resultado del cultivo en medio de Löwenstein-Jensen y, si demuestra creciminto de Mycobacterium tuberculosis, iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 3 primeros meses. 4) Preguntar por el antecedente de vacunación con BCG, realizar una prueba de la tuberculina y, en el caso de que sea positiva, iniciar tratamiento con 3 fármacos (isoniacida, rifampicina y pirazinamida) durante los 3 primeros meses.",
         "respuesta": "La paciente presenta una serie de síntomas y hallazgos que son altamente sugestivos de una infección activa por Mycobacterium tuberculosis, dado su historial, la presencia de tos no productiva, febrícula vespertina, pérdida de peso, y la radiografía de tórax que muestra un infiltrado con cavitación. Además, la baciloscopia de esputo ha demostrado bacilos ácido-alcohol resistentes, lo que indica la presencia de tuberculosis (TB) activa.\n\nEn este contexto, la actitud más apropiada es:\n\n**2) Iniciar tratamiento con 4 fármacos (isoniacida, rifampicina, pirazinamida y etambutol) durante los 2 primeros meses, con posibilidad de suspender en ese intervalo el etambutol en función del resultado del antibiograma.**\n\nEste enfoque es el estándar para el tratamiento de la TB pulmonar con baciloscopía positiva, ya que se recomienda iniciar la terapia con un régimen de múltiples fármacos para asegurar la eficacia y prevenir la resistencia a los medicamentos. La duración del tratamiento inicial debería ser de 2 meses con los cuatro fármacos indicados, y continuar con un régimen de 2 fármacos en la fase de continuación, según sea necesario y según los resultados del cultivo y antibiograma.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 27,
@@ -213,7 +248,8 @@
         "pregunta": "¿Cuál sería el proceso más probable a descartar en una persona de 70 años que ingresa en la UCI por una neumonía grave, siendo tratado con cefalosporinas de 3.ª generación, y que desarrolla a los pocos días una diarrea muy copiosa, con gran deterioro del estado general? 1) Diarrea por Clostridioides difficile. 2) Colitis ulcerosa. 3) Colitis isquémica. 4) Síndrome de malabsorción por daño del intestino delgado",
         "respuesta": "Dada la presentación clínica de un paciente de 70 años que ingresa en la UCI con neumonía grave y recibe tratamiento con cefalosporinas de 3.ª generación, el desarrollo de diarrea muy copiosa y un deterioro significativo del estado general son signos que sugieren una complicación asociada al uso de antibióticos.\n\nEl uso de antibióticos, especialmente en tratamientos prolongados como los que se podrían requerir en la neumonía grave, se asocia comúnmente con un desbalance en la flora intestinal normal, lo que puede permitir la proliferación de patógenos causantes de diarrea.\n\nEn este caso, lo más probable a descartar es:\n\n**1) Diarrea por Clostridioides difficile.**\n\nLa diarrea atribuible a Clostridioides difficile es una complicación frecuente en pacientes que han recibido antibióticos, y los síntomas suelen incluir diarrea abundante y, en algunos casos, deterioro del estado general. Esta entidad puede ser potencialmente grave y requiere atención médica inmediata. En el contexto clínico presentado, hay una alta probabilidad de que esta sea la causa de la diarrea copiosa.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 28,
@@ -221,7 +257,8 @@
         "pregunta": "Un varón de 56 años, con antecedentes de EPOC moderada (FEV1 65%) y hepatopatía crónica por VHC, fue sometido a un trasplante ortotópico hepático hace 10 días. En el periodo posoperatorio se han sucedido diversas complicaciones que han impedido el traslado del paciente desde la UCI a una planta de hospitalización convencional. Comienza con fiebre, hipotensión y leucocitosis, y una TC abdominal urgente demuestra una colección líquida intraperitoneal. Señale cuál de los siguientes tratamientos no sería apropiado: 1) Piperacilina-tazobactam. 2) Meropenem. 3) Tigeciclina. 4) Cefepima y metronidazol.",
         "respuesta": "En el contexto de un paciente con antecedentes de EPOC moderada y hepatopatía crónica que ha sido sometido a un trasplante hepático y presenta complicaciones postoperatorias con fiebre, hipotensión, leucocitosis y una colección líquida intraperitoneal, es crucial seleccionar un tratamiento antibiótico que cubra adecuadamente los posibles patógenos asociados, especialmente considerando que estos pacientes son propensos a infecciones graves.\n\nVamos a evaluar las opciones de tratamiento:\n\n1) **Piperacilina-tazobactam**: Es un antibiótico de amplio espectro que cubre tanto bacterias gram negativas como anaerobios, y es adecuado para infecciones intraabdominales complicadas.\n\n2) **Meropenem**: Este es un carbapenem que también ofrece una cobertura muy amplia, incluyendo muchas cepas resistentes, lo cual es importante en un paciente inmunocomprometido.\n\n3) **Tigeciclina**: Aunque es un antibiótico de amplio espectro, no se recomienda como primera línea para infecciones intraabdominales complicadas debido a su perfil de farmacocinética y potencialmente menor eficacia en infecciones graves.\n\n4) **Cefepima y metronidazol**: Esta combinación es efectiva, ya que cefepima cubre las bacterias gram negativas, y metronidazol ofrece cobertura para anaerobios, lo cual es crítico en infecciones intraabdominales.\n\nPor lo tanto, el tratamiento que **no sería apropiado** en este contexto sería:\n\n**3) Tigeciclina.**\n\nAunque puede ser parte de un régimen antibiótico en algunas situaciones, no se considera la mejor opción de tratamiento para infecciones intraabdominales complicadas en este tipo de paciente.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 29,
@@ -229,7 +266,8 @@
         "pregunta": "Una paciente de 42 años consulta por presentar, 3 horas después de la ingesta de un pastel de crema en un restaurante, un cuadro de vómitos y deposiciones diarreicas sin productos patológicos ni fiebre. Mientras que la paciente es visitada, su marido inicia un cuadro similar. ¿Cuál de los siguientes microorganismos es probablemente el responsable del cuadro clínico? 1) Salmonella enteriditis. 2) Shigella sonnei. 3) Staphylococcus aureus. 4) Campylobacter jejuni.",
         "respuesta": "En el caso de la paciente que presenta vómitos y diarrea 3 horas después de la ingesta de un pastel de crema, junto con la aparición de síntomas similares en su marido, se sugiere un cuadro de intoxicación alimentaria.\n\nLa rápida aparición de síntomas gastrointestinales en un entorno donde ambos pacientes han consumido el mismo alimento indica que la causa es más probable que esté relacionada con un agente que produzca toxinas rápidamente en los alimentos, en lugar de un patógeno que requiera más tiempo para multiplicarse en el intestino y causar síntomas.\n\nAnalizando las opciones:\n\n1) **Salmonella enteriditis**: Típicamente causa síntomas en un lapso de 12 a 72 horas post ingestión y no es la causa más común de aparición rápida de síntomas.\n\n2) **Shigella sonnei**: Causa un cuadro más característico de diarrea con sangre y moco, y un inicio más tardío de los síntomas.\n\n3) **Staphylococcus aureus**: Es conocido por causar intoxicación alimentaria con un inicio rápido de síntomas (generalmente entre 1 a 6 horas) debido a la producción de una enterotoxina que se puede encontrar en alimentos como cremas y productos lácteos.\n\n4) **Campylobacter jejuni**: Tiene un periodo de incubación más largo, que varía de 2 a 5",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 30,
@@ -237,7 +275,8 @@
         "pregunta": "Una paciente de 44 años, sometida a mastectomía izquierda con vaciamiento ganglionar, presenta, 8 meses después de la intervención, un cuadro febril con celulitis extensa en brazo izquierdo, que se resuelve con tratamiento antibiótico. 6 meses más tarde, acude de nuevo por un cuadro similar. ¿Cuál es el agente etiológico más probable? 1) Staphylococcus epidermidis. 2) Streptococcus agalactiae. 3) Corynebacterium hemoliticum. 4) Streptococcus pyogenes.",
         "respuesta": "En el caso de una paciente que ha sido sometida a una mastectomía con vaciamiento ganglionar y que presenta episodios recurrentes de celulitis en el brazo del lado afectado, el agente etiológico más probable es **Staphylococcus epidermidis**. Este microorganismo es un coagulasa negativa que a menudo se asocia con infecciones de piel y partes blandas en pacientes con antecedentes quirúrgicos y en aquellos con dispositivos médicos, como es el caso en pacientes post-mastectomía.\n\nLa razón detrás de esta elección se basa en que S. epidermidis es parte de la flora cutánea normal, pero puede convertirse en patógeno, especialmente en individuos inmunocomprometidos o en pacientes que han tenido procedimientos quirúrgicos. Los otros gérmenes mencionados, aunque también pueden causar infecciones, no son tan comúnmente asociados con episodios reiterados de celulitis postoperatoria en pacientes que han realizado mastectomías.\n\nAdemás, las infecciones en el brazo afectado pueden correlacionarse con la flora normal de la piel, en la cual S. epidermidis predomina.\n\nPor lo tanto, la respuesta correcta es: **1) Staphylococcus epidermidis**.",
         "evaluacion": "down",
-        "motivo": "Streptococcus pyogenes es el patógeno que puede dar una sintomatologia como la que presentó la paciente y luego tener una recidiva"
+        "motivo": "Streptococcus pyogenes es el patógeno que puede dar una sintomatologia como la que presentó la paciente y luego tener una recidiva",
+        "marker": null
     },
     {
         "id": 31,
@@ -245,7 +284,8 @@
         "pregunta": "¿Cuál de las siguientes es la vía de transmisión MÁS FRECUENTE del virus de hepatitis B (VHB)? a)\tPunciones (accidentales o en contexto de consumo de drogas) b)\tTransfusiones de sangre y otros hemoderivados c)\tSexual d)\tVertical (madre-hijo) e)\tPiercings y tatuajes",
         "respuesta": "La vía de transmisión más frecuente del virus de hepatitis B (VHB) varía según la prevalencia de la infección en diferentes poblaciones. Sin embargo, en la mayoría de los contextos, especialmente en áreas de baja prevalencia como muchos países occidentales, la transmisión sexual se considera la vía más común.\n\nAquí una breve descripción de cada opción:\n\na) **Punciones (accidentales o en contexto de consumo de drogas)**: Esta es una vía importante de transmisión, especialmente en el contexto de usuarios de drogas intravenosas, pero no es la más frecuente en general.\n\nb) **Transfusiones de sangre y otros hemoderivados**: Esta vía de transmisión ha disminuido significativamente debido a los estrictos controles de tamizaje en sangre.\n\nc) **Sexual**: Esta es la vía de transmisión predominante en muchas regiones de baja prevalencia del VHB, siendo la más común entre adultos.\n\nd) **Vertical (madre-hijo)**: Aunque esta vía es significativa en áreas de alta prevalencia, es menos común en contextos de bajo riesgo.\n\ne) **Piercings y tatuajes**: Esta vía puede contribuir a la transmisión, pero es menos frecuente que las vías mencionadas anteriormente.\n\nPor lo tanto, la respuesta correcta es **c) Sexual**, que representa la vía de transmisión más frecuente del virus de hepatitis B (VHB) en general.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 32,
@@ -253,7 +293,8 @@
         "pregunta": "¿Qué características definen una infección crónica por VHB? a)\tHBsAg positivo con enzimas hepáticas elevadas  b)\tHBsAg positivo persistente al menos 6 meses c)\tHBsAg positivo con anticuerpos-HBe d)\tHBsAg positivo con anticuerpos-HBe y enzimas hepáticas elevadas",
         "respuesta": "La característica que define una infección crónica por el virus de la hepatitis B (VHB) es:\n\n**b) HBsAg positivo persistente al menos 6 meses.**\n\nLa infección crónica por VHB se define específicamente por la presencia del antígeno de superficie de la hepatitis B (HBsAg) en el suero durante más de seis meses. Esto indica que el virus ha establecido una replicación persistente en el hígado.\n\nAquí un breve análisis de cada opción:\n\na) **HBsAg positivo con enzimas hepáticas elevadas**: No es suficiente por sí solo para definir una infección crónica, ya que las enzimas hepáticas pueden ser normales en algunas fases de infección crónica.\n\nb) **HBsAg positivo persistente al menos 6 meses**: Esta es la definición clara y aceptada para la infección crónica.\n\nc) **HBsAg positivo con anticuerpos-HBe**: Esto puede estar presente en infecciones crónicas, pero no necesariamente define la cronicidad por sí solo.\n\nd) **HBsAg positivo con anticuerpos-HBe y enzimas hepáticas elevadas**: Aunque puede indicar una fase activa de hepatitis crónica, no es una definición estricta de infección crónica.\n\nPor lo tanto, la opción correcta es **b)** que indica la persistencia del HBsAg por al menos 6 meses como el criterio para definir infección crónica por VHB.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 33,
@@ -261,7 +302,8 @@
         "pregunta": "El tratamiento del VHB está indicado en (señale la correcta): a)\tCirrosis hepática compensada independientemente de la carga viral del VHB b)\tEn pacientes con hepatitis B aguda c)\tEn pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml d)\tEn pacientes con infección crónica por VHB independientemente de otros parámetros",
         "respuesta": "La opción correcta sobre el tratamiento del virus de hepatitis B (VHB) es:\n\n**c) En pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml.**\n\nEl tratamiento antiviral para la infección crónica por VHB se recomienda en ciertos contextos, especialmente en aquellos con evidencia de daño hepático o replicación viral significativa.\n\nA continuación, un breve análisis de cada opción:\n\na) **Cirrosis hepática compensada independientemente de la carga viral del VHB**: Si bien el tratamiento está indicado en pacientes con cirrosis, no se puede afirmar que sea “independientemente” de la carga viral. Se deben considerar otros factores, y el tratamiento generalmente se inicia si hay carga viral detectable.\n\nb) **En pacientes con hepatitis B aguda**: En general, el tratamiento antiviral no se indica de rutina en la hepatitis B aguda, ya que la mayoría de los pacientes se resolverán de forma espontánea.\n\nc) **En pacientes con infección crónica por VHB con transaminasas elevadas y carga viral > 2.000 UI/ml**: Esta es la mejor indicación para iniciar tratamiento. Los pacientes que presentan elevaciones de transaminasas y cargas virales significativas son candidatos para la terapia antiviral.\n\nd) **En pacientes con infección crónica por VHB independientemente de otros parámetros**: Esta afirmación no es precisa, ya que el tratamiento no se ofrece a todos los pacientes con infección crónica sin considerar otros factores como la actividad inflamatoria y la replicación viral.\n\nPor lo tanto, la respuesta correcta es **c)**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 34,
@@ -269,7 +311,8 @@
         "pregunta": "¿Qué medidas adopta frente a un paciente que ingresa por una infección en curso producida por Listeria monocytogenes?, responda lo correcto:  a)\tIndica aislamiento de contacto al ingreso a la institución y lo mantiene hasta el mes posterior a finalizar el tratamiento antimicrobiano  b)\tIndica precauciones estándar  c)\tIndica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación.",
         "respuesta": "La opción correcta sobre las medidas que se deben adoptar frente a un paciente con infección por **Listeria monocytogenes** es:\n\n**c) Indica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación.**\n\nLa **Listeria monocytogenes** puede ser transmitida de persona a persona en ciertas circunstancias, y los pacientes con esta infección pueden presentar un riesgo, especialmente en un entorno hospitalario. Por lo tanto, es importante implementar medidas de aislamiento adecuadas.\n\nA continuación, el análisis de cada opción:\n\na) **Indica aislamiento de contacto al ingreso a la institución y lo mantiene hasta el mes posterior a finalizar el tratamiento antimicrobiano**: Esta opción es incorrecta, ya que el aislamiento no debe extenderse un mes después del tratamiento, ya que no se requiere tanto tiempo de aislamiento post-tratamiento.\n\nb) **Indica precauciones estándar**: Aunque las precauciones estándar son importantes, no son suficientes por sí solas, dado que **Listeria** representa un riesgo especial que justifica medidas más estrictas.\n\nc) **Indica medidas de aislamiento de contacto y por gotitas, las mantiene durante toda la internación**: Esta opción es la más precisa, ya que el aislamiento de contacto y medidas por gotitas son recomendadas para prevenir la transmisión de Listeria, especialmente en el contexto de pacientes inmunocomprometidos o en un entorno hospitalario.\n\nPor lo tanto, la respuesta correcta es **c)**.",
         "evaluacion": "down",
-        "motivo": "La oopción correcta es la b)\tIndica precauciones estándar. El modo de transmisión de esta bacteria determina que las precauciones estándares sean suficientes"
+        "motivo": "La oopción correcta es la b)\tIndica precauciones estándar. El modo de transmisión de esta bacteria determina que las precauciones estándares sean suficientes",
+        "marker": null
     },
     {
         "id": 35,
@@ -277,7 +320,8 @@
         "pregunta": "Sobre la clínica de la infección producida por Leptospira, marque la opción correcta a)\tEl periodo de incubación es entre 30 y 60 días b)\tEl compromiso meníngeo se encuentra en más de la mitad de los casos c)\tEn la enfermedad de Weil la afectación renal es característica",
         "respuesta": "La opción correcta sobre la clínica de la infección producida por **Leptospira** es:\n\n**c) En la enfermedad de Weil la afectación renal es característica.**\n\nLa enfermedad de Weil es una forma severa de leptospirosis que se caracteriza por síntomas como fiebre, ictericia, hemorragias y afectación renal, que puede incluir insuficiencia renal aguda.\n\nA continuación, un análisis de cada opción:\n\na) **El periodo de incubación es entre 30 y 60 días**: Esto es incorrecto, ya que el periodo de incubación para la leptospirosis generalmente es de 5 a 14 días, aunque puede variar.\n\nb) **El compromiso meníngeo se encuentra en más de la mitad de los casos**: Esto también es incorrecto. Aunque el compromiso meníngeo puede ocurrir, no se presenta en más de la mitad de los casos de leptospirosis.\n\nc) **En la enfermedad de Weil la afectación renal es característica**: Esta afirmación es verdadera. La afectación renal es una de las características distintivas de la enfermedad de Weil.\n\nPor lo tanto, la respuesta correcta es **c)**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 36,
@@ -285,7 +329,8 @@
         "pregunta": "En referencia al tratamiento ATB en la leptospirosis, marque la opción correcta a)\tCiprofloxacina es una opción recomendada en casos de leptospirosis leve b)\tPenicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves c)\tEl TMP/SMX ha demostrado ser un ATB eficaz en el tratamiento",
         "respuesta": "La opción correcta sobre el tratamiento antibiótico en la leptospirosis es:\n\n**b) Penicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves.**\n\nLa penicilina y la ceftriaxona son los tratamientos de elección para las formas moderadas a graves de leptospirosis. Se ha demostrado que son eficaces en el manejo de la enfermedad, especialmente en casos más severos.\n\nA continuación, un análisis de cada opción:\n\na) **Ciprofloxacina es una opción recomendada en casos de leptospirosis leve**: Si bien ciprofloxacina puede ser utilizada, no es la primera opción recomendada para el tratamiento, especialmente en casos leves. Doxycycline es generalmente preferida en esas circunstancias.\n\nb) **Penicilina cristalina i/v o ceftriaxona son las opciones de elección para el tratamiento en las formas moderadas o graves**: Esta opción es correcta y está respaldada por las guías de tratamiento para leptospirosis en formas severas.\n\nc) **El TMP/SMX ha demostrado ser un ATB eficaz en el tratamiento**: Aunque el TMP/SMX se ha utilizado en algunas circunstancias, no es considerado el antimicrobiano de elección para leptospirosis y su eficacia no está garantizada en todas las presentaciones de la enfermedad.\n\nPor lo tanto, la respuesta correcta es **b)**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 37,
@@ -293,7 +338,8 @@
         "pregunta": "68 años. HTA en tratamiento con enalapril 5 mg cada 12 hrs, DM2 en tratamiento con metformina 850 mg día. Histerectomía en 2014.  Hace 25 días episodio de infección urinaria (IU baja) no complicada, recibe tratamiento empírico con nitrofurantoína 100 mg cada 6 hrs durante 5 días. Luego de 2 semanas de finalizado el tratamiento comienza nuevamente síntomas urinarios. Hoy consulta en emergencia por disuria, pujos, tenesmo y polaquiuria de 3 días de evolución. Niega fiebre.  ¿Cómo se define el episodio de IU actual? a)\tPor tratarse de un segundo episodio en menos de 1 mes, se trata de una infección urinaria persistente (recaída).  b)\tPor tratarse de un segundo episodio en menos de un mes se trata de una infección urinaria complicada.  c)\tPor tratarse de un nuevo episodio luego de 15 días de finalizado el tratamiento previo, se considera una reinfección.",
         "respuesta": "La opción correcta para definir el episodio actual de infección urinaria (IU) en este paciente es:\n\n**c) Por tratarse de un nuevo episodio luego de 15 días de finalizado el tratamiento previo, se considera una reinfección.**\n\nEn la terminología de las infecciones urinarias:\n\n- **Recaída** ocurre cuando el mismo microorganismo que causó la infección original persiste en el tracto urinario y causa un nuevo episodio dentro de un periodo corto, generalmente definido como 2 semanas desde la finalización del tratamiento.\n- **Reinfección** es cuando un nuevo episodio de infección urinaria es causado por un microorganismo diferente, o por la misma bacteria pero después de un período suficiente como para considerar que se ha resuelto la infección original (generalmente más de 2 semanas).\n\nDado que en este caso el episodio actual ocurrió más de 15 días después del tratamiento previo y parece ser un nuevo incidente, se clasifica como una **reinfección**.\n\nPor lo tanto, la respuesta correcta es **c)**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 38,
@@ -301,7 +347,8 @@
         "pregunta": "En cuanto tratamiento antimicrobiano de este episodio, elija la opción correcta:  a)\tCefuroxime axetil 500 mg vo cada 12 hrs por 7 días. b)\tNitrofurantoína macrocistales 100 mg vo cada 12 hrs por 5 días.  c)\tTMP-SMX 160/800 mg vo cada 12 hrs por 5 días.",
         "respuesta": "La opción correcta para el tratamiento antimicrobiano del episodio actual de infección urinaria (IU) en este paciente es:\n\n**a) Cefuroxime axetil 500 mg vo cada 12 hrs por 7 días.**\n\n### Justificación:\n\n1. **Cefuroxime axetil** es un antibiótico de la clase de los cefalosporinas, con buena actividad frente a patógenos comúnmente involucrados en las infecciones urinarias, y es una opción adecuada para un tratamiento empírico en infecciones urinarias no complicadas.\n\n2. **Nitrofurantoína macrocistales**: Si bien se utiliza frecuentemente para tratar infecciones urinarias, no es la mejor opción en este caso, ya que el paciente ya recibió tratamiento con nitrofurantoína para un episodio reciente. La reinfección podría no responder bien a la misma clase de antibiótico.\n\n3. **TMP-SMX** (trimetoprim-sulfametoxazol) es otra opción válida en infecciones urinarias, pero su uso debe ser considerado en función de las pautas locales de resistencia y, en ocasiones, puede que no sea la primera opción debido a preocupaciones sobre la resistencia.\n\nPor lo tanto, teniendo en cuenta la necesidad de un tratamiento empírico adecuado y el historial del paciente, la mejor opción es **a)**.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 44,
@@ -309,7 +356,8 @@
         "pregunta": "En referencia a la vancomicina, marque la opción correcta a)\tLa vancomicina es una molécula lipofílica b)\tPresenta eliminación principalmente a nivel hepático c)\tEl parámetro PK/PD (AUC/CIM) es el principal parámetro farmacocinético a tener en cuenta para el tratamiento d)\tLa dosificación en valle se recomienda solicitar luego de la segunda dosis de administrada",
         "respuesta": "La opción correcta es: **c) El parámetro PK/PD (AUC/CIM) es el principal parámetro farmacocinético a tener en cuenta para el tratamiento.**\n\nEl área bajo la curva (AUC) en relación a la CIM es un parámetro clave para optimizar la eficacia del tratamiento con vancomicina, especialmente en infecciones severas por Staphylococcus aureus resistente a meticilina (SAMR). Un objetivo comúnmente recomendado es alcanzar una relación AUC/CIM de al menos 400 para maximizar la efectividad del tratamiento.\n\nSi necesitas más información sobre vancomicina o alguna otra consulta relacionada con infectología, no dudes en preguntar.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 39,
@@ -317,7 +365,8 @@
         "pregunta": "Mujer de 59 años.  AP: hipertensión arterial, diabética tratada con hipoglicemiantes orales, sin descompensaciones y con buen control metabólico, HbA1c de dos meses previos: 7,1%. Peso 78 Kgr. Historia de cólicos nefríticos hace 3 años, microlitiasis en cavidad calicial derecha en tomografía que no requirieron tratamiento.  Un episodio de pielonefritis hace 2 años, requirió ATB i/v, mejorando y con controles posteriores con ecografía sin alteraciones del aparato urinario. EA: Consulta por fiebre de 38,7°C axilar, malestar general, chuchos de frío y dolor miccional de 6 días de evolución. Orina concentrada y algo turbia. Se automedicó con nitrofurantoina durante 3 días, sin mejoría. Ex. Físico: Confusa, 32 rpm. Lengua seca. Piel y mucosas bien coloreadas. Bien perfundida a nivel de extremidades. Temp. axilar 38,1°C.  Ritmo regular de 96 cpm, bien golpeados, sin soplos. PA: 100/60 Dolor abdominal en flanco izquierdo, aumenta a la palpación profunda. Fosa lumbar izquierda dolorosa a la palpación.  Examen respiratorio y de otros sectores normales. Ex. de orina: abundantes leucocitos, esterasa leucocitaria positiva y nitritos positivos. ¿Cuál sería su diagnóstico inicial? a)\tInfección urinaria no complicada b)\tPielonefritis aguda  c)\tSepsis nefro-urológica d)\tInfección urinaria baja complicada",
         "respuesta": "El diagnóstico inicial más adecuado para esta paciente es:\n\n**b) Pielonefritis aguda.**\n\n### Justificación:\n\n1. **Síntomas**: La paciente presenta fiebre, malestar general, chuchos de frío y dolor miccional, que son indicativos de una infección del tracto urinario. Sin embargo, el síntoma",
         "evaluacion": "down",
-        "motivo": "La opción correcta es: c)\tSepsis nefro-urológica (la paciente estaba confusa y con una frecuencia respiratoria elevada de 32 respiraciones por minuto, y estos son sintomas de sepsis"
+        "motivo": "La opción correcta es: c)\tSepsis nefro-urológica (la paciente estaba confusa y con una frecuencia respiratoria elevada de 32 respiraciones por minuto, y estos son sintomas de sepsis",
+        "marker": null
     },
     {
         "id": 40,
@@ -325,7 +374,8 @@
         "pregunta": "Teniendo en cuenta el caso clinico anterior y que se trata de una sepsis nefrourologica, ¿Cuál plan ATB empírico elegiría? a)\tCiprofloxacina 500 mg vo cada 8 horas b)\tCiprofloxacina 400 mg iv cada 8 horas c)\tPiperacilina-tazobactam 4,5 gr iv cada 6 horas + amikacina 20 mg/Kg cada 24horas iv d)\tCeftriaxona 1 gr iv cada 24 horas + amikacina 20 mg/Kg iv cada 24horas.",
         "respuesta": "Para el manejo empírico de una sepsis nefrourológica, especialmente en presencia de factores de riesgo para microorganismos multirresistentes, la opción más adecuada es:\n\n**c) Piperacilina-tazobactam 4,5 gr iv cada 6 horas + amikacina 20 mg/Kg cada 24 horas iv.**\n\nLa combinación de piperacilina-tazobactam proporciona una amplia cobertura contra bacterias grampositivas y gramnegativas, así como anaerobios, y la adición de amikacina ofrece cobertura adicional para posibles bacilos gramnegativos resistentes. La elección de este esquema se basa en la necesidad de un tratamiento que cubra una amplia gama de patógenos en el contexto de una sepsis, donde se espera resistencia a los antibióticos.\n\nEsto está respaldado por el documento **FlujoG-5-Infeccion_Intra_Abdominal.pdf**[1] que discute la administración de piperacilina-tazobactam en el contexto de sepsis y las opciones para mejorar la cobertura en infecciones complicadas (página 1) y también se menciona la importancia de considerar factores de riesgo para microorganismos resistentes en el manejo de infecciones severas.\n\n\nReferencias:\n[1] FlujoG-5-Infeccion_Intra_Abdominal.pdf",
         "evaluacion": "down",
-        "motivo": "La opción correcta es: d)\tCeftriaxona 1 gr iv cada 24 horas + amikacina 20 mg/Kg iv cada 24horas. (deberias haber considerado el Flujograma 4 de ITU (infeccion de tracto urinario) y no es de Infeccion intraabdominal"
+        "motivo": "La opción correcta es: d)\tCeftriaxona 1 gr iv cada 24 horas + amikacina 20 mg/Kg iv cada 24horas. (deberias haber considerado el Flujograma 4 de ITU (infeccion de tracto urinario) y no es de Infeccion intraabdominal",
+        "marker": null
     },
     {
         "id": 41,
@@ -333,7 +383,8 @@
         "pregunta": "Mujer de 28 años, maestra. En pareja desde hace 2 años, deseo concepcional. Enviada desde consulta ginecológica para asesoramiento preconcepcional por episodio de herpes genital. Primoinfección hace 14 meses, presentó 2 episodios de recidiva posterior. Recibió tratamiento con valaciclovir en la primoinfección y en la recidiva con buena respuesta. Actualmente asintomática. Está preocupada por un eventual embarazo. ¿Qué conducta tomaría hoy con respecto al tratamiento del herpes genital? a)\tIniciaría tratamiento supresivo con aciclovir. b)\tIniciaría tratamiento con valaciclovir. c)\tRealizaría seguimiento clínico para tratar eventuales recidivas. d)\tNo tomaría ninguna conducta en especial.",
         "respuesta": "En este caso, considerando que la paciente ha tenido una primoinfección de herpes genital hace 14 meses y ha experimentado dos episodios de recidiva, es recomendable:\n\n**a) Iniciaría tratamiento supresivo con aciclovir.**\n\nEl tratamiento supresivo con aciclovir puede reducir la frecuencia de las recidivas y disminuir el riesgo de transmisión del virus al compañero sexual, lo que es especialmente importante dado que la paciente está en proceso de concepcionar. Además, el tratamiento supresivo puede ayudar a minimizar el riesgo de brotes activos durante el embarazo, donde una infección activa podría tener reper",
         "evaluacion": "down",
-        "motivo": "La opcion correcta es c)\tRealizaría seguimiento clínico para tratar eventuales recidivas."
+        "motivo": "La opcion correcta es c)\tRealizaría seguimiento clínico para tratar eventuales recidivas.",
+        "marker": null
     },
     {
         "id": 42,
@@ -341,7 +392,8 @@
         "pregunta": "En cuanto a la indicación de realización de serología para Herpes tipo 1 y 2, señale la opción correcta: a)\tForma parte del estudio de donantes de sangre  b)\tForma parte del estudio de ulceras genitales de etiología no clara c)\tForma parte del estudio inicial de coinfecciones en personas con VIH d)\tForma parte del estudio pre quirúrgico en pacientes con patología ginecológica",
         "respuesta": "La opción correcta es: **b) Forma parte del estudio de úlceras genitales de etiología no clara.**\n\nLa serología para herpes tipo 1 y 2 se indica a menudo cuando se presentan úlceras genitales y la etiología no es clara, ya que estas infecciones pueden ser una causa significativa de lesiones ulcerativas en esta área, especialmente en individuos con riesgo de coinfección, como aquellos con VIH. Este enfoque es crucial para establecer un diagnóstico adecuado y un manejo apropiado de los pacientes.\n\nSi tienes más consultas sobre infectología o necesitas información adicional, no dudes en preguntar.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 43,
@@ -349,7 +401,17 @@
         "pregunta": "Sobre el manejo de una bacteriemia por SAMR, marque la opción correcta a)\tLa realización de hemocultivos de control es una medida desaconsejada  b)\tSe recomienda el tratamiento con TMP/SMX en monoterapia c)\tLa CIM a la vancomicina es un determinante fundamental para definir el tratamiento ATB d)\tIndependientemente del foco de infección, la duración del tratamiento ATB debe de ser de 21 días",
         "respuesta": "La opción correcta es: **c) La CIM a la vancomicina es un determinante fundamental para definir el tratamiento ATB.**\n\nLa Concentración Inhibitoria Mínima (CIM) a la vancomicina es crucial en el manejo de infecciones por Staphylococcus aureus meticilino resistente (SAMR), ya que influye en la elección del tratamiento antibiótico. En particular, una CIM elevada puede requerir la utilización de alternativas a la vancomicina o ajustes en la terapia.\n\nSi tienes más preguntas sobre el manejo de infecciones o cualquier otro tema relacionado con infectología, no dudes en preguntar.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 66,
+        "fecha": "1/23/2025, 6:38:32 PM",
+        "pregunta": "Cuantas lesiones en le RMN supratentoriales son suficientes para diagnóstico de EM por imagen ?",
+        "respuesta": "Según los criterios diagnósticos actuales revisados para la esclerosis múltiple (EM), se requiere la identificación de al menos 2 o más lesiones en la resonancia magnética (RM) supratentoriales para establecer el diagnóstico por imagen, siempre que cumplan con los parámetros de diseminación en el espacio y el tiempo.\n\nEsta información se encuentra en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
     },
     {
         "id": 45,
@@ -357,7 +419,8 @@
         "pregunta": "En cuanto al uso de TMP/SMX en la bacteriemia por SAMR, marque la opción correcta a)\tSe considera exclusivamente como ATB bacteriostático b)\tLa combinación de ambos principios activos no tiene efecto sinérgico antifolato c)\tLa dosis recomendada es de 10 mg/kg día del componente trimetoprim d)\tEl metabolismo es principalmente extrahepático",
         "respuesta": "La opción correcta es: **c) La dosis recomendada es de 10 mg/kg/día del componente trimetoprim.**\n\nEn el manejo de bacteriemia por Staphylococcus aureus resistente a meticilina (SAMR), se recomienda una dosis de 10 mg/kg/día del componente trimetoprim de TMP/SMX, administrada en dosis divididas.\n\nEl TMP/SMX se considera generalmente como un antibiótico con actividad bactericida en algunos contextos, y la combinación de sus componentes puede tener un efecto sinérgico en la inhibición de la síntesis de ácido folínico en bacterias.\n\nSi tienes más preguntas o necesitas más información, no dudes en preguntar.",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 46,
@@ -365,7 +428,8 @@
         "pregunta": "78 años. HTA. Recambio valvular Aórtico en 3/2023. Adenoma de próstata en seguimiento por urología. Ingresa a sala de medicina por fiebre de 2 semanas de evolución acompañada de sudoración nocturna y astenia. Dentro de la valoración al ingreso se solicitan 2 set de HC de 10 ml cada uno desarrollando en todas las muestras: S.viridans sensible a cefepime, cefotaxime, ceftriaxona y vancomicina con CIM para penicilina de 0.12 ug/ml. Se realiza ETE que informa vegetación de 2 mm sobre válvula Ao.  Con respecto al tratamiento, elija la opción correcta:  a)\tCeftriaxona 2 g iv día por 4 semanas. b)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas. c)\tCeftriaxona 2g iv día + gentamicina 3mg/kg/día en 3 dosis iv por 4 semanas.  d)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas + gentamicina 3 mg /kg iv en 3 dosis por 2 semanas.",
         "respuesta": "La opción correcta es: **a) Ceftriaxona 2 g iv día por 4 semanas.**\n\nEl tratamiento recomendado para la endocarditis infecciosa causada por *Streptococcus viridans* (considerando que tiene una CIM de penicilina de 0.12 µg/mL, lo que indica sensibilidad) es el uso de ceftriaxona. Según las guías, la ceftriaxona a 2 g por vía intravenosa al día es apropiada para el tratamiento de endocarditis causada por este microorganismo, generalmente durante 4 semanas.\n\nSi necesitas más información o detalles sobre el manejo de esta condición u otros temas relacionados con infectología, no dudes en",
         "evaluacion": "down",
-        "motivo": "La opción correcta es: d)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas + gentamicina 3 mg /kg iv en 3 dosis por 2 semanas."
+        "motivo": "La opción correcta es: d)\tAmpicilina 3 gr iv cada 6 hr por 6 semanas + gentamicina 3 mg /kg iv en 3 dosis por 2 semanas.",
+        "marker": null
     },
     {
         "id": 47,
@@ -373,7 +437,8 @@
         "pregunta": "En el contexto de profilaxis post exposición (PPE) de rabia, son contraindicaciones absolutas para la administración de vacuna antirrábica: a)\tEmbarazo y lactancia. b)\tAlergia a polimixinas, estreptomicina o neomicina. c)\tMenores de 5 años. d)\tNo tiene contraindicaciones.",
         "respuesta": "En el contexto de la profilaxis post exposición (PPE) de rabia, la opción correcta es la **d) No tiene contraindicaciones.** La vacuna antirrábica se considera segura incluso durante el embarazo y la lactancia. Sin embargo, las personas con antecedentes de reacciones anafilácticas a componentes de la vacuna (como la neomicina) deben ser evaluadas cuidadosamente. En general, se recomienda la vacunación a todos los individuos expuestos, independientemente de su edad o estado de embarazo.\n\nEsta información se menciona en el documento **Principles and Practice of Infectious Diseases (2019).pdf**[1] (página 18 y 19).\n\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases (2019).pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 48,
@@ -381,7 +446,8 @@
         "pregunta": "En viajeros la profilaxis preexposición de rabia está indicada en: a)\tViaje a zonas endémicas de rabia silvestre independientemente del tiempo y la actividad que realice. b)\tViajeros inmunosuprimidos. c)\tViajeros a zonas endémicas de rabia canina independientemente del tiempo y la actividad que realice. d)\tViajeros a zonas endémicas de rabia canina donde la atención médica y el acceso a la profilaxis post exposición sea muy limitado.",
         "respuesta": "La opción correcta es **d) Viajeros a zonas endémicas de rabia canina donde la atención médica y el acceso a la profilaxis post exposición sea muy limitado.** En estos casos, la vacunación previa a la exposición es recomendable para ofrecer una protección adecuada debido a la posibilidad de exposición a animales potencialmente rabiosos y la limitación en el acceso a tratamientos posteriores.\n\nEsta información se indica en el documento **Principles and Practice of Infectious Diseases (2019).pdf**[1] (página 5).\n\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases (2019).pdf",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 49,
@@ -389,7 +455,8 @@
         "pregunta": "Paciente de sexo masculino, 32 años, tabaquista, diagnóstico reciente de VIH con inmunodepresión severa (carga viral de 125mil copias/mL y linfocitos CD4 de 78/mL), no coinfecciones, que inicia tratamiento hace 7 días con tenofovir + lamivudina + dolutegravir. Ingresa a emergencia con cefalea y pérdida de fuerzas progresiva de miembro superior derecho de 3 días de evolución. Tomografía de cráneo evidencia 3 lesiones redondeadas gangliobasales con realce en anillo tras la administración de contraste, de 1,5 a 2,5 cm de diámetro con marcado edema perilesional. Se plantea probable diagnóstico de toxoplasmosis encefálica. ¿Qué conducta terapéutica indicaría?  a)\tSuspender el TARV e iniciar espiramicina hasta confirmación diagnóstica b)\tSuspender el TARV e indicar dexametasona intravenosa dado que corresponde a un SIRI (síndrome inflamatorio de reconstitución inmune) c)\tContinuar el TARV y agregar cotrimoxazol forte un comprimido cada 12 horas y dexametasona 4 mg cada 6 horas d)\tContinuar el TARV y agregar sulfadiacina + pirimetamina + ácido folínico",
         "respuesta": "La opción correcta es **d) Continuar el TARV y agregar sulfadiacina + pirimetamina + ácido folínico.** En este caso, dado que hay una presentación clínica y tomográfica compatible con toxoplasmosis encefálica en un paciente con VIH e inmunodepresión severa, el tratamiento de elección incluye sulfadiacina y pirimetamina, junto con ácido folínico para minimizar la toxicidad por pirimetamina.\n\nEs crucial continuar con el tratamiento antirretroviral (TARV) durante esta fase, ya que no se ha evid",
         "evaluacion": "up",
-        "motivo": ""
+        "motivo": "",
+        "marker": null
     },
     {
         "id": 50,
@@ -397,6 +464,574 @@
         "pregunta": "¿Cuál estudio diagnóstico permite confirmar que se trate de abscesos toxoplásmicos?  a)\tResonancia nuclear magnética de cráneo con imágenes en flair b)\tPCR en líquido cefalorraquídeo c)\tCuadruplicación de los títulos de IgG para toxoplasma d)\tEstudio parasitológico de una muestra de la lesión",
         "respuesta": "El estudio diagnóstico que permite confirmar que se trate de abscesos toxoplásmicos es la **PCR en líquido cefalorraquídeo (b)**.\n\nLa PCR es específica y puede demostrar la presencia de ADN de Toxoplasma gondii en el líquido cefalorraquídeo, lo cual es indicativo de una infección activa. Aunque otros métodos como la resonancia magnética pueden mostrar lesiones características, la PCR proporciona un diagnóstico definitivo.\n\nSegún el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte106** (página 21), la PCR en líquido cefalorraquídeo es una herramienta importante para establecer el diagnóstico de encefalitis por Toxoplasma en pacientes inmunocomprometidos, como aquellos con VIH/SIDA.",
         "evaluacion": "down",
-        "motivo": "la opcion correcta es la d)\tEstudio parasitológico de una muestra de la lesión. Si bien la PCR es altamente especifica, el unico estudio confirmatorio es ver el parasito en una muestra de tejido cerebral"
+        "motivo": "la opcion correcta es la d)\tEstudio parasitológico de una muestra de la lesión. Si bien la PCR es altamente especifica, el unico estudio confirmatorio es ver el parasito en una muestra de tejido cerebral",
+        "marker": null
+    },
+    {
+        "id": 82,
+        "fecha": "1/25/2025, 11:27:48 AM",
+        "pregunta": "te llamaré Harry",
+        "respuesta": "Está bien, puedes llamarme Harry si lo prefieres. ¿Cómo puedo asistirte hoy, especialmente en relación con neurología?",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 51,
+        "fecha": "1/23/2025, 4:58:41 PM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia que tengo disponibles en mi contexto:\n\n1. **Neurología Clínica - Bradley (5° Edición) Vol. II**: Este documento ofrece una visión detallada de diversas condiciones neurológicas, su diagnóstico, tratamiento y manejo. Incluye información sobre enfermedades neuromusculares, enfermedades neurodegenerativas, malformaciones vasculares, migrañas, y más.\n\n2. **Aprendizaje Basado en Problemas. Casos Clínicos en Neurología** [1]: Este documento recoge casos clínicos relevantes en neurología que se discuten a través de un enfoque de aprendizaje basado en problemas. Proporciona detalles sobre diagnósticos, tratamientos y evolución de diferentes síndromes neurológicos, así como técnicas de imagen y hallazgos clínicos.\n\n3. **Diccionario de Signos y Síntomas en Neurología Clínica - Campbell** [2]: Un diccionario que ofrece definiciones y descripciones de signos y síntomas clínicos relacionados con enfermedades neurológicas. Este recurso es útil para comprender mejor los términos y hallazgos clínicos que pueden presentarse en diversas condiciones neurológicas.\n\nSi necesitas información específica de alguno de estos documentos o un tema particular relacionado con neurología, no dudes en preguntar.\n\nReferencias:\n[1] Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf\n[2] Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 52,
+        "fecha": "1/23/2025, 5:03:29 PM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia disponibles en mi contexto:\n\n1. **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_partX.pdf** [1]: Este documento es una edición avanzada que abarca diversos aspectos de la neurología clínica, las condiciones neurológicas y su tratamiento. Es un recurso útil para profesionales médicos y estudiantes en el campo de la neurología.\n\n2. **Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf** [2]: Este documento recopila casos clínicos seleccionados y presenta situaciones reales que ayudan a la comprensión de los conceptos neurológicos en un formato basado en problemas. Es útil para el aprendizaje práctico y para la discusión de diagnósticos y tratamientos en neurología.\n\n3. **Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf** [3]: Este diccionario proporciona definiciones y descripciones de signos y síntomas relevantes en neurología. Es un recurso valioso para la identificación y comprensión de diversas manifestaciones clínicas en trastornos neurológicos.\n\nSi necesitas información específica de alguno de estos documentos, no dudes en preguntar.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part1.pdf\n[2] Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf\n[3] Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 53,
+        "fecha": "1/23/2025, 5:25:20 PM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Mis documentos de referencia abarcan una variedad de temas relacionados con la infectología, específicamente sobre diagnóstico, tratamiento y manejo de diferentes infecciones. Aquí tienes un resumen de algunos de los documentos más relevantes:\n\n1. **FlujoG-1-Nemonia Intrahospitalaria.pdf**[1]: Describe la neumonía intrahospitalaria, que se considera adquirida 48 horas después del ingreso hospitalario o hasta 7 días después del alta. Proporciona criterios diagnósticos y recomendaciones de tratamiento.\n\n2. **FlujoG-2-INFECCIÓN DE PIEL Y PARTES BLANDAS.pdf**[2]: Aborda las infecciones de piel y partes blandas, clasificándolas como leves, moderadas y severas, y describe los tratamientos pertinentes, incluidos antibióticos y posibles intervenciones quirúrgicas.\n\n3. **FlujoG-3-Neumonia_Aguda.pdf**[3]: Se centra en el manejo de la neumonía aguda comunitaria, diferenciando entre pacientes inmunocompetentes y aquellos con factores de riesgo para microorganismos multirresistentes. Incluye criterios de internación y escalas de gravedad.\n\n4. **Flujograma-4_ITU.pdf**[4]: Detalla el manejo clínico de las infecciones del tracto urinario (ITU), considerando factores de riesgo en diferentes poblaciones, incluyendo inmunodeprimidos y ancianos.\n\n5. **FlujoG-5-Infeccion_Intra_Abdominal.pdf**[5]: Proporciona información sobre el manejo de infecciones intra-abdominales, enfocándose en síntomas y signos clínicos asociados.\n\n6. **Flujograma-6_Artritis Septica.pdf**[6]: Maneja la artritis séptica nativa aguda, discutiendo la colaboración multidisciplinaria necesaria para su diagnóstico y tratamiento.\n\n7. **FlujoG-9-Meningoencefalitis aguda comunitaria.pdf**[7]: Aborda el manejo de la meningoencefalitis aguda, incluyendo criterios de notificación al Ministerio de Salud Pública y síntomas a investigar.\n\n8. **FlujoG-13_PROA_CATETERES.pdf**[8]: Se centra en las infecciones asociadas a catéteres centrales y las pautas para su manejo, incluidos los antibióticos necesarios y los criterios para la retirada del catéter.\n\n9. **Principles and Practice of Infectious Diseases (2019)**: Este documento es una obra integral sobre el diagnóstico y tratamiento de enfermedades infecciosas, utilizado como referencia por profesionales de salud durante varias décadas.\n\nCada uno de estos documentos proporciona pautas detalladas y evidencia basada en la investigación actual para el manejo de diversas infecciones. Si tienes preguntas específicas sobre alguno de estos temas, no dudes en preguntar.\n\n\nReferencias:\n[1] FlujoG-1-Nemonia Intrahospitalaria.pdf\n[2] FlujoG-2-INFECCIÓN DE PIEL Y PARTES BLANDAS.pdf\n[3] FlujoG-3-Neumonia_Aguda.pdf\n[4] Flujograma-4_ITU.pdf\n[5] FlujoG-5-Infeccion_Intra_Abdominal.pdf\n[6] Flujograma-6_Artritis Septica.pdf\n[7] FlujoG-9-Meningoencefalitis aguda comunitaria.pdf\n[8] FlujoG-13_PROA_CATETERES.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 54,
+        "fecha": "1/23/2025, 5:32:32 PM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia que utilizo:\n\n1. **Neurología Clínica - Bradley (5° Edición) Vol. II** [1]: Este documento es un extenso manual sobre neurología clínica que abarca diversas patologías del sistema nervioso, métodos de diagnóstico, y tratamientos específicos. Proporciona información sobre enfermedades neurológicas como la esclerosis múltiple, malformaciones vasculares y trastornos del sueño, así como aspectos diagnósticos mediante técnicas como la tomografía computarizada y la resonancia magnética.\n\n2. **Aprendizaje Basado en Problemas. Casos Clínicos en Neurología** [2]: Un compendio que presenta una serie de casos clínicos que facilitan la comprensión de diagnósticos y tratamientos en neurología. Incluye ejemplos prácticos que destacan el uso de la neuroimagen en el diagnóstico, así como síndromes poco frecuentes como el síndrome de vasoconstricción cerebral reversible.\n\n3. **Diccionario de Signos y Síntomas en Neurología Clínica - Campbell** [3]: Esta obra proporciona definiciones y descripciones detalladas de síntomas y signos clínicos relacionados con diversas condiciones neurológicas. Es una herramienta valiosa para comprender la presentación clínica de las enfermedades y cómo se pueden manifestar a través de diferentes síntomas.\n\nSi necesitas información más específica de alguno de estos documentos, no dudes en preguntar.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part7.pdf\n[2] Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf\n[3] Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 96,
+        "fecha": "1/25/2025, 12:27:44 PM",
+        "pregunta": "en el pronóstico de muerte cerebral el electroencefalograma contribuye al diagnóstico paraclínico. cuales son los patrones característicos ? y cuales los de mal pronóstico ?",
+        "respuesta": "Lamento informarte que no tengo información específica sobre los patrones característicos del electroencefalograma en el contexto del pronóstico de muerte cerebral en los documentos proporcionados. Te sugiero que contactes a Martín Garmendia de MCT (mgarmendia@mct-esco.com) para obtener información más detallada sobre este tema.",
+        "evaluacion": "down",
+        "motivo": "muerte cerebral debe de estar en Bradley",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 97,
+        "fecha": "1/25/2025, 12:28:16 PM",
+        "pregunta": "muerte cerebral criterios diagnósticos",
+        "respuesta": "Lamento no poder proporcionar información específica sobre los criterios diagnósticos de la muerte cerebral basada en los documentos que tengo disponibles. Para obtener información detallada y precisa sobre este tema, te sugiero que contactes a Martín Garmendia de MCT (mgarmendia@mct-esco.com).",
+        "evaluacion": "down",
+        "motivo": "criterios de muerte cerebral deben estar explícitos en Bradley o cualquier otro manual de neurología",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 55,
+        "fecha": "1/23/2025, 6:17:06 PM",
+        "pregunta": "¿Qué pruebas diagnósticas se utilizan para identificar una esclerosis múltiple y cómo se interpreta una resonancia magnética cerebral?",
+        "respuesta": "Para diagnosticar la esclerosis múltiple (EM), se utilizan varias pruebas diagnósticas. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part39.pdf** [1], las pruebas clave incluyen:\n\n1. **Historia clínica y examen neurológico:** Se evalúan los síntomas del paciente y se realiza una evaluación del sistema nervioso.\n\n2. **Resonancia Magnética (RM):** Esta es la herramienta diagnóstica más importante para la EM. La RM puede mostrar lesiones desmielinizantes en el sistema nervioso central. Estas lesiones suelen ser hipointensas en la RM ponderada por T1 y pueden aparecer como hiperintensas en la RM ponderada por T2.\n\n3. **Análisis del líquido cefalorraquídeo (LCR):** A menudo se realiza una punción lumbar para analizar el LCR en busca de bandas oligoclonales, que son un indicador de enfermedad inflamatoria.\n\n4. **Potenciales evocados:** Estos estudios miden la respuesta eléctrica del cerebro a estímulos visuales, auditivos o somatosensoriales y pueden revelar daños en las vías nerviosas.\n\n### Interpretación de la Resonancia Magnética (RM) Cerebral\nLa interpretación de la RM para la esclerosis múltiple implica buscar lesiones que sean características de la enfermedad:\n\n- **Localización de las lesiones:** Se necesitan lesiones en diferentes localizaciones anatómicas (sustancia blanca, médula espinal) y a menudo deben ser múltiples.\n- **Patrón de las lesiones:** Las lesiones deben ser de forma ovalada y típicamente están relacionadas con las vías de los tractos nerviosos.\n- **Cambios en la evolución:** La RM periódica puede mostrar la aparición de nuevas lesiones o cambios en las existentes, lo que también ayuda a establecer la naturaleza recurrente de la enfermedad.\n\nLa presencia de lesiones en la RM junto con la historia clínica y otros hallazgos complementarios permite establecer un diagnóstico de esclerosis múltiple, considerando también que la enfermedad puede tener un curso clínico variable y que no siempre se presentan todos los síntomas de forma inicial.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part39.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 56,
+        "fecha": "1/23/2025, 6:19:10 PM",
+        "pregunta": "Brotes y remisiones en EM",
+        "respuesta": "La esclerosis múltiple (EM) se caracteriza por episodios de brotes y remisiones. Estos fenómenos son fundamentales para entender la progresión y el manejo de la enfermedad.\n\n### Brotes\nLos brotes en EM son definidos como períodos en los que los pacientes experimentan nuevas disfunciones neurológicas o un empeoramiento de síntomas previos. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf** [1], los brotes se caracterizan por:\n\n- **Inicio Agudo o Subagudo:** Los síntomas suelen presentarse de forma rápida (días a pocas semanas).\n- **Disfunción Clínica:** Pueden incluir debilidad, alteraciones en la marcha, problemas de visión, parestesias y otros síntomas neurológicos.\n- **Duración:** Un brote debe durar al menos 24 horas (esto ayuda a diferenciarlo de otros factores como infecciones o fiebre, que pueden provocar un empeoramiento temporal).\n\n### Remisiones\nDespués de un brote, es común que los pacientes experimenten un período de remisión, durante el cual pueden recuperar parcial o completamente la función neurológica. Las características de las remisiones incluyen:\n\n- **Mejora de los Síntomas:** Los pacientes pueden notar una reducción significativa o completa de los síntomas que experimentaban durante el brote.\n- **Duración Variable:** Las remisiones pueden durar semanas, meses o incluso años, pero en algunos casos, pueden no ser completas.\n\n### Evolución de la Enfermedad\nLa evolución de la EM puede clasificarse en varios patrones, dependiendo del curso de los brotes y las remisiones. Según el documento, estos patrones incluyen:\n\n- **Remitente-Recurrente:** Caracterizado por brotes claros seguidos de remisiones completas o parciales.\n- **Progresiva Secundaria:** Comienza como remitente-recurrente, pero eventualmente los brotes se vuelven menos prominentes y la enfermedad tiene una progresión más continua.\n- **Progresiva Primaria:** Comienza con un curso progresivo desde el inicio, sin episodios aparentes de remisión.\n\nLa comprensión de los brotes y las remisiones es crucial para el manejo clínico de la enfermedad, ya que más allá de realizar un diagnóstico, permite establecer estrategias de tratamiento y pronosticar la evolución del paciente.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 57,
+        "fecha": "1/23/2025, 6:22:02 PM",
+        "pregunta": "Tratamiento en nuevo o primer brote",
+        "respuesta": "El tratamiento en el caso de un nuevo o primer brote de esclerosis múltiple (EM) generalmente se enfoca en manejar los síntomas y reducir la inflamación. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf** [1], las estrategias de tratamiento incluyen:\n\n### Corticoides\n- **Terapia con Corticoides:** En casos de brotes que generan síntomas significativos, se utilizan corticosteroides intravenosos (como metilprednisolona) para reducir la inflamación y acelerar la recuperación neurológica. La dosis común es de 1 g/día durante 3 días.\n\n### Manejo Sintomático\n- Además de los corticosteroides, el tratamiento sintomático puede ser necesario para ayudar a los pacientes a manejar síntomas específicos que surgen durante el brote, como debilidad, espasticidad o problemas de movilidad.\n\n### Modificadores de la Enfermedad\n- **Inicio de Tratamiento de Modificadores de la Enfermedad (DMT):** En algunos casos, especialmente si se cumplen ciertos criterios, se puede considerar iniciar un DMT al diagnóstico, incluso en un primer brote. Esto se basa en la evidencia de que el tratamiento tempranamente puede cambiar la progresión de la enfermedad y reducir la frecuencia de brotes a largo plazo.\n\n### Seguimiento y Evaluación\n- Tras la primera intervención, es esencial un seguimiento cuidadoso del paciente para evaluar la recuperación y la respuesta al tratamiento. También se debe estar atento a la aparición de nuevos síntomas o brotes adicionales.\n\nEs importante destacar que cada paciente es único, por lo que las decisiones de tratamiento deben ser individualizadas, considerando factores como los síntomas específicos, la salud general del paciente y sus preferencias personales. Esto permite una estrategia de manejo más efectiva y adecuada para la EM.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 58,
+        "fecha": "1/23/2025, 6:24:46 PM",
+        "pregunta": "Que dosis de metilprednisolona se utiliza y por cuantos dias en un brote ?",
+        "respuesta": "En el tratamiento de un brote de esclerosis múltiple, se utiliza metilprednisolona a dosis de 1 gramo por día, administrada por vía intravenosa durante 3 días. Esta pauta de tratamiento tiene como objetivo reducir la inflamación y acelerar la recuperación neurológica. Esta información es referenciada del documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 59,
+        "fecha": "1/23/2025, 6:26:15 PM",
+        "pregunta": "Dosis de DMT interferon",
+        "respuesta": "Las dosis de los interferones beta, que son tratamientos modificadores de la enfermedad (DMT) para la esclerosis múltiple, varían según el tipo específico de interferón utilizado. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf** [1], las dosis son las siguientes:\n\n1. **Interferón beta-1a:**\n- **Inyección subcutánea:** 44 microgramos administrados tres veces por semana.\n- **Inyección intramuscular:** 30 microgramos administrados una vez por semana.\n\n2. **Interferón beta-1b:**\n- Se recomienda una dosis de 250 microgramos administrados cada dos días a través de inyección subcutánea.\n\nEstos tratamientos ayudan a reducir la frecuencia de los brotes y la progresión de la enfermedad. Es importante que estas dosis sean supervisadas por un médico y adaptadas a las necesidades individuales del paciente.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part41.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 99,
+        "fecha": "1/25/2025, 12:30:26 PM",
+        "pregunta": "dosis de etosuximida y acido valproico en crisis de ausencia",
+        "respuesta": "Según la información proporcionada en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf** [1], las dosis recomendadas para los fármacos utilizados en crisis de ausencia son las siguientes:\n\n- **Etosuximida**: La dosis inicial recomendada es de 500 mg al día, que puede aumentarse gradualmente. La dosis de mantenimiento habitual es de 20 mg/kg/día, dividida en dosis.\n\n- **Ácido valproico**: La dosis inicial suele ser de 10-15 mg/kg/día, que debe aumentarse gradualmente hasta un máximo de 60 mg/kg/día, basado en la respuesta clínica y la tolerancia del paciente.\n\nEs esencial que las dosis sean ajustadas individualmente y que el tratamiento sea monitorizado por un médico, teniendo en cuenta factores como la edad del paciente, el peso y otras condiciones clínicas.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 60,
+        "fecha": "1/23/2025, 6:29:02 PM",
+        "pregunta": "Lesiones en RMN características de la EM como dedos de Dawson?",
+        "respuesta": "Las lesiones características de la esclerosis múltiple (EM) en la resonancia magnética nuclear (RMN) incluyen varios tipos de patrones que pueden observarse, y una de ellas es el signo de \"dedos de Dawson\". Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part39.pdf** [1], aquí hay más detalles sobre esta y otras características de las lesiones en RMN:\n\n### Signo de \"Dedos de Dawson\"\n- **Descripción:** Se refiere a las lesiones que tienen una apariencia perpendiculada a las superficies ventriculares. Se observan principalmente en la sustancia blanca periventricular.\n- **Localización:** Estas lesiones son típicamente alargadas y pueden parecerse a dedos que se extienden desde el ventrículo hacia la sustancia blanca adyacente.\n\n### Otras Características de Lesiones en RMN en EM\n- **Lesiones en Sustancia Blanca:** Estas son áreas hipointensas en la RM ponderada por T1 y pueden ser hiperintensas en la RM ponderada por T2.\n- **Puntos de Vista:** Las lesiones pueden aparecer en los lóbulos parietales, occipitales y frontales, y también en el cerebelo y la médula espinal.\n- **Lesiones en \"Bola de Nieve\":** Se refiere a pequeñas áreas hiperintensas en la sustancia blanca que pueden ser difíciles de identificar.\n- **Lesiones Activas:** Las lesiones que se realzan con gadolinio son indicativas de actividad inflamatoria reciente y son una señal de que la enfermedad está activa.\n\nLa identificación de estas lesiones es crucial para el diagnóstico de la EM y su seguimiento, ya que ayuda a evaluar la carga de la enfermedad y su respuesta al tratamiento.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part39.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 61,
+        "fecha": "1/23/2025, 6:30:43 PM",
+        "pregunta": "Que características tienen las BOC en la EM ?",
+        "respuesta": "Las bandas oligoclonales (BOC) en la esclerosis múltiple (EM) tienen características específicas que se examinan en el análisis del líquido cefalorraquídeo (LCR). Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part39.pdf**, las características de las BOC en la EM incluyen:\n\n1. **Presencia en LCR:** Las BOC se encuentran en el LCR de aproximadamente el 85-95% de los pacientes con EM clínicamente definida.\n\n2. **Electroforesis:** En un análisis electroforético del LCR normal, se observa una única banda homogénea de inmunoglobulina. Sin embargo, en el caso de la EM y otros trastornos asociados con inflamación, el análisis muestra múltiples bandas discretas que representan un exceso de anticuerpos producidos por uno o más clones de células plasmáticas.\n\n3. **Indicador de Actividad In",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 62,
+        "fecha": "1/23/2025, 6:31:57 PM",
+        "pregunta": "Como se denomina el patrón de BOC en EM que es ppatognomónico ?",
+        "respuesta": "El patrón de bandas oligoclonales (BOC) que es patognomónico en esclerosis múltiple (EM) se refiere a la presencia de múltiples bandas discretas en el líquido cefalorraquídeo. Estas bandas son un indicador de síntesis intratecal de anticuerpos, insinuando una respuesta inmunitaria activa dentro del sistema nervioso central. La presencia de BOC se encuentra en el 85-95% de los pacientes con EM clínicamente definida, lo que las convierte en un dato diagnóstico clave.\n\nEsta información se encuentra detallada en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part38.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part38.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 63,
+        "fecha": "1/23/2025, 6:33:14 PM",
+        "pregunta": "De que se trata las BOC con \"finger print\" en la EM ?",
+        "respuesta": "El patrón de bandas oligoclonales (BOC) conocido como \"finger print\" se caracteriza por la presencia de varias bandas oligoclonales en el líquido cefalorraquídeo que son consistentes y específicas para cada paciente. Este patrón sugiere una respuesta inmunitaria activa y es un indicativo de enfermedad desmielinizante como la esclerosis múltiple (EM).\n\nEste patrón es de particular interés porque, aunque hay variabilidad en la presentación de BOC, el patrón \"finger print\" implica que la producción de estos anticuerpos específicos se ha establecido en el sistema nervioso central de manera única para cada individuo. Este hallazgo es útil en el diagnóstico de EM, ayudando a diferenciar esta condición de otras entidades patológicas.\n\nLa referencia a las BOC y su importancia en la EM se encuentra en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part38.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part38.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 64,
+        "fecha": "1/23/2025, 6:34:29 PM",
+        "pregunta": "Acquaforina 4",
+        "respuesta": "El test de aquaporina-4 (AQP4) se utiliza principalmente en el diagnóstico de neuromielitis óptica (NMO), que es una enfermedad autoinmune que afecta el nervio óptico y la médula espinal. La AQP4 es un canal de agua que se encuentra en las membranas de las células astrogliales en el sistema nervioso central. La presencia de anticuerpos contra AQP4 en el suero del paciente es un marcador importante para confirmar el diagnóstico de NMO.\n\nLa detección de estos anticuerpos no solo ayuda a diagnosticar la NMO, sino que también tiene implicaciones en el pronóstico y en el manejo del tratamiento. En el contexto de la esclerosis múltiple, la presencia de estos anticuerpos es relevante para diferenciar entre estas dos entidades clínicas, ya que los tratamientos pueden diferir significativamente.\n\nSin embargo, como esta información específica sobre el test de aquaporina4 no se encuentra en los documentos proporcionados, lamento no poder ofrecer detalles más específicos. Te recomendaría contactar a Martín Garmendia de MCT (mgarmendia@mct-esco.com) para más información.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 65,
+        "fecha": "1/23/2025, 6:36:38 PM",
+        "pregunta": "Criterios y pautas diagnósticas actuales mediante RMN en EM",
+        "respuesta": "Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf** [1], los criterios diagnósticos para la esclerosis múltiple (EM) mediante resonancia magnética (RM) han evolucionado y se han vuelto más rigurosos.\n\nLos criterios actuales incluyen la identificación de lesiones típicas de EM en la RM, que se localizan generalmente en áreas específicas como la región circunventricular y el cuerpo calloso. Se consideran lesiones hiperintensas en T2 y pueden incluir:\n\n1. **Lesiones en las localizaciones características**: Se consideran placas de EM si hay al menos tres lesiones en regiones sugerentes de la enfermedad (como lesiones ventriculares y lesiones en la fosa posterior).\n\n2. **Patrón de lesiones**: Las lesiones deben ser de un tamaño mínimo (más de 5 mm) y mostrar ciertas características en las imágenes.\n\n3. **Actividad de la enfermedad**: La RM con contraste utilizando gadolinio puede mostrar lesiones activas. Estas lesiones indican inflamación y son un buen marcador de actividad de la enfermedad.\n\n4. **Diseminación en tiempo y espacio**: Para el diagnóstico de EM, se debe demostrar que los eventos clínicos y las lesiones en la RM se presentan en diferentes momentos y lugares del sistema nervioso central.\n\n5. **Otros criterios**: La evaluación de la carga lesional, es decir, el volumen total de cerebro afectado por placas, también se utiliza como un criterio de valoración en ensayos clínicos.\n\nEstas pautas de diagnóstico son cruciales no solo para confirmar la presencia de EM, sino también para averiguar el pronóstico y decidir el tratamiento adecuado. Esto resalta la importancia de la RM en la evaluación y seguimiento de pacientes con EM.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part37.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 67,
+        "fecha": "1/23/2025, 6:39:39 PM",
+        "pregunta": "¿Cuáles son las señales iniciales de alarma de un accidente cerebrovascular y cómo se puede prevenir?",
+        "respuesta": "Las señales iniciales de alarma de un accidente cerebrovascular (ACV) incluyen:\n\n1. **Debilidad repentina** en la cara, brazo o pierna, especialmente en un lado del cuerpo.\n2. **Confusión repentina**, dificultad para hablar o entender el habla.\n3. **Problemas súbitos** para ver con uno o ambos ojos.\n4. **Dificultad para caminar**, mareos, pérdida del equilibrio o coordinación.\n\nPara la prevención del accidente cerebrovascular se recomienda:\n\n1. **Controlar la presión arterial**: Mantener la presión arterial en niveles saludables reduce significativamente el riesgo de ACV.\n2. **No fumar**: dejar de fumar disminuye el riesgo de sufrir un ACV.\n3. **Mantener un control adecuado de la diabetes**: un adecuado manejo de la glucemia es crucial para prevenir complicaciones.\n4. **Mantener un peso saludable y realizar actividad física**: la obesidad y la inactividad están asociadas con un mayor riesgo de ACV.\n5. **Revisar y controlar los niveles de colesterol**: la terapia con estatinas puede ser beneficiosa.\n6. **Seguir una dieta saludable**: puede ayudar en la prevención de accidentes cerebrovasculares.\n\nEsta información puede encontrarse en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 68,
+        "fecha": "1/23/2025, 6:41:06 PM",
+        "pregunta": "Que tipo de imagen aporta al diagnóstico de ACV y permite diferenciar isquémico de hemorragico?",
+        "respuesta": "La tomografía computarizada (TC) es el tipo de imagen más comúnmente utilizado en la evaluación de un accidente cerebrovascular (ACV) y es fundamental para diferenciar entre un ACV isquémico y uno hemorrágico. La TC permite:\n\n1. **Identificación rápida de hemorragia**: En los casos de ACV hemorrágico, la TC puede mostrar la presencia de sangre en el cerebro o en el espacio subaracnoideo, lo que facilita un diagnóstico inmediato.\n\n2. **Detección de isquemia**: En ACV isquémicos, la TC puede no mostrar cambios inmediatos, pero, con el tiempo, puede revelar el infarto cerebral como áreas de hipodensidad en la fase aguda.\n\nLa resonancia magnética (RM) también puede utilizarse para el diagnóstico del ACV, especialmente para evaluar la extensión del daño y en estudios posteriores, pero la TC es la primera y más accesible en el contexto agudo.\n\nEsta información se encuentra en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part53.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part53.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 69,
+        "fecha": "1/23/2025, 6:42:35 PM",
+        "pregunta": "Que signos inirectos  son característucos de un ACV isquémico ?",
+        "respuesta": "Los signos indirectos característicos de un accidente cerebrovascular (ACV) isquémico incluyen:\n\n1. **Hipodensidad cerebral**: Áreas de menor densidad en la tomografía computarizada (TC) pueden indicar infartos cerebrales. Estas áreas pueden aparecer como sombras o difusas en la región afectada.\n\n2. **Signo de la imagen por defecto**: Esto incluye la presencia de edema y desplazamiento de estructuras cerebrales, como la línea media desviada.\n\n3. **Signos de pérdida de volumen en tejidos**: A largo plazo, puede observarse atrofia de regiones cerebrales afectadas.\n\n4. **Nuevas áreas de difusión en la resonancia magnética (RM)**: En estudios de RM, se pueden observar cambios en las secuencias de difusión que no están presentes en el examen inicial.\n\nEstos signos indirectos son fundamentales para el diagnóstico y la evaluación del estado del tejido cerebral en casos de ACV isquémico.\n\nEsta информация está presente en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part53.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part53.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 70,
+        "fecha": "1/23/2025, 6:43:36 PM",
+        "pregunta": "Que es el signo de la arteria cerebral hiperdensa ennla TAC ?",
+        "respuesta": "El signo de la arteria cerebral hiperdensa en una tomografía computarizada (TC) se refiere a la visualización de una arteria cerebral que aparece más densa (brillante) en comparación con el tejido circundante. Este signo es típicamente asociado con un accidente cerebrovascular isquémico y puede ser un indicativo de trombosis o oclusión de la arteria cerebral media (ACM).\n\nLa hiperdensidad de la arteria ocurre porque el trombo (coágulo de sangre) puede cambiar la densidad del flujo sanguíneo en la arteria afectada, haciendo que aparezca más densa en la imagen de la TC. Este hallazgo puede ser uno de los signos tempranos de un ACV isquémico, ya que puede presentarse incluso antes de que aparezcan cambios en el parénquima cerebral.\n\nEste fenómeno es importante en el diagnóstico temprano del ACV isquémico y ayuda a guiar el manejo médico y terapéutico adecuado.\n\nLa información sobre el signo de la arteria cerebral hiperdensa se puede encontrar en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 71,
+        "fecha": "1/23/2025, 6:45:28 PM",
+        "pregunta": "Indistinción de sudtancia geis y blanca en ACV isquemicl",
+        "respuesta": "La indistinción entre la sustancia gris y blanca en un accidente cerebrovascular (ACV) isquémico se refiere a la pérdida de la normalidad de las estructuras cerebrales observadas en la imagenología, específicamente en tomografías computarizadas (TC) o resonancias magnéticas (RM). Este fenómeno puede ocurrir debido a la presencia de edema cerebral, que es el hinchazón del tejido cerebral debido a la acumulación de líquidos, o por la infusión de sangre en áreas que normalmente no tienen esta densidad.\n\nEn un ACV isquémico, la sustancia blanca puede comenzar a mostrar cambios de densidad que la hacen parecer más similar a la sustancia gris, disminuyendo así la definición entre estas dos estructuras. Esto puede dificultar la interpretación diagnóstica y se presenta típicamente durante la fase aguda del ACV.\n\nLa pérdida de esta distinción es un indicador de cambios patológicos significativos en el cerebro como resultado de isquemia, y es asociado con mal pronóstico al reflejar daño cerebral extenso.\n\nEsta información está contenida en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 98,
+        "fecha": "1/25/2025, 12:29:19 PM",
+        "pregunta": "tratamiento farmacológico de las crisis epilépticas de ausencia",
+        "respuesta": "El tratamiento farmacológico de las crisis epilépticas de ausencia generalmente implica el uso de ciertos medicamentos antiepilépticos. Según la información proporcionada en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf** [1], para las crisis de ausencia, los medicamentos de elección incluyen:\n\n- **Etosuximida**: Este fármaco es típicamente el tratamiento de primera línea para las crisis de ausencia.\n- **Ácido valproico**: También se utiliza en el manejo de las crisis de ausencia.\n- **Lamotrigina**: Este medicamento puede considerarse en algunos casos, aunque su uso debe ser evaluado con cuidado.\n\nEs importante mencionar que el tratamiento debe ser individualizado según la respuesta del paciente y la presencia de comorbilidades. Además, la monitorización del tratamiento y el ajuste de las dosis pueden ser necesarios para asegurar la eficacia y minimizar los efectos adversos.\n\nPara más información detallada, puedes consultar el documento mencionado anteriormente.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 72,
+        "fecha": "1/23/2025, 6:48:32 PM",
+        "pregunta": "Tratamiento sgudo del stroke isquemico",
+        "respuesta": "El tratamiento agudo del accidente cerebrovascular (ACV) isquémico incluye varias estrategias clave para restaurar el flujo sanguíneo y minimizar el daño cerebral. Los principales enfoques incluyen:\n\n1. **Trombólisis**: La administración de activador tisular del plasminógeno (t-PA) intravenoso es el tratamiento de elección si se administra dentro de las 3-4.5 horas posteriores al inicio de los síntomas. Este tratamiento tiene como objetivo disolver el coágulo que está bloqueando el flujo sanguíneo.\n\n2. **Trombectomía mecánica**: Para los pacientes que no son candidatos a trombólisis o que tienen oclusiones en grandes vasos, la trombectomía mecánica puede ser una opción. Este procedimiento implica la remoción física del trombo utilizando dispositivos especializados, generalmente realizado dentro de las 6-24 horas después del inicio de los síntomas.\n\n3. **Tratamiento de soporte**: Esto incluye la estabilización de las funciones vitales, el control de la presión arterial, y el manejo de la glucosa en sangre. Es esencial también monitorear los signos de complicaciones post-ACV.\n\n4. **Anticoagulación**: En casos específicos, como en pacientes con fibrilación auricular o trombosis venosa cerebral, se pueden utilizar anticoagulantes.\n\n5. **Cuidados de enfermería y manejo de riesgos**: Es fundamental monitorizar al paciente y tratar factores de riesgo como la hipertensión, el control de la glucosa y la prevención de complicaciones posturales.\n\nEsta información relacionada con el tratamiento agudo del ACV isquémico se puede encontrar en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 73,
+        "fecha": "1/23/2025, 6:49:40 PM",
+        "pregunta": "Diahnóstico diferencial de ictus",
+        "respuesta": "El diagnóstico diferencial de ictus es crucial para distinguir entre diversas causas que pueden presentar síntomas similares. Algunas de las condiciones que deben considerarse en el diagnóstico diferencial incluyen:\n\n1. **Accidente cerebrovascular isquémico**: Resultante de la oclusión de un vaso sanguíneo.\n\n2. **Accidente cerebrovascular hemorrágico**: Causado por la ruptura de un vaso sanguíneo.\n\n3. **Ataques isquémicos transitorios (AIT)**: Episodios temporales de síntomas similares a los de un ACV sin daño cerebral permanente.\n\n4. **Crisis epilépticas**: Pueden causar pérdida temporal de la función motora o alteraciones del estado mental.\n\n5. **Migrañas**: Pueden provocar déficits neurológicos focales similares a los de un ACV.\n\n6. **Trastornos metabólicos**: Hipoglucemia o hiperglucemia severa pueden provocar confusión y debilidad.\n\n7. **Lesiones estructurales**: Tumores cerebrales o abscesos pueden presentar síntomas de similar naturaleza.\n\n8. **Infecciones del sistema nervioso central**: Como meningitis o encefalitis, que pueden causar síntomas neurológicos agudos.\n\n9. **Desmielinización**: Como en la esclerosis múltiple, donde pueden ocurrir episodios agudos que simulan un ictus.\n\n10. **Hematomas subdurales o epidurales**: Pueden presentarse con déficits neurológicos y confusión.\n\nCada una de estas condiciones debe ser considerada y evaluada, utilizando estudios por imagen como tomografía computarizada (TC) o resonancia magnética (RM), junto con la historia clínica y el examen físico.\n\nEsta información se encuentra en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 74,
+        "fecha": "1/23/2025, 6:51:06 PM",
+        "pregunta": "Factores de riesgo cardiovasculares en ACV",
+        "respuesta": "Los factores de riesgo cardiovasculares para el accidente cerebrovascular (ACV) incluyen:\n\n1. **Hipertensión arterial**: Es el factor de riesgo más importante y potente para ACV.\n\n2. **Diabetes mellitus**: La diabetes, especialmente cuando está mal controlada, aumenta el riesgo de ACV.\n\n3. **Hiperlipidemia**: Niveles elevados de colesterol, particularmente LDL, incrementan el riesgo de aterosclerosis y, por ende, de ACV.\n\n4. **Tabaquismo**: Fumar contribuye al daño vascular y aumenta considerablemente el riesgo de ACV.\n\n5. **Obesidad**: El exceso de peso, especialmente la obesidad abdominal, está asociado con un mayor riesgo de enfermedad cardiovascular y ACV.\n\n6. **Sedentarismo**: La falta de actividad física regular se asocia con un mayor riesgo de ACV.\n\n7. **Enfermedad cardíaca**: Condiciones como la fibrilación auricular y el infarto de miocardio aumentan el riesgo de eventos cerebrovasculares.\n\n8. **Consumo excesivo de alcohol**: Puede aumentar la presión arterial y contribuir a la arteriosclerosis.\n\n9. **Enfermedades vasculares periféricas**: Están relacionadas con un mayor riesgo de ACV.\n\n10. **Factores genéticos y familiares**: Antecedentes familiares de ACV o enfermedad cardiovascular pueden aumentar el riesgo.\n\n11. **Estrés y depresión**: Ambos pueden influir en otros factores de riesgo cardiovascular y contribuir al riesgo de ACV.\n\nEstos factores de riesgo deben ser identificados y manejados para reducir la probabilidad de sufrir un ACV y mejorar la salud cardiovascular.\n\nEsta información está presente en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part10.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 75,
+        "fecha": "1/23/2025, 7:00:34 PM",
+        "pregunta": "Cuentame detalles respecto a tus documentos de referencia",
+        "respuesta": "Claro, aquí tienes un resumen de los documentos de referencia disponibles:  1. **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_partX.pdf** [1]: Este extenso manual está diseñado para profesionales de la neurología y ofrece información detallada sobre diversas condiciones neurológicas, métodos diagnósticos y tratamientos. Cubre tópicos que van desde patologías específicas hasta información sobre técnicas de imagen y más.  2. **Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf** [2]: Este documento recopila casos clínicos que se utilizan para el aprendizaje basado en problemas, presentando situaciones clínicas reales que los profesionales pueden encontrar en su práctica. Es una herramienta útil para entender la neurología en un contexto práctico.  3. **Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf** [3]: Es un recurso de referencia que compila diversos signos y síntomas neurológicos, proporcionando definiciones y características específicas. Este diccionario es valioso para diagnosticar y entender trastornos neurológicos.  Estos documentos forman una base de conocimientos amplia sobre diversas áreas de la neurología, desde teoría hasta aplicaciones prácticas en casos clínicos. Si requieres información específica de alguno de estos documentos o sobre un tema particular, estaré encantado de ayudarte.  Referencias: [1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part7.pdf [2] Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf [3] Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 76,
+        "fecha": "1/23/2025, 7:03:41 PM",
+        "pregunta": "Tratamiento de eleccion en Enfermedad de Parkinsonn",
+        "respuesta": "El tratamiento de elección en la enfermedad de Parkinson (EP) incluye principalmente el uso de medicamentos dopaminérgicos, siendo la **levodopa** (en combinación con carbidopa) el tratamiento más efectivo para controlar los síntomas motores de la enfermedad. La levodopa se convierte en dopamina en el cerebro, lo cual es crucial dado que los pacientes con EP tienen una disminución de esta neurotransmisor.\n\nAdicionalmente, otros tratamientos que pueden utilizarse son:\n\n1. **Inhibidores de la monoaminooxidasa B (IMAO-B)**: Como la **selegilina** y **rasagilina**. Ayudan a aumentar los niveles de dopamina y pueden tener efectos neuroprotectores.\n\n2. **Agonistas dopaminérgicos**: Medicamentos como **pramipexol**, **ropinirol** o **apomorfina** que estimulan directamente los receptores de dopamina en el cerebro.\n\n3. **Anticolinérgicos**: Aunque se usan menos frecuentemente, pueden ser beneficiosos para los síntomas de temblor.\n\n4. **Amantadina**: Puede mejorar los síntomas y reducir la discinesia en pacientes que ya están en tratamiento con levodopa.\n\nEn casos avanzados de la enfermedad, la **estimulación cerebral profunda (DBS)** puede ser considerada como un tratamiento eficaz para controlar los síntomas motrices.\n\nSe debe adaptar el tratamiento a las necesidades individuales de cada paciente y monitorizar los efectos secundarios y la eficacia del tratamiento a lo largo del tiempo.\n\nEsta información sobre el tratamiento de la enfermedad de Parkinson se puede encontrar en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf** [1].\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 77,
+        "fecha": "1/23/2025, 7:04:42 PM",
+        "pregunta": "Dosis de inicio de Levodopa",
+        "respuesta": "La dosis de inicio habitual de **levodopa** en el tratamiento de la enfermedad de Parkinson, cuando se combina con **carbidopa**, es generalmente:\n\n- **Levodopa/carbidopa 100/25 mg**: Se puede iniciar con una dosis de **1 tableta 3 veces al día**. Esta combinación es comúnmente utilizada para mejorar la eficacia y disminuir los efectos secundarios periféricos de la levodopa.\n\nCon el tiempo, la dosis puede ser ajustada según la respuesta clínica y la tolerancia del paciente. Es importante que el ajuste de la dosis sea realizado bajo supervisión médica, ya que la respuesta a la levodopa puede variar y afectar el manejo de los síntomas de la enfermedad.\n\nEsta información sobre la dosis de inicio de la levodopa se encuentra en el documento **Neurología_Clínica",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 78,
+        "fecha": "1/23/2025, 7:09:18 PM",
+        "pregunta": "Rol diagnóstico de anticuerpos antireceptor de acetilcolina fracción MIR",
+        "respuesta": "Los anticuerpos anti-receptor de acetilcolina (AChR) son críticos en el diagnóstico de la miastenia gravis (MG). Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part90.pdf** [1], el hallazgo de anticuerpos anti-AChR elevados en un paciente con características clínicas compatibles confirma esencialmente el diagnóstico de MG. Sin embargo, un resultado normal no excluye la presencia de la enfermedad, ya que los niveles de anticuerpos pueden ser normales al inicio de los síntomas y alterarse más adelante.\n\nAdemás, cerca del 80% de los pacientes con MG presentan debilidad debida a los efectos de los anticuerpos circulantes anti-AChR, que se unen a los AChR en los músculos, lo que resulta en debilidad muscular. El análisis de estos anticuerpos es una prueba diagnóstica esencial, ya que la sensibilidad del estudio de unión a AChR es del 70-95% para la MG generalizada y del 50-75% para la forma ocular.\n\nSi tienes más preguntas sobre este tema, no dudes en preguntar.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part90.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 79,
+        "fecha": "1/23/2025, 7:15:30 PM",
+        "pregunta": "Ttatamiento de base en MG",
+        "respuesta": "El tratamiento de base para la miastenia gravis (MG) implica el uso de inhibidores de la colinesterasa, que son medicamentos que ayudan a mejorar la transmisión neuromuscular incrementando la disponibilidad de acetilcolina en la hendidura sináptica. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part90.pdf** [1], el tratamiento inicial generalmente incluye:\n\n1. **Inhibidores de la colinesterasa**: Se recomienda iniciar el tratamiento con estos medicamentos, como la piridostigmina, que ayudan a mejorar la fuerza muscular y a reducir los síntomas de debilidad.\n\n2. **Inmunosupresores**: Si la respuesta a los inhibidores de la colinesterasa no es satisfactoria, se pueden añadir medicamentos inmunosupresores como la azatioprina, micofenolato de mofetilo, o corticosteroides como la prednisona.\n\n3. **Plasmaféresis y terapia con inmunoglobulina intravenosa**: Estos tratamientos pueden ser utilizados en situaciones de crisis miasténica o en casos graves que requieren una respuesta rápida.\n\n4. **Timectomía**: En pacientes con timoma o en aquellos con miastenia gravis generalizada, se puede considerar la extirpación quirúrgica del timo, que puede resultar en una mejora significativa en algunos casos.\n\nEl seguimiento regular y la evaluación continua son cruciales para ajustar el tratamiento de acuerdo con la respuesta del paciente y los efectos secundarios de los medicamentos.\n\nSi necesitas información más detallada o sobre un aspecto específico del tratamiento, házmelo saber.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part90.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 80,
+        "fecha": "1/24/2025, 10:29:37 AM",
+        "pregunta": "Early Bacterial Pneumonia After Hepatic Transplantation: Epidemiologic Profile",
+        "respuesta": "El documento titulado **Early Bacterial Pneumonia After Hepatic Transplantation: Epidemiologic Profile** [1] presenta un estudio sobre la incidencia, los microorganismos involucrados, los factores asociados y la morbilidad de la neumonía bacteriana que se presenta dentro de los primeros 100 días post-trasplante hepático. La investigación muestra que de 106 pacientes trasplantados, se documentaron 9 casos de neumonía bacteriana, con una incidencia de 8.5 por cada 100 pacientes.\n\nLos hallazgos indican que:\n\n- Dos pacientes tuvieron neumonía adquirida en el hospital (HAP) y siete neumonía asociada a ventilación (VAP).\n- En cuatro de los nueve casos, los pacientes presentaron bacteriemia.\n- Se aislaron 11 microorganismos, siendo 9 de ellos bacilos gramnegativos, predominando **Acinetobacter baumannii** y **Klebsiella spp.**.\n- Un análisis univariante identificó la puntuación del Modelo para Enfermedad Hepática en Etapa Terminal (MELD) como un factor asociado al desarrollo de neumonía y la extubación temprana como un factor protector.\n\nLos resultados del estudio subrayan que la neumonía bacteriana temprana después del trasplante hepático está asociada con una mayor morbilidad y mortalidad.\n\nSi deseas más información específica sobre el contenido del estudio, no dudes en preguntar.\n\nReferencias:\n[1] Early Bacterial Pneumonia 2018.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 81,
+        "fecha": "1/24/2025, 11:01:27 AM",
+        "pregunta": "Cita al menos 4 red flags que pongan en duda el diagnóstico de enfermedad de Parkinson",
+        "respuesta": "Según el documento **Diccionario de Signos y Síntomas en Neurología Clínica - Campbell.pdf**, hay ciertas características que pueden poner en duda el diagnóstico de enfermedad de Parkinson. Aquí te menciono al menos cuatro \"red flags\" o signos de alerta:  1. **Inicio súbito de los síntomas**: La enfermedad de Parkinson generalmente tiene un inicio gradual. 2. **Asimetría en los síntomas**: Si los síntomas son altamente asimétricos desde el comienzo, puede ser un indicativo de otro tipo de trastorno. 3. **Más signos de ataxia que de rigidez**: La presencia de una ataxia predominante puede sugerir otros trastornos en lugar de la enfermedad de Parkinson clásica.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 83,
+        "fecha": "1/25/2025, 11:29:50 AM",
+        "pregunta": "Harry, ¿Como diferencias los conceptos de crisis epiléptica de la afección epilepsia ?",
+        "respuesta": "La diferenciación entre una crisis epiléptica y la afección conocida como epilepsia es fundamental en neurología. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf** [1], los conceptos se definen de la siguiente manera:\n\n1. **Crisis Epiléptica**: Se refiere a un episodio clínico prolongado de actividad eléctrica anormal en el cerebro que se traduce en manifestaciones clínicas, como convulsiones, pérdida de la conciencia o síntomas motores y sensoriales. Las crisis epilépticas pueden ocurrir de forma aislada y no siempre indican que una persona tenga epilepsia.\n\n2. **Epilepsia**: Es una afección neurológica crónica caracterizada por la predisposición a generar crisis epilépticas recurrentes. La epilepsia se diagnostica generalmente después de que una persona ha tenido al menos dos crisis epilépticas no provocadas en un contexto no fisiológico. La epilepsia implica no solo la recurrencia de las crisis, sino también el compromiso de un proceso subyacente que afecta la excitabilidad neuronal.\n\nEn resumen, una crisis epiléptica es un evento específico que puede ocurrir en individuos sin epilepsia, mientras que la epilepsia es un diagnóstico que implica la ocurrencia recurrente de estas crisis debido a un trastorno crónico en el sistema nervioso.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 84,
+        "fecha": "1/25/2025, 11:32:43 AM",
+        "pregunta": "en que consisten las crisis epilépticas parciales y de que tipo conoces ?",
+        "respuesta": "Las crisis epilépticas parciales (también conocidas como crisis focales) son aquellas que se originan en una zona específica del cerebro y pueden presentar síntomas según la región afectada. Según la clasificación mencionada en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf** [1], las crisis epilépticas parciales se dividen en dos tipos principales:\n\n1. **Crisis Parciales Simples**: En estas crisis, el paciente puede experimentar síntomas como movimientos involuntarios en un lado del cuerpo, alteraciones sensoriales, o experiencias emocionales, sin pérdida de la conciencia. La persona suele estar completamente consciente durante el episodio y recuerda lo que sucedió.\n\n2. **Crisis Parciales Complejas**: Estas crisis implican una alteración de la conciencia o la \"desconexión\" del entorno. Durante una crisis parcial compleja, la persona puede parecer confundida, repetirse o exhibir conductas automáticas, como frotarse las manos o masticar. Generalmente, el paciente no recuerda el evento.\n\nDentro de estas categorías, las crisis parciales pueden ser clasificadas aún más, dependiendo de los síntomas específicos presentados, localización cortical implicada y la evolución de la crisis hacia una crisis generalizada (es decir, que se propague a ambos hemisferios cerebrales).\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 85,
+        "fecha": "1/25/2025, 11:34:26 AM",
+        "pregunta": "que tipo de exámenes se realizan frente a la sospecha clínica de epilepsia ?",
+        "respuesta": "Frente a la sospecha clínica de epilepsia, se realizan varios exámenes que ayudan a establecer el diagnóstico y determinar el tipo de epilepsia. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf** [1], los principales exámenes incluyen:\n\n1. **Electroencefalograma (EEG)**: Este es el examen más importante para diagnosticar la epilepsia. Permite registrar la actividad eléctrica del cerebro y detectar patrones específicos de descarga que son indicativos de crisis epilépticas.\n\n2. **Resonancia Magnética Cerebral (RM)**: La RM se utiliza para visualizar estructuras cerebrales y detectar anomalías que podrían ser responsables de la epilepsia, como lesiones, malformaciones o tumores.\n\n3. **Tomografía Computarizada (TC)**: En algunos casos, se puede utilizar la TC como una opción inicial para evaluar lesiones estructurales en el cerebro, especialmente en situaciones de emergencia.\n\n4. **Análisis de Líquido Cefalorraquídeo (LCR)**: En casos donde se sospecha una causa infecciosa o inflamatoria, puede ser necesario analizar el LCR para detectar infecciones o enfermedades autoinmunes que pueden desencadenar crisis epilépticas.\n\n5. **Historia Clínica y Examen Neurológico**: La recolección detallada de la historia clínica del paciente, antecedentes familiares, tipo de crisis experimentadas y un examen neurológico completo son fundamentales para el diagnóstico.\n\nEstos exámenes ofrecen una visión integral de la función cerebral y permiten descartar otras condiciones que podrían presentar síntomas similares a los de las crisis epilépticas.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 86,
+        "fecha": "1/25/2025, 11:42:13 AM",
+        "pregunta": "Indicarías un estudio de LCR SIN indicios de infección ? en tal caso por qué razón ?",
+        "respuesta": "Realizar un análisis de líquido cefalorraquídeo (LCR) en ausencia de indicios de infección puede ser útil en varias situaciones diagnósticas según el contexto clínico. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part25.pdf** [1], hay situaciones en las que se justifica este estudio:\n\n1. **Diagnóstico de Enfermedades Autoinmunes**: Algunas enfermedades neurológicas autoinmunes, como la esclerosis múltiple, pueden presentar alteraciones en el LCR, como la presencia de bandas oligoclonales, que son indicativas de procesos inflamatorios en el sistema nervioso central, incluso sin una infección evidente.\n\n2. **Identificación de Síndromes Paraneoplásicos**: En algunos casos, el análisis del LCR puede ayudar a detectar anticuerpos específicos relacionados con síndromes paraneoplásicos que afectan al sistema nervioso, lo que no necesariamente se manifestará con signos de infección.\n\n3. **Evaluación de Crisis Epilépticas**: Aunque no haya indicios de infección, un examen del LCR puede ser relevante si se sospecha que la causa de las crisis es un proceso patológico que afecta la función cerebral sin relación con una meningitis o encefalitis.\n\n4. **Exclusión de Causas Neurológicas**: Aunque inicialmente no se sospeche una infección, el análisis del LCR puede ayudar a descartar otras patología neurológicas, como hemorragias subaracnoideas o encefalitis viral, que pueden no presentar síntomas típicos en las fases iniciales.\n\nEn resumen, el estudio del LCR puede proporcionar información diagnóstica valiosa en situaciones donde las presentaciones clínicas son confusas o donde hay la necesidad de investigar enfermedades neurológicas de base más allá de las infecciones.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part25.pdf",
+        "evaluacion": "down",
+        "motivo": "Sin sospecha de infección viral o bacteriana evidenciada por un cuadro clínico y hallazgos concordantes en el examen físico, el examen del LCR (salvo las BOC en EM, que no es lo habitual en emergencias, lo habitual es un análisis bioquímico e infeccioso). Y tampoco es de elección en una Hemorragia subaracnoidea; al menos no está indicada en primera instancia.",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 87,
+        "fecha": "1/25/2025, 11:45:04 AM",
+        "pregunta": "Hay in tipo de neuroinfección que se manifiesta por demencia rápidamente progresiva, y un patrón electroencefalográfico particular. Asimismo de positivo en el estudoio de LCR buscando la proteína 14.3.3. Como se llama la afección ?",
+        "respuesta": "La afección que se manifiesta con demencia rápidamente progresiva, un patrón electroencefalográfico particular y que resulta positiva en el estudio de líquido cefalorraquídeo (LCR) buscando la proteína 14-3-3 se llama **Enfermedad de Creutzfeldt-Jakob (ECJ)**.\n\nSegún el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part57.pdf** [1], la ECJ es una enfermedad priónica que se caracteriza por un deterioro cognitivo rápidamente progresivo, mioclonías y cambios en el electroencefalograma que pueden mostrar complejos de ondas agudas periódicas. La presencia de la proteína 14-3-3 en el LCR tiene una alta sensibilidad para la ECJ, aunque su especificidad no es completamente alta, ya que puede también verse en otras condiciones neurológicas.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part57.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 88,
+        "fecha": "1/25/2025, 11:46:57 AM",
+        "pregunta": "esta afección es de baja prevalencia, tiene formas asialdas pero también hereditarias ?",
+        "respuesta": "Sí, la Enfermedad de Creutzfeldt-Jakob (ECJ) es una afección de baja prevalencia. Se manifiesta en varias formas, que se pueden clasificar de la siguiente manera:\n\n1. **Forma Esporádica**: Es la forma más común de ECJ, representando aproximadamente el 85-90% de los casos. No se asocia con antecedentes familiares ni con factores de riesgo identificables.\n\n2. **Forma Hereditarias**: Existen variantes familiares de ECJ que se transmiten genéticamente. Estas formas hereditarias están asociadas con mutaciones en el gen PRNP, que codifica la proteína priónica. La herencia puede ser autosómica dominante.\n\n3. **Forma Iatrogénica**: Esta variante ocurre por la transmisión de priones a través de procedimientos médicos, como trasplantes de tejido, injertos de dura mater o la administración de hormonas derivadas de glándulas humanas (como en el caso de la hormona del crecimiento antes de que se implementaran restricciones).\n\n4. **Forma Variante (vCJD)**: Esta forma se ha asociado con el consumo de carne contaminada por la enfermedad de las vacas locas (encefalopatía espongiforme bovina) y generalmente se presenta en una población más joven.\n\nEstas diferentes formas reflejan la complejidad de la enfermedad y la importancia de los mecanismos tanto esporádicos como genéticos en su aparición.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 89,
+        "fecha": "1/25/2025, 12:15:34 PM",
+        "pregunta": "que características clinicas adicionales tiene la ECJ ?",
+        "respuesta": "La Enfermedad de Creutzfeldt-Jakob (ECJ) se caracteriza por diversas manifestaciones clínicas que reflejan el deterioro progresivo del sistema nervioso. Según el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part57.pdf**, las características clínicas adicionales de la ECJ incluyen:\n\n1. **Demencia Progresiva**: Se manifiesta como un deterioro cognitivo global, que incluye problemas de memoria, desorientación y dificultad para concentrarse.\n\n2. **Mioclonías**: Movimientos involuntarios y repentinamente que pueden presentarse en diferentes partes del cuerpo, a menudo descritos como \"sobresaltos\".\n\n3. **Alteraciones del Comportamiento y Psiquiátricas**: Puede haber cambios en la personalidad",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 90,
+        "fecha": "1/25/2025, 12:16:35 PM",
+        "pregunta": "las mioclonias son espontáneas o frente al estímulo auditivo ?",
+        "respuesta": "Las mioclonias pueden presentarse de manera espontánea o pueden ser provocadas por estímulos externos. En el contexto presentado, se señala que en la exploración neurológica, la paciente muestra mioclonias positivas y negativas en las cuatro extremidades. Esto sugiere que las mioclonias que presenta la paciente pueden ser espontáneas y también podrían estar relacionadas con la respuesta a diferentes estímulos.\n\nPor lo tanto, es posible que las mioclonias ocurran de forma tanto espontánea como en respuesta a estímulos auditivos, dependiendo del contexto clínico específico del paciente.\n\nEsta información se basa en el documento **Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf** [1].\n\nReferencias:\n[1] Aprendizaje Basado en Problemas. Casos Clínicos en Neurología.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 91,
+        "fecha": "1/25/2025, 12:18:03 PM",
+        "pregunta": "como tratarías las mioclonias en ECJ",
+        "respuesta": "El tratamiento de las mioclonías en la enfermedad de Creutzfeldt-Jakob (ECJ) se enfoca principalmente en el uso de medicamentos antiepilépticos y benzodiazepinas. Se ha observado que estas intervenciones pueden ayudar a controlar las crisis mioclónicas asociadas a la enfermedad.\n\nSegún el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part36.pdf** [1], no existe un tratamiento que pueda detener o revertir el progreso de la ECJ, pero se pueden utilizar medidas sintomáticas para mejorar la calidad de vida del paciente. Es importante tener en cuenta que la administración de medicamentos debe ser cuidadosamente gestionada por un profesional sanitario, teniendo en cuenta la evolución de la enfermedad y las necesidades específicas del paciente.\n\nSi tienes más preguntas o necesitas información adicional, no dudes en preguntar.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part36.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 92,
+        "fecha": "1/25/2025, 12:18:59 PM",
+        "pregunta": "cual es el patrón electroencefalografico de un estado de mal convulsivo ?",
+        "respuesta": "El patrón electroencefalográfico (EEG) de un estado de mal convulsivo (también conocido como status epilepticus) se caracteriza típicamente por la presencia de actividad continua y recurrente, que puede incluir patrones como:\n\n1. **Brote-supresión**: Este patrón refleja la alternancia entre breves episodios de actividad eléctrica anormal (brotes) y períodos de actividad de muy bajo voltaje o de supresión.\n2. **Olas de alta voltaje**: Estas pueden incluir configuraciones anormales que se asemejan a las descargas epilépticas.\n3. **Actividad epileptiforme continua**: Es común observar descargas repetitivas y habituales a lo largo del trazado.\n\nAdemás, el EEG de un estado de mal convulsivo no convulsivo también puede presentar actividad que no es visible a simple vista, pero se refleja en el fondo eléctrico general.\n\nEstos hallazgos son cruciales para el diagnóstico y manejo del estado de mal convulsivo, y deben ser interpretados en conjunto con el cuadro clínico del paciente. Esta información se encuentra en",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 93,
+        "fecha": "1/25/2025, 12:22:10 PM",
+        "pregunta": "y porque lo mencionas en  el patrón electroencefalográfico del estado de mal convulsivo si ¨no lo dispones en los documentos proporcionados¨?",
+        "respuesta": "Mis disculpas, parece que cometí un error. El patrón de brote-supresión, en el contexto de un estado de mal convulsivo, es un registro importante en electroencefalogramas (EEG) donde se observa una alternancia entre periodos de actividad eléctrica (brote) y ausencia de actividad eléctrica (supresión). Dicho patrón generalmente se asocia con un mal pronóstico y se puede observar en situaciones de daño cerebral agudo, como en el estado epiléptico.\n\nPara obtener información más precisa sobre el brote-supresión, te recomendaría revisar específicamente los documentos de neurología o consultar con un especialista. Si requieres de información detallada, te sugiero que contactes a Martín Garmendia de MCT (mgarmendia@mct-esco.com) para obtener asistencia adecuada.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 94,
+        "fecha": "1/25/2025, 12:23:24 PM",
+        "pregunta": "tu cuando no tienes fundamento en las respuestas las imaginas ? o alucinas ?",
+        "respuesta": "Lamento cualquier confusión causada en mis respuestas anteriores. No tengo la intención de proporcionar información sin fundamento. Mi objetivo es ayudar basándome únicamente en los documentos y la información disponibles. Si alguna respuesta no fue adecuada o no contenía la referencia requerida, me disculpo por ello. Para consultas específicas sobre neurología que no se encuentren en los documentos, te recomendaría contactar a Martín Garmendia de MCT (mgarmendia@mct-esco.com) para obtener la información precisa que necesitas.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 95,
+        "fecha": "1/25/2025, 12:26:27 PM",
+        "pregunta": "patron de brote supresion en que circunstancias se observa ? tanto espontáneamente como farmacológicamente inducida ?",
+        "respuesta": "Lamento informarte que no tengo información específica sobre el \"patrón de brote supresión\" en los documentos proporcionados. Te sugiero que contactes a Martín Garmendia de MCT (mgarmendia@mct-esco.com) para obtener información más detallada.",
+        "evaluacion": "down",
+        "motivo": "esta mencionado en pregunta previa",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 101,
+        "fecha": "1/25/2025, 12:33:55 PM",
+        "pregunta": "cual es el rango de seguridad en la carbamazepina utilizada en crisis parciales mayoritariamente o en algunos tipos de neuralgia ?",
+        "respuesta": "Según la información proporcionada en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf** [1], el rango de seguridad en la sangre para la carbamazepina utilizada en el tratamiento de crisis parciales y en algunos tipos de neuralgia es el siguiente:\n\n- **Concentraciones terapéuticas**: Se consideran efectivas y seguras entre **4 y 12 µg/ml** (microgramos por mililitro).\n\nEs fundamental realizar un monitoreo regular de los niveles en sangre para asegurar que se mantengan dentro de este rango y para ajustar la dosis según sea necesario, minimizando así el riesgo de efectos adversos.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part58.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 102,
+        "fecha": "1/25/2025, 12:36:18 PM",
+        "pregunta": "que intervenciones y tratamiento farmacológico realizarías en un estado de mal convulsivo generalizado?",
+        "respuesta": "En el contexto de un estado de mal convulsivo generalizado, las intervenciones y el tratamiento farmacológico son cruciales y deben realizarse de manera inmediata para estabilizar al paciente y detener las crisis. Según la información del documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part59.pdf**, las siguientes son las intervenciones y pasos recomendados:\n\n1. **Evaluación inicial**:\n- Estabilizar las funciones vitales (control de la vía aérea, respiración y circulación).\n- Identificar y tratar cualquier causa subyacente que pueda estar provocando el estado epiléptico.\n\n2. **Tratamiento farmacológico**:\n- **Benzodiazepinas** (fármacos de primera elección) deben ser administradas de inmediato:\n- **Lorazepam**: 4 mg IV, que puede repetirse a los 10-15 minutos si es necesario.\n- **Diazepam**: 5-10 mg IV, aunque tiene un efecto más corto.\n- **Midazolam**: puede ser utilizado en forma intramuscular o intravenosa.\n\n3. **Fármacos antiepilépticos adicionales**:\n- Después de la administración de benzodiazepinas, si las crisis continúan, se debe administrar uno de los siguientes:\n- **Fenitoína**: se recomienda administrarla a una velocidad controlada para evitar efectos adversos (por ejemplo, no más de 50 mg/minuto en adultos).\n- **Fosfenitoína**: alternativa similar a la fenitoína, pero administrada más rápidamente sin el mismo riesgo de reacciones en el sitio de infusión.\n- **Ácido valproico**: se puede utilizar, aunque su uso puede variar en práctica.\n- **Levetiracetam**: también se considera en algunos entornos clínicos.\n\n4. **Monitorización continua**:\n- Una vez iniciado",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 103,
+        "fecha": "1/25/2025, 12:39:20 PM",
+        "pregunta": "indicaciones para internación en cuidados intensivos de un estado de mal convulsivo generalizado",
+        "respuesta": "Las indicaciones para la internación en cuidados intensivos de un estado de mal convulsivo generalizado, también conocido como estado epiléptico, incluyen:\n\n1. **Duración prolongada de las crisis**: El estado epiléptico se caracteriza por una crisis convulsiva que dura más de 30 minutos o múltiples crisis recurrentes sin recuperación del estado de conciencia entre ellas.\n\n2. **Inestabilidad hemodinámica**: Los pacientes pueden presentar hipotensión, arritmias, o descompensación cardiovascular que requiera monitorización y tratamiento intensivo.\n\n3. **Alteraciones respiratorias**: Puede haber compromiso respiratorio significativo que requiera apoyo ventilatorio o intubación endotraqueal.\n\n4. **Complicaciones neurológicas**: Si hay signos de daño cerebral, como alteraciones en el estado de conciencia y déficits neurológicos focales, se requiere un manejo intensivo.\n\n5. **Requerimiento de cuya tratamiento intensivo**: Cuando el tratamiento médico inicial no accede al control inmediato de las crisis y se necesitan ajustes frecuentes o administración de medicamentos anestésicos para controlar la actividad convulsiva.\n\n6. **Monitoreo continuo**: Es crucial realizar un seguimiento electroencefalográfico (EEG) continuo para evaluar la actividad convulsiva y las respuestas al tratamiento.\n\n7. **Manifestaciones sistémicas graves**: Los pacientes pueden presentar complicaciones sistémicas como acidosis, hipoglucemia o alteraciones en el equilibrio electrolítico que necesitan intervención rápida.\n\nSegún el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf** [1], el tratamiento del estado epiléptico requiere un enfoque intensivo, comenzando con la estabilización de las funciones vitales y el tratamiento activo para detener la actividad convulsiva.\n\nReferencias:\n[1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part60.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 104,
+        "fecha": "1/25/2025, 6:16:18 PM",
+        "pregunta": "¿Qué diferencias existen entre el Parkinson y otros trastornos del movimiento, como el temblor esencial?",
+        "respuesta": "Las diferencias clave entre la enfermedad de Parkinson y el temblor esencial, que son dos trastornos del movimiento, incluyen:  1. **Características del temblor**: - **Temblor en reposo**: En la enfermedad de Parkinson, el temblor típicamente es un temblor en reposo que disminuye con el movimiento voluntario. Este tipo de temblor es una característica cardinal de la enfermedad y a menudo se presenta en la mano. - **Temblor postural y cinético**: En el temblor esencial, el temblor es principalmente postural y cinético, es decir, se presenta cuando el paciente sostiene una posición o durante el movimiento. No hay un temblor en reposo característico.  2. **Síntomas adicionales**: - **Bradicinesia y rigidez**: La enfermedad de Parkinson se caracteriza por la presencia de bradicinesia (movimiento lento) y rigidez (tensión muscular), así como alteraciones en la postura y el equilibrio. Estos síntomas son evidentes a medida que la enfermedad progresa. - **Síntomas aislados**: En contraste, el temblor esencial es generalmente monosintomático, lo que significa que el temblor es el síntoma predominante, sin otros signos neurológicos asociados como bradicinesia o rigidez.  3. **Curso y progresión**: - **Progresión**: La enfermedad de Parkinson muestra un curso crónico y progresivo, con síntomas que suelen empeorar con el tiempo. La aparición de síntomas adicionales a medida que avanza la enfermedad es común. - **Estabilidad**: El temblor esencial puede permanecer relativamente estable durante muchos años, y aunque puede empeorar con el tiempo, muchos pacientes presentan un temblor que no cambia significativamente.  4. **Respuesta al tratamiento**: - **Medicación**: La enfermedad de Parkinson responde bien a la levodopa, que ayuda a mejorar los síntomas motores. En cambio, el temblor esencial responde frecuentemente a los betabloqueantes y la primidona, pero no a la levodopa. - **Efectos del alcohol**: El temblor esencial a menudo muestra una notable mejoría después de la ingesta de alcohol, lo cual no es una característica típica en la enfermedad de Parkinson.  5. **Aspectos clínicos y diagnóstico**: - **Criterios Diagnósticos**: Los criterios diagnósticos difieren entre ambas condiciones, como se detalla en el documento **Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part71.pdf** [1] para el diagnóstico del temblor esencial, que incluye temblor bilateral, cinético o postural que es visible y persistente, y la exclusión de otros signos neurológicos.  Estas diferencias ayudan a los clínicos a diferenciar entre el Parkinson y otros trastornos del movimiento, facilitando el diagnóstico y el manejo adecuado de los pacientes.  Referencias: [1] Neurología_Clínica_-_Bradley_(5°_Edición)_Vol._II_part71.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 105,
+        "fecha": "1/27/2025, 8:20:06 AM",
+        "pregunta": "Plan de mantenimiento para las bombas de calor oilon?",
+        "respuesta": "El plan de mantenimiento para las bombas de calor Oilon, específicamente la serie S, se detalla en el documento **Oilon Maintenance program, S-series.pdf** [1]. Este plan incluye dos tipos de mantenimiento: extenso y compacto.\n\n### Mantenimiento Extensivo:\n- Cambio de aceite\n- Reemplazo del elemento del secador\n- Medidas de corriente del compresor\n- Verificación de protección contra sobrecorriente\n- Verificación de limitación de funcionamiento\n- Verificación de sensores de control\n- Verificación del nivel de refrigerante\n- Inspección de los cables de electricidad y automatización\n- Verificación de la humedad del refrigerante\n- Inspección del compresor\n- Verificación de fugas de refrigerante\n\n### Mantenimiento Compacto:\n- Medidas de corriente del compresor\n- Verificación de protección contra sobrecorriente\n- Verificación de limitación de funcionamiento\n- Verificación de sensores de control\n- Verificación del nivel de refrigerante\n- Inspección de los cables de electricidad y automatización\n- Verificación de la humedad del refrigerante\n- Inspección del compresor\n- Verificación de fugas de refrigerante\n\n### Intervalos de Mantenimiento:\n- **Mantenimiento Extensivo**: Se realiza una vez al año. Después del primer año, es requerido cada 10,000 horas de funcionamiento.\n- **Mantenimiento Compacto**: Se realiza entre los cambios de aceite del mantenimiento extensivo.\n\nEste plan de mantenimiento es esencial para asegurar el funcionamiento eficiente y prolongar la vida útil de las bombas de calor.\n\nReferencias:\n[1] Oilon_Maintenance_program,_S-series.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "URUFARMA"
+    },
+    {
+        "id": 106,
+        "fecha": "1/27/2025, 10:15:49 AM",
+        "pregunta": "Un varón de 23 años, fumador de 20 cigarrillos al día y sexualmente activo, consulta por disuria y secreción uretral matutina de aspecto blanquecino a lo largo de la última semana. En la tinción de dicho exudado se visualizan diplococos gramnegativos agrupados “en granos de café” en el interior de las células polimorfonucleares. Señale la opción correcta: 1) Administraría una dosis única de azitromicina (1 g) por vía oral ante el probable diagnóstico de uretritis por Chlamydia trachomatis. 2) En nuestro medio, el 95% de las cepas de Neisseria gonorrhoeae son sensibles a las quinolonas. 3) No se reconoce el estado de portador crónico asintomático para el gonococo. 4) Administraría una dosis única de única de ceftriaxona i.m. y azitromicina (1 g) v.o. y recomendaría realizar cribado de otras infecciones de transmisión sexual.",
+        "respuesta": "Según el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte38**, el diagnóstico descrito sugiere uretritis gonocócica, evidenciado por la visualización de diplococos gramnegativos. En este contexto, la opción correcta sería:\n\n**4) Administraría una dosis única de única de ceftriaxona i.m. y azitromicina (1 g) v.o. y recomendaría realizar cribado de otras infecciones de transmisión sexual.**\n\nEsta opción",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 107,
+        "fecha": "1/27/2025, 10:17:10 AM",
+        "pregunta": "Acude al servicio de Urgencias de un hospital rural un paciente de 58 años, fumador de medio paquete al día, consumidor ocasional de alcohol e hipertenso, en tratamiento con enalapril. Refiere la aparición, en las últimas 72 horas, de sensación distérmica y de una lesión dolorosa, inicialmente papulosa, en el dorso de la mano derecha que rápidamente evolución a úlcera. A la exploración física presenta una temperatura de 38,5 ºC, PA de 139/95 mmHg y FC de 99 lpm. Además de la citada lesión, destaca la presencia de adenopatías dolorosas en las regiones epitrocleares y axilares del brazo derecho. No se observa ningún trayecto eritematoso e indurado en el antebrazo. ¿Por cuál de los siguientes factores de riesgo debería ser interrogado específicamente este paciente en la anamnesis dirigida? 1) Uso de drogas por vía parenteral. 2) Consumo de derivados lácteos no pasteurizados. 3) Realización de actividades cinegéticas y contacto con roedores silvestres. 4) Antecedentes de traumatismos con ramas u otros vegetales en la mano derecha",
+        "respuesta": "Dado el contexto clínico del paciente, que incluye una lesión inicialmente papulosa que ha evolucionado a una úlcera y la presencia de adenopatías en las regiones epitrocleares y axilares, es relevante investigar posibles factores de riesgo asociados a infecciones como la tularemia, la cual a menudo está relacionada con actividades de caza y contacto con roedores silvestres. El",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 108,
+        "fecha": "1/27/2025, 10:18:11 AM",
+        "pregunta": "Una paciente de 17 años, que estuvo de excursión por el campo hace algunas semanas, presenta fiebre, cefalea, mialgias, escalofríos y fotofobia, con una lesión en la espalda de 15 cm de diámetro, papulosa, anular y con palidez central. La etiología más probable, entre las siguientes, es: 1) Salmonella typhi. 2) Streptococcus grupo A. 3) Borrelia burgdorferi. 4) Spirillum minus.",
+        "respuesta": "La etiología más probable para la paciente descrita es **Borrelia burgdorferi**, causante de la enfermedad de Lyme. La paciente presenta síntomas de fiebre, cefalea, mialgias, escalofríos y fotofobia, así como una lesión característica en la piel conocida como eritema migrans, que es una lesión papulosa, anular y con palidez central de al menos 5 cm de diámetro que aparece en la primera fase de la infección.\n\nLa información sobre esta condición y la presentación de la erupción se encuentra detallada en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte83** [1], donde se menciona que el eritema migrans comúnmente se observa en pacientes infectados por Borrelia burgdorferi, especialmente después de la picadura de garrapatas en áreas donde la enfermedad es endémica.\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part83.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 109,
+        "fecha": "1/27/2025, 10:19:17 AM",
+        "pregunta": "Hombre de 25 años sin antecedentes de interés, que acude al servicio de Urgencias con fiebre, cefalea, mialgias, náuseas, vómitos, dolor abdominal, ictericia e inyección conjuntival. Este cuadro se inició 2 semanas después de haber viajado a Tailandia para participar en una regata en las aguas de un río. ¿Cuál es el diagnóstico más probable? 1) Malaria. 2) Esquistosomiasis. 3) Leptospirosis. 4) Rabia.",
+        "respuesta": "El diagnóstico más probable para este paciente es **Leptospirosis**. La presentación clínica incluye fiebre, cefalea, mialgias, náuseas, vómitos, dolor abdominal, ictericia e inyección conjuntival, todos estos síntomas son compatibles con la leptospirosis, especialmente considerando que el paciente estuvo expuesto a aguas de un río en Tailandia, lo que aumenta su riesgo de infección.\n\nSegún el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte82** [1], la leptospirosis puede presentarse con síntomas similares a los descritos, incluyendo enfermedades hepáticas y signos de afectación renal, y es común en personas que tienen contacto con agua contaminada.\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part82.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 110,
+        "fecha": "1/27/2025, 10:20:46 AM",
+        "pregunta": "Una mujer de 54 años que está siendo sometida a quimioterapia por un carcinoma de mama y que, unos días antes, tenía 1.500 leucocitos por μl, con 20% de segmentados, acude al hospital porque, en las últimas 12 horas, ha tenido dos picos febriles de 38,5 oC. Señale la conducta más correcta en este caso: 1) Se deben dar simplemente antipiréticos, pues no es probable que tenga una infección y, si se da antibióticos, se hará que una eventual infección sea por gérmenes resistentes. 2) Se deben tomar múltiples hemocultivos y esperar al resultado antes de dar antibióticos, pues si se da antibióticos de entrada, se hará que una eventual infección sea por gérmenes resistentes. 3) No se debe perder el tiempo explorando meticulosamente, pues prácticamente nunca se encontrará el lugar de origen de la infección, por lo que basta con iniciar tratamiento con una asociación de antibióticos, incluso sin tomar hemocultivos. 4) Tras explorar meticulosamente para buscar el foco infeccioso y tomar dos series, como mínimo, de hemocultivos, se debe iniciar tratamiento con una asociación de antibióticos, tal como una carboxipenicilina de amplio espectro o una cefalosporina de 4.a generación",
+        "respuesta": "La conducta más correcta en este caso es la opción **4**: \"Tras explorar meticulosamente para buscar el foco infeccioso y tomar dos series, como mínimo, de hemocultivos, se debe iniciar tratamiento con una asociación de antibióticos, tal como una carboxipenicilina de amplio espectro o una cefalosporina de 4.a generación.\"\n\nEn pacientes inmunocomprometidos, como aquellos que están bajo quimioterapia, es fundamental tomar hemocultivos antes de iniciar el tratamiento antibiótico para identificar la posible presencia de agentes patógenos en la circulación. Además, la exploración meticulosa tiene el fin de intentar identificar un foco de infección, aunque en muchos casos puede no ser posible encontrarlo. La introducción temprana de antibióticos de amplio espectro es crucial en este tipo de situaciones para evitar complicaciones asociadas a infecciones en este grupo de pacientes.\n\nEsta estrategia se respalda en recomendaciones sobre el manejo de fiebre en neutropénicos, como se detalla en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte30** [1].\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part30.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 111,
+        "fecha": "1/27/2025, 10:30:09 AM",
+        "pregunta": "Una mujer de 35 años es diagnosticada de una púrpura trombocitopénica idiopática. A pesar del tratamiento con esteroides e inmunoglobulinas por vía parenteral, termina requiriendo esplenectomía al cabo de 6 meses del primer episodio de trombocitopenia. En relación con la población general, esta paciente presenta mayor incidencia de infecciones graves por todos los microorganismos que se exponen, excepto uno: 1) Streptococcus pneumoniae. 2) Babesia microti. 3) Plasmodium falciparum. 4) Pasteurella multocida.",
+        "respuesta": "En relación con la población general, esta paciente que ha sido sometida a esplenectomía presenta una mayor incidencia de infecciones graves por todos los microorganismos que se exponen, excepto **Plasmodium falciparum**.\n\nLa razón para esto es que la esplenectomía lleva a una mayor susceptibilidad a infecciones por organismos encapsulados, como **Streptococcus pneumoniae**, **Babesia microti** y **Pasteurella multocida**, que son comúnmente asociados a infecciones en pacientes asplénicos debido a la pérdida de la función de filtración y respuesta inmune del bazo. Por otro lado, **Plasmodium falciparum** es el agente causante de la malaria y la incidencia de esta infección depende más de la exposición a vectores (mosquitos) en áreas endémicas que de la presencia o ausencia del bazo.\n\nEste concepto se discute en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte125** [1], donde se menciona que los pacientes asplénicos son más vulnerables a infecciones por ciertos patógenos, pero no se incrementa el riesgo de infecciones por Plasmodium.\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part125.pdf",
+        "evaluacion": "down",
+        "motivo": "La respuesta correcta es la 4: Pasteurella multocida. En la página 3718 del libro queda claro que los pacientes con Asplenia tienen mas riesgo de infecciones por protozooarios (Protozoa) como es el caso de Plasmodium falciparum",
+        "marker": null
+    },
+    {
+        "id": 112,
+        "fecha": "1/27/2025, 10:31:14 AM",
+        "pregunta": "Acude a Urgencias un varón de 35 años que refiere que a las 2 semanas de regresar de vacaciones de Arabia Saudí, donde probó leche de camella, presenta fiebre, cefalea y diaforesis nocturna de 7 días de evolución. A la exploración física destacan adenopatías axilares e inguinales, así como hepatoesplenomegalia. Ante tu sospecha diagnóstica, ¿qué prueba solicitaría? 1) Prueba de la tuberculina. 2) Tinciones de micobacterias en esputo y orina. 3) Prueba del rosa de Bengala. 4) Gram directo del líquido cefalorraquídeo",
+        "respuesta": "Ante la presentación clínica de este varón, que incluye fiebre, cefalea, diaforesis nocturna, adenopatías axilares e inguinales, y hepatoesplenomegalia tras su retorno de Arabia Saudí, la sospecha diagnóstica más pertinente sería una infección por **Brucella**, ya que ha estado expuesto al consumo de leche de camello, lo que puede ser un factor de riesgo para la brucelosis.\n\nPor lo tanto, la prueba más adecuada a solicitar sería la **prueba del rosa de Bengala**, que es un test serológico utilizado para el diagnóstico de brucelosis, ya que permite detectar anticuerpos específicos en la sangre.\n\nEste enfoque se apoya en la información general sobre el diagnóstico de brucelosis, donde se enfatiza la relevancia de pruebas serológicas tras la exposición a productos lácteos no pasteurizados de animales potencialmente infectados.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 113,
+        "fecha": "1/27/2025, 10:42:03 AM",
+        "pregunta": "Un varón de 30 años, sin antecedentes de interés, acudió a Urgencias, 3 días después de volver de su viaje de luna de miel en Vietnam, por presentar fiebre elevada de 4 días de duración con mialgias graves y cefalea intensa. El mismo día de su visita a Urgencias comenzó a presentar un exantema maculopapuloso pruriginoso. El examen de la sangre mostró los siguientes datos: hematocrito 38%, leucocitos 3.700 células/mcl (82% neutrófilos y 12% linfocitos), plaquetas 115.000 células/mcl. La placa de tórax era normal. El paciente fue dado de alta con el diagnóstico de cuadro viral, en tratamiento con paracetamol y antihistamínicos para el picor. A las 48 horas volvió a Urgencias con notable deterioro clínico: confusión mental, petequias en antebrazos y piernas, edema en pies, hipotensión (PA 85/70 mmHg) y taquicardia (FC 110 lpm de amplitud pequeña). En los nuevos exámenes de la sangre destacaban: hematocrito 46%, leucocitos 3.600 células/mcl, sin cambios en la fórmula y plaquetas 65.000 células/ mcl. La placa de tórax mostraba un pequeño derrame pleural bilateral. ¿Cuál es el diagnóstico más probable? 1) Malaria por Plasmodium falciparum. 2) Dengue. 3) Chikungunya. 4) Esquistosomiasis.",
+        "respuesta": "El diagnóstico más probable para este varón de 30 años, considerando su reciente viaje a Vietnam, la presentación clínica de fiebre, mialgias, cefalea intensa, exantema maculopapuloso pruriginoso y el deterioro clínico posterior con confusión mental, petequias, edema, hipotensión y taquicardia, es **Dengue**.\n\nLa evolución del cuadro clínico, con el deterioro en un breve periodo de tiempo, así como los datos de laboratorio que muestran trombocitopenia (bajo recuento de plaquetas) y el estado de choque (hipotensión y taquicardia) son indicativos de un dengue grave. Además, la presencia de derrame pleural bilateral es una complicación que puede asociarse a Dengue.\n\nLa información sobre la presentación del dengue y sus complicaciones se menciona en el documento **Principles and Practice of Infectious Diseases (2019).pdf_parte53** [1], donde se destaca la necesidad de considerar dengue en pacientes que regresan de áreas endémicas con síntomas similares.\n\nReferencias:\n[1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part53.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 114,
+        "fecha": "1/27/2025, 10:43:35 AM",
+        "pregunta": "Un joven de 16 años realiza un viaje de fin de curso por Europa. Al mes de regreso, comienza con malestar general, odinofagia y fiebre; en la exploración, destaca hipertrofia amigdalar con exudado blanquecino, adenopatías occipitales, laterocervicales, dolorosas. En el hemograma se observan leucocitos, algunos de ellos atípicos. Ante la sospecha diagnóstica, se debe realizar: 1) Biopsia ganglionar. 2) Biopsia de médula ósea. 3) Tratamiento con penicilina. 4) Serología para virus de Epstein-Barr.",
+        "respuesta": "Ante la presentación clínica de este joven de 16 años, que incluye malestar general, odinofagia, fiebre, hipertrofia amigdalar con exudado blanquecino y adenopatías dolorosas, junto con el hallazgo de leucocitos atípicos en el hemograma, la sospecha diagnóstica más probable es mononucleosis infecciosa, comúnmente causada por el virus de Epstein-Barr.\n\nPor lo tanto, la prueba más adecuada a realizar es la **serología para virus de Epstein-Barr**. Esta prueba permitirá confirmar la infección por este virus, que es la causa más frecuente de",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 115,
+        "fecha": "1/27/2025, 10:44:36 AM",
+        "pregunta": "Paciente trasplantado renal de 2 meses de evolución que acude al servicio de Urgencias por síndrome febril, de 3 días de evolución, bien tolerado y acompañado de epigastralgias. En la analítica practicada, destaca una moderada leucopenia (2.400/mm3) con una leve elevación en la cifra de transaminasas (ALT 75 UI/l; AST 89 Ul/l). ¿Cuál sería el primer diagnóstico de sospecha? 1) Tuberculosis pulmonar. 2) Infección por Helicobacter pylori. 3) Infección por Pneumocystis jirovecii. 4) Infección por citomegalovirus.",
+        "respuesta": "En el caso presentado, el paciente trasplantado renal de 2 meses que presenta un síndrome febril y una moderada leucopenia, así como una leve elevación en las transaminasas, el diagnóstico de sospecha más adecuado sería una **infección por citomegalovirus (CMV)**.\n\nLa infección por CMV en pacientes trasplantados, especialmente en el primer año postrasplante, es una complicación frecuente y puede presentarse con síntomas febril y alteraciones en la función hepática, como se observa en este paciente. La leucopenia también es compatible con la infección por CMV, dado que este virus puede afectar la médula ósea y la producción de células sanguíneas.\n\nEn cambio, la infección por Pneumocystis jirovecii típicamente se manifiesta con síntomas respiratorios y no es la presentación más común con síndrome febril y dolor epigástrico en este contexto. La tuberculosis pulmonar y la infección por Helicobacter pylori son menos probables dadas las características clínicas y el perfil del paciente.\n\nPor lo tanto, la opción correcta sería: **4) Infección por citomegalovirus**.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
     }
 ]
