@@ -89,7 +89,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
     word-wrap: break-word;
-    white-space: pre-line;
+    /*white-space: pre-line;*/
     /* Fuente Roboto (importada arriba) */
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -750,4 +750,48 @@ body {
     padding: 8px 16px;
     font-size: 0.95rem;
   }
+}
+
+/* Estilo moderno para <table> */
+table {
+  width: 100%;         /* O auto, si prefieres */
+  border-collapse: collapse;
+  margin-bottom: 1rem; /* Pequeño margen inferior */
+  font-size: 0.95rem;  /* Ajusta tamaño de fuente */
+  color: #333;         /* Color de texto general */
+  background-color: #fff;
+}
+
+thead th {
+  background-color: #f2f2f2; /* Color de fondo para encabezado */
+  border-bottom: 2px solid #ccc; /* Borde más grueso para separación */
+  padding: 12px 8px;            /* Espaciado interno */
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem; /* Encabezado un poco más grande */
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee; /* Separación sutil entre filas */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fbfbfb; /* Zebra striping en filas pares */
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5; /* Sombreado al hover */
+}
+
+th,
+td {
+  padding: 10px 8px;
+  vertical-align: middle; /* Centrar verticalmente el contenido */
+}
+
+/* Opcional: quita el borde o ajusta estilo si usabas border=1 en tu CSS anterior */
+table,
+th,
+td {
+  border: 0; /* Usamos únicamente los bordes de la regla border-bottom */
 }

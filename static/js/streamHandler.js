@@ -168,75 +168,92 @@ if (message === "") {
     const reader = response.body.getReader();
     const decoder = new TextDecoder("utf-8");
 
-    async function readChunk() {
-      const { done, value } = await reader.read();
-      if (done) {
-        // El servidor cerró el stream => No llegarán más chunks.
-        // Pero tu typewriter (pendingText) podría seguir escribiendo.
-        let checkInterval = setInterval(() => {
-          // Esperamos a que el typewriter consuma pendingText
-          if (pendingText.length === 0 && !isTyping) {
-            clearInterval(checkInterval);
+    console.log("A punto de iniciar lectura de stream");
+async function readChunk() {
+    console.log("readChunk() se ha llamado"); // <= LOG PRINCIPAL
+  const { done, value } = await reader.read();
+  if (done) {
+    console.log("readChunk -> done=true. No más chunks.");
+    // El servidor cerró el stream => No llegarán más chunks.
 
+    let checkInterval = setInterval(() => {
+      // Esperar a que el typewriter termine (pendingText.length === 0 && !isTyping)
+      if (pendingText.length === 0 && !isTyping) {
+        clearInterval(checkInterval);
 
-          if (finalRefChunk) {
-            // SUSTITUIR el contenido con la respuesta final (SIN duplicar):
-            assistantMessageDiv.innerHTML = finalRefChunk;
-          }
+         console.log("DONE: No hay texto pendiente y no está escribiendo. Procesamos markdown.");
 
-            // Una vez que está todo el texto final insertado,
-            // puedes invocar MathJax y/o poner thumbs, OSMA, etc.
-            if (window.MathJax) {
-              window.MathJax.typesetPromise([assistantMessageDiv])
-                .then(() => {
-                  insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
-                  appendOsmaModeSwitchBox();
-                })
-                .catch(err => console.error("MathJax typeset error:", err));
-            } else {
-              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
-              appendOsmaModeSwitchBox();
-            }
-          }
-        }, 50);
-        return;
-      }
+        // ******************************
+        // Aquí hacemos la conversión a HTML con marked
+        // ******************************
 
-      // Decodificar el chunk
-      let chunkText = decoder.decode(value, { stream: true });
-
-      // Verificar si trae el marcador [REF_POSTPROCESS]
-      if (chunkText.includes("[REF_POSTPROCESS]")) {
-        // Dividir en dos partes: lo que está antes y lo que está después de [REF_POSTPROCESS]
-        // (Normalmente, vendrá algo como "...[REF_POSTPROCESS]TextoFinalYaProcesado"
-        //  pero igual manejamos la separación por si hay texto previo)
-        const parts = chunkText.split("[REF_POSTPROCESS]");
-        const normalText = parts[0] || "";  // Texto "normal" antes del marcador
-        const finalText = parts[1] || "";   // Texto final postprocesado
-
-        // 1) Al "normalText" le aplicamos typewriter (si no está vacío)
-        if (normalText) {
-          pendingText += normalText;
-          backgroundTyper(assistantMessageDiv, 12); // Efecto typewriter a 25ms por char
+        // 1) Determinar qué texto final mostraremos
+        let finalContent = "";
+        if (finalRefChunk) {
+          console.log("Tenemos finalRefChunk. Usamos eso como texto final.");
+          // Si llegó un texto especial postprocesado con [REF_POSTPROCESS]
+          finalContent = finalRefChunk;
+        } else {
+          // Si no llegó nada especial, usamos el texto ya tipeado
+          // Ojo: para recogerlo tal cual, podemos usar .innerText o .textContent
+          console.log("No hay finalRefChunk. Tomamos assistantMessageDiv.innerText como finalContent.");
+          finalContent = assistantMessageDiv.innerText;
         }
 
-        // 2) Guardamos el "finalText" en una variable global/local finalRefChunk
-        //    NO lo mostramos todavía, esperaremos a que termine el typewriter
-        finalRefChunk = finalText;
+        // 2) Convertimos el texto final a HTML con marked
+        //    (Asegúrate de importar { marked } y/o usar window.marked si CDN)
+        console.log("Texto final antes de marked:", finalContent);
+        const finalHTML = window.marked.parse(finalContent);
+        console.log("HTML resultante de marked:", finalHTML);
 
-      } else {
-        // No es chunk final => se muestra con typewriter
-        pendingText += chunkText;
-        backgroundTyper(assistantMessageDiv, 12);
+        // 3) Reemplazamos el contenido en el DIV con el HTML resultante
+        //    Esto mostrará correctamente la tabla Markdown, etc.
+        assistantMessageDiv.innerHTML = finalHTML;
+
+        // 4) MathJax (si lo usas) y otros pasos finales
+        if (window.MathJax) {
+          window.MathJax.typesetPromise([assistantMessageDiv])
+            .then(() => {
+              // Insertar UI de Thumbs, OSMA, etc. (si corresponde)
+              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
+              appendOsmaModeSwitchBox();
+            })
+            .catch(err => console.error("MathJax typeset error:", err));
+        } else {
+          insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
+          appendOsmaModeSwitchBox();
+        }
+
       }
+    }, 50);
 
-      // Auto-scroll al final
-      chatBox.scrollTop = chatBox.scrollHeight;
+    return;
+  }
 
-      // Continuar leyendo más chunks de forma recursiva
-      readChunk();
+
+
+
+  // (si no está done, seguimos procesando el chunk normalmente)
+  let chunkText = decoder.decode(value, { stream: true });
+    console.log("Chunk recibido:", chunkText);
+  if (chunkText.includes("[REF_POSTPROCESS]")) {
+    const parts = chunkText.split("[REF_POSTPROCESS]");
+    const normalText = parts[0] || "";
+    const finalText = parts[1] || "";
+
+    if (normalText) {
+      pendingText += normalText;
+      backgroundTyper(assistantMessageDiv, 12);
     }
-    readChunk();
+    finalRefChunk = finalText; // se usará al final
+  } else {
+    pendingText += chunkText;
+    backgroundTyper(assistantMessageDiv, 12);
+  }
+  chatBox.scrollTop = chatBox.scrollHeight;
+  readChunk();
+}
+readChunk();
 
   } catch (err) {
     // 8) Manejo de errores
@@ -364,75 +381,79 @@ export async function sendOptionMessage(message) {
     }
 
 
-    async function readChunk() {
-      const { done, value } = await reader.read();
-      if (done) {
-        // El servidor cerró el stream => No llegarán más chunks.
-        // Pero tu typewriter (pendingText) podría seguir escribiendo.
-        let checkInterval = setInterval(() => {
-          // Esperamos a que el typewriter consuma pendingText
-          if (pendingText.length === 0 && !isTyping) {
-            clearInterval(checkInterval);
+async function readChunk() {
+  const { done, value } = await reader.read();
+  if (done) {
+    // El servidor cerró el stream => No llegarán más chunks.
 
+    let checkInterval = setInterval(() => {
+      // Esperar a que el typewriter termine (pendingText.length === 0 && !isTyping)
+      if (pendingText.length === 0 && !isTyping) {
+        clearInterval(checkInterval);
 
-          if (finalRefChunk) {
-            // SUSTITUIR el contenido con la respuesta final (SIN duplicar):
-            assistantMessageDiv.innerHTML = finalRefChunk;
-          }
+        // ******************************
+        // Aquí hacemos la conversión a HTML con marked
+        // ******************************
 
-            // Una vez que está todo el texto final insertado,
-            // puedes invocar MathJax y/o poner thumbs, OSMA, etc.
-            if (window.MathJax) {
-              window.MathJax.typesetPromise([assistantMessageDiv])
-                .then(() => {
-                  insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
-                  appendOsmaModeSwitchBox();
-                })
-                .catch(err => console.error("MathJax typeset error:", err));
-            } else {
-              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
-              appendOsmaModeSwitchBox();
-            }
-          }
-        }, 50);
-        return;
-      }
-
-      // Decodificar el chunk
-      let chunkText = decoder.decode(value, { stream: true });
-
-      // Verificar si trae el marcador [REF_POSTPROCESS]
-      if (chunkText.includes("[REF_POSTPROCESS]")) {
-        // Dividir en dos partes: lo que está antes y lo que está después de [REF_POSTPROCESS]
-        // (Normalmente, vendrá algo como "...[REF_POSTPROCESS]TextoFinalYaProcesado"
-        //  pero igual manejamos la separación por si hay texto previo)
-        const parts = chunkText.split("[REF_POSTPROCESS]");
-        const normalText = parts[0] || "";  // Texto "normal" antes del marcador
-        const finalText = parts[1] || "";   // Texto final postprocesado
-
-        // 1) Al "normalText" le aplicamos typewriter (si no está vacío)
-        if (normalText) {
-          pendingText += normalText;
-          backgroundTyper(assistantMessageDiv, 12); // Efecto typewriter a 25ms por char
+        // 1) Determinar qué texto final mostraremos
+        let finalContent = "";
+        if (finalRefChunk) {
+          // Si llegó un texto especial postprocesado con [REF_POSTPROCESS]
+          finalContent = finalRefChunk;
+        } else {
+          // Si no llegó nada especial, usamos el texto ya tipeado
+          // Ojo: para recogerlo tal cual, podemos usar .innerText o .textContent
+          finalContent = assistantMessageDiv.innerText;
         }
 
-        // 2) Guardamos el "finalText" en una variable global/local finalRefChunk
-        //    NO lo mostramos todavía, esperaremos a que termine el typewriter
-        finalRefChunk = finalText;
+        // 2) Convertimos el texto final a HTML con marked
+        //    (Asegúrate de importar { marked } y/o usar window.marked si CDN)
+        const finalHTML = marked.parse(finalContent);
 
-      } else {
-        // No es chunk final => se muestra con typewriter
-        pendingText += chunkText;
-        backgroundTyper(assistantMessageDiv, 12);
+        // 3) Reemplazamos el contenido en el DIV con el HTML resultante
+        //    Esto mostrará correctamente la tabla Markdown, etc.
+        assistantMessageDiv.innerHTML = finalHTML;
+
+        // 4) MathJax (si lo usas) y otros pasos finales
+        if (window.MathJax) {
+          window.MathJax.typesetPromise([assistantMessageDiv])
+            .then(() => {
+              // Insertar UI de Thumbs, OSMA, etc. (si corresponde)
+              insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
+              appendOsmaModeSwitchBox();
+            })
+            .catch(err => console.error("MathJax typeset error:", err));
+        } else {
+          insertThumbsFeedbackUI({ question: message, assistantDiv: assistantMessageDiv });
+          appendOsmaModeSwitchBox();
+        }
+
       }
+    }, 50);
 
-      // Auto-scroll al final
-      chatBox.scrollTop = chatBox.scrollHeight;
+    return;
+  }
 
-      // Continuar leyendo más chunks de forma recursiva
-      readChunk();
+  // (si no está done, seguimos procesando el chunk normalmente)
+  let chunkText = decoder.decode(value, { stream: true });
+  if (chunkText.includes("[REF_POSTPROCESS]")) {
+    const parts = chunkText.split("[REF_POSTPROCESS]");
+    const normalText = parts[0] || "";
+    const finalText = parts[1] || "";
+
+    if (normalText) {
+      pendingText += normalText;
+      backgroundTyper(assistantMessageDiv, 12);
     }
-    readChunk();
+    finalRefChunk = finalText; // se usará al final
+  } else {
+    pendingText += chunkText;
+    backgroundTyper(assistantMessageDiv, 12);
+  }
+  chatBox.scrollTop = chatBox.scrollHeight;
+  readChunk();
+}
+readChunk();
 
   } catch (err) {
     // 8) Manejo de errores
