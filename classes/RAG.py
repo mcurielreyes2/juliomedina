@@ -57,7 +57,7 @@ class RAGService:
 
         # 5) Inicializar ReferenceMaker
         docs_directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "static", "docs")
-        self.reference_maker = ReferenceMaker(docs_directory=docs_directory, threshold=50)
+        self.reference_maker = ReferenceMaker(docs_directory=docs_directory, threshold=70)
 
 
     def load_coffee_keywords(self, filename: str):

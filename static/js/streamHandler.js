@@ -170,7 +170,6 @@ if (message === "") {
 
     console.log("A punto de iniciar lectura de stream");
 async function readChunk() {
-    console.log("readChunk() se ha llamado"); // <= LOG PRINCIPAL
   const { done, value } = await reader.read();
   if (done) {
     console.log("readChunk -> done=true. No más chunks.");

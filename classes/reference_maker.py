@@ -87,31 +87,29 @@ class ReferenceMaker:
 
     def process_text_references_with_citations(self, text: str) -> str:
         """
-        Procesa texto para agregar citas con referencias válidas y un bloque de referencias al final.
+        Procesa el texto para buscar fragmentos entre ** ** (posibles referencias),
+        localiza el archivo correspondiente y añade [i] como cita en el texto.
+        Finalmente, añade al final el bloque de "Referencias:" con enlaces.
         """
-        import re
-
-        # Regex para capturar texto entre ** **
         doc_regex = re.compile(r'\*\*([^*]+)\*\*')
         matches = doc_regex.findall(text)
 
         if not matches:
-            return text  # Sin referencias encontradas
+            # Sin referencias encontradas, devolvemos el texto tal cual
+            return text
 
-        # Mapeo de referencia original a índice y detalles de referencia
+        # Mapeo de (referencia original) -> índice de cita y detalles
         ref_map = {}
         ref_details = {}
         current_index = 1
 
+        # 1) Construimos la tabla de referencias únicas y sus índices
         for ref_str in matches:
-            # Evitar procesar referencias repetidas
+            # Evitar procesar la misma referencia más de una vez
             if ref_str in ref_map:
                 continue
 
-            # Buscar archivo más cercano
             matched_filename = self.find_closest_filename(ref_str)
-
-            # Solo procesar si hay una coincidencia válida
             if matched_filename:
                 ref_map[ref_str] = current_index
                 ref_details[current_index] = {
@@ -120,29 +118,31 @@ class ReferenceMaker:
                 }
                 current_index += 1
 
-        # Reemplazo in-place con [i] solo para referencias válidas
-        for ref_str in matches:
-            if ref_str in ref_map:
-                i = ref_map[ref_str]
-                if i in ref_details:  # Confirmar que es una referencia válida
-                    matched = ref_details[i]["matched_filename"]
-                    if matched:
-                        new_fragment=f"**{ref_str}** <span class=\"doc-citation-number\">[{i}]</span>"
-                        old_fragment = f"**{ref_str}**"
-                        text = text.replace(old_fragment, new_fragment)
+        # 2) Definimos una función callback que se usará con re.sub
+        def replacer(match_obj):
+            ref_str_found = match_obj.group(1)  # Lo que está entre ** **
+            if ref_str_found in ref_map:
+                i = ref_map[ref_str_found]
+                # Añadimos la marca de cita [i]
+                return f"**{ref_str_found}** <span class=\"doc-citation-number\">[{i}]</span>"
+            else:
+                # Si no está en ref_map, devolvemos el texto original sin cambios
+                return match_obj.group(0)
 
-        # Construir el bloque de referencias
-        references_block = "\n\n<b>Referencias:</b>\n"
-        for i in sorted(ref_details.keys()):
-            info = ref_details[i]
-            ref_str = info["ref_str"]
-            matched = info["matched_filename"]
-            if matched:  # Solo incluir referencias válidas
-                link = f"/static/docs/{self.encode_filename_for_url(matched)}"
-                references_block += f"[{i}] <a href=\"{link}\" target=\"_blank\">{matched}</a>\n"
+        # 3) Usamos re.sub con nuestro callback para reemplazar todas las referencias
+        text = doc_regex.sub(replacer, text)
 
-        # Agregar bloque de referencias al texto
-        text += references_block
+        # 4) Construimos el bloque de referencias al final del texto
+        if ref_details:
+            references_block = "\n\n<b>Referencias:</b>\n"
+            for i in sorted(ref_details.keys()):
+                info = ref_details[i]
+                matched = info["matched_filename"]
+                if matched:
+                    link = f"/static/docs/{self.encode_filename_for_url(matched)}"
+                    references_block += (f"<li>[{i}] <a href=\"{link}\" target=\"_blank\">{matched}</a></li>")
+            text += references_block
+
         return text
 
     @staticmethod

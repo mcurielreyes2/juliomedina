@@ -154,6 +154,8 @@ def chat_stream():
             # Llamamos a reference_maker para hacer fuzzy matching en la respuesta completa
             final_answer_with_citations = asistente.rag_service.process_references_in_text(final_answer)
 
+            logger.info(final_answer_with_citations)
+
             yield "\n[REF_POSTPROCESS]" + final_answer_with_citations
 
         return Response(

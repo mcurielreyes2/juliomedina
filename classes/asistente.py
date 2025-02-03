@@ -62,7 +62,7 @@ class Asistente:
         #self.bucket_id_english = int(self.bucket_id_english)
 
         # Set other configurations
-        self.completion_model = "gpt-4o-mini"
+        self.completion_model = "o1-preview-2024-09-12"
         instruction_parser = InstructionParser("instructions.json")
         self.instruction = instruction_parser.load_instruction()
 
@@ -159,7 +159,7 @@ class Asistente:
 
             after_groundx = time.time()
             # 3) Build the messages array (system + conversation history + user query)
-            messages = [{"role": "system", "content": f"{self.instruction}\n===\n{system_context}\n==="}]
+            messages = [{"role": "user", "content": f"{self.instruction}\n===\n{system_context}\n==="}]
             for q, a in self.context_history:
                 messages.append({"role": "user", "content": q})
                 messages.append({"role": "assistant", "content": a})

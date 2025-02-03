@@ -990,6 +990,15 @@
         "marker": null
     },
     {
+        "id": 120,
+        "fecha": "1/27/2025, 4:46:07 PM",
+        "pregunta": "que tratamientos disponibles y costo efectivos se disponen para la EA?",
+        "respuesta": "Los tratamientos disponibles y costo-efectivos para la Enfermedad de Alzheimer (EA) incluyen varias opciones farmacológicas y no farmacológicas. Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf [1], se discuten las siguientes:\n\nFármacos inhibidores de la colinesterasa:\n\nEjemplos incluyen donepezilo, rivastigmina y galantamina. Estos medicamentos son útiles para mejorar o estabilizar los síntomas cognitivos y están aprobados para el tratamiento de la EA en etapas leve a moderada. Proveen beneficios cognitivos a corto plazo y su costo-efectividad depende de la etapa y el grado de la enfermedad.\n\nMemantina:\n\nEste fármaco está indicado para pacientes en etapas moderadas a severas y actúa modulando la actividad del glutamato. Puede ser utilizado solo o en combinación con inhibidores de la colinesterasa. Se ha demostrado que mejora el funcionamiento diario y la cognición en algunos pacientes.\n\nIntervenciones no farmacológicas:\n\nEstas incluyen terapias cognitivo-conductuales, estimulación cognitiva y programas de actividades. Las intervenciones psicológicas y sociales han mostrado beneficios en el bienestar general y en la calidad de vida del paciente y sus cuidadores.\n\nRehabilitación y apoyo familiar:\n\nProgramas de educación y apoyo para familiares y cuidadores son también esenciales para mejorar la calidad de vida y la gestión del cuidado del paciente.\n\nEstrategias dietéticas y ejercicio:\n\nAunque no son tratamientos farmacológicos, se sugiere que una dieta saludable y la actividad física pueden tener un efecto positivo en la progresión de la enfermedad y la salud cognitiva general.\n\nEl costo-efectividad de estos tratamientos varía dependiendo de factores como la duración del tratamiento, la etapa de la enfermedad y el contexto del cuidado. La evaluación de costo-efectividad debe considerar tanto los costos directos (fármacos y atención médica) como los indirectos (cuidado informal y pérdida de productividad).\n\nEs crucial realizar un enfoque individualizado para cada paciente de acuerdo con su situación particular y la evolución de la enfermedad, algo que también se menciona en el documento de referencia.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
         "id": 111,
         "fecha": "1/27/2025, 10:30:09 AM",
         "pregunta": "Una mujer de 35 años es diagnosticada de una púrpura trombocitopénica idiopática. A pesar del tratamiento con esteroides e inmunoglobulinas por vía parenteral, termina requiriendo esplenectomía al cabo de 6 meses del primer episodio de trombocitopenia. En relación con la población general, esta paciente presenta mayor incidencia de infecciones graves por todos los microorganismos que se exponen, excepto uno: 1) Streptococcus pneumoniae. 2) Babesia microti. 3) Plasmodium falciparum. 4) Pasteurella multocida.",
@@ -1030,6 +1039,402 @@
         "fecha": "1/27/2025, 10:44:36 AM",
         "pregunta": "Paciente trasplantado renal de 2 meses de evolución que acude al servicio de Urgencias por síndrome febril, de 3 días de evolución, bien tolerado y acompañado de epigastralgias. En la analítica practicada, destaca una moderada leucopenia (2.400/mm3) con una leve elevación en la cifra de transaminasas (ALT 75 UI/l; AST 89 Ul/l). ¿Cuál sería el primer diagnóstico de sospecha? 1) Tuberculosis pulmonar. 2) Infección por Helicobacter pylori. 3) Infección por Pneumocystis jirovecii. 4) Infección por citomegalovirus.",
         "respuesta": "En el caso presentado, el paciente trasplantado renal de 2 meses que presenta un síndrome febril y una moderada leucopenia, así como una leve elevación en las transaminasas, el diagnóstico de sospecha más adecuado sería una **infección por citomegalovirus (CMV)**.\n\nLa infección por CMV en pacientes trasplantados, especialmente en el primer año postrasplante, es una complicación frecuente y puede presentarse con síntomas febril y alteraciones en la función hepática, como se observa en este paciente. La leucopenia también es compatible con la infección por CMV, dado que este virus puede afectar la médula ósea y la producción de células sanguíneas.\n\nEn cambio, la infección por Pneumocystis jirovecii típicamente se manifiesta con síntomas respiratorios y no es la presentación más común con síndrome febril y dolor epigástrico en este contexto. La tuberculosis pulmonar y la infección por Helicobacter pylori son menos probables dadas las características clínicas y el perfil del paciente.\n\nPor lo tanto, la opción correcta sería: **4) Infección por citomegalovirus**.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 116,
+        "fecha": "1/27/2025, 4:15:31 PM",
+        "pregunta": "que diagnósticos diferenciales se pueden plantear frente a una posible Enfermedad de Parkinson ?",
+        "respuesta": "Los diagnósticos diferenciales frente a una posible Enfermedad de Parkinson (EP) incluyen:\n\nTemblor esencial: A menudo se presenta como temblor durante la actividad y no se detiene en reposo, lo que lo distingue del temblor en reposo típico de la EP.\n\nParálisis supranuclear progresiva (PSP): Se caracteriza por la oftalmoplejía supranuclear, rigidez axial y alteraciones en la marcha, además de la expresión facial típica de sorpresa o preocupación.\n\nAtrofia multisistémica (AMS): Incluye síntomas similares a la EP pero también presenta disfunción autonómica y problemas cerebelosos.\n\nDemencia con cuerpos de Lewy: Presenta síntomas motores y no motores, pero la demencia y alucinaciones ocurren en etapas tempranas.\n\nDistonía: Puede causar movimientos involuntarios que imitan los síntomas de parkinsonismo.\n\nEnfermedades neurodegenerativas (como la enfermedad de Alzheimer): Pueden presentar un cuadro clínico que simula la EP, pero a menudo acompañadas de deterioro cognitivo prevalente.\n\nSíndromes relacionados con el uso de fármacos (como los efectos secundarios de antipsicóticos): Pueden causar síntomas similares al parkinsonismo.\n\nEnfermedades metabólicas o tóxicas: Como la encefalopatía anóxica-isquémica o el síndrome de Korsakoff, que pueden presentar síntomas motores y cognitivos.\n\nEs esencial realizar una evaluación clínica cuidadosa, que incluya la historia clínica completa, examen neurológico y pruebas complementarias para establecer un diagnóstico correcto y diferenciar estas condiciones de la EP.\n\nEsta información está basada en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf [1], donde se discuten estas condiciones y su relación con la enfermedad de Parkinson.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 117,
+        "fecha": "1/27/2025, 4:16:13 PM",
+        "pregunta": "Excelente ! complemento la pregunta previa: ¿cuales consideras que son síntomas y signos atípico que se pueden considerar banderas rojas para el diagnóstico de EP?o",
+        "respuesta": "Los síntomas y signos atípicos que pueden considerarse \"banderas rojas\" en el diagnóstico de la Enfermedad de Parkinson (EP) incluyen:\n\nInicio temprano de síntomas: Aunque la EP generalmente se presenta en adultos mayores, el inicio en personas jóvenes (menores de 50 años) puede ser indicativo de otra enfermedad.\n\nSimetría de los síntomas: La EP típicamente presenta síntomas asimétricos. Si los síntomas son simétricos desde el inicio, podría sugerir otra condición.\n\nPresencia de síntomas no motores prominentes desde el inicio: Isso incluye depresión severa, trastornos del sueño, o disfunción cognitiva que aparece al mismo tiempo que los síntomas motores.\n\nDificultad para caminar desde el principio, sin otros síntomas precursores: Esto puede ser más característico de enfermedades como la parálisis supranuclear progresiva.\n\nFalta de respuesta a la dopamina: Los pacientes con EP suelen mostrar mejoría en respuesta a levodopa. Una buena respuesta es un buen indicador para el diagnóstico, mientras que la falta de ella puede señalar un diagnóstico alternativo.\n\nOftalmoplejía y problemas de equilibrio: Si estos síntomas están presentes en las primeras etapas, podrían indicar condiciones como PSP o AMS.\n\nAtrofia o pérdida de masa muscular visible: La pérdida excesiva de masa muscular en las fases tempranas puede sugerir un diagnóstico diferente.\n\nEstos signos y síntomas pueden ayudar a los clínicos a diferenciar la EP de otros trastornos que presentan parkinsonismo. Es fundamental llevar a cabo una evaluación exhaustiva para un diagnóstico correcto. Esta información está respaldada por el contenido del documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 118,
+        "fecha": "1/27/2025, 4:26:14 PM",
+        "pregunta": "en relación a la Enfermedad de Alzheimer, ¿que criterios diagnósticos son útiles?",
+        "respuesta": "Los criterios diagnósticos útiles para la Enfermedad de Alzheimer (EA) según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf [1] son los presentados por el National Institute of Neurological and Communicative Disorders and Stroke/Alzheimer's Disease and Related Disorders Association (NINCDS/ADRDA). Estos criterios incluyen:\n\nDemencia establecida por exploración física: Confirmada por pruebas de cribado cognitivo, como el Mini-Mental State Examination (MMSE).\n\nDéficit en dos o más áreas de cognición: Esto puede incluir memoria, lenguaje, funciones visuoespaciales y funciones ejecutivas.\n\nEmpeoramiento progresivo de la memoria y de otras funciones cognitivas: La progresión es un aspecto clave que distingue la EA de otros tipos de deterioro cognitivo.\n\nSin alteración de la consciencia: En la EA, los pacientes generalmente mantienen un nivel de consciencia normal, a diferencia de otros trastornos que pueden afectar la alerta.\n\nInicio entre los 40 y 90 años de edad, siendo más frecuente después de los 65 años.\n\nAusencia de trastornos sistémicos u otras enfermedades cerebrales que justifiquen los déficits y la progresión: Esto implica que otras posibles causas de demencia deben ser descartadas antes de hacer un diagnóstico de EA.\n\nEstos criterios son esenciales para establecer el diagnóstico y ayudar en la planificación de un enfoque de tratamiento y manejo en los pacientes con EA. Es vital realizar una evaluación clínica completa para aplicar adecuadamente estos criterios.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 119,
+        "fecha": "1/27/2025, 4:37:19 PM",
+        "pregunta": "que elementos del estudio neuropsicológico, colaboran con el diagnóstico de Alzheimer ?",
+        "respuesta": "Los elementos del estudio neuropsicológico que colaboran con el diagnóstico de la Enfermedad de Alzheimer (EA) incluyen:\n\nEvaluación de la memoria: Se valoran tanto la memoria episódica (capacidad para recordar hechos y experiencias) como la memoria semántica (conocimiento de hechos generales). La afectación en estas áreas es fundamental para identificar la EA.\n\nFunciones ejecutivas: Se examinan habilidades como la planificación, organización, solución de problemas y la multitarea. La disfunción ejecutiva es común en la EA.\n\nLenguaje: Se evalúan la fluidez verbal, la denominación de objetos y la comprensión del lenguaje. Los pacientes pueden presentar dificultades en la búsqueda de palabras y en la comprensión de instrucciones.\n\nFunciones visuoespaciales: Se evalúa la capacidad para integrar información visual y espacial, así como habilidades como la orientación. La disfunción en estas áreas puede manifestarse en problemas con actividades cotidianas.\n\nAtención y concentración: Se examina la capacidad de prestar atención y mantener la concentración en tareas. La dificultad en estas áreas es un indicativo importante en la EA.\n\nRazonamiento y habilidades matemáticas: Se evalúa la capacidad para realizar operaciones matemáticas y razonar con información abstracta. La disminución en estas habilidades es frecuente en la EA.\n\nEvaluación de cambios de personalidad y comportamiento: Se considera la presencia de cambios en la conducta, el estado de ánimo y la personalidad que pueden acompañar a la EA.\n\nEstos elementos ayudan a identificar el perfil cognitivo del paciente y pueden ser fundamentales en el diagnóstico diferencial de la EA respecto a otros tipos de demencia, así como en la planificación del manejo y tratamiento del paciente. Esta información está sustentada en el contenido del documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 121,
+        "fecha": "1/27/2025, 4:46:18 PM",
+        "pregunta": "¿qué tipo de neuroimagen recomendarías y porque en EP ?",
+        "respuesta": "Para la evaluación de la Enfermedad de Parkinson (EP), se recomienda principalmente el uso de neuroimagen mediante Resonancia Magnética (RM) y Tomografía por Emisión de Positrones (PET). Aquí están las razones:\n\nResonancia Magnética (RM):\n\nLa RM es útil para descartar otras condiciones que pueden simular la EP, como tumores o enfermedades estructurales del cerebro. Aunque la RM no muestra cambios específicos en la EP, permite una evaluación del volumen cerebral y la identificación de atrofias, especialmente en regiones como el mesencéfalo y la sustancia negra, que son relevantes en los trastornos del movimiento.\nLa RM también es valiosa para evaluar anomalías en estructuras del sistema nervioso central que pueden asociarse con la progresión de la enfermedad.\n\nTomografía por Emisión de Positrones (PET):\n\nLa PET puede utilizarse para evaluar la función del metabolismo cerebral y la actividad dopaminérgica en el cerebro. Permite observar la captación de ligandos que se unen a los transportadores de dopamina, ayudando a establecer la severidad de la disfunción dopaminérgica, que es crucial en la EP.\nLa PET es particularmente útil en la identificación de la EP en etapas tempranas y en la diferenciación de la EP de otros parkinsonismos, ya que puede mostrar características específicas de la enfermedad a nivel funcional.\n\nAmbas modalidades ofrecen información complementaria que puede resultar crucial en el diagnóstico y manejo de la EP. Es importante considerar tanto factores clínicos como neuroimaginológicos en el proceso diagnóstico.\n\nEsta información puede referirse a consideraciones mencionadas en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf [1], donde se discuten aspectos relevantes sobre imágenes en el contexto de la enfermedad de Parkinson.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 122,
+        "fecha": "1/27/2025, 4:48:02 PM",
+        "pregunta": "que tipo de tratamiento alternativo con fármacos existe a los ya sugeridos?",
+        "respuesta": "En el contexto de la Enfermedad de Alzheimer (EA), algunos tratamientos alternativos con fármacos que se han investigado, aunque no son de primera línea ni ampliamente aceptados en la práctica clínica estándar según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf [1], incluyen:\n\nAntiinflamatorios no esteroides (AINEs):\n\nAlgunos estudios han sugerido que el uso de AINEs podría tener un efecto protector sobre el deterioro cognitivo, aunque los resultados han sido inconsistentes y no se recomienda su uso como tratamiento estándar.\n\nÁcidos grasos omega-3:\n\nLos suplementos de omega-3 han sido objeto de estudio por sus posibles beneficios en la función cognitiva y su efecto antiinflamatorio. Sin embargo, la evidencia no es concluyente y debe ser considerada como complemento y no como tratamiento principal.\n\nFármacos antipsicóticos:\n\nEn algunos casos, los antipsicóticos atípicos (como la quetiapina o la risperidona) se utilizan para manejar síntomas conductuales y psicológicos asociados con la EA. Su uso debería ser cuidadoso debido a potenciales efectos secundarios.\n\nMemantina:\n\nAdemás del uso habitual en etapas moderadas a severas, se investiga su potencial en etapas más tempranas junto con otros tratamientos, aunque este enfoque también debe ser evaluado individualmente.\n\nSuplementos de vitaminas y antioxidantes:\n\nSe han propuesto vitaminas como la E, y otras sustancias antioxidantes para su potencial papel en el tratamiento, aunque los resultados han sido variados y generalmente no tienen evidencia sólida que respalde su uso como tratamiento efectivo.\n\nFármacos que moduladores del metabolismo de la glucosa:\n\nSe han investigado medicamentos originalmente diseñados para la diabetes, como la metformina, en el contexto de la EA, dada la creciente evidencia que sugiere un vínculo entre la diabetes y el deterioro cognitivo.\n\nTodos estos enfoques deben ser discutidos en conjunto con un profesional de la salud, quien puede evaluar la idoneidad y la seguridad de estos tratamientos en función de las características individuales del paciente y el contexto clínico. La investigación en tratamientos alternativos sigue en curso y no debe sustituir los tratamientos aprobados.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 123,
+        "fecha": "1/27/2025, 4:55:15 PM",
+        "pregunta": "clasificación de demencias",
+        "respuesta": "La clasificación de demencias incluye diversas categorías basadas en la patología, la etiología y las manifestaciones clínicas. En el documento, se pueden mencionar las siguientes demencias:\n\nDemencia degenerativa: Incluye condiciones como la enfermedad de Alzheimer, la demencia frontotemporal, y la demencia con cuerpos de Lewy. Estas demencias son comúnmente esporádicas o hereditarias.\n\nDemencia vascular: En este tipo, el deterioro cognitivo es el resultado de problemas vasculares, como infartos o hemorragias cerebrales. Puede clasificarse aún más en demencia por infarto cortical, demencia subcortical isquémica (enfermedad de Binswanger) o demencia mixta (combinación de demencia vascular y enfermedad de Alzheimer).\n\nDemencias secundarias: Son aquellas causadas por otras condiciones, como enfermedades metabólicas, infecciones, o bien por el uso de ciertos medicamentos.\n\nDemencia asociada a trastornos neuropsiquiátricos: Incluye síndromes como la demencia por VIH, efectos secundarios de medicamentos antipsicóticos, entre otros.\n\nEsta clasificación es fundamental para el diagnóstico y el tratamiento adecuado de los pacientes. Además, el seguimiento y la investigación continúan evolucionando para entender mejor las relaciones entre las distintas demencias.\n\nEsta información refleja el contenido presente en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part56.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part56.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 124,
+        "fecha": "1/27/2025, 4:56:09 PM",
+        "pregunta": "hidrocefalia normotensiva puede presentarse como demencia ?",
+        "respuesta": "Sí, la hidrocefalia normotensiva puede presentarse con síntomas que incluyen deterioro cognitivo y demencia. Este tipo de hidrocefalia se caracteriza por una acumulación de líquido cefalorraquídeo en los ventrículos del cerebro, lo que puede resultar en una tríada clásica de síntomas: demencia, marcha inestable (generalmente una marcha cautelosa o arrastre de pies) y problemas de control de la continencia urinaria.\n\nLa demencia en hidrocefalia normotensiva puede ser atribuible a la presión ejercida sobre las estructuras cerebrales, y aunque los pacientes pueden experimentar una progresión gradual de los síntomas cognitivos, los tratamientos como la derivación del líquido cefalorraquídeo pueden mejorar significativamente la función cognitiva en algunos casos.\n\nEstas características han sido discutidas en el contexto del deterioro cognitivo y la marcha en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part14.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part14.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 125,
+        "fecha": "1/27/2025, 4:56:59 PM",
+        "pregunta": "es entonces una enfermedad potencialmente reversible, si se realiza una DVP oportunamente ?",
+        "respuesta": "Sí, la hidrocefalia normotensiva es considerada una enfermedad potencialmente reversible si se realiza una derivación ventriculoperitoneal (DVP) de manera oportuna. La intervención quirúrgica para desviar el líquido cefalorraquídeo puede aliviar la presión sobre las estructuras cerebrales y, en muchos casos, resultar en una mejora significativa en los síntomas, incluyendo la función cognitiva, la marcha y la continencia urinaria.\n\nExisten informes de casos en los que los pacientes han presentado una notable recuperación de la demencia una vez que se ha establecido la DVP, evidenciando la importancia de un diagnóstico y tratamiento precoz para optimizar los resultados clínicos.\n\nEsta información se encuentra reflejada en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part14.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part14.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 126,
+        "fecha": "1/27/2025, 4:59:10 PM",
+        "pregunta": "que otros tipos de demencia se conocen, sin la ya mencionada EA puedes plantear como diagnóstico diferencial ?",
+        "respuesta": "Existen varios tipos de demencia además de la Enfermedad de Alzheimer (EA) que pueden considerarse en el diagnóstico diferencial. Según el documento **Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part55",
+        "evaluacion": "down",
+        "motivo": "porque hay diagnósticos diferenciales de Enfermedad de Alzheimer. lo cual se ve reflejada en la respuesta a la siguiente pregunta ¨clasificación de demencias",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 127,
+        "fecha": "1/27/2025, 4:59:50 PM",
+        "pregunta": "que métodos diagnósticos se utilizan para la hidrocefalia normotensiva del adulto ?",
+        "respuesta": "Los métodos diagnósticos utilizados para la hidrocefalia normotensiva del adulto incluyen los siguientes: 1. Imágenes por Resonancia Magnética (RM): Es el método de elección para evaluar la hidrocefalia, ya que puede mostrar la dilatación de los ventrículos cerebrales y otros cambios estructurales en el cerebro. 2. Tomografía Computarizada (TC): Se utiliza para visualizar las estructuras cerebrales y detectar expansiones ventriculares. Aunque menos sensible que la RM, puede ser útil en situaciones en las que no se puede realizar una RM. 3. Evaluaciones clínicas: Incluyen la evaluación de la tríada clásica de síntomas: deterioro cognitivo, marcha inestable y pérdida de control de la continencia urinaria. La historia clínica y el examen físico también son fundamentales para el diagnóstico. 4. Análisis del líquido cefalorraquídeo (LCR): Aunque la hidrocefalia normotensiva se caracteriza por una presión de LCR normal, la evaluación del LCR puede ayudar a descartar otras patologías. Esto incluye la punción lumbar, que puede revelar características del LCR en otros",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 128,
+        "fecha": "1/28/2025, 9:10:07 PM",
+        "pregunta": "tratamientos para la epilepsia en niños",
+        "respuesta": "Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part23.pdf [1], los tratamientos para la epilepsia en niños incluyen principalmente el uso de fármacos antiepilépticos. Estos medicamentos se eligen según el tipo específico de epilepsia y la respuesta del niño al tratamiento. Algunos de los fármacos comúnmente utilizados son:\n\nFenobarbital: es uno de los medicamentos más utilizados en niños para controlar las convulsiones.\nAcido valproico: es efectivo en muchos tipos de epilepsias y es una opción importante para su tratamiento.\nCarbamazepina: se utiliza para ciertos tipos de convulsiones y epilepsias.\nLamotrigina y levetiracetam: se han vuelto populares en la práctica clínica por su perfil de seguridad y eficacia.\nAdemás de los medicamentos, algunos casos pueden requerir enfoques adicionales como la cirugía, especialmente si las crisis son resistentes a los fármacos antiepilépticos. También se considera la dieta cetogénica en algunos niños con epilepsia refractaria.\n\nEs importante que el tratamiento sea personalizado y supervisado por un especialista en neurología pediátrica.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part23.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 129,
+        "fecha": "1/28/2025, 9:10:29 PM",
+        "pregunta": "dosis de valproato en para niño de 35 kg con epilepsia",
+        "respuesta": "Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part60.pdf [1], la dosis de valproato recomendada para el tratamiento de la epilepsia puede variar, pero generalmente se establece en un rango de 10 a 15 mg/kg/día como dosis inicial. Para un niño que pesa 35 kg, esto se calcularía de la siguiente manera:\n\nDosis inicial:\n10 mg/kg/día: 10 mg/kg × 35 kg = 350 mg/día\n15 mg/kg/día: 15 mg/kg × 35 kg = 525 mg/día\nPor lo tanto, la dosis inicial de valproato para un niño de 35 kg estaría entre 350 mg y 525 mg al día, dividida en dos o tres tomas.\n\nEs importante que la dosificación sea ajustada por un médico evaluando la respuesta del paciente y cualquier efecto secundario que pueda ocurrir. Asegúrate de seguir las indicaciones del profesional de salud.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part60.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 130,
+        "fecha": "1/28/2025, 10:27:32 PM",
+        "pregunta": "Qie tratamientos recomiendas para la Enfermedad de Parkinson en etapas iniciales",
+        "respuesta": "Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf [1], en las etapas iniciales de la enfermedad de Parkinson, el tratamiento inicial puede incluir agonistas dopaminérgicos (AD) para pacientes menores de 70 años, sanos y sin alteraciones cognitivas. Para aquellos que presentan problemas de salud, alteraciones cognitivas y son más ancianos, se recomienda iniciar el tratamiento con levodopa.\n\nLos tratamientos sintomáticos disponibles incluyen:\n\nAgonistas dopaminérgicos (AD) como pergolida, pramipexol y ropirinol.\nLevodopa combinada con carbidopa, que es un inhibidor de la descarboxilasa ácida aromática que previene su metabolismo periférico.\nAnticolinérgicos como el trihexifenidil y la benztropina, que ayudan a reducir el temblor y la rigidez.\n\nEs importante considerar que la selección del tratamiento debe hacerse de manera individualizada, dependiendo de las características y necesidades de cada paciente.\n\nPara más detalles sobre el tratamiento y manejo de la enfermedad de Parkinson, puedes consultar el documento mencionado.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 131,
+        "fecha": "1/28/2025, 10:29:39 PM",
+        "pregunta": "Que banderas rojas para diagnóstico diferencial en EP son planteables?",
+        "respuesta": "Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf [1], las \"banderas rojas\" en el diagnóstico diferencial de la enfermedad de Parkinson (EP) incluyen:\n\nDemencia temprana o importante: Indica la posibilidad de un diagnóstico diferente.\nSignos simétricos: La simetría en los signos motores puede sugerir condiciones diferentes como Atrofia Multisistémica o Parálisis Supranuclear Progresiva.\nAlteración de la función bulbar: Puede ser indicativa de otros trastornos neurológicos.\nTrastorno temprano de la marcha: Puede sugerir la presencia de Parálisis Supranuclear Progresiva o vasculopatía subcortical.\nCaídas en el primer año de evolución: Aumenta la sospecha de afecciones como Parálisis Supranuclear Progresiva.\nDependencia de la silla de ruedas dentro de los primeros 5 años de evolución: Así como la insuficiencia autónoma temprana, puede indicar una condición más grave que la EP.\nApnea del sueño: Puede estar relacionada con otros trastornos más específicos.\nRespiraciones boqueantes: Indican la posibilidad de otras condiciones.\nApraxia: Puede ser una señal de otro diagnóstico.\nMiembro extraño: Su presencia puede sugerir desordens neurológicos diferentes.\nPérdida sensorial cortical: También puede ser sugestiva de otros procesos patológicos.\n\nEs vital considerar estas banderas rojas al evaluar a un paciente para asegurar un diagnóstico correcto y un manejo adecuado.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part70.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 132,
+        "fecha": "1/29/2025, 3:11:08 PM",
+        "pregunta": "Pregunta: Mujer de 32 años con demencia que inició hace 3 años. Tiene también ataxia y signos piramidales. Tiene antecedentes familiares de cuadros clínicos iguales de patrón autosomico dominante. Todos fallecieron antes de los 35 años. Que diagnósticos plantearías?",
+        "respuesta": "Basado en la información proporcionada, existen varias condiciones que podrían tener en cuenta para el diagnóstico diferencial. Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part72.pdf [1], el cuadro de demencia combinado con ataxia y signos piramidales, junto con un patrón familiar autosómico dominante, podría sugerir:\n\nAtaxia espinocerebelosa (SCA): Variantes específicas de SCA podrían estar asociadas con este conjunto de síntomas, especialmente dadas las características familiares y la edad de inicio.\n\nEnfermedad de Machado-Joseph (también conocida como ataxia espinocerebelosa tipo 3): Esta enfermedad está asociada con ataxia, disartria, y puede presentar signos piramidales y demencia.\n\nEnfermedad de Huntington: Aunque a menudo se asocia con movimientos involuntarios, también puede presentarse con síntomas cognitivos y motores que evolucionan a demencia.\n\nDemencia frontotemporal con características piramidales: Aunque es menos común, estas demencias pueden manifestarse con ataxia y signos de disfunción piramidal.\n\nEs fundamental una evaluación clínica completa, incluyendo historia familiar, exploración neurológica, y pruebas genéticas si están indicadas, para confirmar el diagnóstico y guiar el manejo apropiado.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part72.pdf",
+        "evaluacion": "down",
+        "motivo": "Falta la enfermedad prionica, que es el primer planteo",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 133,
+        "fecha": "1/29/2025, 3:14:48 PM",
+        "pregunta": "Pregunta: Mujer de 32 años con demencia que inició hace 3 años. Tiene también ataxia y signos piramidales. Tiene antecedentes familiares de cuadros clínicos iguales de patrón autosomico dominante. Todos fallecieron antes de los 35 años. Puede ser una enfermedad prionica?",
+        "respuesta": "Basado en la información que has proporcionado y según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part57.pdf, aunque las enfermedades priónicas son una posibilidad a considerar en un caso de demencia con características neurológicas complejas, generalmente presentan características clínicas y de progresión distintas. Las enfermedades priónicas, como la enfermedad de Creutzfeldt-Jakob (ECJ), suelen tener un inicio más rápido y cursan con episodios de demencia rápidamente progresiva, mioclonías y ataxia, pero son menos comunes en personas tan jóvenes con antecedentes familiares de un",
+        "evaluacion": "down",
+        "motivo": "Hay formas familiares cuya evolución no es tan rápida",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 134,
+        "fecha": "1/29/2025, 3:25:54 PM",
+        "pregunta": "Puede haber enfermedad prionica con hidrocefalia?",
+        "respuesta": "Según el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part36.pdf [1], las prionopatías son enfermedades mortales y no existe tratamiento que pueda detener su progreso. Aunque la hidrocefalia no se menciona explícitamente como un signo directo de enfermedad priónica, es posible que pacientes con prionopatías desarrollen complicaciones que incluyan hidrocefalia secundaria a otros procesos como la inflamación cerebral o a la progresión de la enfermedad. Sin embargo, no hay evidencia directa en los documentos consultados que establezca una relación clara entre enfermedad priónica y hidrocefalia.\n\nSi estás buscando información específica sobre casos clínicos o quieres saber más sobre la relación entre estas condiciones, te recomendaría que te contactes con un especialista en neurología.\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part36.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 135,
+        "fecha": "1/29/2025, 3:38:22 PM",
+        "pregunta": "Puede haber sca con hidrocefalia?",
+        "respuesta": "La ataxia espinocerebelosa (SCA) puede asociarse con diferentes complicaciones, pero en los documentos consultados no se menciona directamente la hidrocefalia como una manifestación común de la SCA. Sin embargo, algunas formas de SCA pueden conducir a la degeneración del sistema nervioso central, que en casos raros podría resultar en hidrocefalia secundaria a la disfunción del sistema de drenaje del líquido cefalorraquídeo o a otros cambios estructurales en el cerebro.\n\nSi deseas obtener información más detallada sobre casos específicos o estudios relacionados con la SCA y la hidrocefalia, te aconsejo que contactes con un especialista en neurología.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 136,
+        "fecha": "1/29/2025, 3:43:28 PM",
+        "pregunta": "Cuál es la edad promedio de presentación de la atrofia multisistemica?",
+        "respuesta": "La atrofia multisistémica (AMS) tiene una edad media de inicio de aproximadamente 53 años. En los documentos revisados, se indica que no existen casos confirmados por debajo de los 30 años y que el inicio después de los 70 años es raro. Esta información se encuentra en el documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part89.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part89.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 137,
+        "fecha": "1/29/2025, 3:46:59 PM",
+        "pregunta": "En qué enfermedades puede verse en mri el hot cross bun?",
+        "respuesta": "El signo \"hot cross bun\" se observa en resonancias magnéticas (MRI) de pacientes con ataxia espinocerebelosa y puede estar asociado con otras condiciones como la degeneración olivopontocerebelosa. Este hallazgo se caracteriza por una imagen de \"cruz\" en la región del puente, y es más comúnmente visto en la atrofia multisistémica.\n\nEsta información proviene del documento Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part89.pdf [1].\n\nReferencias: [1] Neurología_Clínica_-Bradley(5°_Edición)_Vol._II_part89.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": "Neurologia"
+    },
+    {
+        "id": 138,
+        "fecha": "1/30/2025, 7:45:44 AM",
+        "pregunta": "34 años privado de libertad, usuario de pasta base de cocaína, en abstinencia desde hace 3 meses, VIH negativo. No otros antecedentes personales a destacar.  Historia de 4 meses de tos y expectoración mucosa, no hemoptisis. Refiere sensación febril en algunas ocasiones. Adelgazamiento de mas de 5 k en este período.  Ex físico: lúcido, piel y mucosas sin lesiones. LG: adenopatías palpables firmes en territorios de cuello y axilas, no dolorosas, no forman conglomerados. PP: estertores húmedos bilaterales, CV rr de 88cpm, sin alteraciones. ABD, impresiona hepatomegalia.  Se plantea el diagnostico de tuberculosis y se envía a su policlínica.   En cuanto a los estudios para confirmar el diagnostico ud. solicita:  a)\tPunción ganglionar y envío para citología y baciloscopias b)\tBaciloscopias y Xpert de expectoración c)\tFBC con LBA, baciloscopias y Xpert del lavado d)\tPPD",
+        "respuesta": "Dada la historia clínica de 4 meses de tos y expectoración, junto con la pérdida de peso significativa, aloja una fuerte sospecha de tuberculosis, especialmente considerando la presentación con adenopatías y estertores húmedos bilaterales. Para confirmar el diagnóstico de tuberculosis, una de las mejores opciones es realizar baciloscopias y Xpert de expectoración (opción b). Las baciloscopias permiten buscar directamente la presencia de bacilos ácido-alcohol resistentes, mientras que el test Xpert MTB/RIF proporciona resultados rápidos y puede detectar resistencia a rifampicina, lo que es crucial para el manejo del paciente. La opción a), punción ganglionar, aunque puede ser útil para estudios de adenopatías, no es la primera línea en el diagnóstico de tuberculosis pulmonar. La opción c), FBC con LBA, también es válida, pero suele considerarse en",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 139,
+        "fecha": "1/30/2025, 7:48:37 AM",
+        "pregunta": "Luego de confirmado el diagnostico se inició tratamiento anti tuberculoso con INH RF PZ ETB con buena tolerancia. En un examen de control se encuentra un funcional y enzimograma hepático alterado.  FYEH inicial. BT: 0,9. TGO: 34 TGP: 40. GGT 234 FYEH a los 15 dias del inicio del tto.  BT: 3,4. TGO: 156 TGP: 198 ¿Cuál es su conducta frente a estos hallazgos?:  a)\tSuspende el tratamiento anti tuberculoso e inicia un tto alternativo b)\tSuspende el tto anti tuberculoso y valora en 7 días el re inicio  c)\tNo suspende el tratamiento, pero baja las dosis a la mitad d)\tNo suspende el tratamiento y solicita nuevo FYEH en 7 días",
+        "respuesta": "Frente a los hallazgos mencionados, donde hay un aumento significativo en las transaminasas (TGO y TGP) y bilirrubina total, la conducta apropiada, tal como se detalla en los documentos, es suspender el tratamiento antituberculoso. Sin embargo, como el funcional y enzimograma hepático a los 15 días del tratamiento muestra una bilirrubina total de 3,4, junto con aumentos de TGO y TGP, se considera que se trata de un caso de hepatotoxicidad asociada al tratamiento.\n\nLa recomendación indicaría que una opción prudente sería suspender el tratamiento y realizar un nuevo funcional y enzimograma hepático en el tiempo establecido para evaluar la situación clínica del paciente y decidir sobre el reinicio del tratamiento antituberculoso. Esto se alinearía más con la opción b) Suspende el tto antituberculoso y valora en 7 días el reinicio.\n\nAsí, sería importante que el paciente sea monitoreado y que la reintroducción de medicamentos antituberculosos se maneje con cuidado, considerando los riesgos de hepatotoxicidad.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 140,
+        "fecha": "1/30/2025, 7:49:37 AM",
+        "pregunta": "Para el cribado de TB latente según las guías nacionales de prevención de la tuberculosis se incluyen los siguientes grupos de riesgo: (marque la opción correcta) a)\tMayores de 65 años b)\tEmbarazadas c)\tPacientes que iniciarán tratamiento con fármacos anti-TNF alfa d)\tPacientes que serán sometidos a tratamiento con cámara hiperbárica",
+        "respuesta": "Para el cribado de tuberculosis latente (ITBL) según las guías nacionales de prevención de la tuberculosis, se incluyen los siguientes grupos de riesgo:\n\nLa opción correcta es c) Pacientes que iniciarán tratamiento con fármacos anti-TNF alfa. Este grupo es considerado de alto riesgo debido al aumento de la probabilidad de reactivación de la infección tuberculosa latente como consecuencia del tratamiento inmunosupresor que implica el uso de estos medicamentos.\n\nLas otras opciones, como mayores de 65 años y embarazadas, aunque pueden tener consideraciones especiales, no están específicamente mencionadas como grupos de riesgo para el cribado de TB latente en las guías. Respecto a los pacientes que serán sometidos a tratamiento con cámara hiperbárica, esta condición no es un factor de riesgo reconocido para tuberculosis latente.\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 141,
+        "fecha": "1/30/2025, 7:56:26 AM",
+        "pregunta": "Con respecto al tratamiento empírico de infecciones con cobertura para microorganismos productores de carbapenemasas, el score de ROCAS se utiliza para (marque la opción correcta):  a)\tPacientes trasplantados de órgano sólido que cursan shock séptico.  b)\tDiscriminar entre pacientes con mayor riesgo de carbapenemasas del tipo NDM o del tipo KPC.  c)\tEn pacientes onco-hematológicos que cursan una infección sin shock y estabilidad hemodinámica.  d)\tEn pacientes onco-hematológicos que cursan con shock séptico.",
+        "respuesta": "La opción correcta es: d) En pacientes onco-hematológicos que cursan con shock séptico.\n\nEsto se debe a que en los datos del registro ROCAS, se ha documentado que la mortalidad en pacientes con bacteriemia por Enterobacterales productores de carbapenemasas (EPC) en el contexto de shock séptico es un factor de riesgo relevante, y se ha utilizado para guiar las decisiones terapéuticas en esta población (2024-06-07_GUÍAS DE RECOMENDACIONES.pdf).\n\nReferencias:",
+        "evaluacion": "down",
+        "motivo": "La respuesta correcta es: c)\tEn pacientes onco-hematológicos que cursan una infección sin shock y estabilidad hemodinámica.",
+        "marker": null
+    },
+    {
+        "id": 142,
+        "fecha": "1/30/2025, 7:57:20 AM",
+        "pregunta": "En cuanto a la epidemiologia de S. maltophilia, marque la opción correcta a)\tLas tasas de aislamiento a nivel mundial vienen disminuyendo b)\tLos casos de brotes intrahospitalarios son escasos c)\tLos pacientes con fibrosis quística tienen mayor frecuencia de infecciones por dicho microorganismo",
+        "respuesta": "La opción correcta es: c) Los pacientes con fibrosis quística tienen mayor frecuencia de infecciones por dicho microorganismo.\n\nEsto se debe a que Stenotrophomonas maltophilia ha mostrado un aumento en los casos de aislamiento y frecuencia de infecciones en pacientes con fibrosis quística, quienes son particularmente vulnerables a este tipo de infecciones (Principles and Practice of Infectious Diseases (2019)_part72.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 143,
+        "fecha": "1/30/2025, 7:57:55 AM",
+        "pregunta": "Marque la opción correcta con respecto al tratamiento de las infecciones por S. maltophilia a)\tLas opciones terapéuticas para el tratamiento son múltiples b)\tTMP/SMX es una de las opciones ATB disponible para el tratamiento c)\tSi es de adquisición intrahospitalaria puede utilizarse aztreonam",
+        "respuesta": "La opción correcta es: b) TMP/SMX es una de las opciones ATB disponible para el tratamiento.\n\nTrimethoprim-Sulfamethoxazole (TMP-SMX) ha sido históricamente uno de los tratamientos más efectivos contra Stenotrophomonas maltophilia, así como el agente de elección en muchas infecciones causadas por este microorganismo (Principles and Practice of Infectious Diseases (2019)_part72.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 144,
+        "fecha": "1/30/2025, 7:58:47 AM",
+        "pregunta": "70 años. DM2 tratamiento con metformina 850 mg vo D y A. No alergia a fármacos. Prótesis de rodilla por artrosis derecha implantada 3 semanas previas a la consulta.  MC. fiebre y eritema a nivel del abordaje quirúrgico de la rodilla.  ¿Cuál es su conducta terapéutica frente a este paciente con el diagnóstico de infección peri protésica aguda? Señale la correcta: a)\tToma muestras para cultivo del abordaje quirúrgico e inicia rápidamente el tratamiento antibiótico con Vancomicina 15 mg kg día + amikacina 20 mg/kg día.  b)\tLimpieza quirúrgica en block con toma de muestras profundas e inicia cobertura antimicrobiana en el peri-operatorio inmediato (2 horas antes) con Vancomicina 20-30 mg kg dosis carga seguido de 20 mg kg c/12 hs + Amikacina 20 mg kg día.  c)\tLimpieza quirúrgica en block con toma de muestras profundas e inicia tratamiento antimicrobiano en el postoperatorio con ciprofloxacina 500 mg vo c/8 hs + linezolid 600 mg vo c/12 hs",
+        "respuesta": "La opción correcta es: b) Limpieza quirúrgica en block con toma de muestras profundas e inicia cobertura antimicrobiana en el peri-operatorio inmediato (2 horas antes) con Vancomicina 20-30 mg kg dosis carga seguido de 20 mg kg c/12 hs + Amikacina 20 mg kg día.\n\nEsta conducta es apropiada para el manejo de una infección peri-prostética aguda, donde la intervención quirúrgica y la toma de cultivos son fundamentales para el diagnóstico y tratamiento efectivo (Principles and Practice of Infectious Diseases (2019)_part124.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 145,
+        "fecha": "1/30/2025, 7:59:36 AM",
+        "pregunta": "¿En una infección peri protésica de evolución aguda, cual es la recomendación con respecto a la permanencia de implante? Señale la correcta:  a)\tSe indica limpieza quirúrgica con desbridamiento de tejidos y retención del implante (DAIR). b)\tTiene indicado un recambio del implante en 1 tiempo.  c)\tTiene indicado un recambio del implante en 2 tiempos.",
+        "respuesta": "La opción correcta es: a) Se indica limpieza quirúrgica con desbridamiento de tejidos y retención del implante (DAIR).\n\nEn infecciones peri-protésicas de evolución aguda, se recomienda realizar un desbridamiento quirúrgico y permitir la retención del implante, siempre que se cumplan ciertos criterios de salud del paciente y características de la infección (Principles and Practice of Infectious Diseases (2019)_part124.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 146,
+        "fecha": "1/30/2025, 8:00:28 AM",
+        "pregunta": "En cuanto al plan antimicrobiano dirigido a la infección de fractura por Aeromonas hydrophila a)\tCeftazidime 2 gr iv c/8 hs por 2 semanas.  b)\tCiprofloxacina 400 mg iv c/8 hs + TMP-SMX 10 mg kg día 2 semanas parenteral seguido de VO hasta completar 8-12 semanas seguido de plan antimicrobiano supresivo. c)\tCeftazidime 2 gr iv c/8 hs + Ciprofloxacina 400 mg iv c/8 hs durante 8 semanas seguido de tratamiento antimicrobiano supresivo VO por 6 meses",
+        "respuesta": "La opción correcta es: b) Ciprofloxacina 400 mg iv c/8 hs + TMP-SMX 10 mg kg día 2 semanas parenteral seguido de VO hasta completar 8-12 semanas seguido de plan antimicrobiano supresivo.\n\nEste esquema de tratamiento es el recomendado para infecciones causadas por Aeromonas hydrophila, considerando la combinación de ciprofloxacina y TMP-SMX para abordar la sensibilidad y resistencia del microorganismo, además del plan de tratamiento prolongado en caso de infecciones más severas (Principles and Practice of Infectious Diseases (2019)_part72.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 147,
+        "fecha": "1/30/2025, 8:01:20 AM",
+        "pregunta": "En cuanto al diagnóstico de infección de fractura responda lo correcto:  a)\tLa presencia de 2 o más cultivos positivos a un mismo microorganismo con igual perfil fenotípico es un criterio diagnóstico mayor.  b)\tLa presencia de fístula es catalogada como un criterio diagnóstico menor.  c)\tCuando tengo identificado el microorganismos responsable de la infección, se recomienda no volver a tomar nuevos cultivos en posteriores limpiezas quirúrgica.",
+        "respuesta": "La opción correcta es: a) La presencia de 2 o más cultivos positivos a un mismo microorganismo con igual perfil fenotípico es un criterio diagnóstico mayor.\n\nEste criterio es fundamental para confirmar el diagnóstico de infección de fractura, ya que la repetición de cultivos positivos que muestran el mismo organismo ayuda a establecer la permanencia y la relevancia de la infección (Principles and Practice of Infectious Diseases (2019)_part124.pdf).\n\nReferencias:",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 148,
+        "fecha": "1/30/2025, 8:02:34 AM",
+        "pregunta": "23 años. Tabaquista. No alergias.  Siniestro de tránsito conduciendo moto con casco, caída en una cuneta por perdida de control del vehículo. Balance lesional, politraumatismo leve, fractura expuesta de pierna Gustilo 3A.  Evolución:  Ingreso a emergencia, se realiza 1º limpieza quirúrgica dentro de las primeras 6 horas, realizan lavado profuso con SF, estabilizan la fractura con fijadores externos, cierre de planos. Mantiene tax 37,8 sin flebitis, a nivel del foco fracturario mantiene edema, eritema de partes blandas y exudado sero-hemático. Se coordina 2º limpieza quirúrgica a las 72 horas. Encuentran tejidos friables, sin pus claro, lavado, necrectomía y toma de cultivos.  Cultivo profundo desarrolla en 4 de 4 muestras: Aeromonas hydrophila. A las 2 semanas de tratamiento antimicrobiano con foco controlado se realiza la estabilización definitiva del foco con clavo endomedular.  Con respecto al tratamiento inicial de la fractura expuesta indique lo correcto:  a)\tEs necesario realizar una rápida limpieza de los tejidos con suero fisiológico a chorro en emergencia con posterior toma de muestras para cultivo con hisopo.  b)\tEs necesario Iniciar antimicrobianos en la primera hora o lo antes posible, asociado a limpieza quirúrgica de los tejidos y toma de cultivos a partir de la 2º limpieza quirúrgica.   c)\tEs necesario realizar limpieza quirúrgica e inicio de antimicrobianos en caso de que se constate elevación de parámetros inflamatorios luego de 48hs",
+        "respuesta": "La opción correcta es: b) Es necesario Iniciar antimicrobianos en la primera hora o lo antes posible, asociado a limpieza quirúrgica de los tejidos y toma de cultivos a partir de la 2º limpieza quirúrgica. Esto se debe a que en la gestión de fracturas expuestas, es crítico",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 149,
+        "fecha": "1/30/2025, 8:05:27 AM",
+        "pregunta": "¿Qué plan antimicrobiano indicaría en este paciente? a)\tCefazolina 2 gr IV c/12 hs + Gentamicina 5 mg kg día.  b)\tVancomicina 30 mg kg dosis carga seguido de 15 mg kg c/12 hs + amikacina 20 mg kg dia.  c)\tCiprofloxacina 400 mg iv c/12 hs + penicilina 4 MU cada 4 horas + gentamicina 5 mg kg día.",
+        "respuesta": "La elección del plan antimicrobiano depende de la etiología sospechada y el contexto clínico del paciente. Basado en el tratamiento sugerido para infecciones comunes, aquí hay un análisis de las opciones presentadas: a) Cefazolina 2 gr IV c/12 hs + Gentamicina 5 mg/kg día: Esta combinación es adecuada para tratar infecciones por Staphylococcus aureus meticilino sensible y otros organismos grampositivos y gramnegativos. Es un tratamiento común en casos de infecciones donde se sospechan organismos sensibles. b) **Vancomicina 30 mg/kg de dosis carga seguido de 15 mg/kg c",
+        "evaluacion": "down",
+        "motivo": "El paciente habia desarrollado en Cultivo profundo  4 de 4 muestras: Aeromonas hydrophila. Por lo tanto la respuesta correcta es: c)\tCiprofloxacina 400 mg iv c/12 hs + penicilina 4 MU cada 4 horas + gentamicina 5 mg kg día.",
+        "marker": null
+    },
+    {
+        "id": 150,
+        "fecha": "1/30/2025, 8:08:26 AM",
+        "pregunta": "Paciente de 64 años, género masculino, antecedente de tabaquista desde los 18 años, hipertensión arterial, dislipemia y obesidad (peso corporal 102 Kg, IMC: 42). Cáncer renal diagnosticado por hematuria, con ecografía que mostró masa sólida en riñón izquierdo. Se coordina para nefrectomía izquierda, ingresando la noche previa a la cirugía, con urocultivo preoperatorio sin crecimiento bacteriano. Se realiza cirugía abierta el 20/6, abordaje quirúrgico en flanco y fosa lumbar por vía retroperitoneal. Inicio de cirugía hora 8.30 am, finalización hora 12.35. Cierre del sitio quirúrgico por planos al final de la cirugía, colocación de drenaje conectado a bolsa colectora. Sangrado intraoperatorio 1,150 Ltrs. Anestesia general, inducción con drogas intravenosas y mantenimiento con agentes inhalados. Profilaxis antimicrobiana con cefazolina, 2 gr i/v, administrada en infusión corta de 5 min, a la hora 6.15 am. Controles intraoperatorios con temperatura corporal de 34,5°C de temperatura central al finalizar la cirugía. Controles de glicemia preoperatoria 1,20 en la mañana previa a la cirugía y post-operatorias menores a 1,40 gr/L. Alta de la internación peri-operatoria a los 5 días de la cirugía. Cuál de los siguientes factores de riesgo para infección de sitio quirúrgico vinculados a la profilaxis antimicrobiana le parece prioritario en esta situación? a)\tSangrado intraoperatorio como factor determinante de bajos niveles de antimicrobianos en el sitio quirúrgico b)\tElección inadecuada del antimicrobiano para la profilaxis c)\tTiempo inadecuado entre administración de la dosis preoperatoria y el inicio de la cirugía d)\tAusencia de dosis postoperatorias",
+        "respuesta": "En el caso presentado, el factor de riesgo para infección del sitio quirúrgico que parece prioritario es: a) Sangrado intraoperatorio como factor determinante de bajos niveles de antimicrobianos en el sitio quirúrgico. Esto se debe a que hubo un sangrado considerable de 1,150 L durante la cirugía, lo que puede haber comprometido los niveles de cefazolina en el sitio quirúrgico en momentos críticos. Según el documento **Principles and Practice of Infectious Diseases-Elsevier (2019)_",
+        "evaluacion": "down",
+        "motivo": "la opcion correcta es: c)\tTiempo inadecuado entre administración de la dosis preoperatoria y el inicio de la cirugía. Dado que paso mas de 1 hora entre la administración del antibiótico y el inicio de la cirugia.",
+        "marker": null
+    },
+    {
+        "id": 151,
+        "fecha": "1/30/2025, 8:09:21 AM",
+        "pregunta": "Paciente de SM, 66 años. HTA, DM II mal control metabólico. Internación previa hace un mes, uso de antibióticos de forma extensa en los 3 meses previos. Actualmente ingresa con una infección relacionada a pie diabético con necrosis húmeda del 2º dedo y mal perforante plantar en pie derecho, área de celulitis en dorso de pie de 10 cm de diámetro. Marque el tratamiento antibiótico empírico inicial que más se adecua:  a)     Ampicilina-sulbactam más trimetoprim – sulfametoxazol.   b)     Ampicilina más linezolid.   c)     Piperacilina - tazobactam, más amikacina más vancomicina   d)     Ceftriaxona más clindamicina",
+        "respuesta": "Para un paciente con diabetes mellitus que presenta una infección en pie diabético complicado con necrosis y celulitis, especialmente en el contexto de un uso extensivo de antibióticos en los meses previos, el tratamiento empírico inicial debe cubrir un amplio espectro de microorganismos multirresistentes, incluidos los gram-positivos (como Staphylococcus aureus resistente a meticilina, SAMR) y gram-negativos. En este caso, la opción más adecuada sería: c) Piperacilina - tazobactam, más amikacina más vancomicina. Esto se debe a que este esquema abarca tanto las infecciones por gram-positivos como gram-negativos, incluidos los bacilos gram-negativos y, crucialmente, la cobertura para SAMR, que es una preocupación en este tipo de infecciones. Además, la piperacilina-tazobactam",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 152,
+        "fecha": "1/30/2025, 8:10:01 AM",
+        "pregunta": "Respecto al manejo inicial de las infecciones del pie diabético catalogadas como leves, marque la opción correcta:  a)\tSe debe realizar cultivo de las partes blandas.  b)\tRequieren hemocultivos y cultivo de las partes blandas  c)\tSe puede prescindir del cultivo de los tejidos. d)\tSe deben realizar hemocultivos",
+        "respuesta": "La opción correcta respecto al manejo inicial de las infecciones del pie diabético catalogadas como leves es: c) Se puede prescindir del cultivo de los tejidos.\n\nEsto se debe a que las infecciones leves en pacientes con pie diabético pueden ser manejadas con tratamiento empírico, considerando que los cultivos pueden no ser necesarios en estos casos.\n\nPara más detalles sobre el manejo de infecciones en pie diabético, se puede consultar el documento FlujoG-11-Infección en pie diabético (versión 13 de julio).pdf [1] donde se aborda el tratamiento correspondiente.\n\nReferencias: [1] FlujoG-11-Infección en pie diabético (versión 13 de julio).pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 153,
+        "fecha": "1/30/2025, 8:10:54 AM",
+        "pregunta": "Respecto a la infección en pie diabético, marque la opción correcta:  a)\tEn el paciente diabético con mal control metabólico la secreción purulenta a través de una lesión ulcerada en pie es diagnóstico de compromiso óseo.  b)\tLa severidad de la infección se logra catalogar de acuerdo a sus dimensiones, localización, extensión en profundidad como la presencia o no de elementos de compromiso sistémico (qSOFA).  c)\tEn el caso de presentar una lesión ulcerada de más de 2 cm de diámetro con una evolución mayor a 1 mes y qSOFA de 0, es muy poco probable la afectación ósea dada la evolución subaguda sin elementos de severidad sistémica.  d)\tEn el caso de lesión ulcerada sobre prominencia ósea y presencia de dedos “en salchicha”, con pérdida de la cortical ósea y del patrón trabecular óseo en la radiografía es necesaria la confirmación de osteítis con resonancia magnética de pie.",
+        "respuesta": "La opción correcta respecto a la infección en pie diabético es: b) La severidad de la infección se logra catalogar de acuerdo a sus dimensiones, localización, extensión en profundidad como la presencia o no de elementos de compromiso sistémico (qSOFA). Esto se alinea con la clasificación y evaluación de las infe",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 154,
+        "fecha": "1/30/2025, 8:11:41 AM",
+        "pregunta": "Con respecto al tratamiento y manejo inicial de la enfermedad meningocóccica invasiva, marque la opción correcta:  a)\tAnte la sospecha de enfermedad meningocóccica invasiva con compromiso del SNC se iniciará tratamiento antibiótico empírico una vez obtenido los resultados del estudio citoquímico del LCR.  b)\tSe debe asociar dexametasona dado que ha demostrado mejor pronóstico.  c)\tLa terapia antibiótica debe iniciarse en las primeras 2 horas dado que ha demostrado disminuir la mortalidad.",
+        "respuesta": "La opción correcta es la c) \"La terapia antibiótica debe iniciarse en las primeras 2 horas dado que ha demostrado disminuir la mortalidad.\" Esto se enfatiza en la literatura, ya que se considera que el tratamiento antibiótico temprano en la enfermedad meningocócica invasiva es crucial para mejorar el pronóstico y reducir la mortalidad asociada con la enfermedad.\n\nLa respuesta se basa en la información de los documentos proporcionados, donde se menciona que \"Invasive meningococcal disease is a medical emergency, and early parenteral antibiotic treatment with ceftriaxone, cefotaxime, or meropenem should be the primary goal.\" Esta premisa sugiere que el inicio rápido del tratamiento es esencial para mejorar los resultados en pacientes con esta condición.\n\nPor favor, si requieres más información sobre el manejo de la enfermedad meningocóccica, házmelo saber.",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 155,
+        "fecha": "1/30/2025, 8:12:31 AM",
+        "pregunta": "Con respecto a la colonización por Neisseria meningitidis, marque la opción correcta:  a)\tHabitualmente no coloniza la nasofaringe de la población sana.  b)\tEs mínima en lactantes y niños pequeños y máxima en adolescentes y poblaciones cerradas. c)\tEn la evolución a enfermedad meningocóccica invasiva es necesaria la colonización nasofaríngea previa.  d)\tLa colonización no conduce al desarrollo de inmunidad.",
+        "respuesta": "La opción correcta es la b) \"Es mínima en lactantes y niños pequeños y máxima en adolescentes y poblaciones cerradas.\" Según la información disponible, las tasas de colonización por Neisseria meningitidis son bajas en lactantes y niños pequeños, pero aumentan significativamente en adolescentes y entre poblaciones cerradas, como en campamentos o entornos militares. La referencia a esta información se encuentra en el documento que discute la epidemiología y el patrón de colonización del meningococo, indicando que \"Carriage rates are low in infants and young children and highest in adolescents and in closed populations\" (la colonización es baja en lactantes y niños pequeños, y más alta en adolescentes y poblaciones cerradas). Si necesitas más detalles sobre la colonización o el manejo de Neisseria meningitidis",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 156,
+        "fecha": "1/30/2025, 8:15:40 AM",
+        "pregunta": "Cuando realizar  quimioprofilaxis frente a Neisseria meningitidis?",
+        "respuesta": "La quimioprofilaxis frente a Neisseria meningitidis se debe realizar en las siguientes situaciones:\n\nPersonas con exposición directa, prolongada y estrecha desde 7 días previos al inicio de los síntomas hasta 24 horas posteriores al inicio del tratamiento antibiótico adecuado (ATB) (según el documento FlujoG-9-Meningoencefalitis aguda comunitaria.pdf [1]).\n\nEsto incluye situaciones de contacto cercano, como convivientes o personas que han estado en un entorno donde se ha presentado un caso de enfermedad meningocócica.\n\nReferencias: [1] FlujoG-9-Meningoencefalitis aguda comunitaria.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 157,
+        "fecha": "1/30/2025, 8:16:24 AM",
+        "pregunta": "¿Cuál es uno de los indicadores básicos recomendados para medir el consumo de antimicrobianos en un hospital? a)\tNúmero de pacientes tratados con antibióticos b)\tDosis Diarias Definidas (DDD) por cada 100 estancias c)\tNúmero total de antibióticos recetados d)\tCostos de los antimicrobianos por paciente",
+        "respuesta": "Uno de los indicadores básicos recomendados para medir el consumo de antimicrobianos en un hospital es la opción: b) Dosis Diarias Definidas (DDD) por cada 100 estancias. Este indicador permite evaluar y comparar el uso de antimicrobianos en distintas instituciones y situaciones clínicas. Esta información se encuentra respaldada en el documento Principles and Practice of Infectious Diseases (2019).pdf_parte18 [1].\n\nReferencias: [1] Principles and Practice of Infectious Diseases-Elsevier (2019)_part18.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 158,
+        "fecha": "1/30/2025, 8:17:19 AM",
+        "pregunta": "¿Cuál es una estrategia clave en el nivel intermedio de un PROA para mejorar la calidad de prescripción de antimicrobianos? a)\tRealizar auditorías de prescripción prioritariamente en áreas no críticas b)\tEvaluar la calidad de prescripción mediante estudios transversales en unidades seleccionadas c)\tLimitar el acceso a guías clínicas a un grupo de médicos seleccionados d)\tRotar cíclicamente todos los antibióticos utilizados en el hospital",
+        "respuesta": "Una estrategia clave en el nivel intermedio de un Programa de Optimización de Antibióticos (PROA) para mejorar la calidad de prescripción de antimicrobianos es b) Evaluar la calidad de prescripción mediante estudios transversales en unidades seleccionadas. Esta estrategia permite identificar áreas de mejora y fomentar una mejor práctica en la prescripción de antimicrobianos, tal como se menciona en el documento MultiR+en+BGN.pdf [1].\n\nReferencias: [1] MultiR en BGN.pdf",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 159,
+        "fecha": "1/30/2025, 8:18:33 AM",
+        "pregunta": "Con respecto a la inmunización para el Virus Varicela Zoster (varicela y herpes zoster) en el trasplante de órgano sólido: a)\tEn aquellos susceptibles de varicela previo al trasplante, debe recomendarse la vacunación para varicela (virus vivo atenuado). b)\tEn aquellos susceptibles de varicela previo al trasplante, debe recomendarse la vacunación para herpes zoster (vacuna recombinante). c)\tEn aquellos que ya tuvieron varicela, debe recomendarse una dosis de refuerzo de vacunación para varicela (virus vivo atenuado) pasados los primeros 6 meses post trasplante para evitar el herpes zoster. d)\tEn aquellos que ya tuvieron varicela, la vacunación para herpes zoster (recombinante) tiene escasa inmunogenicidad.",
+        "respuesta": "Con respecto a la inmunización para el Virus Varicela Zoster (varicela y herpes zoster) en el trasplante de órgano sólido, la respuesta correcta es: **a) En aquellos susceptibles de varicela previo al",
+        "evaluacion": "up",
+        "motivo": "",
+        "marker": null
+    },
+    {
+        "id": 160,
+        "fecha": "1/30/2025, 8:19:31 AM",
+        "pregunta": "En cuanto a la oportunidad de la inmunización de los pacientes en trasplante de órgano sólido: a)\tEl mejor momento para la inmunización es luego de pasados los primeros 3 meses post trasplante. b)\tEl mejor momento para la inmunización es en la valoración pre-trasplante. c)\tLa vacunación con virus vivos atenuados puede utilizarse luego de 6 meses post trasplante. d)\tLa vacunación antigripal se prefiere no administrarla en el post trasplante dado el riesgo de desencadenar rechazo",
+        "respuesta": "La opción correcta es:\n\nb) El mejor momento para la inmunización es en la valoración pre-trasplante.\n\nEsto se debe a que es recomendable que los candidatos a trasplante de órgano sólido (TOS) se vacunen lo más pronto posible en el período pretrasplante para asegurar una mejor respuesta inmunológica antes de la inmunosupresión que ocurre post-trasplante. Es importante completar la inmunización al menos 4 semanas antes del trasplante, ya que después de la cirugía la respuesta a la vacuna se ve disminuida debido a la terapia inmunosupresora (según el documento Inmunizaciones.pdf [1] [1]).\n\nLas otras opciones son incorrectas:\n\na) No se recomienda esperar a los primeros 3 meses post-trasplante para la inmunización.\nc) La vacunación con virus vivos atenuados está contraindicada después del trasplante (según el documento Inmunizaciones.pdf [1] [1]).\nd) La vacunación antigripal se administra, y su inmunogenicidad puede estar reducida, pero sigue siendo un componente importante de la prevención post-trasplante para evitar complicaciones, aunque no existe evidencia que demuestre un aumento en el riesgo de rechazo con la vacunación antigripal (información del documento Principles and Practice of Infectious Diseases-Elsevier (2019)_part124.pdf [2]).\n\nReferencias: [1] Inmunizaciones.pdf [2] Principles and Practice of Infectious Diseases-Elsevier (2019)_part124.pdf",
         "evaluacion": "up",
         "motivo": "",
         "marker": null
