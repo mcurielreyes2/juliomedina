@@ -96,7 +96,7 @@ class RAGService:
         # 2) If no keywords found, fallback to probability-based classification:
         classification_prompt = f"""
             Eres un clasificador de textos sencillo.
-            Dada la consulta del usuario, estima la probabilidad (0-100) de que la consulta sea sobre infectologia o cualquier disciplina o tematica relacionada con la infectologia 
+            Dada la consulta del usuario, estima la probabilidad (0-100) de que la consulta sea sobre infectologia vacunas vacunacion o cualquier disciplina o tematica relacionada con la infectologia 
             Devuelve SOLO un número del 0 al 100 (un entero). Sin texto adicional.
 
             User query: {query}
